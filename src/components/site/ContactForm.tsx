@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from 'motion/react'
 import { useState, type FormEvent } from 'react'
 import { useTranslation } from 'react-i18next'
-import { buttonVariants } from '~/components/ui/button'
+import { InteractiveHoverButton } from '~/components/magicui/interactive-hover-button'
 import { Input } from '~/components/ui/input'
 import { Label } from '~/components/ui/label'
 import { Textarea } from '~/components/ui/textarea'
@@ -153,26 +153,15 @@ export function ContactForm() {
           aria-hidden="true"
         />
 
-        <motion.button
+        <InteractiveHoverButton
           type="submit"
           disabled={status.kind === 'submitting'}
-          whileTap={{ scale: 0.97 }}
-          className={buttonVariants({ className: 'w-full' })}
+          className="w-full"
         >
-          <AnimatePresence mode="wait" initial={false}>
-            <motion.span
-              key={status.kind === 'submitting' ? 'submitting' : 'idle'}
-              initial={{ opacity: 0, y: 4 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -4 }}
-              transition={{ duration: 0.15 }}
-            >
-              {status.kind === 'submitting'
-                ? t('contact.submitting')
-                : t('contact.submit')}
-            </motion.span>
-          </AnimatePresence>
-        </motion.button>
+          {status.kind === 'submitting'
+            ? t('contact.submitting')
+            : t('contact.submit')}
+        </InteractiveHoverButton>
 
         <AnimatePresence>
           {status.kind === 'success' && (
