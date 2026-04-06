@@ -7,6 +7,8 @@
     "acceptingProjects": "Accepting New Projects"
   },
   "contact": {
+    "title": "Start a conversation",
+    "subtitle": "Tell us about your project — we usually reply within one business day.",
     "fullName": "Full Name",
     "fullNamePlaceholder": "John Doe",
     "email": "Email Address",

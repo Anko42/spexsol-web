@@ -1,29 +1,90 @@
 @import 'tailwindcss' source('../');
 
 @theme {
-  --color-bg: #0e0e11;
-  --color-surface: #131317;
-  --color-card: #1f1f26;
-  --color-input: #25252d;
-  --color-line: rgba(71, 71, 80, 0.2);
-  --color-line-soft: rgba(71, 71, 80, 0.1);
-  --color-fg: #e6e4f0;
-  --color-fg-muted: #abaab5;
-  --color-accent: #d0bcff;
-  --color-accent-fg: #4e03b8;
-  --color-success: #06b77f;
-  --color-success-bg: #00452d;
-  --color-success-fg: #45d79c;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+  --color-input: var(--input);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-success: var(--success);
+  --color-success-bg: var(--success-bg);
+  --color-success-fg: var(--success-fg);
 
   --font-display: 'Manrope', ui-sans-serif, system-ui, sans-serif;
   --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  /* shadcn-compatible aliases mapped onto the project palette */
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-primary: var(--accent);
+  --color-primary-foreground: var(--accent-fg);
+  --color-secondary: var(--card);
+  --color-secondary-foreground: var(--fg);
+  --color-accent-foreground: var(--accent-fg);
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-border: var(--line);
+  --color-input-border: var(--line);
+  --color-ring: var(--accent);
+
+  /* rainbow button tokens */
+  --color-1: #ff5f6d;
+  --color-2: #ffc371;
+  --color-3: #47e0a0;
+  --color-4: #38bdf8;
+  --color-5: #a78bfa;
+  --animate-rainbow: rainbow 2s infinite linear;
+
+  @keyframes rainbow {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
+}
+
+:root {
+  --bg: #fafaf8;
+  --surface: #ffffff;
+  --card: #f3f2ef;
+  --input: #ebeae6;
+  --line: rgba(20, 20, 30, 0.12);
+  --line-soft: rgba(20, 20, 30, 0.06);
+  --fg: #14141a;
+  --fg-muted: #5b5b66;
+  --accent: #5b21b6;
+  --accent-fg: #f5efff;
+  --success: #047857;
+  --success-bg: #d1fae5;
+  --success-fg: #065f46;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #0e0e11;
+  --surface: #131317;
+  --card: #1f1f26;
+  --input: #25252d;
+  --line: rgba(71, 71, 80, 0.2);
+  --line-soft: rgba(71, 71, 80, 0.1);
+  --fg: #e6e4f0;
+  --fg-muted: #abaab5;
+  --accent: #d0bcff;
+  --accent-fg: #4e03b8;
+  --success: #06b77f;
+  --success-bg: #00452d;
+  --success-fg: #45d79c;
+  color-scheme: dark;
 }
 
 @layer base {
-  html {
-    color-scheme: dark;
-  }
-
   html,
   body {
     @apply bg-bg text-fg font-body antialiased;
@@ -32,4 +93,10 @@
   ::selection {
     @apply bg-accent text-accent-fg;
   }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }

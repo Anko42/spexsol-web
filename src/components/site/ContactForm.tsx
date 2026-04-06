@@ -1,10 +1,12 @@
+import { AnimatePresence, motion } from 'motion/react'
 import { useState, type FormEvent } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Button } from '~/components/ui/button'
+import { buttonVariants } from '~/components/ui/button'
 import { Input } from '~/components/ui/input'
 import { Label } from '~/components/ui/label'
 import { Textarea } from '~/components/ui/textarea'
 import { contactSchema } from '~/lib/contact-schema'
+import { fadeUp } from '~/lib/motion-presets'
 
 type Status =
   | { kind: 'idle' }
@@ -65,10 +67,10 @@ export function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full rounded-lg border border-line-soft bg-surface px-12 pb-16 pt-12"
+      className="w-full"
       noValidate
     >
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-2">
           <Label htmlFor="name">{t('contact.fullName')}</Label>
           <Input
@@ -77,7 +79,20 @@ export function ContactForm() {
             placeholder={t('contact.fullNamePlaceholder')}
             autoComplete="name"
           />
-          {errors.name && <p className="text-xs text-red-400">{errors.name}</p>}
+          <AnimatePresence>
+            {errors.name && (
+              <motion.p
+                key="err-name"
+                variants={fadeUp}
+                initial="hidden"
+                animate="visible"
+                exit={{ opacity: 0, y: -4 }}
+                className="text-xs text-red-400"
+              >
+                {errors.name}
+              </motion.p>
+            )}
+          </AnimatePresence>
         </div>
 
         <div className="flex flex-col gap-2">
@@ -89,9 +104,20 @@ export function ContactForm() {
             placeholder={t('contact.emailPlaceholder')}
             autoComplete="email"
           />
-          {errors.email && (
-            <p className="text-xs text-red-400">{errors.email}</p>
-          )}
+          <AnimatePresence>
+            {errors.email && (
+              <motion.p
+                key="err-email"
+                variants={fadeUp}
+                initial="hidden"
+                animate="visible"
+                exit={{ opacity: 0, y: -4 }}
+                className="text-xs text-red-400"
+              >
+                {errors.email}
+              </motion.p>
+            )}
+          </AnimatePresence>
         </div>
 
         <div className="flex flex-col gap-2">
@@ -101,9 +127,20 @@ export function ContactForm() {
             name="message"
             placeholder={t('contact.briefPlaceholder')}
           />
-          {errors.message && (
-            <p className="text-xs text-red-400">{errors.message}</p>
-          )}
+          <AnimatePresence>
+            {errors.message && (
+              <motion.p
+                key="err-message"
+                variants={fadeUp}
+                initial="hidden"
+                animate="visible"
+                exit={{ opacity: 0, y: -4 }}
+                className="text-xs text-red-400"
+              >
+                {errors.message}
+              </motion.p>
+            )}
+          </AnimatePresence>
         </div>
 
         {/* Honeypot */}
@@ -116,16 +153,53 @@ export function ContactForm() {
           aria-hidden="true"
         />
 
-        <Button type="submit" disabled={status.kind === 'submitting'} className="w-full">
-          {status.kind === 'submitting' ? t('contact.submitting') : t('contact.submit')}
-        </Button>
+        <motion.button
+          type="submit"
+          disabled={status.kind === 'submitting'}
+          whileTap={{ scale: 0.97 }}
+          className={buttonVariants({ className: 'w-full' })}
+        >
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.span
+              key={status.kind === 'submitting' ? 'submitting' : 'idle'}
+              initial={{ opacity: 0, y: 4 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -4 }}
+              transition={{ duration: 0.15 }}
+            >
+              {status.kind === 'submitting'
+                ? t('contact.submitting')
+                : t('contact.submit')}
+            </motion.span>
+          </AnimatePresence>
+        </motion.button>
 
-        {status.kind === 'success' && (
-          <p className="text-sm text-success-fg">{t('contact.success')}</p>
-        )}
-        {status.kind === 'error' && (
-          <p className="text-sm text-red-400">{status.message}</p>
-        )}
+        <AnimatePresence>
+          {status.kind === 'success' && (
+            <motion.p
+              key="status-success"
+              variants={fadeUp}
+              initial="hidden"
+              animate="visible"
+              exit={{ opacity: 0, y: -4 }}
+              className="text-sm text-success-fg"
+            >
+              {t('contact.success')}
+            </motion.p>
+          )}
+          {status.kind === 'error' && (
+            <motion.p
+              key="status-error"
+              variants={fadeUp}
+              initial="hidden"
+              animate="visible"
+              exit={{ opacity: 0, y: -4 }}
+              className="text-sm text-red-400"
+            >
+              {status.message}
+            </motion.p>
+          )}
+        </AnimatePresence>
       </div>
     </form>
   )

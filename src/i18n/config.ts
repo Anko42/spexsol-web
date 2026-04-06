@@ -35,6 +35,7 @@ if (!i18n.isInitialized) {
     fallbackLng: DEFAULT_LANGUAGE,
     defaultNS: 'common',
     ns: ['common', 'home', 'legal'],
+    initImmediate: false,
     interpolation: { escapeValue: false },
     react: { useSuspense: false },
   })

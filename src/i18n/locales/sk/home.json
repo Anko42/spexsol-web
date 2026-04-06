@@ -7,6 +7,8 @@
     "acceptingProjects": "Prijímame nové projekty"
   },
   "contact": {
+    "title": "Začnime rozhovor",
+    "subtitle": "Povedzte nám o svojom projekte — zvyčajne odpovieme do jedného pracovného dňa.",
     "fullName": "Celé meno",
     "fullNamePlaceholder": "Ján Novák",
     "email": "Emailová adresa",
