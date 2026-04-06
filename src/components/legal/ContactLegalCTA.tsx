@@ -15,9 +15,9 @@ export function ContactLegalCTA({
   lang,
 }: ContactLegalCTAProps) {
   return (
-    <div className="flex w-full items-center justify-between gap-6 rounded-lg border border-accent/20 bg-[rgba(85,22,190,0.1)] p-8">
+    <div className="flex w-full items-center justify-between gap-6 rounded-lg border border-accent/20 bg-accent/10 p-8">
       <div className="flex flex-col gap-1">
-        <h3 className="text-[16px] font-bold leading-6 text-[#d9c8ff]">
+        <h3 className="text-[16px] font-bold leading-6 text-accent">
           {heading}
         </h3>
         <p className="text-[14px] leading-5 text-fg-muted">{subtitle}</p>

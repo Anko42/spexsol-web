@@ -1,4 +1,5 @@
 import { useRouter, useRouterState } from '@tanstack/react-router'
+import { startTransition } from 'react'
 import { SUPPORTED_LANGUAGES, type SupportedLanguage } from '~/i18n/config'
 import { useLang } from '~/hooks/useLang'
 import { cn } from '~/lib/utils'
@@ -17,7 +18,9 @@ export function LangSwitcher() {
       segments.splice(1, 0, lang)
     }
     const next = segments.join('/') || `/${lang}`
-    router.navigate({ to: next })
+    startTransition(() => {
+      router.navigate({ to: next })
+    })
   }
 
   return (

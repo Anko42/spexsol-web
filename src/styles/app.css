@@ -37,7 +37,7 @@
   --color-2: #ffc371;
   --color-3: #47e0a0;
   --color-4: #38bdf8;
-  --color-5: #a78bfa;
+  --color-5: #4ade80;
   --animate-rainbow: rainbow 2s infinite linear;
 
   @keyframes rainbow {
@@ -59,8 +59,8 @@
   --line-soft: rgba(20, 20, 30, 0.06);
   --fg: #14141a;
   --fg-muted: #5b5b66;
-  --accent: #5b21b6;
-  --accent-fg: #f5efff;
+  --accent: #166534;
+  --accent-fg: #f0fdf4;
   --success: #047857;
   --success-bg: #d1fae5;
   --success-fg: #065f46;
@@ -76,8 +76,8 @@
   --line-soft: rgba(71, 71, 80, 0.1);
   --fg: #e6e4f0;
   --fg-muted: #abaab5;
-  --accent: #d0bcff;
-  --accent-fg: #4e03b8;
+  --accent: #4ade80;
+  --accent-fg: #052e16;
   --success: #06b77f;
   --success-bg: #00452d;
   --success-fg: #45d79c;

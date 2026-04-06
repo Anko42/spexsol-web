@@ -1,5 +1,5 @@
 import { Link } from '@tanstack/react-router'
-import { motion } from 'motion/react'
+import { motion, useScroll, useTransform } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { useLang } from '~/hooks/useLang'
 import { Logo } from '~/components/site/Logo'
@@ -9,11 +9,27 @@ import { AnimatedThemeToggler } from '~/components/magicui/animated-theme-toggle
 export function SiteHeader() {
   const { t } = useTranslation('common')
   const lang = useLang()
+  const { scrollY } = useScroll()
+  const backgroundColor = useTransform(
+    scrollY,
+    [0, 80],
+    [
+      'color-mix(in srgb, var(--bg) 40%, transparent)',
+      'color-mix(in srgb, var(--bg) 85%, transparent)',
+    ],
+  )
+  const borderBottomColor = useTransform(
+    scrollY,
+    [0, 80],
+    ['rgb(255 255 255 / 0)', 'rgb(255 255 255 / 0.08)'],
+  )
   return (
     <motion.header
       initial={{ opacity: 0, y: -8 }}
       animate={{ opacity: 1, y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-[12px] bg-bg/70"
+      transition={{ duration: 0.5, ease: [0.2, 0, 0, 1] }}
+      style={{ backgroundColor, borderBottomColor }}
+      className="fixed top-0 left-0 right-0 z-50 border-b border-transparent backdrop-blur-[12px]"
     >
       <div className="mx-auto flex max-w-[800px] items-center justify-between px-6 py-8">
         <Link
