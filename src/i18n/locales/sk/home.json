@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "title": "Digitálna presnosť.",
+    "subtitle": "Pokročilé riešenia, špecializované vyhotovenie."
+  },
+  "status": {
+    "acceptingProjects": "Prijímame nové projekty"
+  },
+  "contact": {
+    "fullName": "Celé meno",
+    "fullNamePlaceholder": "Ján Novák",
+    "email": "Emailová adresa",
+    "emailPlaceholder": "hello@example.com",
+    "brief": "Zadanie",
+    "briefPlaceholder": "Opíšte požiadavky vášho projektu...",
+    "submit": "Odoslať dopyt",
+    "submitting": "Odosiela sa…",
+    "success": "Ďakujeme — vaša správa bola prijatá.",
+    "errorFallback": "Niečo sa pokazilo"
+  },
+  "services": {
+    "systems": {
+      "title": "Systémová architektúra",
+      "description": "Škálovateľná cloud-native infraštruktúra navrhnutá pre vysokú dostupnosť a terminálovú bezpečnosť."
+    },
+    "tooling": {
+      "title": "Vlastné nástroje",
+      "description": "Interné procesy a vývojárske platformy ušité na mieru konkrétnym inžinierskym tímom."
+    }
+  }
+}

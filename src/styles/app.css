@@ -1,0 +1,35 @@
+@import 'tailwindcss' source('../');
+
+@theme {
+  --color-bg: #0e0e11;
+  --color-surface: #131317;
+  --color-card: #1f1f26;
+  --color-input: #25252d;
+  --color-line: rgba(71, 71, 80, 0.2);
+  --color-line-soft: rgba(71, 71, 80, 0.1);
+  --color-fg: #e6e4f0;
+  --color-fg-muted: #abaab5;
+  --color-accent: #d0bcff;
+  --color-accent-fg: #4e03b8;
+  --color-success: #06b77f;
+  --color-success-bg: #00452d;
+  --color-success-fg: #45d79c;
+
+  --font-display: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  html,
+  body {
+    @apply bg-bg text-fg font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent text-accent-fg;
+  }
+}

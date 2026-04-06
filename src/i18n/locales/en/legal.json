@@ -1,0 +1,191 @@
+{
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdatedLabel": "Last updated",
+    "lastUpdated": "April 6, 2026",
+    "sections": {
+      "overview": {
+        "heading": "1. Overview",
+        "bodyBefore": "Your privacy is important to us. It is the policy of ",
+        "brand": "SpexSol s. r. o.",
+        "bodyAfter": " (\"SpexSol\", \"we\", \"us\", \"our\") to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, mobile applications and other sites and services we own and operate. This policy applies to the SpexSol marketing site and to the iOS applications published by SpexSol."
+      },
+      "collection": {
+        "heading": "2. Information We Collect",
+        "intro": "Information we collect falls into one of two categories: \"voluntarily provided\" information and \"automatically collected\" information. Voluntarily provided information refers to any information you knowingly and actively provide us when using or participating in our services. Automatically collected information refers to any information automatically sent by your devices in the course of accessing our products and services.",
+        "logDataHeading": "Log Data",
+        "logDataBody": "When you visit our website or use our applications, our servers may automatically log the standard data provided by your web browser or device. This may include your device's IP address, browser type and version, the pages you visit, the time and date of your visit, the time spent on each page, app crash data, and other details about your use of the services.",
+        "personalHeading": "Personal Information",
+        "personalIntro": "We may ask for personal information — for example, when you contact us through the website or otherwise interact with our services. This may include:",
+        "items": {
+          "01": "Name",
+          "02": "Email address",
+          "03": "Contents of any message you send us"
+        }
+      },
+      "legitimateReasons": {
+        "heading": "3. Legitimate Reasons for Processing Your Personal Information",
+        "body": "We only collect and use your personal information when we have a legitimate reason for doing so. In which instance, we only collect personal information that is reasonably necessary to provide our services to you."
+      },
+      "use": {
+        "heading": "4. Collection and Use of Information",
+        "intro": "We may collect, hold, use and disclose information for the following purposes, and personal information will not be further processed in a manner that is incompatible with these purposes:",
+        "items": {
+          "01": "to provide you with our platform's core features and services;",
+          "02": "to enable you to contact us and to respond to your enquiries;",
+          "03": "to comply with our legal obligations and resolve any disputes that we may have;",
+          "04": "to improve and maintain the security and integrity of our services."
+        }
+      },
+      "security": {
+        "heading": "5. Security of Your Personal Information",
+        "body": "When we collect and process personal information, and while we retain this information, we will protect it within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification. Although we will do our best to protect the personal information you provide to us, we advise that no method of electronic transmission or storage is 100% secure and no one can guarantee absolute data security."
+      },
+      "retention": {
+        "heading": "6. How Long We Keep Your Personal Information",
+        "body": "We keep your personal information only for as long as we need to. This time period may depend on what we are using your information for, in accordance with this privacy policy. If your personal information is no longer required, we will delete it or make it anonymous by removing all details that identify you."
+      },
+      "children": {
+        "heading": "7. Children's Privacy",
+        "body": "We do not aim any of our products or services directly at children under the age of 13 and we do not knowingly collect personal information about children under 13. If we become aware that we have collected personal information from a child under 13 without verification of parental consent, we will take steps to remove that information."
+      },
+      "thirdParties": {
+        "heading": "8. Disclosure of Personal Information to Third Parties",
+        "intro": "We may disclose personal information to:",
+        "items": {
+          "01": "a parent, subsidiary or affiliate of our company;",
+          "02": "third-party service providers for the purpose of enabling them to provide their services to us, including (but not limited to) IT service providers, hosting providers, analytics providers, error loggers, and customer support providers;",
+          "03": "courts, tribunals, regulatory authorities, and law enforcement officers, as required by law, in connection with any actual or prospective legal proceedings, or in order to establish, exercise, or defend our legal rights."
+        },
+        "providersIntro": "Third-party services we currently use include:",
+        "providers": {
+          "01": "TODO — analytics provider",
+          "02": "TODO — crash / error reporting",
+          "03": "TODO — hosting provider",
+          "04": "TODO — email / contact form delivery"
+        },
+        "providersNote": "This list is maintained on a best-effort basis and is updated when our integrations change."
+      },
+      "rights": {
+        "heading": "9. Your Rights and Controlling Your Personal Information",
+        "intro": "You always retain the right to withhold personal information from us, with the understanding that your experience of our services may be affected. We will not discriminate against you for exercising any of your rights over your personal information. If you do provide us with personal information, you understand that we will collect, hold, use and disclose it in accordance with this privacy policy. You have the right to:",
+        "items": {
+          "01": "request access to the personal information we hold about you;",
+          "02": "request that any inaccurate or out-of-date personal information be corrected;",
+          "03": "unsubscribe from any direct marketing communications at any time;",
+          "04": "request that we delete personal information we hold about you, subject to applicable legal requirements."
+        }
+      },
+      "businessTransfers": {
+        "heading": "10. Business Transfers",
+        "body": "If we or our assets are acquired, or in the unlikely event that we go out of business or enter bankruptcy, we would include data, including your personal information, among the assets transferred to any parties who acquire us. You acknowledge that such transfers may occur, and that any parties who acquire us may, to the extent permitted by applicable law, continue to use your personal information according to this policy."
+      },
+      "limits": {
+        "heading": "11. Limits of Our Policy",
+        "body": "Our website and applications may link to external sites that are not operated by us. Please be aware that we have no control over the content and policies of those sites, and cannot accept responsibility or liability for their respective privacy practices."
+      },
+      "changes": {
+        "heading": "12. Changes to This Policy",
+        "body": "At our discretion, we may change our privacy policy to reflect updates to our business processes, current acceptable practices, or legislative or regulatory changes. If we decide to change this privacy policy, we will post the changes here at the same link by which you are accessing this privacy policy and update the \"Last updated\" date at the top of this page."
+      },
+      "gdpr": {
+        "heading": "13. Additional Disclosures for GDPR Compliance (EU)",
+        "controllerHeading": "Data Controller",
+        "controllerBody": "SpexSol s. r. o. acts as a data controller in respect of the personal information we collect from users in the European Economic Area (EEA) and the United Kingdom.",
+        "legalBasesHeading": "Legal Bases for Processing",
+        "legalBasesIntro": "We will process your personal information lawfully, fairly and in a transparent manner. We collect and process information about you only where we have legal bases for doing so. These legal bases depend on the services you use and how you use them, meaning we collect and use your information only where:",
+        "legalBases": {
+          "01": "it is necessary for the performance of a contract to which you are a party or to take steps at your request before entering into such a contract (for example, when we provide a service you request from us);",
+          "02": "it satisfies a legitimate interest (which is not overridden by your data protection interests), such as for research and development, to market and promote our services, and to protect our legal rights and interests;",
+          "03": "you give us consent to do so for a specific purpose; or",
+          "04": "we need to process your data to comply with a legal obligation."
+        },
+        "transfersHeading": "International Transfers Outside the EEA",
+        "transfersBody": "We will ensure that any transfer of personal information from countries in the European Economic Area (EEA) to countries outside the EEA will be protected by appropriate safeguards, for example by using standard data protection clauses approved by the European Commission, or the use of binding corporate rules or other legally accepted means.",
+        "rightsHeading": "Your Rights",
+        "rightsIntro": "In addition to the rights listed in section 9, you have the right to:",
+        "rights": {
+          "01": "restrict the processing of your personal information;",
+          "02": "object to the processing of your personal information;",
+          "03": "request the portability of your personal information;",
+          "04": "lodge a complaint with a supervisory authority — in Slovakia, the Office for Personal Data Protection (Úrad na ochranu osobných údajov SR)."
+        }
+      },
+      "ccpa": {
+        "heading": "14. Additional Disclosures for California Compliance (US)",
+        "dntHeading": "Do Not Track",
+        "dntBody": "Some browsers have a \"Do Not Track\" feature that lets you tell websites that you do not want to have your online activities tracked. At this time, we do not respond to browser \"Do Not Track\" signals.",
+        "noticeHeading": "California Notice of Collection",
+        "noticeBody": "In the past 12 months, we have collected the following categories of personal information enumerated in the California Consumer Privacy Act: identifiers (such as name, email address and IP address) and internet or other electronic network activity information (such as browsing history and information regarding interaction with our services). We collect this information for the business purposes described in this policy.",
+        "rightsHeading": "Right to Know and Delete",
+        "rightsBody": "If you are a California resident, you have the right to know what personal information we collect about you, to request deletion of your personal information, and to not be discriminated against for exercising these rights. To exercise any of these rights, please contact us using the details below.",
+        "shineHeading": "Shine the Light",
+        "shineBody": "If you are a California resident, in addition to the rights discussed above, you have the right to request information from us regarding the manner in which we share certain personal information with third parties for their direct marketing purposes."
+      },
+      "contact": {
+        "heading": "15. Contact Us",
+        "intro": "For any questions or concerns regarding your privacy, you may contact us using the following details:",
+        "company": "SpexSol s. r. o.",
+        "address": "Bojničky 2, 920 55 Bojničky, Slovakia",
+        "ico": "Company ID (IČO): 57004196",
+        "dic": "Tax ID (DIČ): 2122528089",
+        "registry": "Registered with the Commercial Register of the District Court Trnava, Section: Sro, Insert No.: 59763/T",
+        "emailLabel": "Email"
+      }
+    },
+    "cta": {
+      "heading": "Questions about your data?",
+      "subtitle": "Reach out and we'll get back to you.",
+      "button": "Contact us"
+    }
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "lastUpdatedLabel": "Last updated",
+    "lastUpdated": "April 6, 2026",
+    "intro": "Welcome to spexsol.sk. These Terms of Use govern your access to and use of the Spexsol website, mobile applications, and related services. By accessing or using any part of our offering, you agree to be bound by these Terms together with our Privacy Policy. If you do not agree, please do not use the services.",
+    "sections": {
+      "acceptance": {
+        "heading": "1. Acceptance of Terms",
+        "body": "These Terms form a binding agreement between you and Spexsol. We may update them from time to time; the version published on this page is always the one in force. Continuing to use the services after an update means you accept the revised Terms."
+      },
+      "useOfService": {
+        "heading": "2. Use of the Service",
+        "intro": "Spexsol is provided for personal and professional use in line with applicable law. You are responsible for how you use it and for keeping any account credentials secure.",
+        "items": {
+          "01": "You must be at least 16 years old, or the minimum age required in your jurisdiction, to use the services on your own behalf.",
+          "02": "You agree not to misuse the services, including by attempting to disrupt them, gain unauthorised access, or scrape data without permission.",
+          "03": "You are responsible for the content you submit and for ensuring it does not infringe the rights of any third party."
+        }
+      },
+      "intellectualProperty": {
+        "heading": "3. Intellectual Property",
+        "body": "All software, designs, text, graphics, and other materials made available through Spexsol are owned by Spexsol or its licensors and are protected by intellectual property laws. We grant you a limited, non-exclusive, non-transferable licence to use the services for their intended purpose. You may not copy, modify, reverse engineer, or create derivative works from any part of the services without our prior written consent."
+      },
+      "disclaimers": {
+        "heading": "4. Disclaimers and Limitation of Liability",
+        "paragraphs": [
+          "The services are provided \"as is\" and \"as available\" without warranties of any kind, whether express or implied. Spexsol does not guarantee that the services will be uninterrupted, error-free, or fit for any particular purpose.",
+          "To the fullest extent permitted by law, Spexsol shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the services. Our total liability for any claim relating to the services is limited to the amount you paid us, if any, in the twelve months preceding the claim."
+        ]
+      },
+      "termination": {
+        "heading": "5. Termination",
+        "body": "We may suspend or terminate your access to the services at any time if you breach these Terms or use the services in a way that could harm Spexsol, other users, or third parties. You may stop using the services at any time."
+      },
+      "changes": {
+        "heading": "6. Changes to These Terms",
+        "body": "We may revise these Terms to reflect changes in our services, applicable law, or business practice. When we do, we will update the \"Last updated\" date at the top of this page. Material changes will be communicated through the services or by other reasonable means."
+      },
+      "governingLaw": {
+        "heading": "7. Governing Law",
+        "body": "These Terms are governed by the laws of the Slovak Republic, without regard to conflict-of-law principles. Any dispute arising out of or in connection with these Terms shall be resolved by the competent courts of the Slovak Republic."
+      }
+    },
+    "cta": {
+      "heading": "Questions about these terms?",
+      "subtitle": "Reach out and we'll get back to you.",
+      "button": "Contact us"
+    }
+  }
+}

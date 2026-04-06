@@ -1,0 +1,11 @@
+{
+  "brand": "spexsol.sk",
+  "nav": {
+    "back": "Back"
+  },
+  "footer": {
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "copyright": "© {{year}} spexsol.sk"
+  }
+}

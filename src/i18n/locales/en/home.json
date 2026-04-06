@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "title": "Digital precision.",
+    "subtitle": "Advanced solutions, niche execution."
+  },
+  "status": {
+    "acceptingProjects": "Accepting New Projects"
+  },
+  "contact": {
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "hello@example.com",
+    "brief": "Brief",
+    "briefPlaceholder": "Describe your project requirements...",
+    "submit": "Initiate Inquiry",
+    "submitting": "Sending…",
+    "success": "Thanks — your inquiry has been received.",
+    "errorFallback": "Something went wrong"
+  },
+  "services": {
+    "systems": {
+      "title": "Systems Architecture",
+      "description": "Scalable cloud-native infrastructure designed for high availability and terminal-grade security."
+    },
+    "tooling": {
+      "title": "Custom Tooling",
+      "description": "Internal workflows and developer platforms tailored to specific engineering organizational needs."
+    }
+  }
+}
