@@ -100,3 +100,9 @@
   animation: none;
   mix-blend-mode: normal;
 }
+
+/* Splash overlay: hidden instantly for returning visitors (set by inline
+   pre-hydration script in __root.tsx). */
+html.splash-skip #splash-root {
+  display: none !important;
+}

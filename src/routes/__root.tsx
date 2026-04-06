@@ -1,12 +1,14 @@
 /// <reference types="vite/client" />
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
-import { MotionConfig } from 'motion/react'
+import { LayoutGroup, MotionConfig } from 'motion/react'
 import * as React from 'react'
 import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary'
 import { NotFound } from '~/components/NotFound'
 import { SiteHeader } from '~/components/site/SiteHeader'
 import { SiteFooter } from '~/components/site/SiteFooter'
+import { Splash } from '~/components/site/Splash'
+import { SplashProvider } from '~/components/site/SplashContext'
 import i18n, { DEFAULT_LANGUAGE, isSupportedLanguage } from '~/i18n/config'
 import appCss from '~/styles/app.css?url'
 import { seo } from '~/utils/seo'
@@ -62,15 +64,25 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             __html: `(function(){try{var s=localStorage.getItem('theme');var d=s?s==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');}catch(e){}})();`,
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{sessionStorage.removeItem('splash-seen');}catch(e){}})();`,
+          }}
+        />
       </head>
       <body className="min-h-screen flex flex-col relative overflow-x-hidden">
         <MotionConfig
           reducedMotion="user"
           transition={{ duration: 0.22, ease: [0.2, 0, 0, 1] }}
         >
-          <SiteHeader />
-          <main className="flex-1">{children}</main>
-          <SiteFooter />
+          <SplashProvider>
+            <LayoutGroup id="brand">
+              <SiteHeader />
+              <main className="flex-1">{children}</main>
+              <SiteFooter />
+              <Splash />
+            </LayoutGroup>
+          </SplashProvider>
         </MotionConfig>
         <TanStackRouterDevtools position="bottom-right" />
         <Scripts />
