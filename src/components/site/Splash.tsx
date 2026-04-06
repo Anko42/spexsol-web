@@ -69,7 +69,7 @@ export function Splash() {
               },
             }}
           />
-          <div className="relative flex items-center gap-3 font-display text-[56px] leading-none tracking-[-0.05em] text-fg">
+          <div className="relative flex items-center gap-3 px-6 font-display text-[36px] leading-none tracking-[-0.05em] text-fg sm:text-[56px]">
             <motion.span
               layoutId="brand-logo"
               className="inline-flex"

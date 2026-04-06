@@ -15,7 +15,7 @@ export function ContactLegalCTA({
   lang,
 }: ContactLegalCTAProps) {
   return (
-    <div className="flex w-full items-center justify-between gap-6 rounded-lg border border-accent/20 bg-accent/10 p-8">
+    <div className="flex w-full flex-col items-start gap-6 rounded-lg border border-accent/20 bg-accent/10 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
       <div className="flex flex-col gap-1">
         <h3 className="text-[16px] font-bold leading-6 text-accent">
           {heading}
@@ -26,7 +26,7 @@ export function ContactLegalCTA({
         to="/$lang"
         params={{ lang }}
         hash="contact"
-        className="inline-flex items-center justify-center rounded-[4px] bg-accent px-6 py-3 text-[14px] font-bold text-accent-fg transition-colors hover:bg-accent/90"
+        className="inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded-[4px] bg-accent px-6 py-3 text-[14px] font-bold text-accent-fg transition-colors hover:bg-accent/90"
       >
         {buttonLabel}
       </Link>

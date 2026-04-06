@@ -33,7 +33,7 @@ export function SiteHeader() {
       style={{ backgroundColor, borderBottomColor }}
       className="fixed top-0 left-0 right-0 z-50 border-b border-transparent backdrop-blur-[12px]"
     >
-      <div className="mx-auto flex max-w-[800px] items-center justify-between px-6 py-8">
+      <div className="mx-auto flex max-w-[800px] items-center justify-between px-4 py-5 sm:px-6 sm:py-8">
         <Link
           to="/$lang"
           params={{ lang }}

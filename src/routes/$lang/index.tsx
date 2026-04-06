@@ -26,7 +26,7 @@ const cellShell =
 function Home() {
   const { t } = useTranslation('home')
   return (
-    <div className="mx-auto w-full max-w-6xl px-6 pb-24 pt-32">
+    <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-28 sm:px-6 sm:pb-24 sm:pt-32">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -44,14 +44,14 @@ function Home() {
               animate="visible"
             />
             <motion.div
-              className="relative z-10 flex h-full flex-col justify-center gap-4 p-8"
+              className="relative z-10 flex h-full flex-col justify-center gap-4 p-6 sm:p-8"
               variants={staggerContainer}
               initial="hidden"
               animate="visible"
             >
               <motion.h1
                 variants={staggerItem}
-                className="font-display text-[44px] leading-[1.05] tracking-[-0.025em] text-fg lg:text-[56px]"
+                className="font-display text-[32px] leading-[1.05] tracking-[-0.025em] text-balance text-fg break-words sm:text-[44px] lg:text-[56px]"
               >
                 {t('hero.title')}
               </motion.h1>
@@ -94,7 +94,7 @@ function Home() {
             id="contact"
             className={cn(
               cellShell,
-              'scroll-mt-32 lg:col-span-2 lg:row-span-2 lg:h-auto lg:min-h-[44rem]',
+              'order-last scroll-mt-32 lg:order-none lg:col-span-2 lg:row-span-2 lg:h-auto lg:min-h-[44rem]',
             )}
           >
             <div

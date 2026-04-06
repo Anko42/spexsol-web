@@ -17,7 +17,7 @@ export function SiteFooter() {
 
   const linkClass = (active: boolean) =>
     cn(
-      'text-xs tracking-[0.025em] opacity-80 hover:opacity-100',
+      'whitespace-nowrap text-xs tracking-[0.025em] opacity-80 hover:opacity-100',
       active ? 'text-accent underline' : 'text-fg-muted',
     )
 
@@ -27,7 +27,7 @@ export function SiteFooter() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
-      className="mx-auto flex w-full max-w-[800px] items-center justify-between px-6 pb-16 pt-32 border-t border-line-soft"
+      className="mx-auto flex w-full max-w-[800px] flex-col gap-6 border-t border-line-soft px-6 pb-16 pt-32 sm:flex-row sm:items-center sm:justify-between"
     >
       <Link
         to="/$lang"
@@ -37,7 +37,7 @@ export function SiteFooter() {
         <Logo className="h-[1em] w-auto shrink-0" />
         <span className="leading-none">{t('brand')}</span>
       </Link>
-      <nav className="flex items-center gap-8">
+      <nav className="flex items-center gap-6">
         <Link
           to="/$lang/privacy-policy"
           params={{ lang }}
@@ -53,7 +53,7 @@ export function SiteFooter() {
           {t('footer.termsOfUse')}
         </Link>
       </nav>
-      <span className="text-xs text-fg-muted tracking-[0.025em]">
+      <span className="whitespace-nowrap text-xs text-fg-muted tracking-[0.025em]">
         {t('footer.copyright', { year })}
       </span>
     </motion.footer>
