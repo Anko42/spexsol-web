@@ -3,6 +3,7 @@ import { motion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { BentoGrid, BentoCard } from '~/components/site/BentoGrid'
 import { StatusChip } from '~/components/site/StatusChip'
+import { CeoCard } from '~/components/site/CeoCard'
 import { ContactForm } from '~/components/site/ContactForm'
 import { SystemsIcon } from '~/components/icons/SystemsIcon'
 import { ToolingIcon } from '~/components/icons/ToolingIcon'
@@ -63,14 +64,12 @@ function Home() {
             </motion.div>
           </div>
 
-          {/* Status */}
+          {/* CEO */}
           <motion.div
             variants={staggerItem}
             className={cn(cellShell, 'lg:col-span-1')}
           >
-            <div className="relative z-10 flex h-full flex-col items-start justify-center p-8">
-              <StatusChip>{t('status.acceptingProjects')}</StatusChip>
-            </div>
+            <CeoCard />
           </motion.div>
 
           {/* Systems */}
@@ -103,7 +102,8 @@ function Home() {
               aria-hidden="true"
             />
             <div className="relative z-10 flex h-full flex-col gap-5 p-8">
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-3">
+                <StatusChip>{t('status.acceptingProjects')}</StatusChip>
                 <h2 className="font-display text-[28px] leading-[1.1] tracking-[-0.02em] text-fg lg:text-[32px]">
                   {t('contact.title')}
                 </h2>

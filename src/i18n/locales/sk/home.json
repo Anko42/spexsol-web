@@ -6,6 +6,13 @@
   "status": {
     "acceptingProjects": "Prijímame nové projekty"
   },
+  "ceo": {
+    "name": "Andrej Skalický",
+    "role": "CEO a zakladateľ",
+    "tagline": "Staviam spoľahlivé systémy a nástroje pre produktové tímy.",
+    "email": "skalicky@spexsol.sk",
+    "linkedin": "https://www.linkedin.com/in/andrej-skalick%C3%BD-09208413a/"
+  },
   "contact": {
     "title": "Začnime rozhovor",
     "subtitle": "Povedzte nám o svojom projekte — zvyčajne odpovieme do jedného pracovného dňa.",

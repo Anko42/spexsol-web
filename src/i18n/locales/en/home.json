@@ -6,6 +6,13 @@
   "status": {
     "acceptingProjects": "Accepting New Projects"
   },
+  "ceo": {
+    "name": "Andrej Skalicky",
+    "role": "CEO & Founder",
+    "tagline": "Building reliable systems and tooling for product teams.",
+    "email": "skalicky@spexsol.sk",
+    "linkedin": "https://www.linkedin.com/in/andrej-skalick%C3%BD-09208413a/"
+  },
   "contact": {
     "title": "Start a conversation",
     "subtitle": "Tell us about your project — we usually reply within one business day.",

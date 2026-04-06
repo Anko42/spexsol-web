@@ -29,10 +29,14 @@ export function SiteFooter() {
       viewport={{ once: true, amount: 0.3 }}
       className="mx-auto flex w-full max-w-[800px] items-center justify-between px-6 pb-16 pt-32 border-t border-line-soft"
     >
-      <span className="flex items-center gap-2 text-sm font-semibold leading-none text-fg">
+      <Link
+        to="/$lang"
+        params={{ lang }}
+        className="flex items-center gap-2 text-sm font-semibold leading-none text-fg"
+      >
         <Logo className="h-[1em] w-auto shrink-0" />
         <span className="leading-none">{t('brand')}</span>
-      </span>
+      </Link>
       <nav className="flex items-center gap-8">
         <Link
           to="/$lang/privacy-policy"
