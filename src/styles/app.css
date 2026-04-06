@@ -50,6 +50,24 @@
   }
 }
 
+@keyframes shine {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@layer utilities {
+  .animate-shine {
+    animation: shine var(--duration, 14s) infinite linear;
+  }
+}
+
 :root {
   --bg: #fafaf8;
   --surface: #ffffff;

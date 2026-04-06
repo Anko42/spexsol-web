@@ -5,6 +5,7 @@ import { BentoGrid, BentoCard } from '~/components/site/BentoGrid'
 import { StatusChip } from '~/components/site/StatusChip'
 import { CeoCard } from '~/components/site/CeoCard'
 import { ContactForm } from '~/components/site/ContactForm'
+import { ShineBorder } from '~/components/ui/shine-border'
 import { SystemsIcon } from '~/components/icons/SystemsIcon'
 import { ToolingIcon } from '~/components/icons/ToolingIcon'
 import { cn } from '~/lib/utils'
@@ -97,6 +98,11 @@ function Home() {
               'order-last scroll-mt-32 lg:order-none lg:col-span-2 lg:row-span-2 lg:h-auto lg:min-h-[44rem]',
             )}
           >
+            <ShineBorder
+              borderWidth={1.5}
+              duration={10}
+              shineColor={['#4ade80', '#38bdf8', '#4ade80']}
+            />
             <div
               className="pointer-events-none absolute -bottom-32 -right-24 h-[24rem] w-[24rem] rounded-full bg-accent/5 blur-3xl"
               aria-hidden="true"
