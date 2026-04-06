@@ -5,6 +5,7 @@ import { LayoutGroup, MotionConfig } from 'motion/react'
 import * as React from 'react'
 import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary'
 import { NotFound } from '~/components/NotFound'
+import { RouteTransition } from '~/components/site/RouteTransition'
 import { SiteHeader } from '~/components/site/SiteHeader'
 import { SiteFooter } from '~/components/site/SiteFooter'
 import { Splash } from '~/components/site/Splash'
@@ -78,7 +79,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           <SplashProvider>
             <LayoutGroup id="brand">
               <SiteHeader />
-              <main className="flex-1">{children}</main>
+              <main className="flex-1">
+                <RouteTransition>{children}</RouteTransition>
+              </main>
               <SiteFooter />
               <Splash />
             </LayoutGroup>
