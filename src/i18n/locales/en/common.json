@@ -3,6 +3,12 @@
   "nav": {
     "back": "Back"
   },
+  "notFound": {
+    "title": "Page not found.",
+    "description": "The page you are looking for does not exist or has moved.",
+    "back": "Go back",
+    "home": "Back to home"
+  },
   "footer": {
     "privacyPolicy": "Privacy Policy",
     "termsOfUse": "Terms of Use",

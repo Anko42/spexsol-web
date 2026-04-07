@@ -3,6 +3,12 @@
   "nav": {
     "back": "Späť"
   },
+  "notFound": {
+    "title": "Stránka sa nenašla.",
+    "description": "Stránka, ktorú hľadáte, neexistuje alebo bola presunutá.",
+    "back": "Späť",
+    "home": "Na úvod"
+  },
   "footer": {
     "privacyPolicy": "Ochrana súkromia",
     "termsOfUse": "Podmienky používania",
