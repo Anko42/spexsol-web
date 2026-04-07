@@ -61,7 +61,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var s=localStorage.getItem('theme');var d=s?s==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');}catch(e){}})();`,
+            __html: `(function(){try{var mq=window.matchMedia('(prefers-color-scheme: dark)');var apply=function(){var s=localStorage.getItem('theme');var d=s?s==='dark':mq.matches;document.documentElement.classList.toggle('dark',d);};apply();mq.addEventListener('change',function(){if(!localStorage.getItem('theme'))apply();});}catch(e){}})();`,
           }}
         />
         <script
