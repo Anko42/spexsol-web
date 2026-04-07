@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Digitálna presnosť.",
-    "subtitle": "Pokročilé riešenia, špecializované vyhotovenie."
+    "title": "Postavené s rozmyslom.",
+    "subtitle": "Od kompletných produktov až po malé skripty, ktoré ich držia pohromade."
   },
   "status": {
     "acceptingProjects": "Prijímame nové projekty"
@@ -14,27 +14,58 @@
     "linkedin": "https://www.linkedin.com/in/andrej-skalick%C3%BD-09208413a/"
   },
   "contact": {
-    "title": "Začnime rozhovor",
-    "subtitle": "Povedzte nám o svojom projekte — zvyčajne odpovieme do jedného pracovného dňa.",
+    "title": "Ozvite sa",
+    "subtitle": "Napíšte nám, čo staviate. Odpovieme do jedného pracovného dňa.",
     "fullName": "Celé meno",
     "fullNamePlaceholder": "Ján Novák",
     "email": "Emailová adresa",
     "emailPlaceholder": "hello@example.com",
-    "brief": "Zadanie",
-    "briefPlaceholder": "Opíšte požiadavky vášho projektu...",
-    "submit": "Odoslať dopyt",
+    "topic": "O čo ide",
+    "topics": {
+      "product": "Produkt",
+      "automation": "Automatizácia",
+      "ai": "AI",
+      "advisory": "Konzultácia",
+      "other": "Iné"
+    },
+    "brief": "Čo potrebujete",
+    "briefPlaceholder": "Pár riadkov o vašom projekte…",
+    "privacy": {
+      "labelBefore": "Prečítal som si ",
+      "linkText": "zásady ochrany osobných údajov",
+      "labelAfter": " a súhlasím s nimi.",
+      "error": "Prosím, potvrďte zásady ochrany osobných údajov"
+    },
+    "errors": {
+      "nameRequired": "Zadajte prosím svoje meno",
+      "emailInvalid": "Zadajte platnú emailovú adresu",
+      "messageTooShort": "Správa musí mať aspoň 10 znakov",
+      "messageRequired": "Napíšte prosím krátku správu"
+    },
+    "submit": "Odoslať",
     "submitting": "Odosiela sa…",
     "success": "Ďakujeme — vaša správa bola prijatá.",
     "errorFallback": "Niečo sa pokazilo"
   },
   "services": {
-    "systems": {
-      "title": "Systémová architektúra",
-      "description": "Škálovateľná cloud-native infraštruktúra navrhnutá pre vysokú dostupnosť a terminálovú bezpečnosť."
+    "product": {
+      "title": "Produkt na kľúč",
+      "description": "Návrh, vývoj, nasadenie. Web a mobil, od prvej skice až po App Store."
     },
-    "tooling": {
-      "title": "Vlastné nástroje",
-      "description": "Interné procesy a vývojárske platformy ušité na mieru konkrétnym inžinierskym tímom."
+    "automation": {
+      "title": "Automatizácie a skripty",
+      "description": "Koniec s Excelom. Interné nástroje, procesy a integrácie šité na to, ako naozaj pracujete."
+    },
+    "ai": {
+      "title": "AI integrácie",
+      "description": "LLM funkcie, ktoré majú zmysel — agenti, RAG a štruktúrované výstupy, nie ukážky."
+    },
+    "advisory": {
+      "title": "Konzultácie a audity",
+      "description": "Druhý pohľad na architektúru, kód a rozhodnutia, ktoré za nimi stoja."
     }
+  },
+  "cards": {
+    "cta": "Napíšte nám"
   }
 }

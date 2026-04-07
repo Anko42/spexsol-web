@@ -8,6 +8,9 @@ import { ContactForm } from '~/components/site/ContactForm'
 import { ShineBorder } from '~/components/ui/shine-border'
 import { SystemsIcon } from '~/components/icons/SystemsIcon'
 import { ToolingIcon } from '~/components/icons/ToolingIcon'
+import { SystemOptimizationIcon } from '~/components/icons/SystemOptimizationIcon'
+import { SecurityIntegrityIcon } from '~/components/icons/SecurityIntegrityIcon'
+import { selectContactTopic } from '~/lib/contact-schema'
 import { cn } from '~/lib/utils'
 import {
   heroBlur,
@@ -26,6 +29,7 @@ const cellShell =
 
 function Home() {
   const { t } = useTranslation('home')
+  const cardsCta = t('cards.cta')
   return (
     <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-28 sm:px-6 sm:pb-24 sm:pt-32">
       <motion.div
@@ -76,29 +80,67 @@ function Home() {
             <CeoCard />
           </motion.div>
 
-          {/* Systems */}
+          {/* Product */}
           <motion.div
             variants={staggerItem}
             className="col-span-3 lg:col-span-1"
           >
             <BentoCard
-              name={t('services.systems.title')}
-              description={t('services.systems.description')}
+              name={t('services.product.title')}
+              description={t('services.product.description')}
               Icon={SystemsIcon}
               href="#contact"
-              cta="Learn more"
+              cta={cardsCta}
+              onCtaClick={() => selectContactTopic('product')}
               background={<div aria-hidden="true" />}
               className="h-full"
             />
           </motion.div>
 
+          {/* Advisory */}
+          <motion.div
+            variants={staggerItem}
+            className="col-span-3 lg:col-span-2"
+          >
+            <BentoCard
+              name={t('services.advisory.title')}
+              description={t('services.advisory.description')}
+              Icon={SecurityIntegrityIcon}
+              href="#contact"
+              cta={cardsCta}
+              onCtaClick={() => selectContactTopic('advisory')}
+              background={<div aria-hidden="true" />}
+              className="h-full"
+            />
+          </motion.div>
+
+          {/* Automation */}
+          <motion.div
+            variants={staggerItem}
+            className="col-span-3 lg:col-span-1"
+          >
+            <BentoCard
+              name={t('services.automation.title')}
+              description={t('services.automation.description')}
+              Icon={ToolingIcon}
+              href="#contact"
+              cta={cardsCta}
+              onCtaClick={() => selectContactTopic('automation')}
+              background={<div aria-hidden="true" />}
+              className="h-full"
+            />
+          </motion.div>
+
+          
+
+          
           {/* Contact (2x2) */}
           <motion.div
             variants={staggerItem}
             id="contact"
             className={cn(
               cellShell,
-              'order-last scroll-mt-32 lg:order-none lg:col-span-2 lg:row-span-2 lg:h-auto lg:min-h-[44rem]',
+              'order-last scroll-mt-32 lg:order-none lg:col-span-2 lg:row-span-2 lg:h-auto',
             )}
           >
             <ShineBorder
@@ -110,12 +152,12 @@ function Home() {
               className="pointer-events-none absolute -bottom-32 -right-24 h-[24rem] w-[24rem] rounded-full bg-accent/5 blur-3xl"
               aria-hidden="true"
             />
-            <div className="relative z-10 flex h-full flex-col gap-5 p-8">
-              <div className="flex flex-col gap-3">
-                <h2 className="font-display text-[28px] leading-[1.1] tracking-[-0.02em] text-fg lg:text-[32px]">
+            <div className="relative z-10 flex h-full flex-col gap-4 p-6 sm:p-7">
+              <div className="flex flex-col gap-2">
+                <h2 className="font-display text-[26px] leading-[1.1] tracking-[-0.02em] text-fg lg:text-[30px]">
                   {t('contact.title')}
                 </h2>
-                <p className="max-w-[420px] text-[15px] leading-6 text-fg-muted">
+                <p className="max-w-[420px] text-[14px] leading-5 text-fg-muted">
                   {t('contact.subtitle')}
                 </p>
               </div>
@@ -123,21 +165,23 @@ function Home() {
             </div>
           </motion.div>
 
-          {/* Tooling */}
+          {/* AI */}
           <motion.div
             variants={staggerItem}
             className="col-span-3 lg:col-span-1"
           >
             <BentoCard
-              name={t('services.tooling.title')}
-              description={t('services.tooling.description')}
-              Icon={ToolingIcon}
+              name={t('services.ai.title')}
+              description={t('services.ai.description')}
+              Icon={SystemOptimizationIcon}
               href="#contact"
-              cta="Learn more"
+              cta={cardsCta}
+              onCtaClick={() => selectContactTopic('ai')}
               background={<div aria-hidden="true" />}
               className="h-full"
             />
           </motion.div>
+
         </BentoGrid>
       </motion.div>
     </div>

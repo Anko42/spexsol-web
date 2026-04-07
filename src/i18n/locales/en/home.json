@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Digital precision.",
-    "subtitle": "Advanced solutions, niche execution."
+    "title": "Built with intent.",
+    "subtitle": "From full products to the small scripts that hold them together."
   },
   "status": {
     "acceptingProjects": "Accepting New Projects"
@@ -15,26 +15,57 @@
   },
   "contact": {
     "title": "Start a conversation",
-    "subtitle": "Tell us about your project — we usually reply within one business day.",
+    "subtitle": "Tell us what you're building. We reply within one business day.",
     "fullName": "Full Name",
     "fullNamePlaceholder": "John Doe",
     "email": "Email Address",
     "emailPlaceholder": "hello@example.com",
-    "brief": "Brief",
-    "briefPlaceholder": "Describe your project requirements...",
-    "submit": "Initiate Inquiry",
+    "topic": "What's it about",
+    "topics": {
+      "product": "Product",
+      "automation": "Automation",
+      "ai": "AI",
+      "advisory": "Advisory",
+      "other": "Other"
+    },
+    "brief": "What you need",
+    "briefPlaceholder": "A few lines about your project…",
+    "privacy": {
+      "labelBefore": "I have read and agree to the ",
+      "linkText": "privacy policy",
+      "labelAfter": ".",
+      "error": "Please accept the privacy policy"
+    },
+    "errors": {
+      "nameRequired": "Please enter your name",
+      "emailInvalid": "Please enter a valid email",
+      "messageTooShort": "Message must be at least 10 characters",
+      "messageRequired": "Please write a short message"
+    },
+    "submit": "Send",
     "submitting": "Sending…",
-    "success": "Thanks — your inquiry has been received.",
+    "success": "Thanks — your message has been received.",
     "errorFallback": "Something went wrong"
   },
   "services": {
-    "systems": {
-      "title": "Systems Architecture",
-      "description": "Scalable cloud-native infrastructure designed for high availability and terminal-grade security."
+    "product": {
+      "title": "End-to-end product",
+      "description": "Design, build, ship. Web and mobile, from first sketch to the App Store."
     },
-    "tooling": {
-      "title": "Custom Tooling",
-      "description": "Internal workflows and developer platforms tailored to specific engineering organizational needs."
+    "automation": {
+      "title": "Automation & scripts",
+      "description": "Ditch the spreadsheet. Internal tools, workflows and integrations shaped around how you actually work."
+    },
+    "ai": {
+      "title": "AI integrations",
+      "description": "LLM features that pull their weight — agents, RAG and structured outputs, not demos."
+    },
+    "advisory": {
+      "title": "Advisory & audits",
+      "description": "A second pair of eyes on architecture, code or the decisions behind them."
     }
+  },
+  "cards": {
+    "cta": "Talk to us"
   }
 }
