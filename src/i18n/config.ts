@@ -1,4 +1,4 @@
-import i18n from 'i18next'
+import i18n, { type InitOptions } from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
 import enCommon from './locales/en/common.json'
@@ -26,7 +26,7 @@ function detectInitialLanguage(): SupportedLanguage {
 }
 
 if (!i18n.isInitialized) {
-  i18n.use(initReactI18next).init({
+  const options: InitOptions = {
     resources: {
       en: { common: enCommon, home: enHome, legal: enLegal },
       sk: { common: skCommon, home: skHome, legal: skLegal },
@@ -35,10 +35,10 @@ if (!i18n.isInitialized) {
     fallbackLng: DEFAULT_LANGUAGE,
     defaultNS: 'common',
     ns: ['common', 'home', 'legal'],
-    initImmediate: false,
     interpolation: { escapeValue: false },
     react: { useSuspense: false },
-  })
+  }
+  i18n.use(initReactI18next).init(options)
 }
 
 export default i18n
