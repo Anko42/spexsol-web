@@ -50,6 +50,9 @@ function Home() {
               initial="hidden"
               animate="visible"
             >
+              <motion.div variants={staggerItem}>
+                <StatusChip>{t('status.acceptingProjects')}</StatusChip>
+              </motion.div>
               <motion.h1
                 variants={staggerItem}
                 className="font-display text-[32px] leading-[1.05] tracking-[-0.025em] text-balance text-fg break-words sm:text-[44px] lg:text-[56px]"
@@ -109,7 +112,6 @@ function Home() {
             />
             <div className="relative z-10 flex h-full flex-col gap-5 p-8">
               <div className="flex flex-col gap-3">
-                <StatusChip>{t('status.acceptingProjects')}</StatusChip>
                 <h2 className="font-display text-[28px] leading-[1.1] tracking-[-0.02em] text-fg lg:text-[32px]">
                   {t('contact.title')}
                 </h2>
