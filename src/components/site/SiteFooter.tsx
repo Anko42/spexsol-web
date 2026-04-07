@@ -5,6 +5,7 @@ import { useLang } from '~/hooks/useLang'
 import { fadeIn } from '~/lib/motion-presets'
 import { cn } from '~/lib/utils'
 import { Logo } from '~/components/site/Logo'
+import { showCookiePreferences } from '~/components/site/CookieConsent'
 
 export function SiteFooter() {
   const { t } = useTranslation('common')
@@ -53,6 +54,13 @@ export function SiteFooter() {
           >
             {t('footer.termsOfUse')}
           </Link>
+          <button
+            type="button"
+            onClick={showCookiePreferences}
+            className={linkClass(false)}
+          >
+            {t('footer.cookieSettings')}
+          </button>
         </nav>
         <span className="whitespace-nowrap text-xs text-fg-muted tracking-[0.025em]">
           {t('footer.copyright', { year })}

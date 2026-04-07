@@ -1,0 +1,41 @@
+#cc-main {
+  --cc-font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --cc-bg: var(--surface);
+  --cc-primary-color: var(--fg);
+  --cc-secondary-color: var(--fg-muted);
+  --cc-link-color: var(--accent);
+
+  --cc-btn-primary-bg: var(--accent);
+  --cc-btn-primary-color: var(--accent-fg);
+  --cc-btn-primary-border-color: var(--accent);
+  --cc-btn-primary-hover-bg: color-mix(in oklab, var(--accent) 88%, black);
+  --cc-btn-primary-hover-color: var(--accent-fg);
+  --cc-btn-primary-hover-border-color: var(--cc-btn-primary-hover-bg);
+
+  --cc-btn-secondary-bg: var(--card);
+  --cc-btn-secondary-color: var(--fg);
+  --cc-btn-secondary-border-color: var(--line);
+  --cc-btn-secondary-hover-bg: var(--input);
+  --cc-btn-secondary-hover-color: var(--fg);
+  --cc-btn-secondary-hover-border-color: var(--line);
+
+  --cc-separator-border-color: var(--line);
+  --cc-toggle-bg-off: var(--input);
+  --cc-toggle-bg-on: var(--accent);
+  --cc-toggle-bg-readonly: var(--input);
+  --cc-toggle-knob-bg: var(--surface);
+  --cc-toggle-knob-icon-color: var(--fg);
+
+  --cc-cookie-category-block-bg: var(--card);
+  --cc-cookie-category-block-border: var(--line);
+  --cc-cookie-category-block-bg-hover: var(--input);
+  --cc-cookie-category-block-border-hover: var(--line);
+  --cc-cookie-category-expanded-block-bg: var(--card);
+
+  --cc-overlay-bg: rgba(0, 0, 0, 0.5);
+  --cc-modal-border-radius: 0.75rem;
+  --cc-btn-border-radius: 0.5rem;
+  --cc-modal-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.35);
+  --cc-footer-bg: var(--card);
+  --cc-footer-border-color: var(--line);
+}
