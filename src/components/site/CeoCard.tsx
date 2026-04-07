@@ -14,7 +14,7 @@ export function CeoCard() {
           alt={t('ceo.name')}
           width={80}
           height={80}
-          className="h-24 w-24 shrink-0 rounded-full border border-white/10 bg-accent/10 object-cover object-top transition-transform duration-150 ease-out hover:scale-[1.35]"
+          className="h-24 w-24 shrink-0 rounded-full border border-white/10 bg-accent/10 object-cover object-top transition-transform duration-150 ease-out hover:scale-[1.25]"
         />
         <div className="flex min-w-0 flex-col">
           <span className="font-display text-[17px] leading-tight text-fg">
