@@ -12,7 +12,6 @@ export function CeoCard() {
         <Image
           src="/Andrej (1).png"
           alt={t('ceo.name')}
-          layout="constrained"
           width={80}
           height={80}
           className="h-24 w-24 shrink-0 rounded-full border border-white/10 bg-accent/10 object-cover object-top transition-transform duration-150 ease-out hover:scale-[1.35]"
