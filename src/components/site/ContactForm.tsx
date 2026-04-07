@@ -22,7 +22,14 @@ type Status =
   | { kind: 'success' }
   | { kind: 'error'; message: string }
 
-type FieldError = 'name' | 'email' | 'topic' | 'message' | 'privacy'
+type FieldError =
+  | 'name'
+  | 'email'
+  | 'phone'
+  | 'company'
+  | 'topic'
+  | 'message'
+  | 'privacy'
 
 export function ContactForm() {
   const { t } = useTranslation('home')
@@ -47,10 +54,12 @@ export function ContactForm() {
     const payload = {
       name: String(data.get('name') ?? ''),
       email: String(data.get('email') ?? ''),
+      phone: String(data.get('phone') ?? ''),
+      company: String(data.get('company') ?? ''),
       topic,
       message: String(data.get('message') ?? ''),
       privacyAccepted,
-      company: String(data.get('company') ?? ''),
+      website: String(data.get('website') ?? ''),
     }
 
     const parsed = contactSchema.safeParse(payload)
@@ -62,6 +71,8 @@ export function ContactForm() {
           fieldErrors.name = t('contact.errors.nameRequired')
         } else if (key === 'email') {
           fieldErrors.email = t('contact.errors.emailInvalid')
+        } else if (key === 'phone') {
+          fieldErrors.phone = t('contact.errors.phoneInvalid')
         } else if (key === 'message') {
           fieldErrors.message =
             issue.code === 'too_small' && payload.message.trim().length === 0
@@ -151,6 +162,43 @@ export function ContactForm() {
           </div>
         </div>
 
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div className="flex flex-col gap-2">
+            <Label htmlFor="phone">{t('contact.phone')}</Label>
+            <Input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder={t('contact.phonePlaceholder')}
+              autoComplete="tel"
+            />
+            <AnimatePresence>
+              {errors.phone && (
+                <motion.p
+                  key="err-phone"
+                  variants={fadeUp}
+                  initial="hidden"
+                  animate="visible"
+                  exit={{ opacity: 0, y: -4 }}
+                  className="text-xs text-red-400"
+                >
+                  {errors.phone}
+                </motion.p>
+              )}
+            </AnimatePresence>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <Label htmlFor="company">{t('contact.company')}</Label>
+            <Input
+              id="company"
+              name="company"
+              placeholder={t('contact.companyPlaceholder')}
+              autoComplete="organization"
+            />
+          </div>
+        </div>
+
         <div className="flex flex-col gap-2">
           <Label htmlFor="topic-select">{t('contact.topic')}</Label>
 
@@ -229,7 +277,7 @@ export function ContactForm() {
         {/* Honeypot */}
         <input
           type="text"
-          name="company"
+          name="website"
           tabIndex={-1}
           autoComplete="off"
           className="hidden"

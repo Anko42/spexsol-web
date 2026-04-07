@@ -20,6 +20,10 @@
     "fullNamePlaceholder": "Ján Novák",
     "email": "Emailová adresa",
     "emailPlaceholder": "hello@example.com",
+    "phone": "Telefónne číslo (nepovinné)",
+    "phonePlaceholder": "+421 900 000 000",
+    "company": "Spoločnosť (nepovinné)",
+    "companyPlaceholder": "Acme s.r.o.",
     "topic": "O čo ide",
     "topics": {
       "product": "Produkt",
@@ -39,6 +43,7 @@
     "errors": {
       "nameRequired": "Zadajte prosím svoje meno",
       "emailInvalid": "Zadajte platnú emailovú adresu",
+      "phoneInvalid": "Zadajte platné telefónne číslo",
       "messageTooShort": "Správa musí mať aspoň 10 znakov",
       "messageRequired": "Napíšte prosím krátku správu"
     },

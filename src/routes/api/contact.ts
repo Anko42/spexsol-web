@@ -1,6 +1,6 @@
-// TODO: wire delivery (Resend / SMTP / Formspree / DB) — see docs/context/contact-form.md
 import { createFileRoute } from '@tanstack/react-router'
 import { contactSchema } from '~/lib/contact-schema'
+import { postContactToSlack } from '~/server/slack'
 
 export const Route = createFileRoute('/api/contact')({
   server: {
@@ -21,12 +21,12 @@ export const Route = createFileRoute('/api/contact')({
           )
         }
 
-        // Stub: log and pretend to deliver
-        console.info('[contact] new submission', {
-          name: parsed.data.name,
-          email: parsed.data.email,
-          messageLength: parsed.data.message.length,
-        })
+        try {
+          await postContactToSlack(parsed.data)
+        } catch (e) {
+          console.error('[contact] slack delivery failed', e)
+          return Response.json({ error: 'Delivery failed' }, { status: 502 })
+        }
 
         return Response.json({ ok: true })
       },

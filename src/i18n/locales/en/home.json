@@ -20,6 +20,10 @@
     "fullNamePlaceholder": "John Doe",
     "email": "Email Address",
     "emailPlaceholder": "hello@example.com",
+    "phone": "Phone Number (optional)",
+    "phonePlaceholder": "+421 900 000 000",
+    "company": "Company (optional)",
+    "companyPlaceholder": "Acme s.r.o.",
     "topic": "What's it about",
     "topics": {
       "product": "Product",
@@ -39,6 +43,7 @@
     "errors": {
       "nameRequired": "Please enter your name",
       "emailInvalid": "Please enter a valid email",
+      "phoneInvalid": "Please enter a valid phone number",
       "messageTooShort": "Message must be at least 10 characters",
       "messageRequired": "Please write a short message"
     },

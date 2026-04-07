@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { isValidPhoneNumber, parsePhoneNumberWithError } from 'libphonenumber-js'
 
 export const CONTACT_TOPICS = [
   'product',
@@ -12,6 +13,28 @@ export type ContactTopic = (typeof CONTACT_TOPICS)[number]
 export const contactSchema = z.object({
   name: z.string().trim().min(1, 'Name is required').max(120),
   email: z.string().trim().email('Enter a valid email'),
+  phone: z
+    .string()
+    .trim()
+    .max(40)
+    .optional()
+    .transform((v, ctx) => {
+      if (!v) return undefined
+      if (!isValidPhoneNumber(v)) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: 'Invalid phone number',
+        })
+        return z.NEVER
+      }
+      return parsePhoneNumberWithError(v).formatInternational()
+    }),
+  company: z
+    .string()
+    .trim()
+    .max(160)
+    .optional()
+    .transform((v) => (v && v.length > 0 ? v : undefined)),
   topic: z.enum(CONTACT_TOPICS).default('product'),
   message: z
     .string()
@@ -22,7 +45,7 @@ export const contactSchema = z.object({
     errorMap: () => ({ message: 'You must accept the privacy policy' }),
   }),
   // Honeypot — must be empty
-  company: z.string().max(0).optional().or(z.literal('')),
+  website: z.string().max(0).optional().or(z.literal('')),
 })
 
 export type ContactInput = z.infer<typeof contactSchema>
