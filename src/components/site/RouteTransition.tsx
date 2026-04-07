@@ -12,7 +12,7 @@ function isHomePath(pathname: string): boolean {
 
 export function RouteTransition({ children }: { children: React.ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname })
-  const dir = isHomePath(pathname) ? 1 : -1
+  const dir = isHomePath(pathname) ? -1 : 1
 
   return (
     <AnimatePresence mode="popLayout" initial={false}>
@@ -20,7 +20,6 @@ export function RouteTransition({ children }: { children: React.ReactNode }) {
         key={pathname}
         initial={{ x: dir * 75, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        exit={{ x: -dir * 75, opacity: 0 }}
       >
         {children}
       </motion.div>

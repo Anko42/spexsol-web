@@ -70,6 +70,10 @@ function PrivacyPolicy() {
         </h3>
         <p>{t('privacy.sections.collection.personalIntro')}</p>
         <NumberedList items={toNumberedItems(collectionItems)} />
+        <h3 className={subHeadingClass}>
+          {t('privacy.sections.collection.iosHeading')}
+        </h3>
+        <p>{t('privacy.sections.collection.iosBody')}</p>
       </LegalSection>
 
       <LegalSection heading={t('privacy.sections.legitimateReasons.heading')}>
@@ -103,6 +107,10 @@ function PrivacyPolicy() {
         </p>
       </LegalSection>
 
+      <LegalSection heading={t('privacy.sections.cookies.heading')}>
+        <p>{t('privacy.sections.cookies.body')}</p>
+      </LegalSection>
+
       <LegalSection heading={t('privacy.sections.rights.heading')}>
         <p>{t('privacy.sections.rights.intro')}</p>
         <NumberedList items={toNumberedItems(rightsItems)} />
@@ -134,6 +142,10 @@ function PrivacyPolicy() {
           {t('privacy.sections.gdpr.transfersHeading')}
         </h3>
         <p>{t('privacy.sections.gdpr.transfersBody')}</p>
+        <h3 className={subHeadingClass}>
+          {t('privacy.sections.gdpr.dpoHeading')}
+        </h3>
+        <p>{t('privacy.sections.gdpr.dpoBody')}</p>
         <h3 className={subHeadingClass}>
           {t('privacy.sections.gdpr.rightsHeading')}
         </h3>

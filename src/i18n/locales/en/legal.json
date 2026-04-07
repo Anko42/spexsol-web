@@ -14,14 +14,16 @@
         "heading": "2. Information We Collect",
         "intro": "Information we collect falls into one of two categories: \"voluntarily provided\" information and \"automatically collected\" information. Voluntarily provided information refers to any information you knowingly and actively provide us when using or participating in our services. Automatically collected information refers to any information automatically sent by your devices in the course of accessing our products and services.",
         "logDataHeading": "Log Data",
-        "logDataBody": "When you visit our website or use our applications, our servers may automatically log the standard data provided by your web browser or device. This may include your device's IP address, browser type and version, the pages you visit, the time and date of your visit, the time spent on each page, app crash data, and other details about your use of the services.",
+        "logDataBody": "When you visit our website, our hosting provider may keep short-lived server access logs containing your IP address, user agent, the path requested and a timestamp. These logs are used solely to operate the service and to detect abuse or security incidents. Our iOS applications send crash and error diagnostics through Sentry; see section 9 (Cookies and Tracking Technologies) for details.",
         "personalHeading": "Personal Information",
         "personalIntro": "We may ask for personal information — for example, when you contact us through the website or otherwise interact with our services. This may include:",
         "items": {
           "01": "Name",
           "02": "Email address",
           "03": "Contents of any message you send us"
-        }
+        },
+        "iosHeading": "Data Collected by Our iOS Applications",
+        "iosBody": "The data our iOS applications collect mirrors what is declared on each app's App Store privacy label. In summary: name and email address only if you contact support; crash and performance diagnostics through Sentry (see section 9); no advertising identifiers; no cross-app or cross-site tracking; and no location data unless you explicitly grant a specific feature permission to access it."
       },
       "legitimateReasons": {
         "heading": "3. Legitimate Reasons for Processing Your Personal Information",
@@ -43,11 +45,11 @@
       },
       "retention": {
         "heading": "6. How Long We Keep Your Personal Information",
-        "body": "We keep your personal information only for as long as we need to. This time period may depend on what we are using your information for, in accordance with this privacy policy. If your personal information is no longer required, we will delete it or make it anonymous by removing all details that identify you."
+        "body": "We keep your personal information only for as long as we need to. Contact form submissions and any related correspondence are retained for up to 12 months after our last reply, after which they are deleted or anonymised. Server access logs are retained for the standard short window applied by our hosting provider. Crash and error reports submitted through Sentry are retained for Sentry's default period (90 days) unless they are tied to an open issue we are still investigating. If your personal information is no longer required and we are not legally obliged to retain it, we will delete it or make it anonymous by removing all details that identify you."
       },
       "children": {
         "heading": "7. Children's Privacy",
-        "body": "We do not aim any of our products or services directly at children under the age of 13 and we do not knowingly collect personal information about children under 13. If we become aware that we have collected personal information from a child under 13 without verification of parental consent, we will take steps to remove that information."
+        "body": "Our products and services are not directed at children. We do not knowingly collect personal information from children under the age of 16 (the digital consent age in Slovakia and most of the EU under Article 8 GDPR), or under the age of 13 in jurisdictions where that lower threshold applies. If we become aware that we have collected personal information from a child below the applicable age without verified parental consent, we will take steps to delete that information."
       },
       "thirdParties": {
         "heading": "8. Disclosure of Personal Information to Third Parties",
@@ -57,17 +59,19 @@
           "02": "third-party service providers for the purpose of enabling them to provide their services to us, including (but not limited to) IT service providers, hosting providers, analytics providers, error loggers, and customer support providers;",
           "03": "courts, tribunals, regulatory authorities, and law enforcement officers, as required by law, in connection with any actual or prospective legal proceedings, or in order to establish, exercise, or defend our legal rights."
         },
-        "providersIntro": "Third-party services we currently use include:",
+        "providersIntro": "Third-party services we currently use or rely on include:",
         "providers": {
-          "01": "TODO — analytics provider",
-          "02": "TODO — crash / error reporting",
-          "03": "TODO — hosting provider",
-          "04": "TODO — email / contact form delivery"
+          "01": "Sentry — crash and error reporting for our iOS applications. Sentry processes minimal device and diagnostic data on our behalf as a processor. Data may be transferred to the United States under the European Commission's Standard Contractual Clauses.",
+          "02": "Hosting, contact-form delivery and any analytics providers are still being finalised. Once our integrations are in place they will be listed here by name and purpose."
         },
         "providersNote": "This list is maintained on a best-effort basis and is updated when our integrations change."
       },
+      "cookies": {
+        "heading": "9. Cookies and Tracking Technologies",
+        "body": "Our marketing website does not set any cookies and does not use any analytics or advertising trackers. The only automatically collected data is the short-lived server access log described in section 2, kept by our hosting provider for security and abuse prevention. Our iOS applications use Sentry for crash and error reporting; they do not use advertising identifiers, do not track you across other apps or websites, and do not request App Tracking Transparency permission. If we ever introduce cookies, analytics or similar technologies, we will update this section and, where required by law, ask for your consent first."
+      },
       "rights": {
-        "heading": "9. Your Rights and Controlling Your Personal Information",
+        "heading": "10. Your Rights and Controlling Your Personal Information",
         "intro": "You always retain the right to withhold personal information from us, with the understanding that your experience of our services may be affected. We will not discriminate against you for exercising any of your rights over your personal information. If you do provide us with personal information, you understand that we will collect, hold, use and disclose it in accordance with this privacy policy. You have the right to:",
         "items": {
           "01": "request access to the personal information we hold about you;",
@@ -77,42 +81,44 @@
         }
       },
       "businessTransfers": {
-        "heading": "10. Business Transfers",
+        "heading": "11. Business Transfers",
         "body": "If we or our assets are acquired, or in the unlikely event that we go out of business or enter bankruptcy, we would include data, including your personal information, among the assets transferred to any parties who acquire us. You acknowledge that such transfers may occur, and that any parties who acquire us may, to the extent permitted by applicable law, continue to use your personal information according to this policy."
       },
       "limits": {
-        "heading": "11. Limits of Our Policy",
+        "heading": "12. Limits of Our Policy",
         "body": "Our website and applications may link to external sites that are not operated by us. Please be aware that we have no control over the content and policies of those sites, and cannot accept responsibility or liability for their respective privacy practices."
       },
       "changes": {
-        "heading": "12. Changes to This Policy",
+        "heading": "13. Changes to This Policy",
         "body": "At our discretion, we may change our privacy policy to reflect updates to our business processes, current acceptable practices, or legislative or regulatory changes. If we decide to change this privacy policy, we will post the changes here at the same link by which you are accessing this privacy policy and update the \"Last updated\" date at the top of this page."
       },
       "gdpr": {
-        "heading": "13. Additional Disclosures for GDPR Compliance (EU)",
+        "heading": "14. Additional Disclosures for GDPR Compliance (EU)",
         "controllerHeading": "Data Controller",
         "controllerBody": "SpexSol s. r. o. acts as a data controller in respect of the personal information we collect from users in the European Economic Area (EEA) and the United Kingdom.",
         "legalBasesHeading": "Legal Bases for Processing",
         "legalBasesIntro": "We will process your personal information lawfully, fairly and in a transparent manner. We collect and process information about you only where we have legal bases for doing so. These legal bases depend on the services you use and how you use them, meaning we collect and use your information only where:",
         "legalBases": {
-          "01": "it is necessary for the performance of a contract to which you are a party or to take steps at your request before entering into such a contract (for example, when we provide a service you request from us);",
-          "02": "it satisfies a legitimate interest (which is not overridden by your data protection interests), such as for research and development, to market and promote our services, and to protect our legal rights and interests;",
-          "03": "you give us consent to do so for a specific purpose; or",
-          "04": "we need to process your data to comply with a legal obligation."
+          "01": "it is necessary for the performance of a contract to which you are a party or to take steps at your request before entering into such a contract (Article 6(1)(b) GDPR) — for example, when we respond to an enquiry you submit through the contact form;",
+          "02": "it satisfies a legitimate interest (which is not overridden by your data protection interests) under Article 6(1)(f) GDPR, such as responding to enquiries that are not pre-contractual, keeping our iOS applications stable and secure through crash reporting, protecting our services from abuse, and protecting our legal rights and interests;",
+          "03": "you give us consent to do so for a specific purpose under Article 6(1)(a) GDPR; or",
+          "04": "we need to process your data to comply with a legal obligation under Article 6(1)(c) GDPR."
         },
         "transfersHeading": "International Transfers Outside the EEA",
-        "transfersBody": "We will ensure that any transfer of personal information from countries in the European Economic Area (EEA) to countries outside the EEA will be protected by appropriate safeguards, for example by using standard data protection clauses approved by the European Commission, or the use of binding corporate rules or other legally accepted means.",
+        "transfersBody": "We will ensure that any transfer of personal information from countries in the European Economic Area (EEA) to countries outside the EEA is protected by appropriate safeguards, for example by using Standard Contractual Clauses approved by the European Commission. This applies in particular to crash and error data sent to Sentry, which may be processed in the United States.",
+        "dpoHeading": "Data Protection Officer",
+        "dpoBody": "We have not appointed a Data Protection Officer. Given the size of SpexSol and the limited nature of the personal data we process, we are not required to do so under Article 37 GDPR. For any questions relating to your personal data you can contact us directly at skalicky@spexsol.sk.",
         "rightsHeading": "Your Rights",
-        "rightsIntro": "In addition to the rights listed in section 9, you have the right to:",
+        "rightsIntro": "In addition to the rights listed in section 10, you have the right to:",
         "rights": {
           "01": "restrict the processing of your personal information;",
           "02": "object to the processing of your personal information;",
           "03": "request the portability of your personal information;",
-          "04": "lodge a complaint with a supervisory authority — in Slovakia, the Office for Personal Data Protection (Úrad na ochranu osobných údajov SR)."
+          "04": "lodge a complaint with a supervisory authority — in Slovakia, the Office for Personal Data Protection of the Slovak Republic (Úrad na ochranu osobných údajov Slovenskej republiky), dataprotection.gov.sk."
         }
       },
       "ccpa": {
-        "heading": "14. Additional Disclosures for California Compliance (US)",
+        "heading": "15. Additional Disclosures for California Compliance (US)",
         "dntHeading": "Do Not Track",
         "dntBody": "Some browsers have a \"Do Not Track\" feature that lets you tell websites that you do not want to have your online activities tracked. At this time, we do not respond to browser \"Do Not Track\" signals.",
         "noticeHeading": "California Notice of Collection",
@@ -123,7 +129,7 @@
         "shineBody": "If you are a California resident, in addition to the rights discussed above, you have the right to request information from us regarding the manner in which we share certain personal information with third parties for their direct marketing purposes."
       },
       "contact": {
-        "heading": "15. Contact Us",
+        "heading": "16. Contact Us",
         "intro": "For any questions or concerns regarding your privacy, you may contact us using the following details:",
         "company": "SpexSol s. r. o.",
         "address": "Bojničky 2, 920 55 Bojničky, Slovakia",
@@ -143,7 +149,7 @@
     "title": "Terms of Use",
     "lastUpdatedLabel": "Last updated",
     "lastUpdated": "April 6, 2026",
-    "intro": "Welcome to spexsol.sk. These Terms of Use govern your access to and use of the Spexsol website, mobile applications, and related services. By accessing or using any part of our offering, you agree to be bound by these Terms together with our Privacy Policy. If you do not agree, please do not use the services.",
+    "intro": "Welcome to Spexsol. These Terms of Use (\"Terms\") govern your access to and use of the Spexsol website, mobile applications, and related services (together, the \"services\") provided by SpexSol s. r. o. (\"Spexsol\", \"we\", \"us\", \"our\"). By accessing or using any part of the services, you agree to be bound by these Terms together with our Privacy Policy. If you do not agree, please do not use the services.",
     "sections": {
       "acceptance": {
         "heading": "1. Acceptance of Terms",
@@ -151,35 +157,91 @@
       },
       "useOfService": {
         "heading": "2. Use of the Service",
-        "intro": "Spexsol is provided for personal and professional use in line with applicable law. You are responsible for how you use it and for keeping any account credentials secure.",
+        "intro": "Spexsol is provided for personal and professional use in line with applicable law. You are responsible for how you use it.",
         "items": {
           "01": "You must be at least 16 years old, or the minimum age required in your jurisdiction, to use the services on your own behalf.",
-          "02": "You agree not to misuse the services, including by attempting to disrupt them, gain unauthorised access, or scrape data without permission.",
+          "02": "You agree not to misuse the services, including by attempting to disrupt them, gain unauthorised access, scrape data without permission, or use them in any way that violates applicable law.",
           "03": "You are responsible for the content you submit and for ensuring it does not infringe the rights of any third party."
         }
       },
-      "intellectualProperty": {
-        "heading": "3. Intellectual Property",
-        "body": "All software, designs, text, graphics, and other materials made available through Spexsol are owned by Spexsol or its licensors and are protected by intellectual property laws. We grant you a limited, non-exclusive, non-transferable licence to use the services for their intended purpose. You may not copy, modify, reverse engineer, or create derivative works from any part of the services without our prior written consent."
+      "accounts": {
+        "heading": "3. Accounts",
+        "body": "Some of our services may currently be used without an account. In the future, certain features may require you to create an account. If and when you create one, you agree to provide accurate information, to keep your credentials confidential, and to be responsible for all activity that takes place under your account. You must notify us promptly of any unauthorised use. We may suspend or terminate accounts that breach these Terms."
       },
-      "disclaimers": {
-        "heading": "4. Disclaimers and Limitation of Liability",
+      "subscriptions": {
+        "heading": "4. Paid Subscriptions and In-App Purchases",
         "paragraphs": [
-          "The services are provided \"as is\" and \"as available\" without warranties of any kind, whether express or implied. Spexsol does not guarantee that the services will be uninterrupted, error-free, or fit for any particular purpose.",
-          "To the fullest extent permitted by law, Spexsol shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the services. Our total liability for any claim relating to the services is limited to the amount you paid us, if any, in the twelve months preceding the claim."
+          "Some features of our iOS applications are offered as paid subscriptions or in-app purchases. All payments, billing, renewals, and refunds for purchases made through the App Store are processed by Apple in accordance with the terms of your Apple ID account, and not by Spexsol.",
+          "Subscriptions automatically renew unless auto-renewal is turned off at least 24 hours before the end of the current period. You can manage and cancel subscriptions in your Apple ID account settings. Cancellation takes effect at the end of the current billing period; previously charged amounts are non-refundable except where required by law or by Apple's policies.",
+          "Prices, features, and the scope of free and paid tiers may change. Where required, we will notify you of material changes before they take effect."
         ]
       },
+      "intellectualProperty": {
+        "heading": "5. Intellectual Property",
+        "body": "All software, designs, text, graphics, and other materials made available through Spexsol are owned by Spexsol or its licensors and are protected by intellectual property laws. We grant you a limited, non-exclusive, non-transferable, revocable licence to use the services for their intended purpose. You may not copy, modify, reverse engineer, decompile, or create derivative works from any part of the services without our prior written consent, except to the extent such restriction is prohibited by applicable law."
+      },
+      "appleEula": {
+        "heading": "6. Apple App Store — Additional Terms",
+        "intro": "The following terms apply to any Spexsol application you obtain from the Apple App Store (the \"App\"). These terms are required by Apple Inc. (\"Apple\") and apply in addition to the rest of these Terms.",
+        "items": {
+          "01": "These Terms are concluded between you and Spexsol only, and not with Apple. Spexsol, not Apple, is solely responsible for the App and its content.",
+          "02": "Apple grants you a non-transferable licence to use the App on any Apple-branded device that you own or control, as permitted by the Usage Rules in the Apple Media Services Terms and Conditions.",
+          "03": "Apple has no obligation to provide any maintenance or support for the App.",
+          "04": "Apple is not responsible for any product warranties, whether express or implied by law. In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any) for the App; to the maximum extent permitted by applicable law, Apple has no other warranty obligation with respect to the App.",
+          "05": "Spexsol, not Apple, is responsible for addressing any claims relating to the App or your use of it, including (i) product liability claims, (ii) any claim that the App fails to conform to any applicable legal or regulatory requirement, and (iii) claims arising under consumer protection or similar legislation.",
+          "06": "In the event of any third-party claim that the App or your use of it infringes that third party's intellectual property rights, Spexsol — not Apple — is solely responsible for the investigation, defence, settlement, and discharge of the claim.",
+          "07": "You represent that you are not located in a country subject to a U.S. Government embargo or designated as a \"terrorist supporting\" country, and that you are not listed on any U.S. Government list of prohibited or restricted parties.",
+          "08": "Apple and Apple's subsidiaries are third-party beneficiaries of these Terms, and upon your acceptance of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third-party beneficiary."
+        }
+      },
+      "thirdParty": {
+        "heading": "7. Third-Party Services and Links",
+        "body": "The services may rely on or link to services, content, or websites operated by third parties. We do not control such third-party services and are not responsible for their content, policies, or practices. Your use of any third-party service is at your own risk and may be subject to that third party's own terms."
+      },
+      "disclaimers": {
+        "heading": "8. Disclaimers and Limitation of Liability",
+        "paragraphs": [
+          "The services are provided \"as is\" and \"as available\" without warranties of any kind, whether express or implied. Spexsol does not guarantee that the services will be uninterrupted, error-free, or fit for any particular purpose.",
+          "To the fullest extent permitted by law, Spexsol shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the services. Our total liability for any claim relating to the services is limited to the greater of (a) the amount you paid us, if any, in the twelve months preceding the claim, or (b) EUR 50.",
+          "Nothing in these Terms excludes or limits any liability that cannot be excluded or limited under applicable law."
+        ]
+      },
+      "indemnification": {
+        "heading": "9. Indemnification",
+        "body": "To the extent permitted by applicable law, you agree to indemnify and hold Spexsol and its affiliates, officers, employees, and agents harmless from any claims, damages, losses, liabilities, and expenses (including reasonable legal fees) arising out of or related to your misuse of the services, your breach of these Terms, or your violation of any law or third-party right."
+      },
       "termination": {
-        "heading": "5. Termination",
-        "body": "We may suspend or terminate your access to the services at any time if you breach these Terms or use the services in a way that could harm Spexsol, other users, or third parties. You may stop using the services at any time."
+        "heading": "10. Termination",
+        "body": "We may suspend or terminate your access to the services at any time if you breach these Terms or use the services in a way that could harm Spexsol, other users, or third parties. You may stop using the services at any time. Provisions that by their nature should survive termination (including intellectual property, disclaimers, limitation of liability, indemnification, and governing law) will survive."
       },
       "changes": {
-        "heading": "6. Changes to These Terms",
+        "heading": "11. Changes to These Terms",
         "body": "We may revise these Terms to reflect changes in our services, applicable law, or business practice. When we do, we will update the \"Last updated\" date at the top of this page. Material changes will be communicated through the services or by other reasonable means."
       },
+      "consumerRights": {
+        "heading": "12. Consumer Rights",
+        "paragraphs": [
+          "If you use the services as a consumer in the European Union, nothing in these Terms limits or excludes any mandatory consumer rights you have under the laws of your country of residence, including under Slovak consumer protection law. Where any provision of these Terms conflicts with such mandatory rights, the mandatory rights prevail.",
+          "The European Commission provides an online dispute resolution platform for consumers, available at https://ec.europa.eu/consumers/odr."
+        ]
+      },
       "governingLaw": {
-        "heading": "7. Governing Law",
-        "body": "These Terms are governed by the laws of the Slovak Republic, without regard to conflict-of-law principles. Any dispute arising out of or in connection with these Terms shall be resolved by the competent courts of the Slovak Republic."
+        "heading": "13. Governing Law",
+        "body": "These Terms are governed by the laws of the Slovak Republic, without regard to conflict-of-law principles. Any dispute arising out of or in connection with these Terms shall be resolved by the competent courts of the Slovak Republic, without prejudice to any mandatory consumer protection rules of your country of residence."
+      },
+      "general": {
+        "heading": "14. General",
+        "body": "These Terms, together with our Privacy Policy, constitute the entire agreement between you and Spexsol regarding the services and supersede any prior agreements. If any provision of these Terms is found to be unenforceable, the remaining provisions will remain in full force and effect. Our failure to enforce any right or provision is not a waiver of that right or provision. You may not assign or transfer these Terms without our prior written consent; we may assign these Terms in connection with a merger, acquisition, or sale of assets."
+      },
+      "contact": {
+        "heading": "15. Contact Us",
+        "intro": "For any questions about these Terms, you may contact us using the following details:",
+        "company": "SpexSol s. r. o.",
+        "address": "Bojničky 2, 920 55 Bojničky, Slovakia",
+        "ico": "Company ID (IČO): 57004196",
+        "dic": "Tax ID (DIČ): 2122528089",
+        "registry": "Registered with the Commercial Register of the District Court Trnava, Section: Sro, Insert No.: 59763/T",
+        "emailLabel": "Email"
       }
     },
     "cta": {

@@ -14,14 +14,16 @@
         "heading": "2. Aké údaje zhromažďujeme",
         "intro": "Údaje, ktoré zhromažďujeme, spadajú do jednej z dvoch kategórií: údaje „dobrovoľne poskytnuté\" a údaje „automaticky zhromažďované\". Dobrovoľne poskytnuté údaje sú akékoľvek údaje, ktoré nám vedome a aktívne poskytnete pri používaní našich služieb. Automaticky zhromažďované údaje sú údaje, ktoré nám automaticky zasielajú vaše zariadenia pri prístupe k našim produktom a službám.",
         "logDataHeading": "Záznamy o prístupe (Log Data)",
-        "logDataBody": "Pri návšteve našej webovej stránky alebo používaní aplikácií môžu naše servery automaticky zaznamenávať štandardné údaje poskytované vaším prehliadačom alebo zariadením. Môžu zahŕňať IP adresu vášho zariadenia, typ a verziu prehliadača, navštívené stránky, čas a dátum návštevy, čas strávený na jednotlivých stránkach, údaje o páde aplikácie a ďalšie podrobnosti o vašom používaní služieb.",
+        "logDataBody": "Pri návšteve našej webovej stránky môže náš poskytovateľ hostingu uchovávať krátkodobé serverové záznamy obsahujúce vašu IP adresu, identifikátor prehliadača (user agent), požadovanú cestu a časovú značku. Tieto záznamy slúžia výhradne na prevádzku služby a na odhaľovanie zneužitia alebo bezpečnostných incidentov. Naše iOS aplikácie odosielajú diagnostiku pádov a chýb prostredníctvom služby Sentry; podrobnosti nájdete v sekcii 9 (Súbory cookie a sledovacie technológie).",
         "personalHeading": "Osobné údaje",
         "personalIntro": "Môžeme vás požiadať o osobné údaje — napríklad keď nás kontaktujete cez webovú stránku alebo inak interagujete s našimi službami. Môžu zahŕňať:",
         "items": {
           "01": "Meno",
           "02": "E-mailovú adresu",
           "03": "Obsah akejkoľvek správy, ktorú nám pošlete"
-        }
+        },
+        "iosHeading": "Údaje zhromažďované našimi iOS aplikáciami",
+        "iosBody": "Údaje, ktoré naše iOS aplikácie zhromažďujú, zodpovedajú tomu, čo je deklarované v privacy label každej aplikácie v App Store. V skratke: meno a e-mailová adresa iba ak nás kontaktujete kvôli podpore; diagnostika pádov a výkonu prostredníctvom služby Sentry (pozri sekciu 9); žiadne reklamné identifikátory; žiadne sledovanie naprieč inými aplikáciami alebo webovými stránkami; a žiadne údaje o polohe, pokiaľ konkrétnej funkcii výslovne neudelíte povolenie na prístup k nim."
       },
       "legitimateReasons": {
         "heading": "3. Oprávnené dôvody spracúvania osobných údajov",
@@ -43,11 +45,11 @@
       },
       "retention": {
         "heading": "6. Ako dlho uchovávame vaše osobné údaje",
-        "body": "Vaše osobné údaje uchovávame iba tak dlho, ako je to nevyhnutné. Toto obdobie závisí od účelu, na ktorý vaše údaje používame, v súlade s týmito zásadami. Ak už vaše osobné údaje nie sú potrebné, vymažeme ich alebo ich anonymizujeme odstránením všetkých údajov, ktoré vás identifikujú."
+        "body": "Vaše osobné údaje uchovávame iba tak dlho, ako je to nevyhnutné. Správy odoslané cez kontaktný formulár a súvisiacu komunikáciu uchovávame najviac 12 mesiacov od našej poslednej odpovede, po uplynutí tejto doby ich vymažeme alebo anonymizujeme. Serverové záznamy o prístupe sú uchovávané po štandardnú krátku dobu stanovenú naším poskytovateľom hostingu. Záznamy o pádoch a chybách odoslané cez Sentry sú uchovávané po štandardnú dobu Sentry (90 dní), pokiaľ nie sú viazané na otvorený problém, ktorý ešte riešime. Ak vaše osobné údaje už nie sú potrebné a nemáme zákonnú povinnosť ich uchovávať, vymažeme ich alebo ich anonymizujeme odstránením všetkých údajov, ktoré vás identifikujú."
       },
       "children": {
         "heading": "7. Ochrana súkromia detí",
-        "body": "Žiadny z našich produktov ani služieb nie je priamo zameraný na deti mladšie ako 13 rokov a vedome nezhromažďujeme osobné údaje o deťoch mladších ako 13 rokov. Ak zistíme, že sme získali osobné údaje od dieťaťa mladšieho ako 13 rokov bez overeného súhlasu rodiča, podnikneme kroky na ich odstránenie."
+        "body": "Naše produkty a služby nie sú zamerané na deti. Vedome nezhromažďujeme osobné údaje od detí mladších ako 16 rokov (vek digitálneho súhlasu na Slovensku a vo väčšine EÚ podľa článku 8 GDPR), ani od detí mladších ako 13 rokov v jurisdikciách, kde platí táto nižšia hranica. Ak zistíme, že sme získali osobné údaje od dieťaťa pod príslušnou vekovou hranicou bez overeného súhlasu rodiča, podnikneme kroky na ich odstránenie."
       },
       "thirdParties": {
         "heading": "8. Sprístupnenie osobných údajov tretím stranám",
@@ -57,17 +59,19 @@
           "02": "poskytovateľom služieb tretích strán s cieľom umožniť im poskytovať nám ich služby, vrátane (ale nielen) poskytovateľov IT služieb, hostingových služieb, analytických nástrojov, nástrojov na sledovanie chýb a zákazníckej podpory;",
           "03": "súdom, tribunálom, regulačným orgánom a orgánom činným v trestnom konaní, ak to vyžaduje zákon, v súvislosti s akýmikoľvek skutočnými alebo potenciálnymi právnymi konaniami, alebo s cieľom uplatniť, vykonať alebo brániť naše zákonné práva."
         },
-        "providersIntro": "Služby tretích strán, ktoré aktuálne používame, zahŕňajú:",
+        "providersIntro": "Služby tretích strán, ktoré aktuálne používame alebo na ktoré sa spoliehame, zahŕňajú:",
         "providers": {
-          "01": "TODO — poskytovateľ analytiky",
-          "02": "TODO — sledovanie chýb / pádov",
-          "03": "TODO — poskytovateľ hostingu",
-          "04": "TODO — doručovanie e-mailov / kontaktný formulár"
+          "01": "Sentry — nahlasovanie pádov a chýb pre naše iOS aplikácie. Sentry spracúva minimálne údaje o zariadení a diagnostické údaje v našom mene ako sprostredkovateľ. Údaje môžu byť prenášané do Spojených štátov na základe Štandardných zmluvných doložiek schválených Európskou komisiou.",
+          "02": "Hosting, doručovanie kontaktného formulára a prípadní poskytovatelia analytiky sa ešte finalizujú. Po nasadení integrácií budú uvedení tu spolu s názvom a účelom."
         },
         "providersNote": "Tento zoznam je udržiavaný podľa najlepšieho úsilia a aktualizovaný pri zmene našich integrácií."
       },
+      "cookies": {
+        "heading": "9. Súbory cookie a sledovacie technológie",
+        "body": "Naša marketingová webová stránka nenastavuje žiadne súbory cookie a nepoužíva žiadne analytické ani reklamné nástroje. Jediné automaticky zhromažďované údaje sú krátkodobé serverové záznamy o prístupe opísané v sekcii 2, ktoré uchováva náš poskytovateľ hostingu na účely bezpečnosti a prevencie zneužitia. Naše iOS aplikácie používajú Sentry na nahlasovanie pádov a chýb; nepoužívajú reklamné identifikátory, nesledujú vás naprieč inými aplikáciami ani webovými stránkami a nežiadajú o povolenie App Tracking Transparency. Ak v budúcnosti zavedieme súbory cookie, analytiku alebo podobné technológie, túto sekciu aktualizujeme a tam, kde to vyžaduje zákon, si najprv vyžiadame váš súhlas."
+      },
       "rights": {
-        "heading": "9. Vaše práva a kontrola nad osobnými údajmi",
+        "heading": "10. Vaše práva a kontrola nad osobnými údajmi",
         "intro": "Vždy máte právo neposkytnúť nám osobné údaje s tým, že to môže ovplyvniť váš zážitok z používania našich služieb. Za uplatnenie svojich práv vás nebudeme nijako diskriminovať. Ak nám osobné údaje poskytnete, beriete na vedomie, že ich budeme zhromažďovať, uchovávať, používať a sprístupňovať v súlade s týmito zásadami. Máte právo:",
         "items": {
           "01": "požiadať o prístup k osobným údajom, ktoré o vás máme;",
@@ -77,42 +81,44 @@
         }
       },
       "businessTransfers": {
-        "heading": "10. Prevod podniku",
+        "heading": "11. Prevod podniku",
         "body": "V prípade akvizície našej spoločnosti alebo jej majetku, alebo v nepravdepodobnom prípade, že by sme ukončili činnosť alebo vstúpili do konkurzu, by údaje vrátane vašich osobných údajov boli súčasťou majetku prevedeného na nadobúdateľa. Beriete na vedomie, že k takýmto prevodom môže dôjsť, a že ktorýkoľvek nadobúdateľ môže v rozsahu povolenom platnými právnymi predpismi pokračovať v používaní vašich osobných údajov v súlade s týmito zásadami."
       },
       "limits": {
-        "heading": "11. Obmedzenia týchto zásad",
+        "heading": "12. Obmedzenia týchto zásad",
         "body": "Naša webová stránka a aplikácie môžu odkazovať na externé stránky, ktoré neprevádzkujeme. Upozorňujeme, že nemáme kontrolu nad obsahom a zásadami týchto stránok a nemôžeme prevziať zodpovednosť za ich postupy ochrany súkromia."
       },
       "changes": {
-        "heading": "12. Zmeny týchto zásad",
+        "heading": "13. Zmeny týchto zásad",
         "body": "Podľa nášho uváženia môžeme zmeniť tieto zásady ochrany osobných údajov s cieľom zohľadniť aktualizácie našich obchodných procesov, aktuálnych prijateľných postupov alebo legislatívnych či regulačných zmien. Ak sa rozhodneme tieto zásady zmeniť, zmeny zverejníme tu na tom istom odkaze, prostredníctvom ktorého pristupujete k týmto zásadám, a aktualizujeme dátum „Posledná aktualizácia\" v hornej časti tejto stránky."
       },
       "gdpr": {
-        "heading": "13. Doplňujúce informácie podľa GDPR (EÚ)",
+        "heading": "14. Doplňujúce informácie podľa GDPR (EÚ)",
         "controllerHeading": "Prevádzkovateľ",
         "controllerBody": "SpexSol s. r. o. vystupuje ako prevádzkovateľ vo vzťahu k osobným údajom, ktoré zhromažďujeme od používateľov v Európskom hospodárskom priestore (EHP) a Spojenom kráľovstve.",
         "legalBasesHeading": "Právne základy spracúvania",
         "legalBasesIntro": "Vaše osobné údaje budeme spracúvať zákonným, spravodlivým a transparentným spôsobom. Údaje o vás zhromažďujeme a spracúvame iba vtedy, keď na to máme právny základ. Tieto právne základy závisia od služieb, ktoré používate, a od spôsobu ich používania, čo znamená, že vaše údaje zhromažďujeme a používame iba v prípade, ak:",
         "legalBases": {
-          "01": "je to nevyhnutné na plnenie zmluvy, ktorej ste zmluvnou stranou, alebo na vykonanie krokov na vašu žiadosť pred uzavretím takejto zmluvy (napríklad keď vám poskytujeme službu, ktorú si od nás vyžiadate);",
-          "02": "to spĺňa oprávnený záujem (ktorý nie je prevažovaný vašimi záujmami na ochranu údajov), napríklad pre výskum a vývoj, marketing a propagáciu našich služieb a ochranu našich zákonných práv a záujmov;",
-          "03": "ste nám na to dali súhlas na konkrétny účel; alebo",
-          "04": "potrebujeme spracúvať vaše údaje na splnenie zákonnej povinnosti."
+          "01": "je to nevyhnutné na plnenie zmluvy, ktorej ste zmluvnou stranou, alebo na vykonanie krokov na vašu žiadosť pred uzavretím takejto zmluvy (čl. 6 ods. 1 písm. b) GDPR) — napríklad keď odpovedáme na dopyt zaslaný cez kontaktný formulár;",
+          "02": "spĺňa to oprávnený záujem (ktorý nie je prevažovaný vašimi záujmami na ochranu údajov) podľa čl. 6 ods. 1 písm. f) GDPR, napríklad odpovedanie na dopyty, ktoré nie sú predzmluvné, udržiavanie stability a bezpečnosti našich iOS aplikácií prostredníctvom nahlasovania pádov, ochrana našich služieb pred zneužitím a ochrana našich právnych práv a záujmov;",
+          "03": "ste nám na to dali súhlas na konkrétny účel podľa čl. 6 ods. 1 písm. a) GDPR; alebo",
+          "04": "potrebujeme spracúvať vaše údaje na splnenie zákonnej povinnosti podľa čl. 6 ods. 1 písm. c) GDPR."
         },
         "transfersHeading": "Medzinárodné prenosy mimo EHP",
-        "transfersBody": "Zabezpečíme, aby každý prenos osobných údajov z krajín Európskeho hospodárskeho priestoru (EHP) do krajín mimo EHP bol chránený primeranými zárukami, napríklad použitím štandardných doložiek o ochrane údajov schválených Európskou komisiou alebo použitím záväzných vnútropodnikových pravidiel či iných právne akceptovaných prostriedkov.",
+        "transfersBody": "Zabezpečíme, aby každý prenos osobných údajov z krajín Európskeho hospodárskeho priestoru (EHP) do krajín mimo EHP bol chránený primeranými zárukami, napríklad použitím Štandardných zmluvných doložiek schválených Európskou komisiou. Týka sa to najmä údajov o pádoch a chybách odosielaných do služby Sentry, ktoré môžu byť spracúvané v Spojených štátoch.",
+        "dpoHeading": "Zodpovedná osoba (DPO)",
+        "dpoBody": "Nevymenovali sme zodpovednú osobu (Data Protection Officer). Vzhľadom na veľkosť spoločnosti SpexSol a obmedzenú povahu osobných údajov, ktoré spracúvame, nie sme na to povinní podľa čl. 37 GDPR. V akýchkoľvek otázkach týkajúcich sa vašich osobných údajov nás môžete priamo kontaktovať na skalicky@spexsol.sk.",
         "rightsHeading": "Vaše práva",
-        "rightsIntro": "Okrem práv uvedených v sekcii 9 máte právo:",
+        "rightsIntro": "Okrem práv uvedených v sekcii 10 máte právo:",
         "rights": {
           "01": "obmedziť spracúvanie vašich osobných údajov;",
           "02": "namietať proti spracúvaniu vašich osobných údajov;",
           "03": "požiadať o prenosnosť vašich osobných údajov;",
-          "04": "podať sťažnosť dozornému orgánu — na Slovensku Úradu na ochranu osobných údajov SR."
+          "04": "podať sťažnosť dozornému orgánu — na Slovensku Úradu na ochranu osobných údajov Slovenskej republiky, dataprotection.gov.sk."
         }
       },
       "ccpa": {
-        "heading": "14. Doplňujúce informácie pre Kaliforniu (USA)",
+        "heading": "15. Doplňujúce informácie pre Kaliforniu (USA)",
         "dntHeading": "Do Not Track",
         "dntBody": "Niektoré prehliadače majú funkciu „Do Not Track\", ktorá vám umožňuje povedať webovým stránkam, že si neželáte byť sledovaní. V súčasnosti na signály prehliadača „Do Not Track\" nereagujeme.",
         "noticeHeading": "Oznámenie o zhromažďovaní údajov v Kalifornii",
@@ -123,7 +129,7 @@
         "shineBody": "Ak ste obyvateľom Kalifornie, okrem vyššie uvedených práv máte tiež právo požiadať nás o informácie o spôsobe, akým zdieľame určité osobné údaje s tretími stranami na ich účely priameho marketingu."
       },
       "contact": {
-        "heading": "15. Kontaktujte nás",
+        "heading": "16. Kontaktujte nás",
         "intro": "S akýmikoľvek otázkami alebo obavami týkajúcimi sa vášho súkromia nás môžete kontaktovať na nasledujúcich údajoch:",
         "company": "SpexSol s. r. o.",
         "address": "Bojničky 2, 920 55 Bojničky, Slovensko",
@@ -143,7 +149,7 @@
     "title": "Podmienky používania",
     "lastUpdatedLabel": "Posledná aktualizácia",
     "lastUpdated": "6. apríla 2026",
-    "intro": "Vitajte na spexsol.sk. Tieto Podmienky používania upravujú váš prístup k webovej stránke Spexsol, mobilným aplikáciám a súvisiacim službám a ich používanie. Prístupom k službám alebo ich používaním súhlasíte s týmito Podmienkami a s našimi Zásadami ochrany súkromia. Ak s nimi nesúhlasíte, službu nepoužívajte.",
+    "intro": "Vitajte v Spexsol. Tieto Podmienky používania („Podmienky\") upravujú váš prístup k webovej stránke Spexsol, mobilným aplikáciám a súvisiacim službám (spolu „služby\") poskytovaným spoločnosťou SpexSol s. r. o. („Spexsol\", „my\", „nás\", „naše\") a ich používanie. Prístupom k službám alebo ich používaním súhlasíte s týmito Podmienkami a s našimi Zásadami ochrany súkromia. Ak s nimi nesúhlasíte, službu nepoužívajte.",
     "sections": {
       "acceptance": {
         "heading": "1. Súhlas s podmienkami",
@@ -151,35 +157,91 @@
       },
       "useOfService": {
         "heading": "2. Používanie služby",
-        "intro": "Spexsol je určený na osobné a profesionálne použitie v súlade s platnými zákonmi. Za spôsob používania a za bezpečnosť svojich prihlasovacích údajov zodpovedáte vy.",
+        "intro": "Spexsol je určený na osobné a profesionálne použitie v súlade s platnými zákonmi. Za spôsob používania zodpovedáte vy.",
         "items": {
           "01": "Na samostatné používanie služieb musíte mať aspoň 16 rokov alebo minimálny vek vyžadovaný vo vašej krajine.",
-          "02": "Súhlasíte, že službu nebudete zneužívať — najmä ju nebudete narúšať, neoprávnene k nej pristupovať ani z nej získavať údaje bez povolenia.",
+          "02": "Súhlasíte, že služby nebudete zneužívať — najmä ich nebudete narúšať, neoprávnene k nim pristupovať, získavať z nich údaje bez povolenia ani ich používať spôsobom, ktorý porušuje platné právo.",
           "03": "Ste zodpovední za obsah, ktorý zadávate, a za to, že neporušuje práva tretích strán."
         }
       },
-      "intellectualProperty": {
-        "heading": "3. Duševné vlastníctvo",
-        "body": "Všetok softvér, dizajn, texty, grafika a ďalšie materiály sprístupnené prostredníctvom Spexsol patria spoločnosti Spexsol alebo jej poskytovateľom licencií a sú chránené zákonmi o duševnom vlastníctve. Udeľujeme vám obmedzenú, nevýhradnú a neprenosnú licenciu na používanie služieb na ich zamýšľaný účel. Bez nášho predchádzajúceho písomného súhlasu nesmiete žiadnu časť služieb kopírovať, upravovať, spätne analyzovať ani z nej vytvárať odvodené diela."
+      "accounts": {
+        "heading": "3. Účty",
+        "body": "Niektoré z našich služieb je momentálne možné používať bez účtu. V budúcnosti môžu niektoré funkcie vyžadovať vytvorenie účtu. Ak si ho vytvoríte, súhlasíte, že poskytnete pravdivé údaje, zachováte dôvernosť svojich prihlasovacích údajov a nesiete zodpovednosť za všetky aktivity uskutočnené pod vaším účtom. O akomkoľvek neoprávnenom použití nás musíte bezodkladne informovať. Účty, ktoré porušujú tieto Podmienky, môžeme pozastaviť alebo zrušiť."
       },
-      "disclaimers": {
-        "heading": "4. Vyhlásenia a obmedzenie zodpovednosti",
+      "subscriptions": {
+        "heading": "4. Platené predplatné a nákupy v aplikácii",
         "paragraphs": [
-          "Služby sú poskytované „tak, ako sú\" a „podľa dostupnosti\" bez akýchkoľvek záruk, výslovných alebo implicitných. Spexsol nezaručuje, že služby budú bez prerušenia, bez chýb alebo vhodné na konkrétny účel.",
-          "V maximálnom rozsahu povolenom zákonom Spexsol nezodpovedá za žiadne nepriame, náhodné, osobitné ani následné škody vyplývajúce z používania služieb. Naša celková zodpovednosť za akýkoľvek nárok je obmedzená na sumu, ktorú ste nám prípadne zaplatili počas dvanástich mesiacov pred vznikom nároku."
+          "Niektoré funkcie našich iOS aplikácií sú ponúkané ako platené predplatné alebo nákupy v aplikácii. Všetky platby, fakturácia, obnovenia a vrátenie peňazí za nákupy uskutočnené prostredníctvom App Store sú spracúvané spoločnosťou Apple v súlade s podmienkami vášho Apple ID účtu, a nie spoločnosťou Spexsol.",
+          "Predplatné sa automaticky obnovuje, pokiaľ automatické obnovenie nevypnete najmenej 24 hodín pred koncom aktuálneho obdobia. Predplatné môžete spravovať a zrušiť v nastaveniach svojho Apple ID. Zrušenie nadobudne účinnosť na konci aktuálneho fakturačného obdobia; už uhradené sumy sa nevracajú s výnimkou prípadov vyžadovaných zákonom alebo politikami spoločnosti Apple.",
+          "Ceny, funkcie a rozsah bezplatných a platených úrovní sa môžu meniť. Ak je to potrebné, o podstatných zmenách vás budeme informovať pred ich účinnosťou."
         ]
       },
+      "intellectualProperty": {
+        "heading": "5. Duševné vlastníctvo",
+        "body": "Všetok softvér, dizajn, texty, grafika a ďalšie materiály sprístupnené prostredníctvom Spexsol patria spoločnosti Spexsol alebo jej poskytovateľom licencií a sú chránené zákonmi o duševnom vlastníctve. Udeľujeme vám obmedzenú, nevýhradnú, neprenosnú a odvolateľnú licenciu na používanie služieb na ich zamýšľaný účel. Bez nášho predchádzajúceho písomného súhlasu nesmiete žiadnu časť služieb kopírovať, upravovať, spätne analyzovať, dekompilovať ani z nej vytvárať odvodené diela, s výnimkou prípadov, keď je takéto obmedzenie zakázané platným právom."
+      },
+      "appleEula": {
+        "heading": "6. Apple App Store — dodatočné podmienky",
+        "intro": "Nasledujúce podmienky sa vzťahujú na akúkoľvek aplikáciu Spexsol, ktorú získate z Apple App Store („Aplikácia\"). Tieto podmienky vyžaduje spoločnosť Apple Inc. („Apple\") a uplatňujú sa nad rámec ostatných týchto Podmienok.",
+        "items": {
+          "01": "Tieto Podmienky sú uzavreté výhradne medzi vami a Spexsol, nie so spoločnosťou Apple. Za Aplikáciu a jej obsah je výhradne zodpovedný Spexsol, nie Apple.",
+          "02": "Apple vám udeľuje neprenosnú licenciu na používanie Aplikácie na akomkoľvek zariadení značky Apple, ktoré vlastníte alebo ovládate, v rozsahu povolenom Pravidlami používania v Podmienkach služieb Apple Media.",
+          "03": "Apple nemá žiadnu povinnosť poskytovať akúkoľvek údržbu alebo podporu pre Aplikáciu.",
+          "04": "Apple nezodpovedá za žiadne záruky na produkt, či už výslovné alebo zákonom predpokladané. V prípade, že Aplikácia nezodpovedá akejkoľvek platnej záruke, môžete o tom informovať Apple, a Apple vám vráti prípadnú kúpnu cenu Aplikácie; v maximálnom rozsahu povolenom platným právom Apple nemá voči Aplikácii žiadne ďalšie záručné povinnosti.",
+          "05": "Za riešenie akýchkoľvek nárokov týkajúcich sa Aplikácie alebo jej používania je zodpovedný Spexsol, nie Apple, vrátane (i) nárokov zo zodpovednosti za výrobok, (ii) akéhokoľvek nároku, že Aplikácia nespĺňa akúkoľvek platnú právnu alebo regulačnú požiadavku, a (iii) nárokov vyplývajúcich z právnych predpisov na ochranu spotrebiteľa alebo podobných právnych predpisov.",
+          "06": "V prípade akéhokoľvek nároku tretej strany, že Aplikácia alebo jej používanie porušuje práva duševného vlastníctva tejto tretej strany, je za vyšetrenie, obhajobu, urovnanie a vyriešenie takého nároku výhradne zodpovedný Spexsol — nie Apple.",
+          "07": "Vyhlasujete, že sa nenachádzate v krajine, ktorá podlieha embargu vlády USA alebo je označená za krajinu „podporujúcu terorizmus\", a že nie ste uvedení na žiadnom zozname vlády USA obsahujúcom zakázané alebo obmedzené strany.",
+          "08": "Apple a dcérske spoločnosti Apple sú treťou stranou s priamym prospechom z týchto Podmienok, a akceptovaním týchto Podmienok bude mať Apple právo (a bude sa to považovať za akceptovanie tohto práva) vymáhať tieto Podmienky voči vám ako tretia strana s priamym prospechom."
+        }
+      },
+      "thirdParty": {
+        "heading": "7. Služby a odkazy tretích strán",
+        "body": "Služby sa môžu spoliehať na služby, obsah alebo webové stránky prevádzkované tretími stranami alebo na ne odkazovať. Tieto služby tretích strán neovládame a nezodpovedáme za ich obsah, politiky ani postupy. Používanie akejkoľvek služby tretej strany je na vaše vlastné riziko a môže podliehať vlastným podmienkam danej tretej strany."
+      },
+      "disclaimers": {
+        "heading": "8. Vyhlásenia a obmedzenie zodpovednosti",
+        "paragraphs": [
+          "Služby sú poskytované „tak, ako sú\" a „podľa dostupnosti\" bez akýchkoľvek záruk, výslovných alebo implicitných. Spexsol nezaručuje, že služby budú bez prerušenia, bez chýb alebo vhodné na konkrétny účel.",
+          "V maximálnom rozsahu povolenom zákonom Spexsol nezodpovedá za žiadne nepriame, náhodné, osobitné ani následné škody vyplývajúce z používania služieb. Naša celková zodpovednosť za akýkoľvek nárok týkajúci sa služieb je obmedzená na vyššiu z týchto súm: (a) sumu, ktorú ste nám prípadne zaplatili počas dvanástich mesiacov pred vznikom nároku, alebo (b) 50 EUR.",
+          "Nič v týchto Podmienkach nevylučuje ani neobmedzuje žiadnu zodpovednosť, ktorú nemožno vylúčiť alebo obmedziť podľa platného práva."
+        ]
+      },
+      "indemnification": {
+        "heading": "9. Náhrada škody",
+        "body": "V rozsahu povolenom platným právom súhlasíte, že odškodníte Spexsol a jeho pridružené spoločnosti, vedúcich pracovníkov, zamestnancov a zástupcov a zbavíte ich zodpovednosti voči akýmkoľvek nárokom, škodám, stratám, záväzkom a výdavkom (vrátane primeraných právnych poplatkov), ktoré vzniknú v dôsledku zneužitia služieb z vašej strany, porušenia týchto Podmienok alebo porušenia akéhokoľvek zákona alebo práva tretej strany."
+      },
       "termination": {
-        "heading": "5. Ukončenie",
-        "body": "Váš prístup k službám môžeme kedykoľvek pozastaviť alebo ukončiť, ak porušíte tieto Podmienky alebo ak služby používate spôsobom, ktorý by mohol poškodiť Spexsol, ostatných používateľov alebo tretie strany. Vy môžete službu kedykoľvek prestať používať."
+        "heading": "10. Ukončenie",
+        "body": "Váš prístup k službám môžeme kedykoľvek pozastaviť alebo ukončiť, ak porušíte tieto Podmienky alebo ak služby používate spôsobom, ktorý by mohol poškodiť Spexsol, ostatných používateľov alebo tretie strany. Vy môžete službu kedykoľvek prestať používať. Ustanovenia, ktoré by svojou povahou mali platiť aj po ukončení (vrátane duševného vlastníctva, vyhlásení, obmedzenia zodpovednosti, náhrady škody a rozhodného práva), zostávajú v platnosti."
       },
       "changes": {
-        "heading": "6. Zmeny týchto podmienok",
+        "heading": "11. Zmeny týchto podmienok",
         "body": "Tieto Podmienky môžeme upraviť, aby odrážali zmeny v našich službách, platnej legislatíve alebo obchodnej praxi. V takom prípade aktualizujeme dátum „Posledná aktualizácia\" v hornej časti tejto stránky. Podstatné zmeny vám oznámime prostredníctvom služieb alebo inými primeranými prostriedkami."
       },
+      "consumerRights": {
+        "heading": "12. Práva spotrebiteľa",
+        "paragraphs": [
+          "Ak služby používate ako spotrebiteľ v Európskej únii, nič v týchto Podmienkach neobmedzuje ani nevylučuje žiadne záväzné práva spotrebiteľa, ktoré máte podľa právnych predpisov vašej krajiny pobytu, vrátane slovenských predpisov o ochrane spotrebiteľa. V prípade, že ktorékoľvek ustanovenie týchto Podmienok je v rozpore s takýmito záväznými právami, prednosť majú záväzné práva.",
+          "Európska komisia poskytuje platformu na alternatívne riešenie spotrebiteľských sporov online, dostupnú na https://ec.europa.eu/consumers/odr."
+        ]
+      },
       "governingLaw": {
-        "heading": "7. Rozhodné právo",
-        "body": "Tieto Podmienky sa riadia zákonmi Slovenskej republiky bez ohľadu na ustanovenia kolíznych noriem. Akýkoľvek spor vyplývajúci z týchto Podmienok alebo s nimi súvisiaci bude riešený príslušnými súdmi Slovenskej republiky."
+        "heading": "13. Rozhodné právo",
+        "body": "Tieto Podmienky sa riadia zákonmi Slovenskej republiky bez ohľadu na ustanovenia kolíznych noriem. Akýkoľvek spor vyplývajúci z týchto Podmienok alebo s nimi súvisiaci bude riešený príslušnými súdmi Slovenskej republiky, bez toho, aby boli dotknuté záväzné predpisy o ochrane spotrebiteľa vašej krajiny pobytu."
+      },
+      "general": {
+        "heading": "14. Všeobecné ustanovenia",
+        "body": "Tieto Podmienky spolu s našimi Zásadami ochrany súkromia predstavujú celú dohodu medzi vami a Spexsol týkajúcu sa služieb a nahrádzajú akékoľvek predchádzajúce dohody. Ak je niektoré ustanovenie týchto Podmienok neplatné alebo nevymáhateľné, ostatné ustanovenia zostávajú v plnej platnosti a účinnosti. Naše neuplatnenie niektorého práva alebo ustanovenia neznamená vzdanie sa tohto práva alebo ustanovenia. Tieto Podmienky nemôžete postúpiť ani previesť bez nášho predchádzajúceho písomného súhlasu; my ich môžeme postúpiť v súvislosti s fúziou, akvizíciou alebo predajom majetku."
+      },
+      "contact": {
+        "heading": "15. Kontaktujte nás",
+        "intro": "V prípade akýchkoľvek otázok týkajúcich sa týchto Podmienok nás môžete kontaktovať pomocou nasledujúcich údajov:",
+        "company": "SpexSol s. r. o.",
+        "address": "Bojničky 2, 920 55 Bojničky, Slovensko",
+        "ico": "IČO: 57004196",
+        "dic": "DIČ: 2122528089",
+        "registry": "Zapísaná v Obchodnom registri Okresného súdu Trnava, oddiel: Sro, vložka č.: 59763/T",
+        "emailLabel": "Email"
       }
     },
     "cta": {

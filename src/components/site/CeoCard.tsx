@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Image } from "@unpic/react";
 
 export function CeoCard() {
   const { t } = useTranslation('home')
@@ -8,10 +9,13 @@ export function CeoCard() {
   return (
     <div className="relative z-10 flex h-full flex-col justify-center gap-4 p-8">
       <div className="flex items-center gap-4">
-        <img
+        <Image
           src="/Andrej (1).png"
           alt={t('ceo.name')}
-          className="h-16 w-16 shrink-0 rounded-full border border-white/10 bg-accent/10 object-cover object-top transition-transform duration-150 ease-out hover:scale-[1.35]"
+          layout="constrained"
+          width={80}
+          height={80}
+          className="h-24 w-24 shrink-0 rounded-full border border-white/10 bg-accent/10 object-cover object-top transition-transform duration-150 ease-out hover:scale-[1.35]"
         />
         <div className="flex min-w-0 flex-col">
           <span className="font-display text-[17px] leading-tight text-fg">
