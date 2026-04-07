@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useState, type FormEvent } from 'react'
 import { useTranslation } from 'react-i18next'
+import { toast } from 'sonner'
 import { Link } from '@tanstack/react-router'
 import { InteractiveHoverButton } from '~/components/magicui/interactive-hover-button'
 import { Input } from '~/components/ui/input'
@@ -100,11 +101,12 @@ export function ContactForm() {
       ;(e.target as HTMLFormElement).reset()
       setTopic('product')
       setPrivacyAccepted(false)
+      toast.success(t('contact.success'))
     } catch (err) {
-      setStatus({
-        kind: 'error',
-        message: err instanceof Error ? err.message : t('contact.errorFallback'),
-      })
+      const message =
+        err instanceof Error ? err.message : t('contact.errorFallback')
+      setStatus({ kind: 'error', message })
+      toast.error(t('contact.errorFallback'), { description: message })
     }
   }
 
@@ -334,32 +336,6 @@ export function ContactForm() {
             : t('contact.submit')}
         </InteractiveHoverButton>
 
-        <AnimatePresence>
-          {status.kind === 'success' && (
-            <motion.p
-              key="status-success"
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-              exit={{ opacity: 0, y: -4 }}
-              className="text-sm text-success-fg"
-            >
-              {t('contact.success')}
-            </motion.p>
-          )}
-          {status.kind === 'error' && (
-            <motion.p
-              key="status-error"
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-              exit={{ opacity: 0, y: -4 }}
-              className="text-sm text-red-400"
-            >
-              {status.message}
-            </motion.p>
-          )}
-        </AnimatePresence>
       </div>
     </form>
   )

@@ -3,6 +3,7 @@ import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 import { LayoutGroup, MotionConfig } from 'motion/react'
 import * as React from 'react'
+import { Toaster } from 'sonner'
 import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary'
 import { NotFound } from '~/components/NotFound'
 import { RouteTransition } from '~/components/site/RouteTransition'
@@ -85,6 +86,18 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             </LayoutGroup>
           </SplashProvider>
         </MotionConfig>
+        <Toaster
+          position="bottom-right"
+          theme="dark"
+          richColors
+          duration={3000}
+          toastOptions={{
+            classNames: {
+              toast:
+                'border border-white/10 bg-card text-fg shadow-lg backdrop-blur',
+            },
+          }}
+        />
         <TanStackRouterDevtools position="bottom-right" />
         <Scripts />
       </body>
