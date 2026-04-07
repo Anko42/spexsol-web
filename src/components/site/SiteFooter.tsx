@@ -27,35 +27,40 @@ export function SiteFooter() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
-      className="mx-auto flex w-full max-w-[800px] flex-col gap-6 border-t border-line-soft px-6 pb-16 pt-32 sm:flex-row sm:items-center sm:justify-between"
+      className="mx-auto flex w-full max-w-[800px] flex-col gap-8 border-t border-line-soft px-6 pb-16 pt-32"
     >
-      <Link
-        to="/$lang"
-        params={{ lang }}
-        className="flex items-center gap-2 text-sm font-semibold leading-none text-fg"
-      >
-        <Logo className="h-[1em] w-auto shrink-0" />
-        <span className="leading-none">{t('brand')}</span>
-      </Link>
-      <nav className="flex items-center gap-6">
+      <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
         <Link
-          to="/$lang/privacy-policy"
+          to="/$lang"
           params={{ lang }}
-          className={linkClass(isPrivacy)}
+          className="flex items-center gap-2 text-sm font-semibold leading-none text-fg"
         >
-          {t('footer.privacyPolicy')}
+          <Logo className="h-[1em] w-auto shrink-0" />
+          <span className="leading-none">{t('brand')}</span>
         </Link>
-        <Link
-          to="/$lang/terms-of-use"
-          params={{ lang }}
-          className={linkClass(isTerms)}
-        >
-          {t('footer.termsOfUse')}
-        </Link>
-      </nav>
-      <span className="whitespace-nowrap text-xs text-fg-muted tracking-[0.025em]">
-        {t('footer.copyright', { year })}
-      </span>
+        <nav className="flex items-center gap-6">
+          <Link
+            to="/$lang/privacy-policy"
+            params={{ lang }}
+            className={linkClass(isPrivacy)}
+          >
+            {t('footer.privacyPolicy')}
+          </Link>
+          <Link
+            to="/$lang/terms-of-use"
+            params={{ lang }}
+            className={linkClass(isTerms)}
+          >
+            {t('footer.termsOfUse')}
+          </Link>
+        </nav>
+        <span className="whitespace-nowrap text-xs text-fg-muted tracking-[0.025em]">
+          {t('footer.copyright', { year })}
+        </span>
+      </div>
+      <p className="text-xs text-fg-muted tracking-[0.025em] leading-relaxed">
+        {t('footer.company.legal')}
+      </p>
     </motion.footer>
   )
 }

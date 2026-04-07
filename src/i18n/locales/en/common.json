@@ -6,6 +6,9 @@
   "footer": {
     "privacyPolicy": "Privacy Policy",
     "termsOfUse": "Terms of Use",
-    "copyright": "© {{year}} spexsol.sk"
+    "copyright": "© {{year}} SpexSol s. r. o.",
+    "company": {
+      "legal": "SpexSol s. r. o. · Bojničky 2, 920 55 Bojničky, Slovakia · Company ID: 57004196 · VAT ID: 2122528089"
+    }
   }
 }
