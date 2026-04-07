@@ -1,23 +1,13 @@
 import { useEffect } from 'react'
+import { useGoogleAnalytics } from 'tanstack-router-ga4'
 import i18n from '~/i18n/config'
-
-declare global {
-  interface Window {
-    dataLayer: Array<unknown>
-  }
-}
-
-function gtag(...args: Array<unknown>) {
-  if (typeof window === 'undefined') return
-  window.dataLayer = window.dataLayer || []
-  window.dataLayer.push(args)
-}
 
 export function showCookiePreferences() {
   import('vanilla-cookieconsent').then((cc) => cc.showPreferences())
 }
 
 export function CookieConsent() {
+  const ga = useGoogleAnalytics()
   useEffect(() => {
     let mounted = true
     Promise.all([
@@ -53,15 +43,17 @@ export function CookieConsent() {
           },
         },
         onConsent: ({ cookie }) => {
-          const analytics = cookie.categories.includes('analytics')
-          gtag('consent', 'update', {
-            analytics_storage: analytics ? 'granted' : 'denied',
+          ga.consent('update', {
+            analytics_storage: cookie.categories.includes('analytics')
+              ? 'granted'
+              : 'denied',
           })
         },
         onChange: ({ cookie }) => {
-          const analytics = cookie.categories.includes('analytics')
-          gtag('consent', 'update', {
-            analytics_storage: analytics ? 'granted' : 'denied',
+          ga.consent('update', {
+            analytics_storage: cookie.categories.includes('analytics')
+              ? 'granted'
+              : 'denied',
           })
         },
         language: {

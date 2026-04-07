@@ -14,7 +14,7 @@
         "heading": "2. Information We Collect",
         "intro": "Information we collect falls into one of two categories: \"voluntarily provided\" information and \"automatically collected\" information. Voluntarily provided information refers to any information you knowingly and actively provide us when using or participating in our services. Automatically collected information refers to any information automatically sent by your devices in the course of accessing our products and services.",
         "logDataHeading": "Log Data",
-        "logDataBody": "When you visit our website, our hosting provider may keep short-lived server access logs containing your IP address, user agent, the path requested and a timestamp. These logs are used solely to operate the service and to detect abuse or security incidents. Our iOS applications send crash and error diagnostics through Sentry; see section 9 (Cookies and Tracking Technologies) for details.",
+        "logDataBody": "When you visit our website, our hosting provider may keep short-lived server access logs containing your IP address, user agent, the path requested and a timestamp. These logs are used solely to operate the service and to detect abuse or security incidents. Our iOS applications send crash and error diagnostics through Firebase Crashlytics; see section 9 (Cookies and Tracking Technologies) for details.",
         "personalHeading": "Personal Information",
         "personalIntro": "We may ask for personal information — for example, when you contact us through the website or otherwise interact with our services. This may include:",
         "items": {
@@ -23,7 +23,7 @@
           "03": "Contents of any message you send us"
         },
         "iosHeading": "Data Collected by Our iOS Applications",
-        "iosBody": "The data our iOS applications collect mirrors what is declared on each app's App Store privacy label. In summary: name and email address only if you contact support; crash and performance diagnostics through Sentry (see section 9); no advertising identifiers; no cross-app or cross-site tracking; and no location data unless you explicitly grant a specific feature permission to access it."
+        "iosBody": "The data our iOS applications collect mirrors what is declared on each app's App Store privacy label. In summary: name and email address only if you contact support; crash and performance diagnostics through Firebase Crashlytics (see section 9); no advertising identifiers; no cross-app or cross-site tracking; and no location data unless you explicitly grant a specific feature permission to access it."
       },
       "legitimateReasons": {
         "heading": "3. Legitimate Reasons for Processing Your Personal Information",
@@ -61,14 +61,15 @@
         },
         "providersIntro": "Third-party services we currently use or rely on include:",
         "providers": {
-          "01": "Sentry — crash and error reporting for our iOS applications. Sentry processes minimal device and diagnostic data on our behalf as a processor. Data may be transferred to the United States under the European Commission's Standard Contractual Clauses.",
-          "02": "Hosting, contact-form delivery and any analytics providers are still being finalised. Once our integrations are in place they will be listed here by name and purpose."
+          "01": "Firebase Crashlytics (Google Ireland Limited) — crash and error reporting for our iOS applications. Crashlytics processes minimal device and diagnostic data on our behalf as a processor. Data may be transferred to the United States under the European Commission's Standard Contractual Clauses.",
+          "02": "Google Analytics 4 and Google Tag Manager (Google Ireland Limited) — measurement of website traffic and usage. Loaded only after you accept analytics cookies via our cookie banner. Data may be transferred to the United States under the European Commission's Standard Contractual Clauses.",
+          "03": "Hosting and contact-form delivery providers are still being finalised. Once our integrations are in place they will be listed here by name and purpose."
         },
         "providersNote": "This list is maintained on a best-effort basis and is updated when our integrations change."
       },
       "cookies": {
         "heading": "9. Cookies and Tracking Technologies",
-        "body": "Our marketing website does not set any cookies and does not use any analytics or advertising trackers. The only automatically collected data is the short-lived server access log described in section 2, kept by our hosting provider for security and abuse prevention. Our iOS applications use Sentry for crash and error reporting; they do not use advertising identifiers, do not track you across other apps or websites, and do not request App Tracking Transparency permission. If we ever introduce cookies, analytics or similar technologies, we will update this section and, where required by law, ask for your consent first."
+        "body": "Our marketing website uses Google Tag Manager and Google Analytics 4 (measurement ID G-BTY6T00NQ0) to understand how visitors use the site. These tools are loaded with Google Consent Mode v2 set to \"denied\" by default and are only activated after you accept analytics cookies via our cookie banner. You can change or withdraw your consent at any time using the \"Cookie Settings\" link in the footer. If you reject analytics cookies, no analytics or advertising cookies are set and no measurement data is sent. The only other automatically collected data is the short-lived server access log described in section 2, kept by our hosting provider for security and abuse prevention. Our iOS applications use Firebase Crashlytics for crash and error reporting; they do not use advertising identifiers, do not track you across other apps or websites, and do not request App Tracking Transparency permission."
       },
       "rights": {
         "heading": "10. Your Rights and Controlling Your Personal Information",
@@ -105,7 +106,7 @@
           "04": "we need to process your data to comply with a legal obligation under Article 6(1)(c) GDPR."
         },
         "transfersHeading": "International Transfers Outside the EEA",
-        "transfersBody": "We will ensure that any transfer of personal information from countries in the European Economic Area (EEA) to countries outside the EEA is protected by appropriate safeguards, for example by using Standard Contractual Clauses approved by the European Commission. This applies in particular to crash and error data sent to Sentry, which may be processed in the United States.",
+        "transfersBody": "We will ensure that any transfer of personal information from countries in the European Economic Area (EEA) to countries outside the EEA is protected by appropriate safeguards, for example by using Standard Contractual Clauses approved by the European Commission. This applies in particular to crash and error data sent to Firebase Crashlytics and to website analytics data sent to Google Analytics, which may be processed in the United States.",
         "dpoHeading": "Data Protection Officer",
         "dpoBody": "We have not appointed a Data Protection Officer. Given the size of SpexSol and the limited nature of the personal data we process, we are not required to do so under Article 37 GDPR. For any questions relating to your personal data you can contact us directly at skalicky@spexsol.sk.",
         "rightsHeading": "Your Rights",

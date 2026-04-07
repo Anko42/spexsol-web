@@ -4,6 +4,7 @@ import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 import { LayoutGroup, MotionConfig } from 'motion/react'
 import * as React from 'react'
 import { Toaster } from 'sonner'
+import { GoogleAnalytics } from 'tanstack-router-ga4'
 import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary'
 import { NotFound } from '~/components/NotFound'
 import { RouteTransition } from '~/components/site/RouteTransition'
@@ -65,12 +66,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',analytics_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});`,
           }}
         />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTY6T00NQ0" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `gtag('js',new Date());gtag('config','G-BTY6T00NQ0');`,
-          }}
-        />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NNDT5VL2');`,
@@ -88,6 +83,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         />
       </head>
       <body className="min-h-screen flex flex-col relative overflow-x-hidden">
+        <GoogleAnalytics measurementId="G-BTY6T00NQ0" />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-NNDT5VL2"

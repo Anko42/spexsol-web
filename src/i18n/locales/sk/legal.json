@@ -14,7 +14,7 @@
         "heading": "2. Aké údaje zhromažďujeme",
         "intro": "Údaje, ktoré zhromažďujeme, spadajú do jednej z dvoch kategórií: údaje „dobrovoľne poskytnuté\" a údaje „automaticky zhromažďované\". Dobrovoľne poskytnuté údaje sú akékoľvek údaje, ktoré nám vedome a aktívne poskytnete pri používaní našich služieb. Automaticky zhromažďované údaje sú údaje, ktoré nám automaticky zasielajú vaše zariadenia pri prístupe k našim produktom a službám.",
         "logDataHeading": "Záznamy o prístupe (Log Data)",
-        "logDataBody": "Pri návšteve našej webovej stránky môže náš poskytovateľ hostingu uchovávať krátkodobé serverové záznamy obsahujúce vašu IP adresu, identifikátor prehliadača (user agent), požadovanú cestu a časovú značku. Tieto záznamy slúžia výhradne na prevádzku služby a na odhaľovanie zneužitia alebo bezpečnostných incidentov. Naše iOS aplikácie odosielajú diagnostiku pádov a chýb prostredníctvom služby Sentry; podrobnosti nájdete v sekcii 9 (Súbory cookie a sledovacie technológie).",
+        "logDataBody": "Pri návšteve našej webovej stránky môže náš poskytovateľ hostingu uchovávať krátkodobé serverové záznamy obsahujúce vašu IP adresu, identifikátor prehliadača (user agent), požadovanú cestu a časovú značku. Tieto záznamy slúžia výhradne na prevádzku služby a na odhaľovanie zneužitia alebo bezpečnostných incidentov. Naše iOS aplikácie odosielajú diagnostiku pádov a chýb prostredníctvom služby Firebase Crashlytics; podrobnosti nájdete v sekcii 9 (Súbory cookie a sledovacie technológie).",
         "personalHeading": "Osobné údaje",
         "personalIntro": "Môžeme vás požiadať o osobné údaje — napríklad keď nás kontaktujete cez webovú stránku alebo inak interagujete s našimi službami. Môžu zahŕňať:",
         "items": {
@@ -23,7 +23,7 @@
           "03": "Obsah akejkoľvek správy, ktorú nám pošlete"
         },
         "iosHeading": "Údaje zhromažďované našimi iOS aplikáciami",
-        "iosBody": "Údaje, ktoré naše iOS aplikácie zhromažďujú, zodpovedajú tomu, čo je deklarované v privacy label každej aplikácie v App Store. V skratke: meno a e-mailová adresa iba ak nás kontaktujete kvôli podpore; diagnostika pádov a výkonu prostredníctvom služby Sentry (pozri sekciu 9); žiadne reklamné identifikátory; žiadne sledovanie naprieč inými aplikáciami alebo webovými stránkami; a žiadne údaje o polohe, pokiaľ konkrétnej funkcii výslovne neudelíte povolenie na prístup k nim."
+        "iosBody": "Údaje, ktoré naše iOS aplikácie zhromažďujú, zodpovedajú tomu, čo je deklarované v privacy label každej aplikácie v App Store. V skratke: meno a e-mailová adresa iba ak nás kontaktujete kvôli podpore; diagnostika pádov a výkonu prostredníctvom služby Firebase Crashlytics (pozri sekciu 9); žiadne reklamné identifikátory; žiadne sledovanie naprieč inými aplikáciami alebo webovými stránkami; a žiadne údaje o polohe, pokiaľ konkrétnej funkcii výslovne neudelíte povolenie na prístup k nim."
       },
       "legitimateReasons": {
         "heading": "3. Oprávnené dôvody spracúvania osobných údajov",
@@ -61,14 +61,15 @@
         },
         "providersIntro": "Služby tretích strán, ktoré aktuálne používame alebo na ktoré sa spoliehame, zahŕňajú:",
         "providers": {
-          "01": "Sentry — nahlasovanie pádov a chýb pre naše iOS aplikácie. Sentry spracúva minimálne údaje o zariadení a diagnostické údaje v našom mene ako sprostredkovateľ. Údaje môžu byť prenášané do Spojených štátov na základe Štandardných zmluvných doložiek schválených Európskou komisiou.",
-          "02": "Hosting, doručovanie kontaktného formulára a prípadní poskytovatelia analytiky sa ešte finalizujú. Po nasadení integrácií budú uvedení tu spolu s názvom a účelom."
+          "01": "Firebase Crashlytics (Google Ireland Limited) — nahlasovanie pádov a chýb pre naše iOS aplikácie. Crashlytics spracúva minimálne údaje o zariadení a diagnostické údaje v našom mene ako sprostredkovateľ. Údaje môžu byť prenášané do Spojených štátov na základe Štandardných zmluvných doložiek schválených Európskou komisiou.",
+          "02": "Google Analytics 4 a Google Tag Manager (Google Ireland Limited) — meranie návštevnosti a používania webovej stránky. Načítavajú sa až po tom, ako prijmete analytické cookies cez náš cookie banner. Údaje môžu byť prenášané do Spojených štátov na základe Štandardných zmluvných doložiek schválených Európskou komisiou.",
+          "03": "Poskytovatelia hostingu a doručovania kontaktného formulára sa ešte finalizujú. Po nasadení integrácií budú uvedení tu spolu s názvom a účelom."
         },
         "providersNote": "Tento zoznam je udržiavaný podľa najlepšieho úsilia a aktualizovaný pri zmene našich integrácií."
       },
       "cookies": {
         "heading": "9. Súbory cookie a sledovacie technológie",
-        "body": "Naša marketingová webová stránka nenastavuje žiadne súbory cookie a nepoužíva žiadne analytické ani reklamné nástroje. Jediné automaticky zhromažďované údaje sú krátkodobé serverové záznamy o prístupe opísané v sekcii 2, ktoré uchováva náš poskytovateľ hostingu na účely bezpečnosti a prevencie zneužitia. Naše iOS aplikácie používajú Sentry na nahlasovanie pádov a chýb; nepoužívajú reklamné identifikátory, nesledujú vás naprieč inými aplikáciami ani webovými stránkami a nežiadajú o povolenie App Tracking Transparency. Ak v budúcnosti zavedieme súbory cookie, analytiku alebo podobné technológie, túto sekciu aktualizujeme a tam, kde to vyžaduje zákon, si najprv vyžiadame váš súhlas."
+        "body": "Naša marketingová webová stránka používa Google Tag Manager a Google Analytics 4 (merací identifikátor G-BTY6T00NQ0) na pochopenie toho, ako návštevníci stránku používajú. Tieto nástroje sa načítavajú s nastavením Google Consent Mode v2 predvolene na „denied\" (zamietnuté) a aktivujú sa až po tom, ako prijmete analytické cookies cez náš cookie banner. Svoj súhlas môžete kedykoľvek zmeniť alebo odvolať pomocou odkazu „Nastavenia cookies\" v päte stránky. Ak analytické cookies odmietnete, nenastavia sa žiadne analytické ani reklamné cookies a neodošlú sa žiadne merané údaje. Jediné ďalšie automaticky zhromažďované údaje sú krátkodobé serverové záznamy o prístupe opísané v sekcii 2, ktoré uchováva náš poskytovateľ hostingu na účely bezpečnosti a prevencie zneužitia. Naše iOS aplikácie používajú Firebase Crashlytics na nahlasovanie pádov a chýb; nepoužívajú reklamné identifikátory, nesledujú vás naprieč inými aplikáciami ani webovými stránkami a nežiadajú o povolenie App Tracking Transparency."
       },
       "rights": {
         "heading": "10. Vaše práva a kontrola nad osobnými údajmi",
@@ -105,7 +106,7 @@
           "04": "potrebujeme spracúvať vaše údaje na splnenie zákonnej povinnosti podľa čl. 6 ods. 1 písm. c) GDPR."
         },
         "transfersHeading": "Medzinárodné prenosy mimo EHP",
-        "transfersBody": "Zabezpečíme, aby každý prenos osobných údajov z krajín Európskeho hospodárskeho priestoru (EHP) do krajín mimo EHP bol chránený primeranými zárukami, napríklad použitím Štandardných zmluvných doložiek schválených Európskou komisiou. Týka sa to najmä údajov o pádoch a chybách odosielaných do služby Sentry, ktoré môžu byť spracúvané v Spojených štátoch.",
+        "transfersBody": "Zabezpečíme, aby každý prenos osobných údajov z krajín Európskeho hospodárskeho priestoru (EHP) do krajín mimo EHP bol chránený primeranými zárukami, napríklad použitím Štandardných zmluvných doložiek schválených Európskou komisiou. Týka sa to najmä údajov o pádoch a chybách odosielaných do služby Firebase Crashlytics a údajov o návštevnosti webu odosielaných do služby Google Analytics, ktoré môžu byť spracúvané v Spojených štátoch.",
         "dpoHeading": "Zodpovedná osoba (DPO)",
         "dpoBody": "Nevymenovali sme zodpovednú osobu (Data Protection Officer). Vzhľadom na veľkosť spoločnosti SpexSol a obmedzenú povahu osobných údajov, ktoré spracúvame, nie sme na to povinní podľa čl. 37 GDPR. V akýchkoľvek otázkach týkajúcich sa vašich osobných údajov nás môžete priamo kontaktovať na skalicky@spexsol.sk.",
         "rightsHeading": "Vaše práva",
