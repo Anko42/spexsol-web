@@ -1,5 +1,6 @@
 import { useRouter, useRouterState } from '@tanstack/react-router'
 import { startTransition } from 'react'
+import { useGoogleAnalytics } from 'tanstack-router-ga4'
 import { SUPPORTED_LANGUAGES, type SupportedLanguage } from '~/i18n/config'
 import { useLang } from '~/hooks/useLang'
 import { cn } from '~/lib/utils'
@@ -7,10 +8,12 @@ import { cn } from '~/lib/utils'
 export function LangSwitcher() {
   const current = useLang()
   const router = useRouter()
+  const ga = useGoogleAnalytics()
   const pathname = useRouterState({ select: (s) => s.location.pathname })
 
   const switchTo = (lang: SupportedLanguage) => {
     if (lang === current) return
+    ga.event('language_switch', { from: current, to: lang })
     const segments = pathname.split('/')
     if (segments.length > 1 && (SUPPORTED_LANGUAGES as readonly string[]).includes(segments[1])) {
       segments[1] = lang

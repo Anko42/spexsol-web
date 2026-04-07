@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useState, type FormEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import { toast } from 'sonner'
+import { useGoogleAnalytics } from 'tanstack-router-ga4'
 import { Link } from '@tanstack/react-router'
 import { InteractiveHoverButton } from '~/components/magicui/interactive-hover-button'
 import { Input } from '~/components/ui/input'
@@ -35,6 +36,7 @@ type FieldError =
 export function ContactForm() {
   const { t } = useTranslation('home')
   const lang = useLang()
+  const ga = useGoogleAnalytics()
   const [status, setStatus] = useState<Status>({ kind: 'idle' })
   const [errors, setErrors] = useState<Partial<Record<FieldError, string>>>({})
   const [topic, setTopic] = useState<ContactTopic>('product')
@@ -85,6 +87,10 @@ export function ContactForm() {
       }
       setErrors(fieldErrors)
       setStatus({ kind: 'idle' })
+      ga.event('contact_form_validation_error', {
+        topic,
+        invalid_fields: Object.keys(fieldErrors).join(','),
+      })
       return
     }
 
@@ -102,11 +108,25 @@ export function ContactForm() {
       setTopic('product')
       setPrivacyAccepted(false)
       toast.success(t('contact.success'))
+      ga.event('generate_lead', {
+        currency: 'EUR',
+        value: 0,
+        topic: parsed.data.topic,
+      })
+      ga.event('contact_form_submit_success', { topic: parsed.data.topic })
     } catch (err) {
       const message =
         err instanceof Error ? err.message : t('contact.errorFallback')
       setStatus({ kind: 'error', message })
       toast.error(t('contact.errorFallback'), { description: message })
+      ga.event('exception', {
+        description: `contact_form_submit:${message}`,
+        fatal: false,
+      })
+      ga.event('contact_form_submit_error', {
+        topic: parsed.data.topic,
+        error_message: message,
+      })
     }
   }
 

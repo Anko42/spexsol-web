@@ -68,11 +68,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NNDT5VL2');`,
-          }}
-        />
-        <script
-          dangerouslySetInnerHTML={{
             __html: `(function(){try{var mq=window.matchMedia('(prefers-color-scheme: dark)');var apply=function(){var s=localStorage.getItem('theme');var d=s?s==='dark':mq.matches;document.documentElement.classList.toggle('dark',d);};apply();mq.addEventListener('change',function(){if(!localStorage.getItem('theme'))apply();});}catch(e){}})();`,
           }}
         />
@@ -84,14 +79,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
       <body className="min-h-screen flex flex-col relative overflow-x-hidden">
         <GoogleAnalytics measurementId="G-BTY6T00NQ0" />
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-NNDT5VL2"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
         <MotionConfig
           reducedMotion="user"
           transition={{ duration: 0.22, ease: [0.2, 0, 0, 1] }}

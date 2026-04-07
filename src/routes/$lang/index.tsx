@@ -10,6 +10,7 @@ import { SystemsIcon } from '~/components/icons/SystemsIcon'
 import { ToolingIcon } from '~/components/icons/ToolingIcon'
 import { SystemOptimizationIcon } from '~/components/icons/SystemOptimizationIcon'
 import { SecurityIntegrityIcon } from '~/components/icons/SecurityIntegrityIcon'
+import { useGoogleAnalytics } from 'tanstack-router-ga4'
 import { selectContactTopic } from '~/lib/contact-schema'
 import { cn } from '~/lib/utils'
 import {
@@ -29,7 +30,15 @@ const cellShell =
 
 function Home() {
   const { t } = useTranslation('home')
+  const ga = useGoogleAnalytics()
   const cardsCta = t('cards.cta')
+  const handleCardCta = (topic: 'product' | 'advisory' | 'automation' | 'ai') => {
+    ga.event('select_content', {
+      content_type: 'service_card',
+      item_id: topic,
+    })
+    selectContactTopic(topic)
+  }
   return (
     <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-28 sm:px-6 sm:pb-24 sm:pt-32">
       <motion.div
@@ -91,7 +100,7 @@ function Home() {
               Icon={SystemsIcon}
               href="#contact"
               cta={cardsCta}
-              onCtaClick={() => selectContactTopic('product')}
+              onCtaClick={() => handleCardCta('product')}
               background={<div aria-hidden="true" />}
               className="h-full"
             />
@@ -108,7 +117,7 @@ function Home() {
               Icon={SecurityIntegrityIcon}
               href="#contact"
               cta={cardsCta}
-              onCtaClick={() => selectContactTopic('advisory')}
+              onCtaClick={() => handleCardCta('advisory')}
               background={<div aria-hidden="true" />}
               className="h-full"
             />
@@ -125,7 +134,7 @@ function Home() {
               Icon={ToolingIcon}
               href="#contact"
               cta={cardsCta}
-              onCtaClick={() => selectContactTopic('automation')}
+              onCtaClick={() => handleCardCta('automation')}
               background={<div aria-hidden="true" />}
               className="h-full"
             />
@@ -176,7 +185,7 @@ function Home() {
               Icon={SystemOptimizationIcon}
               href="#contact"
               cta={cardsCta}
-              onCtaClick={() => selectContactTopic('ai')}
+              onCtaClick={() => handleCardCta('ai')}
               background={<div aria-hidden="true" />}
               className="h-full"
             />
