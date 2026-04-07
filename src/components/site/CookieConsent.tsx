@@ -1,9 +1,27 @@
+import { Cookie } from 'lucide-react'
 import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useGoogleAnalytics } from 'tanstack-router-ga4'
 import i18n from '~/i18n/config'
 
 export function showCookiePreferences() {
   import('vanilla-cookieconsent').then((cc) => cc.showPreferences())
+}
+
+export function CookieSettingsButton() {
+  const { t } = useTranslation('common')
+  const label = t('footer.cookieSettings')
+  return (
+    <button
+      type="button"
+      onClick={showCookiePreferences}
+      aria-label={label}
+      title={label}
+      className="fixed bottom-4 left-4 z-40 inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-card text-fg-muted shadow-lg backdrop-blur transition-colors hover:text-fg hover:border-line/80 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-accent/60"
+    >
+      <Cookie className="h-5 w-5" />
+    </button>
+  )
 }
 
 export function CookieConsent() {

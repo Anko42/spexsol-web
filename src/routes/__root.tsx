@@ -10,7 +10,7 @@ import { NotFound } from '~/components/NotFound'
 import { RouteTransition } from '~/components/site/RouteTransition'
 import { SiteHeader } from '~/components/site/SiteHeader'
 import { SiteFooter } from '~/components/site/SiteFooter'
-import { CookieConsent } from '~/components/site/CookieConsent'
+import { CookieConsent, CookieSettingsButton } from '~/components/site/CookieConsent'
 import { Splash } from '~/components/site/Splash'
 import { SplashProvider } from '~/components/site/SplashContext'
 import i18n, { DEFAULT_LANGUAGE, isSupportedLanguage } from '~/i18n/config'
@@ -94,6 +94,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             </LayoutGroup>
           </SplashProvider>
           <CookieConsent />
+          <CookieSettingsButton />
         </MotionConfig>
         <Toaster
           position="bottom-right"
