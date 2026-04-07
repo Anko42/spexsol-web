@@ -129,7 +129,7 @@ export function AnimatedThemeToggler({
       onClick={toggleTheme}
       aria-label="Toggle theme"
       className={cn(
-        'inline-flex h-9 w-9 items-center justify-center rounded-md text-fg-muted transition-colors hover:text-fg',
+        'inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-md text-fg-muted transition-colors hover:text-fg',
         className,
       )}
       {...props}

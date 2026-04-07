@@ -32,7 +32,7 @@ export function LangSwitcher() {
             type="button"
             onClick={() => switchTo(lang)}
             className={cn(
-              'transition-colors',
+              'cursor-pointer transition-colors',
               lang === current ? 'text-fg' : 'text-fg-muted hover:text-fg',
             )}
             aria-current={lang === current ? 'true' : undefined}
