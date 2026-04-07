@@ -240,8 +240,8 @@ export function ContactForm() {
             onChange={(e) => setTopic(e.target.value as ContactTopic)}
             className={cn(
               'sm:hidden',
-              'h-10 w-full rounded-md border border-white/10 bg-card px-3 text-sm text-fg',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40',
+              'h-10 w-full rounded-[4px] border border-line bg-input px-[12px] py-[8px] text-base text-fg',
+              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent',
             )}
           >
             {CONTACT_TOPICS.map((value) => (
