@@ -6,11 +6,12 @@ import { Logo } from '~/components/site/Logo'
 import { LangSwitcher } from '~/components/site/LangSwitcher'
 import { AnimatedThemeToggler } from '~/components/magicui/animated-theme-toggler'
 import { useSplash } from '~/components/site/SplashContext'
+import { EASE, HEADER_BRAND_S } from '~/components/site/splashTimings'
 
 export function SiteHeader() {
   const { t } = useTranslation('common')
   const lang = useLang()
-  const { done: splashDone, settled: splashSettled } = useSplash()
+  const { done: splashDone } = useSplash()
   const { scrollY } = useScroll()
   const backgroundColor = useTransform(
     scrollY,
@@ -39,33 +40,17 @@ export function SiteHeader() {
           params={{ lang }}
           className="flex items-center gap-2 font-display text-[18px] leading-none tracking-[-0.05em] text-fg"
         >
-          {splashSettled ? (
-            <>
-              <span className="inline-flex">
-                <Logo className="h-[1em] w-auto shrink-0" />
-              </span>
-              <span className="leading-none">{t('brand')}</span>
-            </>
-          ) : (
-            <>
-              <motion.span
-                layoutId="brand-logo"
-                className="inline-flex"
-                style={{ visibility: splashDone ? 'visible' : 'hidden' }}
-                transition={{ layout: { duration: 0.7, ease: [0.2, 0, 0, 1] } }}
-              >
-                <Logo className="h-[1em] w-auto shrink-0" />
-              </motion.span>
-              <motion.span
-                layoutId="brand-wordmark"
-                className="leading-none"
-                style={{ visibility: splashDone ? 'visible' : 'hidden' }}
-                transition={{ layout: { duration: 0.7, ease: [0.2, 0, 0, 1] } }}
-              >
-                {t('brand')}
-              </motion.span>
-            </>
-          )}
+          <motion.span
+            className="inline-flex items-center gap-2"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: splashDone ? 1 : 0 }}
+            transition={{ duration: HEADER_BRAND_S, ease: EASE }}
+          >
+            <span className="inline-flex">
+              <Logo className="h-[1em] w-auto shrink-0" />
+            </span>
+            <span className="leading-none">{t('brand')}</span>
+          </motion.span>
         </Link>
         <div className="flex items-center gap-3">
           <LangSwitcher />

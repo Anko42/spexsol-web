@@ -1,8 +1,10 @@
 /// <reference types="vite/client" />
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
-import { LayoutGroup, MotionConfig } from 'motion/react'
+import { MotionConfig, motion } from 'motion/react'
 import * as React from 'react'
+import { useSplash } from '~/components/site/SplashContext'
+import { EASE, PAGE_ENTRY_S } from '~/components/site/splashTimings'
 import { Toaster } from 'sonner'
 import { GoogleAnalytics } from 'tanstack-router-ga4'
 import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary'
@@ -56,6 +58,20 @@ export const Route = createRootRoute({
   shellComponent: RootDocument,
 })
 
+function MainEntry({ children }: { children: React.ReactNode }) {
+  const { done } = useSplash()
+  return (
+    <motion.main
+      className="flex-1"
+      initial={{ opacity: 0, y: 12 }}
+      animate={done ? { opacity: 1, y: 0 } : { opacity: 0, y: 12 }}
+      transition={{ duration: PAGE_ENTRY_S, ease: EASE, delay: done ? 0.1 : 0 }}
+    >
+      {children}
+    </motion.main>
+  )
+}
+
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
     <html suppressHydrationWarning>
@@ -84,14 +100,12 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           transition={{ duration: 0.22, ease: [0.2, 0, 0, 1] }}
         >
           <SplashProvider>
-            <LayoutGroup id="brand">
-              <SiteHeader />
-              <main className="flex-1">
-                <RouteTransition>{children}</RouteTransition>
-              </main>
-              <SiteFooter />
-              <Splash />
-            </LayoutGroup>
+            <SiteHeader />
+            <MainEntry>
+              <RouteTransition>{children}</RouteTransition>
+            </MainEntry>
+            <SiteFooter />
+            <Splash />
           </SplashProvider>
           <CookieConsent />
           <CookieSettingsButton />
