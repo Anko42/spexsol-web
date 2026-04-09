@@ -52,6 +52,11 @@
     "success": "Thanks — your message has been received.",
     "errorFallback": "Something went wrong"
   },
+  "products": {
+    "title": "Our work",
+    "description": "Apps and websites we built. See what we ship.",
+    "cta": "See products"
+  },
   "services": {
     "product": {
       "title": "End-to-end product",

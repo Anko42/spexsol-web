@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { Link, createFileRoute } from '@tanstack/react-router'
 import { motion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { BentoGrid, BentoCard } from '~/components/site/BentoGrid'
@@ -6,12 +6,17 @@ import { StatusChip } from '~/components/site/StatusChip'
 import { CeoCard } from '~/components/site/CeoCard'
 import { ContactForm } from '~/components/site/ContactForm'
 import { ShineBorder } from '~/components/ui/shine-border'
+import { Marquee } from '~/components/magicui/marquee'
 import { SystemsIcon } from '~/components/icons/SystemsIcon'
 import { ToolingIcon } from '~/components/icons/ToolingIcon'
 import { SystemOptimizationIcon } from '~/components/icons/SystemOptimizationIcon'
 import { SecurityIntegrityIcon } from '~/components/icons/SecurityIntegrityIcon'
 import { useGoogleAnalytics } from 'tanstack-router-ga4'
+import { useLang } from '~/hooks/useLang'
+import { products } from '~/data/products'
+import type { SupportedLanguage } from '~/i18n/config'
 import { selectContactTopic } from '~/lib/contact-schema'
+import type { Product } from '~/lib/product-schema'
 import { cn } from '~/lib/utils'
 import {
   heroBlur,
@@ -28,8 +33,51 @@ export const Route = createFileRoute('/$lang/')({
 const cellShell =
   'group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl bg-card transform-gpu [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]'
 
+function MarqueeProductCard({
+  product,
+  lang,
+}: {
+  product: Product
+  lang: SupportedLanguage
+}) {
+  return (
+    <Link
+      to="/$lang/products/$slug"
+      params={{ lang, slug: product.slug }}
+      onClick={(e) => e.stopPropagation()}
+      className={cn(
+        'pointer-events-auto relative block w-56 cursor-pointer overflow-hidden rounded-xl border p-4',
+        'border-line bg-card/60 hover:bg-card',
+        'transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none',
+      )}
+    >
+      <figure>
+        <div className="flex flex-row items-center gap-3">
+          <img
+            src={product.icon}
+            alt=""
+            className="h-10 w-10 shrink-0 rounded-lg object-cover"
+          />
+          <div className="flex min-w-0 flex-col">
+            <figcaption className="truncate font-display text-[14px] text-fg">
+              {product.name}
+            </figcaption>
+            <span className="truncate text-[11px] text-fg-muted">
+              {product.category}
+            </span>
+          </div>
+        </div>
+        <blockquote className="mt-2 line-clamp-2 text-xs text-fg-muted">
+          {product.tagline[lang]}
+        </blockquote>
+      </figure>
+    </Link>
+  )
+}
+
 function Home() {
   const { t } = useTranslation('home')
+  const lang = useLang()
   const ga = useGoogleAnalytics()
   const cardsCta = t('cards.cta')
   const handleCardCta = (topic: 'product' | 'advisory' | 'automation' | 'ai') => {
@@ -87,6 +135,35 @@ function Home() {
             className={cn(cellShell, 'lg:col-span-1')}
           >
             <CeoCard />
+          </motion.div>
+
+          {/* Products teaser */}
+          <motion.div
+            variants={staggerItem}
+            className="col-span-3 lg:col-span-3"
+          >
+            <BentoCard
+              name={t('products.title')}
+              description={t('products.description')}
+              Icon={SystemsIcon}
+              href={`/${lang}/products`}
+              cta={t('products.cta')}
+              background={
+                <Marquee
+                  pauseOnHover
+                  className="absolute top-5 lg:top-20 mask-[linear-gradient(to_top,transparent_40%,#000_100%)] [--duration:20s]"
+                >
+                  {products.map((product) => (
+                    <MarqueeProductCard
+                      key={product.slug}
+                      product={product}
+                      lang={lang}
+                    />
+                  ))}
+                </Marquee>
+              }
+              className="h-full min-h-72"
+            />
           </motion.div>
 
           {/* Product */}
@@ -190,6 +267,8 @@ function Home() {
               className="h-full"
             />
           </motion.div>
+
+      
 
         </BentoGrid>
       </motion.div>

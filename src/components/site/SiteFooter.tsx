@@ -14,6 +14,8 @@ export function SiteFooter() {
 
   const isPrivacy = pathname.endsWith('/privacy-policy')
   const isTerms = pathname.endsWith('/terms-of-use')
+  const isProducts = pathname.includes('/products')
+  const isContact = pathname.endsWith('/contact')
 
   const linkClass = (active: boolean) =>
     cn(
@@ -38,7 +40,21 @@ export function SiteFooter() {
           <Logo className="h-[1em] w-auto shrink-0" />
           <span className="leading-none">{t('brand')}</span>
         </Link>
-        <nav className="flex items-center gap-6">
+        <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
+          <Link
+            to="/$lang/products"
+            params={{ lang }}
+            className={linkClass(isProducts)}
+          >
+            {t('nav.products')}
+          </Link>
+          <Link
+            to="/$lang/contact"
+            params={{ lang }}
+            className={linkClass(isContact)}
+          >
+            {t('nav.contact')}
+          </Link>
           <Link
             to="/$lang/privacy-policy"
             params={{ lang }}

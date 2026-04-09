@@ -1,7 +1,9 @@
 {
   "brand": "spexsol.sk",
   "nav": {
-    "back": "Back"
+    "back": "Back",
+    "products": "Products",
+    "contact": "Contact"
   },
   "notFound": {
     "title": "Page not found.",

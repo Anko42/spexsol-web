@@ -2,6 +2,7 @@ import type { ComponentPropsWithoutRef, ElementType, ReactNode } from 'react'
 import { cn } from '~/lib/utils'
 import { Button } from '~/components/ui/button'
 import { ArrowRightIcon } from '~/components/icons/ArrowRightIcon'
+import { Link } from '@tanstack/react-router'
 
 interface BentoGridProps extends ComponentPropsWithoutRef<'div'> {
   children: ReactNode
@@ -91,10 +92,10 @@ const BentoCard = ({
           size="sm"
           className="pointer-events-auto p-0"
         >
-          <a href={href} onClick={handleClick}>
+          <Link to={href} onClick={handleClick}>
             {cta}
             <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
-          </a>
+          </Link>
         </Button>
       </div>
 

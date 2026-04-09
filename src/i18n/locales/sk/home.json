@@ -52,6 +52,11 @@
     "success": "Ďakujeme — vaša správa bola prijatá.",
     "errorFallback": "Niečo sa pokazilo"
   },
+  "products": {
+    "title": "Naša práca",
+    "description": "Aplikácie a weby, ktoré sme postavili. Pozrite si, čo dodávame.",
+    "cta": "Pozrieť produkty"
+  },
   "services": {
     "product": {
       "title": "Produkt na kľúč",
