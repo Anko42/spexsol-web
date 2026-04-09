@@ -11,6 +11,12 @@ import { SystemsIcon } from '~/components/icons/SystemsIcon'
 import { ToolingIcon } from '~/components/icons/ToolingIcon'
 import { SystemOptimizationIcon } from '~/components/icons/SystemOptimizationIcon'
 import { SecurityIntegrityIcon } from '~/components/icons/SecurityIntegrityIcon'
+import {
+  ProductBackground,
+  AdvisoryBackground,
+  AutomationBackground,
+  AiBackground,
+} from '~/components/site/bento-backgrounds'
 import { useGoogleAnalytics } from 'tanstack-router-ga4'
 import { useLang } from '~/hooks/useLang'
 import { products } from '~/data/products'
@@ -178,7 +184,7 @@ function Home() {
               href="#contact"
               cta={cardsCta}
               onCtaClick={() => handleCardCta('product')}
-              background={<div aria-hidden="true" />}
+              background={<ProductBackground />}
               className="h-full"
             />
           </motion.div>
@@ -195,7 +201,7 @@ function Home() {
               href="#contact"
               cta={cardsCta}
               onCtaClick={() => handleCardCta('advisory')}
-              background={<div aria-hidden="true" />}
+              background={<AdvisoryBackground />}
               className="h-full"
             />
           </motion.div>
@@ -212,7 +218,7 @@ function Home() {
               href="#contact"
               cta={cardsCta}
               onCtaClick={() => handleCardCta('automation')}
-              background={<div aria-hidden="true" />}
+              background={<AutomationBackground />}
               className="h-full"
             />
           </motion.div>
@@ -263,7 +269,7 @@ function Home() {
               href="#contact"
               cta={cardsCta}
               onCtaClick={() => handleCardCta('ai')}
-              background={<div aria-hidden="true" />}
+              background={<AiBackground />}
               className="h-full"
             />
           </motion.div>
