@@ -24,7 +24,7 @@ export function AdvisoryBackground() {
       aria-hidden="true"
       className="pointer-events-none absolute inset-0 overflow-hidden"
     >
-      <div className="absolute inset-y-4 left-[38%] right-4 grid grid-cols-2 gap-3 rotate-[-1deg] opacity-70 transition-all duration-500 group-hover:-translate-y-1 group-hover:opacity-100">
+      <div className="absolute inset-y-6 left-[38%] lg:left-1/5 right-4 grid grid-cols-2 gap-3 -rotate-1 opacity-70 transition-all duration-500 group-hover:-translate-y-1 group-hover:opacity-100">
         <CodeBlock
           code={BEFORE}
           lang="ts"
