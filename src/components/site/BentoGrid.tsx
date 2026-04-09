@@ -63,7 +63,22 @@ const BentoCard = ({
       {...props}
     >
       <div>{background}</div>
-      <div className="p-6">
+
+      {/* Frosted glass scrim behind the copy — blurs whatever the background renders */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[60%] backdrop-blur-md"
+        style={{
+          maskImage: 'linear-gradient(to top, black 60%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(to top, black 60%, transparent 100%)',
+        }}
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[55%] bg-gradient-to-t from-card/70 via-card/30 to-transparent"
+      />
+
+      <div className="relative p-6">
         <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 transition-all duration-300 lg:group-hover:-translate-y-10">
           <Icon className="h-12 w-12 origin-left transform-gpu text-fg-muted transition-all duration-300 ease-in-out group-hover:scale-75" />
           <h3 className="font-display text-xl text-fg">{name}</h3>

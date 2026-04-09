@@ -41,10 +41,6 @@ export function AdvisoryBackground() {
         />
       </div>
 
-      {/* Left scrim — fade code into the card behind the title */}
-      <div className="absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-card via-card/90 to-transparent" />
-      {/* Bottom scrim — keep CTA reveal area clean */}
-      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-card/80 to-transparent" />
     </div>
   )
 }
