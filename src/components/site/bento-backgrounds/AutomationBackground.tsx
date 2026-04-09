@@ -9,7 +9,7 @@ export function AutomationBackground() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none absolute inset-0 overflow-hidden"
+      className="pointer-events-none absolute inset-0 overflow-hidden ml-40 lg:ml-0"
     >
       <div className="absolute inset-x-4 top-6 flex flex-col gap-2 opacity-80 transition-all duration-500 group-hover:-translate-y-1 group-hover:opacity-100">
         {NODES.map((node, i) => (

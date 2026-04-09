@@ -25,7 +25,7 @@ export function AiBackground() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none absolute inset-0 overflow-hidden"
+      className="pointer-events-none absolute right-0 -inset-2 lg:inset-0 overflow-hidden ml-40 lg:ml-0"
     >
       <div className="absolute inset-x-4 top-6 overflow-hidden rounded-md border border-[var(--line)] bg-[var(--surface)] opacity-85 shadow-sm transition-all duration-500 group-hover:-translate-y-1 group-hover:opacity-100">
         <div className="flex items-center gap-2 border-b border-[var(--line)] bg-input px-2 py-1 text-[11px] text-fg-muted">
