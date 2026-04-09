@@ -47,16 +47,34 @@ function ProductsIndex() {
         variants={staggerContainer}
         className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
       >
-        {products.map((product) => (
+        {products.length === 0 ? (
           <motion.div
-            key={product.slug}
             variants={staggerItem}
-            className="h-full"
+            className="flex min-h-56 items-center justify-center rounded-2xl border border-dashed border-fg/15 bg-fg/[0.02] px-6 py-12 text-center sm:col-span-2 lg:col-span-3"
           >
-            <ProductCard product={product} />
+            <p className="font-display text-[24px] leading-[1.15] tracking-[-0.02em] text-fg sm:text-[32px]">
+              {t('empty')}
+            </p>
           </motion.div>
-        ))}
-        <motion.div variants={staggerItem} className="h-full">
+        ) : (
+          products.map((product) => (
+            <motion.div
+              key={product.slug}
+              variants={staggerItem}
+              className="h-full"
+            >
+              <ProductCard product={product} />
+            </motion.div>
+          ))
+        )}
+        <motion.div
+          variants={staggerItem}
+          className={
+            products.length === 0
+              ? 'h-full sm:col-span-2 lg:col-span-3'
+              : 'h-full'
+          }
+        >
           <ContactCard />
         </motion.div>
       </motion.div>
