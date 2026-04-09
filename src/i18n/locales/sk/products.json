@@ -1,0 +1,27 @@
+{
+  "pageTitle": "Produkty",
+  "pageSubtitle": "Aplikácie a webové stránky od Spexsolu.",
+  "empty": "Čoskoro pribudnú ďalšie produkty.",
+  "viewDetails": "Zobraziť detail",
+  "backToProducts": "Späť na produkty",
+  "cta": {
+    "title": "Máte nápad?",
+    "subtitle": "Postavíme ho spolu.",
+    "button": "Začať projekt"
+  },
+  "sections": {
+    "about": "O projekte",
+    "screenshots": "Snímky obrazovky"
+  },
+  "links": {
+    "appStore": "Stiahnuť v App Store",
+    "playStore": "Získať na Google Play",
+    "website": "Otvoriť web"
+  },
+  "platform": {
+    "ios": "iOS",
+    "android": "Android",
+    "web": "Web",
+    "cross-platform": "Multiplatformové"
+  }
+}

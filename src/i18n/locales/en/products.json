@@ -1,0 +1,27 @@
+{
+  "pageTitle": "Products",
+  "pageSubtitle": "Apps and websites built by Spexsol.",
+  "empty": "More products coming soon.",
+  "viewDetails": "View details",
+  "backToProducts": "Back to products",
+  "cta": {
+    "title": "Have an idea?",
+    "subtitle": "Let's build it together.",
+    "button": "Start a project"
+  },
+  "sections": {
+    "about": "About",
+    "screenshots": "Screenshots"
+  },
+  "links": {
+    "appStore": "Download on the App Store",
+    "playStore": "Get it on Google Play",
+    "website": "Visit website"
+  },
+  "platform": {
+    "ios": "iOS",
+    "android": "Android",
+    "web": "Web",
+    "cross-platform": "Cross-platform"
+  }
+}

@@ -1,6 +1,8 @@
 @import 'tailwindcss' source('../');
 @import './cookieconsent.css';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-bg: var(--bg);
   --color-surface: var(--surface);

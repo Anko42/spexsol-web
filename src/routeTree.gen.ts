@@ -15,6 +15,9 @@ import { Route as LangIndexRouteImport } from './routes/$lang/index'
 import { Route as ApiContactRouteImport } from './routes/api/contact'
 import { Route as LangTermsOfUseRouteImport } from './routes/$lang/terms-of-use'
 import { Route as LangPrivacyPolicyRouteImport } from './routes/$lang/privacy-policy'
+import { Route as LangContactRouteImport } from './routes/$lang/contact'
+import { Route as LangProductsIndexRouteImport } from './routes/$lang/products/index'
+import { Route as LangProductsSlugRouteImport } from './routes/$lang/products/$slug'
 
 const LangRoute = LangRouteImport.update({
   id: '/$lang',
@@ -46,55 +49,88 @@ const LangPrivacyPolicyRoute = LangPrivacyPolicyRouteImport.update({
   path: '/privacy-policy',
   getParentRoute: () => LangRoute,
 } as any)
+const LangContactRoute = LangContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => LangRoute,
+} as any)
+const LangProductsIndexRoute = LangProductsIndexRouteImport.update({
+  id: '/products/',
+  path: '/products/',
+  getParentRoute: () => LangRoute,
+} as any)
+const LangProductsSlugRoute = LangProductsSlugRouteImport.update({
+  id: '/products/$slug',
+  path: '/products/$slug',
+  getParentRoute: () => LangRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/$lang': typeof LangRouteWithChildren
+  '/$lang/contact': typeof LangContactRoute
   '/$lang/privacy-policy': typeof LangPrivacyPolicyRoute
   '/$lang/terms-of-use': typeof LangTermsOfUseRoute
   '/api/contact': typeof ApiContactRoute
   '/$lang/': typeof LangIndexRoute
+  '/$lang/products/$slug': typeof LangProductsSlugRoute
+  '/$lang/products/': typeof LangProductsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/$lang/contact': typeof LangContactRoute
   '/$lang/privacy-policy': typeof LangPrivacyPolicyRoute
   '/$lang/terms-of-use': typeof LangTermsOfUseRoute
   '/api/contact': typeof ApiContactRoute
   '/$lang': typeof LangIndexRoute
+  '/$lang/products/$slug': typeof LangProductsSlugRoute
+  '/$lang/products': typeof LangProductsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/$lang': typeof LangRouteWithChildren
+  '/$lang/contact': typeof LangContactRoute
   '/$lang/privacy-policy': typeof LangPrivacyPolicyRoute
   '/$lang/terms-of-use': typeof LangTermsOfUseRoute
   '/api/contact': typeof ApiContactRoute
   '/$lang/': typeof LangIndexRoute
+  '/$lang/products/$slug': typeof LangProductsSlugRoute
+  '/$lang/products/': typeof LangProductsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/$lang'
+    | '/$lang/contact'
     | '/$lang/privacy-policy'
     | '/$lang/terms-of-use'
     | '/api/contact'
     | '/$lang/'
+    | '/$lang/products/$slug'
+    | '/$lang/products/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/$lang/contact'
     | '/$lang/privacy-policy'
     | '/$lang/terms-of-use'
     | '/api/contact'
     | '/$lang'
+    | '/$lang/products/$slug'
+    | '/$lang/products'
   id:
     | '__root__'
     | '/'
     | '/$lang'
+    | '/$lang/contact'
     | '/$lang/privacy-policy'
     | '/$lang/terms-of-use'
     | '/api/contact'
     | '/$lang/'
+    | '/$lang/products/$slug'
+    | '/$lang/products/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -147,19 +183,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LangPrivacyPolicyRouteImport
       parentRoute: typeof LangRoute
     }
+    '/$lang/contact': {
+      id: '/$lang/contact'
+      path: '/contact'
+      fullPath: '/$lang/contact'
+      preLoaderRoute: typeof LangContactRouteImport
+      parentRoute: typeof LangRoute
+    }
+    '/$lang/products/': {
+      id: '/$lang/products/'
+      path: '/products'
+      fullPath: '/$lang/products/'
+      preLoaderRoute: typeof LangProductsIndexRouteImport
+      parentRoute: typeof LangRoute
+    }
+    '/$lang/products/$slug': {
+      id: '/$lang/products/$slug'
+      path: '/products/$slug'
+      fullPath: '/$lang/products/$slug'
+      preLoaderRoute: typeof LangProductsSlugRouteImport
+      parentRoute: typeof LangRoute
+    }
   }
 }
 
 interface LangRouteChildren {
+  LangContactRoute: typeof LangContactRoute
   LangPrivacyPolicyRoute: typeof LangPrivacyPolicyRoute
   LangTermsOfUseRoute: typeof LangTermsOfUseRoute
   LangIndexRoute: typeof LangIndexRoute
+  LangProductsSlugRoute: typeof LangProductsSlugRoute
+  LangProductsIndexRoute: typeof LangProductsIndexRoute
 }
 
 const LangRouteChildren: LangRouteChildren = {
+  LangContactRoute: LangContactRoute,
   LangPrivacyPolicyRoute: LangPrivacyPolicyRoute,
   LangTermsOfUseRoute: LangTermsOfUseRoute,
   LangIndexRoute: LangIndexRoute,
+  LangProductsSlugRoute: LangProductsSlugRoute,
+  LangProductsIndexRoute: LangProductsIndexRoute,
 }
 
 const LangRouteWithChildren = LangRoute._addFileChildren(LangRouteChildren)
