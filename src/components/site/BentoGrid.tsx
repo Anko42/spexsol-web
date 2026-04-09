@@ -67,7 +67,7 @@ const BentoCard = ({
       {/* Frosted glass scrim behind the copy — blurs whatever the background renders */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-[72%] lg:h-[60%] backdrop-blur-md"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[72%] lg:h-[65%] backdrop-blur-md"
         style={{
           maskImage: 'linear-gradient(to top, black 60%, transparent 100%)',
           WebkitMaskImage: 'linear-gradient(to top, black 60%, transparent 100%)',
