@@ -64,14 +64,6 @@ function ContactPage() {
             aria-hidden="true"
           />
           <div className="relative z-10 flex h-full flex-col gap-4 p-6 sm:p-7">
-            <div className="flex flex-col gap-2">
-              <h2 className="font-display text-[26px] leading-[1.1] tracking-[-0.02em] text-fg lg:text-[30px]">
-                {tHome('contact.title')}
-              </h2>
-              <p className="max-w-[420px] text-[14px] leading-5 text-fg-muted">
-                {tHome('contact.subtitle')}
-              </p>
-            </div>
             <ContactForm />
           </div>
         </motion.div>

@@ -92,10 +92,10 @@ const BentoCard = ({
             size="sm"
             className="pointer-events-auto p-0"
           >
-            <a href={href} onClick={handleClick}>
+            <Link to={href} onClick={handleClick}>
               {cta}
               <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
-            </a>
+            </Link>
           </Button>
         </div>
       </div>
