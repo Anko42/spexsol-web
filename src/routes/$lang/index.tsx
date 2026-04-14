@@ -185,7 +185,7 @@ function Home() {
               cta={cardsCta}
               onCtaClick={() => handleCardCta('product')}
               background={<ProductBackground />}
-              className="h-full"
+              className="h-full min-h-[20rem]"
             />
           </motion.div>
 
@@ -202,7 +202,7 @@ function Home() {
               cta={cardsCta}
               onCtaClick={() => handleCardCta('advisory')}
               background={<AdvisoryBackground />}
-              className="h-full"
+              className="h-full min-h-[20rem]"
             />
           </motion.div>
 

@@ -8,12 +8,12 @@ export function ProductBackground() {
       className="pointer-events-none absolute inset-0 overflow-hidden"
     >
       {/* Safari window — wider, behind, tilted left */}
-      <div className="absolute top-9 left-[54%] w-[280px] -translate-x-[58%] rotate-[-3deg] drop-shadow-2xl transition-all duration-500 group-hover:-translate-y-1">
+      <div className="absolute top-0 lg:top-9 left-2/3 lg:left-[54%]  w-[280px]  scale-50 lg:scale-100 -translate-x-[58%] rotate-[-3deg] drop-shadow-2xl transition-all duration-500 group-hover:-translate-y-1">
         <Safari url="spexsol.sk" />
       </div>
 
       {/* iPhone — smaller, in front, offset right and tilted right */}
-      <div className="absolute top-12 left-3/5 w-[90px] translate-x-4 rotate-[3deg] drop-shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:translate-x-5">
+      <div className="absolute top-3 lg:top-12 left-[60%] lg:left-3/5 w-[90px] scale-50 lg:scale-100 translate-x-4 rotate-[3deg] drop-shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:translate-x-5">
         <Iphone />
       </div>
 
