@@ -13,8 +13,12 @@ export async function postContactToSlack(p: ContactPayload): Promise<void> {
   if (!WEBHOOK_URL) throw new Error('SLACK_WEBHOOK_URL not set')
 
   const body = {
-    text: `New contact: ${p.name} (${p.topic})`,
+    text: `<!channel> New contact: ${p.name} (${p.topic})`,
     blocks: [
+      {
+        type: 'section',
+        text: { type: 'mrkdwn', text: '<!channel> *New contact submission*' },
+      },
       {
         type: 'header',
         text: { type: 'plain_text', text: 'New contact submission' },
