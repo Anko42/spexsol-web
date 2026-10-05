@@ -35,25 +35,12 @@
   --color-input-border: var(--line);
   --color-ring: var(--accent);
 
-  /* rainbow button tokens */
-  --color-1: #ff5f6d;
-  --color-2: #ffc371;
-  --color-3: #47e0a0;
-  --color-4: #38bdf8;
-  --color-5: #4ade80;
-  --animate-rainbow: rainbow 2s infinite linear;
+  /* radius scale: field = inputs/buttons/controls, card = cards/cells/panels */
+  --radius-field: 0.5rem;
+  --radius-card: 0.75rem;
 
   --animate-marquee: marquee var(--duration, 40s) linear infinite;
   --animate-marquee-vertical: marquee-vertical var(--duration, 40s) linear infinite;
-
-  @keyframes rainbow {
-    0% {
-      background-position: 0%;
-    }
-    100% {
-      background-position: 200%;
-    }
-  }
 
   @keyframes marquee {
     from {
@@ -92,6 +79,24 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-marquee-vertical,
+  .animate-shine {
+    animation: none;
+  }
+}
+
+@layer components {
+  /* Shared card chrome: light = hairline + drop shadow, dark = hairline + inset glow */
+  .card-shell {
+    border-radius: var(--radius-card);
+    border: 1px solid var(--card-line);
+    box-shadow: var(--card-glow);
+    background-color: var(--card);
+  }
+}
+
 :root {
   --bg: #fafaf8;
   --surface: #ffffff;
@@ -106,6 +111,12 @@
   --success: #047857;
   --success-bg: #d1fae5;
   --success-fg: #065f46;
+  --card-line: rgba(20, 20, 30, 0.1);
+  --card-line-hover: rgba(20, 20, 30, 0.18);
+  --card-glow:
+    0 1px 2px rgba(20, 20, 30, 0.04), 0 12px 32px -16px rgba(20, 20, 30, 0.12);
+  --shine-strong: #16a34a;
+  --shine-soft: rgba(22, 101, 52, 0.25);
   color-scheme: light;
 }
 
@@ -123,6 +134,11 @@
   --success: #06b77f;
   --success-bg: #00452d;
   --success-fg: #45d79c;
+  --card-line: rgba(255, 255, 255, 0.1);
+  --card-line-hover: rgba(255, 255, 255, 0.2);
+  --card-glow: 0 -20px 80px -20px rgba(255, 255, 255, 0.12) inset;
+  --shine-strong: #4ade80;
+  --shine-soft: rgba(74, 222, 128, 0.3);
   color-scheme: dark;
 }
 

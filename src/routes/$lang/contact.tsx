@@ -13,7 +13,7 @@ export const Route = createFileRoute('/$lang/contact')({
 })
 
 const cellShell =
-  'group relative flex flex-col overflow-hidden rounded-xl bg-card transform-gpu [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]'
+  'card-shell group relative flex flex-col overflow-hidden transform-gpu'
 
 function ContactPage() {
   const { t } = useTranslation('contact')
@@ -54,11 +54,7 @@ function ContactPage() {
           variants={staggerItem}
           className={cn(cellShell, 'lg:col-span-2')}
         >
-          <ShineBorder
-            borderWidth={1.5}
-            duration={10}
-            shineColor={['#4ade80', '#38bdf8', '#4ade80']}
-          />
+          <ShineBorder borderWidth={1.5} />
           <div
             className="pointer-events-none absolute -bottom-32 -right-24 h-[24rem] w-[24rem] rounded-full bg-accent/5 blur-3xl"
             aria-hidden="true"

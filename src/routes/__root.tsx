@@ -89,7 +89,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{sessionStorage.removeItem('splash-seen');}catch(e){}})();`,
+            __html: `(function(){try{if(sessionStorage.getItem('splash-seen')){document.documentElement.classList.add('splash-skip')}else{sessionStorage.setItem('splash-seen','1')}}catch(e){}})();`,
           }}
         />
       </head>
@@ -112,13 +112,13 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         </MotionConfig>
         <Toaster
           position="bottom-right"
-          theme="dark"
+          theme="system"
           richColors
           duration={3000}
           toastOptions={{
             classNames: {
               toast:
-                'border border-white/10 bg-card text-fg shadow-lg backdrop-blur',
+                'border border-line bg-card text-fg shadow-lg backdrop-blur',
             },
           }}
         />

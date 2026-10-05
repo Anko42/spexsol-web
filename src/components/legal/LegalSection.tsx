@@ -30,7 +30,7 @@ export function LegalSection({
         className={cn(
           'flex flex-col gap-4 text-[16px] leading-[1.8] tracking-[0.01em] text-fg-muted',
           variant === 'card' &&
-            'rounded-lg border border-line-soft bg-surface p-8',
+            'rounded-card border border-line-soft bg-surface p-8',
         )}
       >
         {children}

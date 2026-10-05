@@ -50,7 +50,7 @@ function ProductsIndex() {
         {products.length === 0 ? (
           <motion.div
             variants={staggerItem}
-            className="flex min-h-56 items-center justify-center rounded-2xl border border-dashed border-fg/15 bg-fg/[0.02] px-6 py-12 text-center sm:col-span-2 lg:col-span-3"
+            className="flex min-h-56 items-center justify-center rounded-card border border-dashed border-fg/15 bg-fg/[0.02] px-6 py-12 text-center sm:col-span-2 lg:col-span-3"
           >
             <p className="font-display text-[24px] leading-[1.15] tracking-[-0.02em] text-fg sm:text-[32px]">
               {t('empty')}

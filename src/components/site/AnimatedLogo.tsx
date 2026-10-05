@@ -24,18 +24,18 @@ const PATHS = [
 //
 // Order:
 //   t=0.00  top inner S hook (path 3)   — drifts down 6u into place
-//   t=0.10  long S sweep (path 0)       — drifts down 6u into place
-//   t=0.20  bottom inner S hook (path 4)— drifts up 6u into place
-//   t=0.45  right wing (path 1)         — rotates inward from -15°
-//   t=0.50  left wing (path 2)          — rotates inward from +15°
-//   t=0.95  mark fully settled
+//   t=0.06  long S sweep (path 0)       — drifts down 6u into place
+//   t=0.12  bottom inner S hook (path 4)— drifts up 6u into place
+//   t=0.20  right wing (path 1)         — rotates inward from -15°
+//   t=0.24  left wing (path 2)          — rotates inward from +15°
+//   t=0.59  mark fully settled
 //
 // Wings come in AFTER the S exists, so they read as a frame closing around
-// finished content rather than petals unfolding into emptiness. The 5°
+// finished content rather than petals unfolding into emptiness. The
 // asymmetric stagger between right and left breaks mechanical symmetry.
 
-const S_DUR = 0.45
-const WING_DUR = 0.5
+const S_DUR = 0.3
+const WING_DUR = 0.35
 const Y_DRIFT = 6 // viewBox units
 
 const variantsForPath: Record<number, Variants> = {
@@ -45,7 +45,7 @@ const variantsForPath: Record<number, Variants> = {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: S_DUR, ease: EASE, delay: 0.1 },
+      transition: { duration: S_DUR, ease: EASE, delay: 0.06 },
     },
   },
   1: {
@@ -54,7 +54,7 @@ const variantsForPath: Record<number, Variants> = {
     visible: {
       opacity: 1,
       rotate: 0,
-      transition: { duration: WING_DUR, ease: EASE, delay: 0.45 },
+      transition: { duration: WING_DUR, ease: EASE, delay: 0.2 },
     },
   },
   2: {
@@ -63,7 +63,7 @@ const variantsForPath: Record<number, Variants> = {
     visible: {
       opacity: 1,
       rotate: 0,
-      transition: { duration: WING_DUR, ease: EASE, delay: 0.5 },
+      transition: { duration: WING_DUR, ease: EASE, delay: 0.24 },
     },
   },
   3: {
@@ -81,7 +81,7 @@ const variantsForPath: Record<number, Variants> = {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: S_DUR, ease: EASE, delay: 0.2 },
+      transition: { duration: S_DUR, ease: EASE, delay: 0.12 },
     },
   },
 }

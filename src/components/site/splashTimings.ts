@@ -2,10 +2,10 @@
 // Imported by Splash, SiteHeader, and __root so they cannot drift.
 
 export const REVEAL_S = 0.55
-export const WORDMARK_S = 0.5
-export const HOLD_S = 1.5
+export const WORDMARK_S = 0.4
+export const HOLD_S = 0.6
 // Curtain lift: backdrop + lockup translate up together as one piece.
-export const CURTAIN_S = 0.7
+export const CURTAIN_S = 0.5
 // Page content fades + rises in once the curtain is on its way out.
 export const PAGE_ENTRY_S = 0.5
 // Header brand fades in once the splash is dismissed.

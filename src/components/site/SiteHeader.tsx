@@ -24,7 +24,10 @@ export function SiteHeader() {
   const borderBottomColor = useTransform(
     scrollY,
     [0, 80],
-    ['rgb(255 255 255 / 0)', 'rgb(255 255 255 / 0.08)'],
+    [
+      'color-mix(in srgb, var(--fg) 0%, transparent)',
+      'color-mix(in srgb, var(--fg) 10%, transparent)',
+    ],
   )
   return (
     <motion.header

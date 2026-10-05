@@ -56,8 +56,8 @@ const BentoCard = ({
       key={name}
       onClick={handleClick}
       className={cn(
-        'group relative col-span-3 flex cursor-pointer flex-col justify-between overflow-hidden rounded-xl',
-        'bg-card transform-gpu [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]',
+        'group relative col-span-3 flex cursor-pointer flex-col justify-between overflow-hidden',
+        'card-shell transform-gpu',
         className,
       )}
       {...props}

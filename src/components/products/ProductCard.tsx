@@ -16,7 +16,7 @@ export function ProductCard({ product }: ProductCardProps) {
     <Link
       to="/$lang/products/$slug"
       params={{ lang, slug: product.slug }}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl bg-card p-6 transform-gpu transition-all duration-300 [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] hover:-translate-y-1 hover:[border:1px_solid_rgba(255,255,255,.2)]"
+      className="card-shell group relative flex h-full flex-col overflow-hidden p-6 transform-gpu transition-all duration-300 hover:-translate-y-1 hover:[border-color:var(--card-line-hover)]"
     >
       <div className="flex items-start gap-4">
         <img

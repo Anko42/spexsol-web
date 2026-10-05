@@ -21,6 +21,17 @@ export function Splash() {
   const [visible, setVisible] = useState(true)
 
   useEffect(() => {
+    // Returning visitor in this tab session: the pre-hydration script in
+    // __root.tsx set `splash-skip` and CSS hides the overlay — but MainEntry
+    // and the header brand stay at opacity 0 until done fires, so release
+    // them immediately.
+    if (document.documentElement.classList.contains('splash-skip')) {
+      markDone()
+      markSettled()
+      setVisible(false)
+      return
+    }
+
     const holdMs = reduce ? REDUCED_HOLD_MS : TOTAL_HOLD_MS
     const settleAt = reduce ? REDUCED_HOLD_MS + 50 : SETTLE_MS
 
@@ -40,6 +51,7 @@ export function Splash() {
       {visible && (
         <motion.div
           key="splash"
+          id="splash-root"
           aria-hidden="true"
           className="fixed inset-0 z-[100] flex items-center justify-center bg-bg pointer-events-none"
           initial={{ y: 0 }}
@@ -74,7 +86,7 @@ export function Splash() {
                   transition={{
                     duration: WORDMARK_S,
                     ease: EASE,
-                    delay: 1.0,
+                    delay: 0.15,
                   }}
                 >
                   spexsol.sk

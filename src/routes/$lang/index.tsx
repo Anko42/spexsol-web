@@ -37,7 +37,7 @@ export const Route = createFileRoute('/$lang/')({
 })
 
 const cellShell =
-  'group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl bg-card transform-gpu [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]'
+  'card-shell group relative col-span-3 flex flex-col justify-between overflow-hidden transform-gpu'
 
 function MarqueeProductCard({
   product,
@@ -52,7 +52,7 @@ function MarqueeProductCard({
       params={{ lang, slug: product.slug }}
       onClick={(e) => e.stopPropagation()}
       className={cn(
-        'pointer-events-auto relative block w-56 cursor-pointer overflow-hidden rounded-xl border p-4',
+        'pointer-events-auto relative block w-56 cursor-pointer overflow-hidden rounded-card border p-4',
         'border-line bg-card/60 hover:bg-card',
         'transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none',
       )}
@@ -235,11 +235,7 @@ function Home() {
               'order-last scroll-mt-32 lg:order-none lg:col-span-2 lg:row-span-2 lg:h-auto',
             )}
           >
-            <ShineBorder
-              borderWidth={1.5}
-              duration={10}
-              shineColor={['#4ade80', '#38bdf8', '#4ade80']}
-            />
+            <ShineBorder borderWidth={1.5} />
             <div
               className="pointer-events-none absolute -bottom-32 -right-24 h-[24rem] w-[24rem] rounded-full bg-accent/5 blur-3xl"
               aria-hidden="true"

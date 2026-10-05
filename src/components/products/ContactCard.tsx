@@ -12,20 +12,16 @@ export function ContactCard() {
     <Link
       to="/$lang/contact"
       params={{ lang }}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl bg-card p-6 transform-gpu transition-all duration-300 [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] hover:-translate-y-1"
+      className="card-shell group relative flex h-full flex-col overflow-hidden p-6 transform-gpu transition-all duration-300 hover:-translate-y-1"
     >
-      <ShineBorder
-        borderWidth={1.5}
-        duration={10}
-        shineColor={['#4ade80', '#38bdf8', '#4ade80']}
-      />
+      <ShineBorder borderWidth={1.5} />
       <div
         className="pointer-events-none absolute -bottom-24 -right-16 h-64 w-64 rounded-full bg-accent/10 blur-3xl"
         aria-hidden="true"
       />
 
       <div className="relative z-10 flex h-full flex-col">
-        <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-accent/10 text-accent [border:1px_solid_rgba(74,222,128,.3)]">
+        <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-accent/30 bg-accent/10 text-accent">
           <PlusSpark className="h-8 w-8" />
         </div>
 

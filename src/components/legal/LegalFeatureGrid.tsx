@@ -16,7 +16,7 @@ export function LegalFeatureGrid({ items }: LegalFeatureGridProps) {
       {items.map((item, idx) => (
         <div
           key={idx}
-          className="flex flex-col gap-2 rounded-lg border border-line-soft bg-surface p-6"
+          className="flex flex-col gap-2 rounded-card border border-line-soft bg-surface p-6"
         >
           <div className="h-5">{item.icon}</div>
           <h3 className="font-display text-[14px] leading-5 text-fg/90">

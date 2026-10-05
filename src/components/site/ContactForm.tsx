@@ -244,7 +244,7 @@ export function ContactForm() {
                     'focus-visible:outline-none focus-visible:border-accent focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-card',
                     selected
                       ? 'border-accent/40 bg-accent/15 text-fg'
-                      : 'border-white/10 bg-card text-fg-muted hover:border-white/20 hover:text-fg',
+                      : 'border-line bg-card text-fg-muted hover:border-[var(--card-line-hover)] hover:text-fg',
                   )}
                 >
                   {t(`contact.topics.${value}`)}
@@ -260,7 +260,7 @@ export function ContactForm() {
             onChange={(e) => setTopic(e.target.value as ContactTopic)}
             className={cn(
               'sm:hidden',
-              'h-10 w-full rounded-[4px] border border-line bg-input px-[12px] py-[8px] text-base text-fg',
+              'h-10 w-full rounded-field border border-line bg-input px-[12px] py-[8px] text-base text-fg',
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent',
             )}
           >
@@ -316,7 +316,7 @@ export function ContactForm() {
               type="checkbox"
               checked={privacyAccepted}
               onChange={(e) => setPrivacyAccepted(e.target.checked)}
-              className="mt-0.5 h-4 w-4 rounded border-white/20 bg-card accent-accent"
+              className="mt-0.5 h-4 w-4 rounded border-line bg-card accent-accent"
             />
             <span>
               {t('contact.privacy.labelBefore')}

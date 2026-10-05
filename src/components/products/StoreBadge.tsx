@@ -61,7 +61,7 @@ export function StoreBadge({ link }: StoreBadgeProps) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="inline-flex h-12 items-center gap-2 rounded-xl bg-accent/10 px-5 text-accent transition-all hover:-translate-y-0.5 hover:bg-accent/20 [border:1px_solid_rgba(74,222,128,.3)]"
+      className="inline-flex h-12 items-center gap-2 rounded-field border border-accent/30 bg-accent/10 px-5 text-accent transition-all hover:-translate-y-0.5 hover:bg-accent/20"
     >
       <svg
         viewBox="0 0 24 24"
