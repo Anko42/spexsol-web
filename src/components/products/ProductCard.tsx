@@ -1,5 +1,4 @@
 import { Link } from '@tanstack/react-router'
-import { useTranslation } from 'react-i18next'
 import { useLang } from '~/hooks/useLang'
 import type { Product } from '~/lib/product-schema'
 import { ProductChips } from './ProductChips'
@@ -8,42 +7,39 @@ interface ProductCardProps {
   product: Product
 }
 
+/** Product as a hairline list row: icon · name + tagline · tags · arrow. */
 export function ProductCard({ product }: ProductCardProps) {
   const lang = useLang()
-  const { t } = useTranslation('products')
 
   return (
     <Link
       to="/$lang/products/$slug"
       params={{ lang, slug: product.slug }}
-      className="card-shell group relative flex h-full flex-col overflow-hidden p-6 transform-gpu transition-all duration-300 hover:-translate-y-1 hover:[border-color:var(--card-line-hover)]"
+      className="group grid grid-cols-[3.5rem_1fr_auto] items-center gap-4 border-t border-line py-5 transition-colors hover:bg-card/60 sm:grid-cols-[4rem_1fr_auto_auto] sm:gap-6 sm:px-2"
     >
-      <div className="flex items-start gap-4">
-        <img
-          src={product.icon}
-          alt={`${product.name} icon`}
-          className="h-16 w-16 shrink-0 rounded-2xl object-cover"
-          loading="lazy"
-        />
-        <div className="flex min-w-0 flex-1 flex-col gap-1">
-          <h3 className="font-display text-xl text-fg truncate">
-            {product.name}
-          </h3>
-          <p className="text-[13px] leading-5 text-fg-muted line-clamp-2">
-            {product.tagline[lang]}
-          </p>
-        </div>
+      <img
+        src={product.icon}
+        alt=""
+        className="size-14 rounded-[14px] border border-line object-cover sm:size-16 sm:rounded-[16px]"
+        loading="lazy"
+      />
+      <div className="min-w-0">
+        <h3 className="truncate text-[20px] font-semibold leading-tight tracking-[-0.02em] text-fg">
+          {product.name}
+        </h3>
+        <p className="mt-1 line-clamp-2 text-[14px] leading-6 text-fg-muted">
+          {product.tagline[lang]}
+        </p>
       </div>
-
-      <div className="mt-4 flex flex-wrap items-center gap-2">
-        <ProductChips product={product} size="sm" />
+      <div className="hidden flex-wrap gap-2 sm:flex">
+        <ProductChips product={product} />
       </div>
-
-      <div className="mt-auto pt-6">
-        <span className="text-[13px] font-medium text-accent transition-all group-hover:underline">
-          {t('viewDetails')} →
-        </span>
-      </div>
+      <span
+        aria-hidden="true"
+        className="text-[20px] text-fg-muted transition-transform duration-200 group-hover:translate-x-1 group-hover:text-fg"
+      >
+        →
+      </span>
     </Link>
   )
 }

@@ -18,8 +18,8 @@ export function RouteTransition({ children }: { children: React.ReactNode }) {
     <AnimatePresence mode="popLayout" initial={false}>
       <motion.div
         key={pathname}
-        initial={{ x: dir * 75, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        initial={{ y: dir * -8, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
       >
         {children}
       </motion.div>

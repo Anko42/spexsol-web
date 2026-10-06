@@ -3,11 +3,11 @@
 
 export const REVEAL_S = 0.55
 export const WORDMARK_S = 0.4
-export const HOLD_S = 0.6
+export const HOLD_S = 0.35
 // Curtain lift: backdrop + lockup translate up together as one piece.
-export const CURTAIN_S = 0.5
+export const CURTAIN_S = 0.4
 // Page content fades + rises in once the curtain is on its way out.
-export const PAGE_ENTRY_S = 0.5
+export const PAGE_ENTRY_S = 0.4
 // Header brand fades in once the splash is dismissed.
 export const HEADER_BRAND_S = 0.45
 

@@ -18,6 +18,10 @@
     "copyright": "© {{year}} SpexSol s. r. o.",
     "company": {
       "legal": "SpexSol s. r. o. · Bojničky 2, 920 55 Bojničky, Slovakia · Company ID: 57004196 · VAT ID: 2122528089"
-    }
-  }
+    },
+    "tagline": "Software, built with intent. A small engineering studio from Slovakia.",
+    "studio": "Studio",
+    "legal": "Legal"
+  },
+  "skip": "Skip to content"
 }

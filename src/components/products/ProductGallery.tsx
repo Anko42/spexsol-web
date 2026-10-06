@@ -17,7 +17,7 @@ export function ProductGallery({
           src={src}
           alt={`${productName} screenshot ${i + 1}`}
           loading="lazy"
-          className="h-auto w-[75vw] max-w-sm shrink-0 snap-center rounded-card border border-line object-cover sm:w-full sm:max-w-none"
+          className="h-auto w-[75vw] max-w-sm shrink-0 snap-center rounded-card border border-line bg-card object-cover sm:w-full sm:max-w-none"
         />
       ))}
     </div>

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { FileIcon } from 'lucide-react'
 import { cn } from '~/lib/utils'
 
 function useIsDark() {
@@ -70,12 +69,11 @@ export function CodeBlock({
   return (
     <div
       className={cn(
-        'overflow-hidden rounded-md border border-[var(--line)] bg-[var(--surface)]',
+        'overflow-hidden rounded-field border border-line bg-surface',
         className,
       )}
     >
-      <div className="flex items-center gap-2 border-b border-[var(--line)] bg-input px-2 py-1 text-[11px] text-fg-muted">
-        <FileIcon className="h-3 w-3" />
+      <div className="flex items-center gap-2 border-b border-line px-3 py-1.5 font-mono text-[11px] text-fg-muted">
         <span className="truncate">{filename}</span>
         {label && <span className="ml-auto">{label}</span>}
       </div>
@@ -83,18 +81,18 @@ export function CodeBlock({
       {html ? (
         <div
           className={cn(
-            'font-mono text-[10px] leading-[1.5]',
+            'font-mono text-[11px] leading-[1.6]',
             '[&>pre]:!bg-transparent [&>pre]:py-2',
             '[&>pre>code]:block',
             '[&>pre>code>.line]:block [&>pre>code>.line]:px-3',
-            '[&>pre>code>.diff.add]:bg-emerald-500/15',
-            '[&>pre>code>.diff.remove]:bg-rose-500/15',
+            '[&>pre>code>.diff.add]:bg-accent/12',
+            '[&>pre>code>.diff.remove]:bg-danger/10',
             '[&>pre>code>.highlighted]:bg-accent/10',
           )}
           dangerouslySetInnerHTML={{ __html: html }}
         />
       ) : (
-        <pre className="overflow-hidden whitespace-pre px-3 py-2 font-mono text-[10px] leading-[1.5] text-fg-muted">
+        <pre className="overflow-hidden whitespace-pre px-3 py-2 font-mono text-[11px] leading-[1.6] text-fg-muted">
           {code.replace(/\s*\/\/\s*\[!code [^\]]+\]/g, '')}
         </pre>
       )}

@@ -17,34 +17,35 @@ export function DefaultCatchBoundary({ error }: ErrorComponentProps) {
   console.error('DefaultCatchBoundary Error:', error)
 
   return (
-    <div className="min-w-0 flex-1 p-4 flex flex-col items-center justify-center gap-6">
+    <div className="mx-auto flex w-full max-w-6xl flex-col items-start gap-6 px-4 pb-16 pt-32 sm:px-6 sm:pt-40">
+      <p className="eyebrow">500</p>
       <ErrorComponent error={error} />
       <div className="flex gap-2 items-center flex-wrap">
         <button
           onClick={() => {
             router.invalidate()
           }}
-          className={`px-2 py-1 bg-gray-600 dark:bg-gray-700 rounded-sm text-white uppercase font-extrabold`}
+          className="inline-flex h-10 items-center rounded-field border border-line px-4 text-[14px] font-medium text-fg transition-colors hover:bg-card"
         >
-          Try Again
+          Try again
         </button>
         {isRoot ? (
           <Link
             to="/"
-            className={`px-2 py-1 bg-gray-600 dark:bg-gray-700 rounded-sm text-white uppercase font-extrabold`}
+            className="inline-flex h-10 items-center rounded-field border border-line px-4 text-[14px] font-medium text-fg transition-colors hover:bg-card"
           >
             Home
           </Link>
         ) : (
           <Link
             to="/"
-            className={`px-2 py-1 bg-gray-600 dark:bg-gray-700 rounded-sm text-white uppercase font-extrabold`}
+            className="inline-flex h-10 items-center rounded-field border border-line px-4 text-[14px] font-medium text-fg transition-colors hover:bg-card"
             onClick={(e) => {
               e.preventDefault()
               window.history.back()
             }}
           >
-            Go Back
+            Go back
           </Link>
         )}
       </div>

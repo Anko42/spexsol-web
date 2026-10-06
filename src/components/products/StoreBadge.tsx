@@ -61,7 +61,7 @@ export function StoreBadge({ link }: StoreBadgeProps) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="inline-flex h-12 items-center gap-2 rounded-field border border-accent/30 bg-accent/10 px-5 text-accent transition-all hover:-translate-y-0.5 hover:bg-accent/20"
+      className="inline-flex h-12 items-center gap-2 rounded-field border border-line px-5 text-fg transition-colors hover:border-fg/40 hover:bg-card"
     >
       <svg
         viewBox="0 0 24 24"
@@ -76,7 +76,7 @@ export function StoreBadge({ link }: StoreBadgeProps) {
         <circle cx="12" cy="12" r="9" />
         <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
       </svg>
-      <span className="font-display text-[15px]">{label}</span>
+      <span className="text-[15px] font-medium">{label} ↗</span>
     </a>
   )
 }

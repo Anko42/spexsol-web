@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { toast } from 'sonner'
 import { useGoogleAnalytics } from 'tanstack-router-ga4'
 import { Link } from '@tanstack/react-router'
-import { InteractiveHoverButton } from '~/components/magicui/interactive-hover-button'
+import { Button } from '~/components/ui/button'
 import { Input } from '~/components/ui/input'
 import { Label } from '~/components/ui/label'
 import { Textarea } from '~/components/ui/textarea'
@@ -132,13 +132,15 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="w-full" noValidate>
-      <div className="flex flex-col gap-4">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <div className="flex flex-col gap-6">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           <div className="flex flex-col gap-2">
             <Label htmlFor="name">{t('contact.fullName')}</Label>
             <Input
               id="name"
               name="name"
+              aria-invalid={errors.name ? true : undefined}
+              aria-describedby={errors.name ? 'err-name' : undefined}
               placeholder={t('contact.fullNamePlaceholder')}
               autoComplete="name"
             />
@@ -146,11 +148,12 @@ export function ContactForm() {
               {errors.name && (
                 <motion.p
                   key="err-name"
+                  id="err-name"
                   variants={fadeUp}
                   initial="hidden"
                   animate="visible"
                   exit={{ opacity: 0, y: -4 }}
-                  className="text-xs text-red-400"
+                  className="text-[13px] text-danger"
                 >
                   {errors.name}
                 </motion.p>
@@ -163,6 +166,8 @@ export function ContactForm() {
             <Input
               id="email"
               name="email"
+              aria-invalid={errors.email ? true : undefined}
+              aria-describedby={errors.email ? 'err-email' : undefined}
               type="email"
               placeholder={t('contact.emailPlaceholder')}
               autoComplete="email"
@@ -171,11 +176,12 @@ export function ContactForm() {
               {errors.email && (
                 <motion.p
                   key="err-email"
+                  id="err-email"
                   variants={fadeUp}
                   initial="hidden"
                   animate="visible"
                   exit={{ opacity: 0, y: -4 }}
-                  className="text-xs text-red-400"
+                  className="text-[13px] text-danger"
                 >
                   {errors.email}
                 </motion.p>
@@ -184,12 +190,14 @@ export function ContactForm() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           <div className="flex flex-col gap-2">
             <Label htmlFor="phone">{t('contact.phone')}</Label>
             <Input
               id="phone"
               name="phone"
+              aria-invalid={errors.phone ? true : undefined}
+              aria-describedby={errors.phone ? 'err-phone' : undefined}
               type="tel"
               placeholder={t('contact.phonePlaceholder')}
               autoComplete="tel"
@@ -198,11 +206,12 @@ export function ContactForm() {
               {errors.phone && (
                 <motion.p
                   key="err-phone"
+                  id="err-phone"
                   variants={fadeUp}
                   initial="hidden"
                   animate="visible"
                   exit={{ opacity: 0, y: -4 }}
-                  className="text-xs text-red-400"
+                  className="text-[13px] text-danger"
                 >
                   {errors.phone}
                 </motion.p>
@@ -228,7 +237,7 @@ export function ContactForm() {
           <div
             role="radiogroup"
             aria-label={t('contact.topic')}
-            className="hidden flex-wrap gap-2 sm:flex"
+            className="well hidden w-fit flex-wrap gap-1 !rounded-full p-1 sm:flex"
           >
             {CONTACT_TOPICS.map((value) => {
               const selected = topic === value
@@ -240,11 +249,10 @@ export function ContactForm() {
                   aria-checked={selected}
                   onClick={() => setTopic(value)}
                   className={cn(
-                    'cursor-pointer rounded-full border px-3 py-1.5 text-sm transition-colors',
-                    'focus-visible:outline-none focus-visible:border-accent focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-card',
+                    'h-9 cursor-pointer rounded-full px-4 text-[14px] transition-[background-color,color,box-shadow] duration-150',
                     selected
-                      ? 'border-accent/40 bg-accent/15 text-fg'
-                      : 'border-line bg-card text-fg-muted hover:border-[var(--card-line-hover)] hover:text-fg',
+                      ? 'bg-surface font-medium text-fg shadow-[0_0_0_1px_var(--line),var(--shadow-soft)]'
+                      : 'text-fg-muted hover:text-fg',
                   )}
                 >
                   {t(`contact.topics.${value}`)}
@@ -260,8 +268,7 @@ export function ContactForm() {
             onChange={(e) => setTopic(e.target.value as ContactTopic)}
             className={cn(
               'sm:hidden',
-              'h-10 w-full rounded-field border border-line bg-input px-[12px] py-[8px] text-base text-fg',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent',
+              'h-11 w-full rounded-field border border-line bg-input px-3 text-base text-fg',
             )}
           >
             {CONTACT_TOPICS.map((value) => (
@@ -277,6 +284,8 @@ export function ContactForm() {
           <Textarea
             id="message"
             name="message"
+            aria-invalid={errors.message ? true : undefined}
+            aria-describedby={errors.message ? 'err-message' : undefined}
             placeholder={t('contact.briefPlaceholder')}
             className="min-h-[120px]"
           />
@@ -284,11 +293,12 @@ export function ContactForm() {
             {errors.message && (
               <motion.p
                 key="err-message"
+                id="err-message"
                 variants={fadeUp}
                 initial="hidden"
                 animate="visible"
                 exit={{ opacity: 0, y: -4 }}
-                className="text-xs text-red-400"
+                className="text-[13px] text-danger"
               >
                 {errors.message}
               </motion.p>
@@ -309,21 +319,23 @@ export function ContactForm() {
         <div className="flex flex-col gap-2">
           <label
             htmlFor="privacy"
-            className="flex items-start gap-2 text-sm text-fg-muted"
+            className="flex cursor-pointer items-start gap-3 text-[14px] leading-6 text-fg-muted"
           >
             <input
               id="privacy"
               type="checkbox"
               checked={privacyAccepted}
               onChange={(e) => setPrivacyAccepted(e.target.checked)}
-              className="mt-0.5 h-4 w-4 rounded border-line bg-card accent-accent"
+              className="mt-1 size-4 shrink-0 cursor-pointer accent-[var(--accent)]"
+              aria-invalid={errors.privacy ? true : undefined}
+              aria-describedby={errors.privacy ? 'err-privacy' : undefined}
             />
             <span>
               {t('contact.privacy.labelBefore')}
               <Link
                 to="/$lang/privacy-policy"
                 params={{ lang }}
-                className="text-accent hover:underline"
+                className="text-fg underline decoration-line underline-offset-4 hover:decoration-fg"
               >
                 {t('contact.privacy.linkText')}
               </Link>
@@ -334,11 +346,12 @@ export function ContactForm() {
             {errors.privacy && (
               <motion.p
                 key="err-privacy"
+                id="err-privacy"
                 variants={fadeUp}
                 initial="hidden"
                 animate="visible"
                 exit={{ opacity: 0, y: -4 }}
-                className="text-xs text-red-400"
+                className="text-[13px] text-danger"
               >
                 {errors.privacy}
               </motion.p>
@@ -346,15 +359,22 @@ export function ContactForm() {
           </AnimatePresence>
         </div>
 
-        <InteractiveHoverButton
-          type="submit"
-          disabled={status.kind === 'submitting'}
-          className="w-full"
-        >
-          {status.kind === 'submitting'
-            ? t('contact.submitting')
-            : t('contact.submit')}
-        </InteractiveHoverButton>
+        <div className="flex flex-wrap items-center justify-between gap-4 border-t border-line pt-6">
+          <p className="label">{t('contact.replyNote')}</p>
+          <Button
+            type="submit"
+            size="lg"
+            variant="accent"
+            disabled={status.kind === 'submitting'}
+            aria-busy={status.kind === 'submitting'}
+            className="w-full sm:w-auto"
+          >
+            {status.kind === 'submitting'
+              ? t('contact.submitting')
+              : t('contact.submit')}
+            <span aria-hidden="true">→</span>
+          </Button>
+        </div>
 
       </div>
     </form>

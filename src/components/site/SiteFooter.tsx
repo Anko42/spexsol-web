@@ -1,82 +1,79 @@
 import { Link, useRouterState } from '@tanstack/react-router'
-import { motion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { useLang } from '~/hooks/useLang'
-import { fadeIn } from '~/lib/motion-presets'
 import { cn } from '~/lib/utils'
 import { Logo } from '~/components/site/Logo'
+import { showCookiePreferences } from '~/components/site/CookieConsent'
 
 export function SiteFooter() {
   const { t } = useTranslation('common')
+  const { t: tHome } = useTranslation('home')
   const lang = useLang()
   const year = new Date().getFullYear()
   const pathname = useRouterState({ select: (s) => s.location.pathname })
 
-  const isPrivacy = pathname.endsWith('/privacy-policy')
-  const isTerms = pathname.endsWith('/terms-of-use')
-  const isProducts = pathname.includes('/products')
-  const isContact = pathname.endsWith('/contact')
-
-  const linkClass = (active: boolean) =>
+  const linkClass = (active = false) =>
     cn(
-      'whitespace-nowrap text-xs tracking-[0.025em] opacity-80 hover:opacity-100',
-      active ? 'text-accent underline' : 'text-fg-muted',
+      'inline-flex min-h-8 items-center text-[14px] transition-colors hover:text-fg',
+      active ? 'text-fg underline decoration-accent underline-offset-4' : 'text-fg-muted',
     )
 
   return (
-    <motion.footer
-      variants={fadeIn}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
-      className="mx-auto flex w-full max-w-[800px] flex-col gap-8 border-t border-line-soft px-6 pb-16 pt-32"
-    >
-      <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-        <Link
-          to="/$lang"
-          params={{ lang }}
-          className="flex items-center gap-2 text-sm font-semibold leading-none text-fg"
-        >
-          <Logo className="h-[1em] w-auto shrink-0" />
-          <span className="leading-none">{t('brand')}</span>
-        </Link>
-        <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
+    <footer className="mt-24 border-t border-line">
+      <div className="mx-auto grid w-full max-w-6xl grid-cols-2 gap-x-6 gap-y-10 px-4 pb-10 pt-12 sm:px-6 md:grid-cols-12">
+        <div className="col-span-2 md:col-span-6">
           <Link
-            to="/$lang/products"
+            to="/$lang"
             params={{ lang }}
-            className={linkClass(isProducts)}
+            aria-label="SpexSol — home"
+            className="inline-flex items-center gap-3 font-display text-[28px] leading-none tracking-[-0.02em] text-fg"
           >
+            <Logo className="h-[0.8em] w-auto" />
+            {t('brand')}
+          </Link>
+          <p className="mt-4 max-w-[36ch] text-[14px] leading-6 text-fg-muted">
+            {t('footer.tagline')}
+          </p>
+        </div>
+
+        <nav aria-label={t('footer.studio')} className="flex flex-col gap-1 md:col-span-2">
+          <span className="label mb-2">{t('footer.studio')}</span>
+          <Link to="/$lang/products" params={{ lang }} className={linkClass(pathname.includes('/products'))}>
             {t('nav.products')}
           </Link>
-          <Link
-            to="/$lang/contact"
-            params={{ lang }}
-            className={linkClass(isContact)}
-          >
+          <Link to="/$lang/contact" params={{ lang }} className={linkClass(pathname.endsWith('/contact'))}>
             {t('nav.contact')}
           </Link>
-          <Link
-            to="/$lang/privacy-policy"
-            params={{ lang }}
-            className={linkClass(isPrivacy)}
-          >
+        </nav>
+
+        <nav aria-label={t('footer.legal')} className="flex flex-col gap-1 md:col-span-2">
+          <span className="label mb-2">{t('footer.legal')}</span>
+          <Link to="/$lang/privacy-policy" params={{ lang }} className={linkClass(pathname.endsWith('/privacy-policy'))}>
             {t('footer.privacyPolicy')}
           </Link>
-          <Link
-            to="/$lang/terms-of-use"
-            params={{ lang }}
-            className={linkClass(isTerms)}
-          >
+          <Link to="/$lang/terms-of-use" params={{ lang }} className={linkClass(pathname.endsWith('/terms-of-use'))}>
             {t('footer.termsOfUse')}
           </Link>
+          <button type="button" onClick={showCookiePreferences} className={cn(linkClass(), 'cursor-pointer text-left')}>
+            {t('footer.cookieSettings')}
+          </button>
         </nav>
-        <span className="whitespace-nowrap text-xs text-fg-muted tracking-[0.025em]">
-          {t('footer.copyright', { year })}
-        </span>
+
+        <div className="col-span-2 flex flex-col gap-1 md:col-span-2">
+          <span className="label mb-2">{t('nav.contact')}</span>
+          <a href={`mailto:${tHome('ceo.email')}`} className={linkClass()}>
+            {tHome('ceo.email')}
+          </a>
+          <a href={tHome('ceo.linkedin')} target="_blank" rel="noopener noreferrer" className={linkClass()}>
+            LinkedIn ↗
+          </a>
+        </div>
       </div>
-      <p className="text-xs text-fg-muted tracking-[0.025em] leading-relaxed">
-        {t('footer.company.legal')}
-      </p>
-    </motion.footer>
+
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 border-t border-line-soft px-4 py-6 sm:flex-row sm:justify-between sm:px-6">
+        <p className="label normal-case tracking-normal">{t('footer.company.legal')}</p>
+        <p className="label shrink-0 normal-case tracking-normal">{t('footer.copyright', { year })}</p>
+      </div>
+    </footer>
   )
 }

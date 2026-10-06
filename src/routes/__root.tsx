@@ -12,7 +12,7 @@ import { NotFound } from '~/components/NotFound'
 import { RouteTransition } from '~/components/site/RouteTransition'
 import { SiteHeader } from '~/components/site/SiteHeader'
 import { SiteFooter } from '~/components/site/SiteFooter'
-import { CookieConsent, CookieSettingsButton } from '~/components/site/CookieConsent'
+import { CookieConsent } from '~/components/site/CookieConsent'
 import { Splash } from '~/components/site/Splash'
 import { SplashProvider } from '~/components/site/SplashContext'
 import i18n, { DEFAULT_LANGUAGE, isSupportedLanguage } from '~/i18n/config'
@@ -31,11 +31,12 @@ export const Route = createRootRoute({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'theme-color', content: '#fafaf8', media: '(prefers-color-scheme: light)' },
-      { name: 'theme-color', content: '#0e0e11', media: '(prefers-color-scheme: dark)' },
+      { name: 'theme-color', content: '#f5f3ee', media: '(prefers-color-scheme: light)' },
+      { name: 'theme-color', content: '#12110e', media: '(prefers-color-scheme: dark)' },
       ...seo({
-        title: 'Spexsol — Digital precision.',
-        description: 'Advanced solutions, niche execution.',
+        title: 'SpexSol — Software, built with intent',
+        description:
+          'Small Slovak engineering studio. Web and mobile products, automation, AI integrations and code audits.',
       }),
     ],
     links: [
@@ -48,7 +49,7 @@ export const Route = createRootRoute({
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap',
       },
       { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
     ],
@@ -62,7 +63,9 @@ function MainEntry({ children }: { children: React.ReactNode }) {
   const { done } = useSplash()
   return (
     <motion.main
-      className="flex-1"
+      id="main"
+      tabIndex={-1}
+      className="flex-1 outline-none"
       initial={{ opacity: 0, y: 12 }}
       animate={done ? { opacity: 1, y: 0 } : { opacity: 0, y: 12 }}
       transition={{ duration: PAGE_ENTRY_S, ease: EASE, delay: done ? 0.1 : 0 }}
@@ -100,6 +103,12 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           transition={{ duration: 0.22, ease: [0.2, 0, 0, 1] }}
         >
           <SplashProvider>
+            <a
+              href="#main"
+              className="label fixed left-4 top-4 z-[70] -translate-y-20 bg-fg px-3 py-2 !text-bg focus:translate-y-0"
+            >
+              {i18n.t('common:skip')}
+            </a>
             <SiteHeader />
             <MainEntry>
               <RouteTransition>{children}</RouteTransition>
@@ -108,17 +117,15 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             <Splash />
           </SplashProvider>
           <CookieConsent />
-          <CookieSettingsButton />
         </MotionConfig>
         <Toaster
           position="bottom-right"
           theme="system"
-          richColors
           duration={3000}
           toastOptions={{
             classNames: {
               toast:
-                'border border-line bg-card text-fg shadow-lg backdrop-blur',
+                '!rounded-field !border-line !bg-surface !text-fg !font-body !shadow-none',
             },
           }}
         />

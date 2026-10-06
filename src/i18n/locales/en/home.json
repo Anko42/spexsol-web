@@ -1,14 +1,36 @@
 {
   "hero": {
-    "title": "Built with intent.",
-    "subtitle": "From full products to the small scripts that hold them together."
-  },
-  "status": {
-    "acceptingProjects": "Accepting New Projects"
+    "status": "Taking new projects",
+    "titleBefore": "Still running your business on",
+    "words": [
+      "spreadsheets",
+      "paper forms",
+      "email threads",
+      "copy‑paste"
+    ],
+    "titleAfter": "?",
+    "titleFull": "Still running your business on spreadsheets and paper forms?",
+    "subtitle": "We replace them with apps, automations and AI that fit how you work — designed, built and supported by one engineer you talk to directly.",
+    "cta": "Describe your project",
+    "ctaSecondary": "See what we build",
+    "note": "Reply within 1 business day · English or Slovak",
+    "widget": {
+      "title": "Example project",
+      "discovery": "Discovery",
+      "design": "Design",
+      "build": "Build",
+      "launch": "Launch",
+      "done": "Done",
+      "progress": "Week 3 of 6",
+      "store": "App Store",
+      "replaces": "Replaces",
+      "reply": "Reply within 1 business day"
+    },
+    "pauseAnimation": "Pause headline animation"
   },
   "ceo": {
     "name": "Andrej Skalicky",
-    "role": "Engineer & Founder",
+    "role": "Engineer & founder",
     "tagline": "Building reliable systems and tooling for product teams.",
     "email": "skalicky@spexsol.sk",
     "linkedin": "https://www.linkedin.com/in/andrej-skalick%C3%BD-09208413a/"
@@ -16,14 +38,14 @@
   "contact": {
     "title": "Start a conversation",
     "subtitle": "Tell us what you're building. We reply within one business day.",
-    "fullName": "Full Name",
-    "fullNamePlaceholder": "John Doe",
-    "email": "Email Address",
-    "emailPlaceholder": "hello@example.com",
-    "phone": "Phone Number (optional)",
+    "fullName": "Full name",
+    "fullNamePlaceholder": "Jana Kováčová",
+    "email": "Email",
+    "emailPlaceholder": "jana@company.sk",
+    "phone": "Phone (optional)",
     "phonePlaceholder": "+421 900 000 000",
     "company": "Company (optional)",
-    "companyPlaceholder": "Acme s.r.o.",
+    "companyPlaceholder": "Your company",
     "topic": "What's it about",
     "topics": {
       "product": "Product",
@@ -49,33 +71,98 @@
     },
     "submit": "Send",
     "submitting": "Sending…",
-    "success": "Thanks — your message has been received.",
-    "errorFallback": "Something went wrong"
+    "success": "Thanks — your message is in. We'll reply within one business day.",
+    "errorFallback": "Couldn't send your message. Try again or email skalicky@spexsol.sk.",
+    "replyNote": "Reply within 1 business day"
   },
   "products": {
     "title": "Our work",
-    "description": "Apps and websites we built. See what we ship.",
+    "description": "Apps and websites we built.",
     "cta": "See products"
   },
   "services": {
     "product": {
       "title": "End-to-end product",
-      "description": "Design, build, ship. Web and mobile, from first sketch to the App Store."
+      "description": "Design, build, ship. Web and mobile, from first sketch to the App Store.",
+      "deliverables": [
+        "UX/UI design",
+        "iOS & web app",
+        "App Store release",
+        "Maintenance"
+      ]
     },
     "automation": {
       "title": "Automation & scripts",
-      "description": "Ditch the spreadsheet. Internal tools, workflows and integrations shaped around how you actually work."
+      "description": "Ditch the spreadsheet. Internal tools, workflows and integrations shaped around how you actually work.",
+      "deliverables": [
+        "Process audit",
+        "Scripts & integrations",
+        "Internal tools",
+        "Documentation"
+      ]
     },
     "ai": {
       "title": "AI integrations",
-      "description": "LLM features that pull their weight — agents, RAG and structured outputs, not demos."
+      "description": "LLM features that pull their weight — agents, RAG and structured outputs, not demos.",
+      "deliverables": [
+        "Use-case review",
+        "RAG / agents",
+        "Structured outputs",
+        "Cost & quality monitoring"
+      ]
     },
     "advisory": {
       "title": "Advisory & audits",
-      "description": "A second pair of eyes on architecture, code or the decisions behind them."
-    }
+      "description": "A second pair of eyes on architecture, code or the decisions behind them.",
+      "deliverables": [
+        "Code review",
+        "Architecture audit",
+        "Written report",
+        "Follow-up call"
+      ]
+    },
+    "heading": "What we do",
+    "lead": "Pick an area to see what you get.",
+    "deliverablesLabel": "What you get"
   },
   "cards": {
     "cta": "Talk to us"
+  },
+  "sections": {
+    "services": "Services"
+  },
+  "work": {
+    "title": "Selected products",
+    "all": "All products"
+  },
+  "studio": {
+    "title": "Who you'll work with",
+    "body": "SpexSol is a small studio by design. You talk directly to the person writing the code — no account managers, no hand-offs."
+  },
+  "process": {
+    "title": "How we work",
+    "steps": [
+      "Free intro call",
+      "Written proposal with fixed scope",
+      "Build with weekly demos",
+      "Launch & support"
+    ]
+  },
+  "figures": {
+    "product": {
+      "url": "booking.client.sk",
+      "title": "Bookings",
+      "week": "Week 41",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "book": "Book a time",
+      "day": "Thu 9 Oct",
+      "confirm": "Confirm"
+    }
   }
 }

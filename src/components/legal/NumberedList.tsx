@@ -4,15 +4,16 @@ interface NumberedListProps {
 
 export function NumberedList({ items }: NumberedListProps) {
   return (
-    <ul className="flex flex-col gap-3 border-l border-line pl-[9px]">
+    <ul className="flex flex-col border-t border-line-soft">
       {items.map((item) => (
-        <li key={item.number} className="flex items-start gap-4">
-          <span className="pt-1 font-mono text-[12px] leading-4 tracking-[0.01em] text-success">
+        <li
+          key={item.number}
+          className="grid grid-cols-[2.5rem_1fr] gap-2 border-b border-line-soft py-3"
+        >
+          <span className="pt-1.5 font-mono text-[12px] leading-4 tabular-nums text-accent">
             {item.number}
           </span>
-          <span className="flex-1 text-[16px] leading-[1.8] tracking-[0.01em] text-fg-muted">
-            {item.text}
-          </span>
+          <span className="text-[16px] leading-[1.75] text-fg-muted">{item.text}</span>
         </li>
       ))}
     </ul>

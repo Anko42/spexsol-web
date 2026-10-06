@@ -1,12 +1,12 @@
 {
   "pageTitle": "Produkty",
-  "pageSubtitle": "Aplikácie a webové stránky od SpexSol.",
-  "empty": "Čoskoro pribudnú ďalšie produkty.",
+  "pageSubtitle": "Aplikácie a weby, ktoré SpexSol postavil a udržiava.",
+  "empty": "Produkty tu čoskoro pribudnú.",
   "viewDetails": "Zobraziť detail",
   "backToProducts": "Späť na produkty",
   "cta": {
     "title": "Máte nápad?",
-    "subtitle": "Postavíme ho spolu.",
+    "subtitle": "Napíšte, čo chcete postaviť. Odpovieme s úprimnými ďalšími krokmi.",
     "button": "Začať projekt"
   },
   "sections": {
@@ -23,5 +23,10 @@
     "android": "Android",
     "web": "Web",
     "cross-platform": "Multiplatformové"
+  },
+  "spec": {
+    "category": "Kategória",
+    "platform": "Platforma",
+    "get": "Stiahnuť"
   }
 }

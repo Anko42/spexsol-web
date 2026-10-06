@@ -1,16 +1,16 @@
 #cc-main {
   --cc-z-index: 50;
-  --cc-font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --cc-font-family: 'Geist', ui-sans-serif, system-ui, sans-serif;
   --cc-bg: var(--surface);
   --cc-primary-color: var(--fg);
   --cc-secondary-color: var(--fg-muted);
   --cc-link-color: var(--accent);
 
-  --cc-btn-primary-bg: var(--accent);
-  --cc-btn-primary-color: var(--accent-fg);
-  --cc-btn-primary-border-color: var(--accent);
-  --cc-btn-primary-hover-bg: color-mix(in oklab, var(--accent) 88%, black);
-  --cc-btn-primary-hover-color: var(--accent-fg);
+  --cc-btn-primary-bg: var(--fg);
+  --cc-btn-primary-color: var(--bg);
+  --cc-btn-primary-border-color: var(--fg);
+  --cc-btn-primary-hover-bg: color-mix(in oklab, var(--fg) 85%, var(--bg));
+  --cc-btn-primary-hover-color: var(--bg);
   --cc-btn-primary-hover-border-color: var(--cc-btn-primary-hover-bg);
 
   --cc-btn-secondary-bg: var(--card);
@@ -34,9 +34,9 @@
   --cc-cookie-category-expanded-block-bg: var(--card);
 
   --cc-overlay-bg: rgba(0, 0, 0, 0.5);
-  --cc-modal-border-radius: 0.75rem;
-  --cc-btn-border-radius: 0.5rem;
-  --cc-modal-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.35);
+  --cc-modal-border-radius: 6px;
+  --cc-btn-border-radius: 4px;
+  --cc-modal-box-shadow: 0 0 0 1px var(--line), 0 12px 32px -16px rgba(23, 22, 15, 0.25);
   --cc-footer-bg: var(--card);
   --cc-footer-border-color: var(--line);
 }

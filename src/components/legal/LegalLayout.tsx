@@ -14,22 +14,20 @@ export function LegalLayout({
   children,
 }: LegalLayoutProps) {
   return (
-    <article className="mx-auto w-full max-w-[800px] px-6 pt-32 pb-16">
-      <header className="flex flex-col gap-4">
-        <h1 className="font-display text-[48px] leading-[48px] tracking-[-0.05em] text-fg">
+    <article className="mx-auto w-full max-w-6xl px-4 pb-8 pt-28 sm:px-6 sm:pt-36">
+      <header className="border-b border-line pb-10">
+        <h1 className="max-w-[18ch] text-[clamp(2.25rem,5vw,3.5rem)] font-semibold leading-[1.05] tracking-[-0.035em] text-fg">
           {title}
         </h1>
-        <div className="flex items-center gap-3">
-          <span
-            aria-hidden="true"
-            className="block h-px w-8 bg-accent/40"
-          />
-          <span className="text-[12px] font-medium uppercase tracking-[0.2em] text-fg-muted">
-            {lastUpdatedLabel}: {lastUpdated}
-          </span>
-        </div>
+        <p className="label mt-4">
+          {lastUpdatedLabel}: <span className="text-fg">{lastUpdated}</span>
+        </p>
       </header>
-      <div className="mt-20 flex flex-col gap-16">{children}</div>
+      <div className="mt-12 grid grid-cols-1 lg:grid-cols-12 lg:gap-6">
+        <div className="flex flex-col gap-14 lg:col-span-8 lg:col-start-3">
+          {children}
+        </div>
+      </div>
     </article>
   )
 }

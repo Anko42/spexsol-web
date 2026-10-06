@@ -1,14 +1,36 @@
 {
   "hero": {
-    "title": "Postavené s rozmyslom.",
-    "subtitle": "Od kompletných produktov až po malé skripty, ktoré ich držia pohromade."
-  },
-  "status": {
-    "acceptingProjects": "Prijímame nové projekty"
+    "status": "Prijímame nové projekty",
+    "titleBefore": "Stále riadite firmu cez",
+    "words": [
+      "Excel",
+      "papiere",
+      "e‑maily",
+      "kopírovanie"
+    ],
+    "titleAfter": "?",
+    "titleFull": "Stále riadite firmu cez Excel a papiere?",
+    "subtitle": "Nahradíme ich aplikáciami, automatizáciami a AI, ktoré sedia na to, ako pracujete — navrhne, postaví a podporí ich jeden inžinier, s ktorým hovoríte priamo.",
+    "cta": "Opíšte váš projekt",
+    "ctaSecondary": "Čo staviame",
+    "note": "Odpoveď do 1 pracovného dňa · slovensky alebo anglicky",
+    "widget": {
+      "title": "Ukážkový projekt",
+      "discovery": "Analýza",
+      "design": "Dizajn",
+      "build": "Vývoj",
+      "launch": "Spustenie",
+      "done": "Hotovo",
+      "progress": "Týždeň 3 zo 6",
+      "store": "App Store",
+      "replaces": "Nahrádza",
+      "reply": "Odpoveď do 1 pracovného dňa"
+    },
+    "pauseAnimation": "Pozastaviť animáciu nadpisu"
   },
   "ceo": {
     "name": "Andrej Skalický",
-    "role": "Engineer a founder",
+    "role": "Inžinier a zakladateľ",
     "tagline": "Staviam spoľahlivé systémy a nástroje pre produktové tímy.",
     "email": "skalicky@spexsol.sk",
     "linkedin": "https://www.linkedin.com/in/andrej-skalick%C3%BD-09208413a/"
@@ -17,13 +39,13 @@
     "title": "Ozvite sa",
     "subtitle": "Napíšte nám, čo staviate. Odpovieme do jedného pracovného dňa.",
     "fullName": "Celé meno",
-    "fullNamePlaceholder": "Ján Novák",
-    "email": "Emailová adresa",
-    "emailPlaceholder": "hello@example.com",
-    "phone": "Telefónne číslo (nepovinné)",
+    "fullNamePlaceholder": "Jana Kováčová",
+    "email": "Email",
+    "emailPlaceholder": "jana@firma.sk",
+    "phone": "Telefón (nepovinné)",
     "phonePlaceholder": "+421 900 000 000",
     "company": "Spoločnosť (nepovinné)",
-    "companyPlaceholder": "Acme s.r.o.",
+    "companyPlaceholder": "Vaša firma",
     "topic": "O čo ide",
     "topics": {
       "product": "Produkt",
@@ -49,8 +71,9 @@
     },
     "submit": "Odoslať",
     "submitting": "Odosiela sa…",
-    "success": "Ďakujeme — vaša správa bola prijatá.",
-    "errorFallback": "Niečo sa pokazilo"
+    "success": "Ďakujeme — správa dorazila. Ozveme sa do jedného pracovného dňa.",
+    "errorFallback": "Správu sa nepodarilo odoslať. Skúste znova alebo napíšte na skalicky@spexsol.sk.",
+    "replyNote": "Odpoveď do 1 pracovného dňa"
   },
   "products": {
     "title": "Naša práca",
@@ -60,22 +83,86 @@
   "services": {
     "product": {
       "title": "Produkt na kľúč",
-      "description": "Návrh, vývoj, nasadenie. Web a mobil, od prvej skice až po App Store."
+      "description": "Návrh, vývoj, nasadenie. Web a mobil, od prvej skice až po App Store.",
+      "deliverables": [
+        "UX/UI dizajn",
+        "iOS a webová aplikácia",
+        "Vydanie v App Store",
+        "Údržba"
+      ]
     },
     "automation": {
       "title": "Automatizácie a skripty",
-      "description": "Koniec s Excelom. Interné nástroje, procesy a integrácie šité na to, ako naozaj pracujete."
+      "description": "Koniec s Excelom. Interné nástroje, procesy a integrácie šité na to, ako naozaj pracujete.",
+      "deliverables": [
+        "Analýza procesov",
+        "Skripty a integrácie",
+        "Interné nástroje",
+        "Dokumentácia"
+      ]
     },
     "ai": {
       "title": "AI integrácie",
-      "description": "LLM funkcie, ktoré majú zmysel — agenti, RAG a štruktúrované výstupy, nie ukážky."
+      "description": "LLM funkcie, ktoré majú zmysel — agenti, RAG a štruktúrované výstupy, nie ukážky.",
+      "deliverables": [
+        "Posúdenie využitia",
+        "RAG / agenti",
+        "Štruktúrované výstupy",
+        "Monitoring nákladov a kvality"
+      ]
     },
     "advisory": {
       "title": "Konzultácie a audity",
-      "description": "Druhý pohľad na architektúru, kód a rozhodnutia, ktoré za nimi stoja."
-    }
+      "description": "Druhý pohľad na architektúru, kód a rozhodnutia, ktoré za nimi stoja.",
+      "deliverables": [
+        "Code review",
+        "Audit architektúry",
+        "Písomná správa",
+        "Následný hovor"
+      ]
+    },
+    "heading": "Čo robíme",
+    "lead": "Vyberte oblasť a pozrite si, čo dostanete.",
+    "deliverablesLabel": "Čo dostanete"
   },
   "cards": {
     "cta": "Napíšte nám"
+  },
+  "sections": {
+    "services": "Služby"
+  },
+  "work": {
+    "title": "Vybrané produkty",
+    "all": "Všetky produkty"
+  },
+  "studio": {
+    "title": "S kým budete pracovať",
+    "body": "SpexSol je zámerne malé štúdio. Hovoríte priamo s človekom, ktorý píše kód — žiadni account manažéri, žiadne odovzdávanie."
+  },
+  "process": {
+    "title": "Ako spolupracujeme",
+    "steps": [
+      "Úvodný hovor zdarma",
+      "Písomný návrh s pevným rozsahom",
+      "Vývoj s týždennými ukážkami",
+      "Spustenie a podpora"
+    ]
+  },
+  "figures": {
+    "product": {
+      "url": "rezervacie.klient.sk",
+      "title": "Rezervácie",
+      "week": "Týždeň 41",
+      "days": [
+        "Po",
+        "Ut",
+        "St",
+        "Št",
+        "Pi"
+      ],
+      "book": "Vyberte čas",
+      "day": "Št 9. 10.",
+      "confirm": "Potvrdiť"
+    }
   }
 }

@@ -125,7 +125,7 @@ function TermsOfUse() {
             {t('terms.sections.contact.emailLabel')}:{' '}
             <a
               href="mailto:skalicky@spexsol.sk"
-              className="text-accent hover:underline"
+              className="link-underline text-fg"
             >
               skalicky@spexsol.sk
             </a>

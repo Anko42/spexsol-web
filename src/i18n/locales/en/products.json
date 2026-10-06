@@ -1,12 +1,12 @@
 {
   "pageTitle": "Products",
-  "pageSubtitle": "Apps and websites built by SpexSol.",
-  "empty": "More products coming soon.",
+  "pageSubtitle": "Apps and websites built and maintained by SpexSol.",
+  "empty": "Products will appear here soon.",
   "viewDetails": "View details",
   "backToProducts": "Back to products",
   "cta": {
     "title": "Have an idea?",
-    "subtitle": "Let's build it together.",
+    "subtitle": "Tell us what you want to build. We'll reply with honest next steps.",
     "button": "Start a project"
   },
   "sections": {
@@ -23,5 +23,10 @@
     "android": "Android",
     "web": "Web",
     "cross-platform": "Cross-platform"
+  },
+  "spec": {
+    "category": "Category",
+    "platform": "Platform",
+    "get": "Get it"
   }
 }

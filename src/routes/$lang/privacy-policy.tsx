@@ -41,7 +41,7 @@ function PrivacyPolicy() {
   }) as Record<string, string>
 
   const subHeadingClass =
-    'font-display text-[16px] font-semibold leading-6 tracking-[-0.01em] text-fg'
+    'mt-2 text-[16px] font-semibold leading-6 text-fg'
 
   return (
     <LegalLayout
@@ -52,7 +52,7 @@ function PrivacyPolicy() {
       <LegalSection heading={t('privacy.sections.overview.heading')}>
         <p>
           {t('privacy.sections.overview.bodyBefore')}
-          <span className="text-accent">
+          <span className="text-fg">
             {t('privacy.sections.overview.brand')}
           </span>
           {t('privacy.sections.overview.bodyAfter')}
@@ -186,7 +186,7 @@ function PrivacyPolicy() {
             {t('privacy.sections.contact.emailLabel')}:{' '}
             <a
               href="mailto:skalicky@spexsol.sk"
-              className="text-accent hover:underline"
+              className="link-underline text-fg"
             >
               skalicky@spexsol.sk
             </a>

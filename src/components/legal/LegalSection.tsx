@@ -4,33 +4,25 @@ import { cn } from '~/lib/utils'
 interface LegalSectionProps {
   heading?: string
   variant?: 'plain' | 'card'
-  topBorder?: boolean
   children: ReactNode
 }
 
 export function LegalSection({
   heading,
   variant = 'plain',
-  topBorder = false,
   children,
 }: LegalSectionProps) {
   return (
-    <section
-      className={cn(
-        'flex w-full flex-col gap-6',
-        topBorder && 'border-t border-line pt-8',
-      )}
-    >
+    <section className="flex w-full flex-col gap-5">
       {heading && (
-        <h2 className="font-display text-[20px] leading-7 tracking-[-0.025em] text-accent">
+        <h2 className="text-[22px] font-semibold leading-[1.25] tracking-[-0.02em] text-fg">
           {heading}
         </h2>
       )}
       <div
         className={cn(
-          'flex flex-col gap-4 text-[16px] leading-[1.8] tracking-[0.01em] text-fg-muted',
-          variant === 'card' &&
-            'rounded-card border border-line-soft bg-surface p-8',
+          'flex max-w-[68ch] flex-col gap-4 text-[16px] leading-[1.75] text-fg-muted',
+          variant === 'card' && 'border-l-2 border-accent pl-6',
         )}
       >
         {children}

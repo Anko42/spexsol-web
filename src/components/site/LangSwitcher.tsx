@@ -27,18 +27,20 @@ export function LangSwitcher() {
   }
 
   return (
-    <div className="flex items-center gap-2 text-[13px] font-medium uppercase tracking-wider">
+    <div className="label flex items-center gap-1.5">
       {SUPPORTED_LANGUAGES.map((lang, i) => (
-        <span key={lang} className="flex items-center gap-2">
-          {i > 0 && <span className="text-fg-muted/40">·</span>}
+        <span key={lang} className="flex items-center gap-1.5">
+          {i > 0 && <span aria-hidden="true">/</span>}
           <button
             type="button"
             onClick={() => switchTo(lang)}
             className={cn(
-              'cursor-pointer transition-colors',
-              lang === current ? 'text-fg' : 'text-fg-muted hover:text-fg',
+              'inline-flex h-9 cursor-pointer items-center transition-colors',
+              lang === current ? 'text-fg' : 'hover:text-fg',
             )}
             aria-current={lang === current ? 'true' : undefined}
+            lang={lang}
+            aria-label={lang === 'sk' ? 'Slovenčina' : 'English'}
           >
             {lang}
           </button>
