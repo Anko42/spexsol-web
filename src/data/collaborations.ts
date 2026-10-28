@@ -9,6 +9,8 @@ export interface Collaboration {
   to?: number
   /** Optional logo path under /public, e.g. "/logos/acme.svg". */
   logo?: string
+  /** Invert the logo in dark mode (for black-on-transparent marks). */
+  invertDark?: boolean
   /** Shows the "ongoing" badge. */
   active: boolean
   /** Keep the entry but do not render it. */
@@ -39,11 +41,14 @@ export const collaborations: Collaboration[] = [
   },
   {
     name: "Gentlemen's",
+    url: 'https://gentlemens.sk',
     role: {
-      en: 'Software development on client projects',
-      sk: 'Vývoj softvéru na klientskych projektoch',
+      en: 'E-shop development and automation',
+      sk: 'Vývoj e-shopu a automatizácie',
     },
     from: 2025,
+    logo: '/logos/gentlemens.png',
+    invertDark: true,
     active: true,
   },
   {

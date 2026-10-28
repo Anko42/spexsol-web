@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { useLang } from '~/hooks/useLang'
 import type { Collaboration } from '~/data/collaborations'
+import { cn } from '~/lib/utils'
 
 /** Hairline rows: logo/initial · name + role · period · ongoing badge. */
 export function CollaborationList({ items }: { items: Collaboration[] }) {
@@ -20,7 +21,10 @@ export function CollaborationList({ items }: { items: Collaboration[] }) {
               <img
                 src={c.logo}
                 alt=""
-                className="size-12 rounded-[12px] border border-line bg-card object-contain p-2 sm:size-14"
+                className={cn(
+                  "size-12 rounded-[12px] border border-line bg-card object-contain p-2 sm:size-14",
+                  c.invertDark && "dark:invert",
+                )}
                 loading="lazy"
               />
             ) : (
