@@ -4,7 +4,6 @@ import { Hero } from '~/components/site/Hero'
 import { ContactSection } from '~/components/site/ContactSection'
 import { SectionHead } from '~/components/site/SectionHead'
 import { ServicesShowcase } from '~/components/site/ServicesShowcase'
-import { Personas } from '~/components/site/Personas'
 import { Offer } from '~/components/site/Offer'
 import { Faq } from '~/components/site/Faq'
 import { ProductCard } from '~/components/products/ProductCard'
@@ -22,17 +21,6 @@ function Home() {
   return (
     <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
       <Hero />
-
-      <section aria-labelledby="personas-title" className="pb-16 lg:pb-24">
-        <div className="mb-8 lg:mb-10">
-          <SectionHead
-            id="personas-title"
-            title={t('personas.heading')}
-            description={t('personas.lead')}
-          />
-        </div>
-        <Personas />
-      </section>
 
       <section
         id="services"

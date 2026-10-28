@@ -1,10 +1,8 @@
 /// <reference types="vite/client" />
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
-import { MotionConfig, motion } from 'motion/react'
+import { MotionConfig } from 'motion/react'
 import * as React from 'react'
-import { useSplash } from '~/components/site/SplashContext'
-import { EASE, PAGE_ENTRY_S } from '~/components/site/splashTimings'
 import { Toaster } from 'sonner'
 import { GoogleAnalytics } from 'tanstack-router-ga4'
 import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary'
@@ -59,19 +57,13 @@ export const Route = createRootRoute({
   shellComponent: RootDocument,
 })
 
+// Content renders visible from the first byte; the splash curtain covers it
+// and lifts away. No opacity gate, so no-JS and slow hydration still show the page.
 function MainEntry({ children }: { children: React.ReactNode }) {
-  const { done } = useSplash()
   return (
-    <motion.main
-      id="main"
-      tabIndex={-1}
-      className="flex-1 outline-none"
-      initial={{ opacity: 0, y: 12 }}
-      animate={done ? { opacity: 1, y: 0 } : { opacity: 0, y: 12 }}
-      transition={{ duration: PAGE_ENTRY_S, ease: EASE, delay: done ? 0.1 : 0 }}
-    >
+    <main id="main" tabIndex={-1} className="flex-1 outline-none">
       {children}
-    </motion.main>
+    </main>
   )
 }
 

@@ -13,7 +13,7 @@
     "subtitle": "We replace them with apps, automations and AI that fit how you work — designed, built and supported by one engineer you talk to directly.",
     "cta": "Describe your project",
     "ctaSecondary": "See what we build",
-    "note": "Reply within 1 business day · English or Slovak",
+    "note": "Reply within 1 business day",
     "widget": {
       "title": "Example project",
       "discovery": "Discovery",
@@ -31,6 +31,20 @@
       "Every Friday you see what landed",
       "Repo and accounts in your name",
       "No lock-in, month to month"
+    ],
+    "personas": [
+      {
+        "label": "Owners: replace the spreadsheet",
+        "topic": "automation"
+      },
+      {
+        "label": "Founders: MVP in 4–8 weeks",
+        "topic": "mvp"
+      },
+      {
+        "label": "Teams: extra hands for the backlog",
+        "topic": "advisory"
+      }
     ]
   },
   "ceo": {
@@ -157,15 +171,6 @@
     "title": "Who you'll work with",
     "body": "SpexSol is a small studio by design. You talk directly to the person writing the code — no account managers, no hand-offs."
   },
-  "process": {
-    "title": "How we work",
-    "steps": [
-      "Free intro call",
-      "Written proposal with fixed scope",
-      "Build with weekly demos",
-      "Launch & support"
-    ]
-  },
   "figures": {
     "product": {
       "url": "booking.client.sk",
@@ -198,26 +203,6 @@
       ]
     }
   },
-  "personas": {
-    "heading": "Sound familiar?",
-    "lead": "Three situations companies usually come to us with.",
-    "cta": "That's us",
-    "owners": {
-      "title": "Owners & operations",
-      "question": "The whole company runs on one spreadsheet and the one person who understands it.",
-      "body": "We build a small internal system that replaces the sheet and makes sense to the whole team."
-    },
-    "founders": {
-      "title": "Founders & MVPs",
-      "question": "You have the idea and first interested customers, but nothing they can use yet.",
-      "body": "An MVP on web and iOS in 4–8 weeks: the first version a real customer pays for, not a demo. We agree up front what goes in and what waits."
-    },
-    "teams": {
-      "title": "Product teams & CTOs",
-      "question": "The backlog grows faster than the team can work through it.",
-      "body": "An extra pair of hands: an experienced developer who works by your rules and your code review."
-    }
-  },
   "offer": {
     "heading": "Ways to work with us",
     "lead": "We don't bill by the hour. Scope and price are agreed up front, based on what you need.",
@@ -226,11 +211,9 @@
       "title": "Monthly partnership",
       "description": "We work your priority list and hand over finished changes every week. You decide what comes first.",
       "points": [
-        "Finished work every week, not at the end",
         "Change priorities as you learn",
         "One engineer with AI tooling, no middlemen",
-        "Pause or end the subscription any month",
-        "Everything we build is yours from the start"
+        "Pause or end the subscription any month"
       ],
       "cta": "Start a monthly partnership"
     },
@@ -239,11 +222,9 @@
       "title": "Fixed-price project",
       "description": "Right when you know exactly what you want. We write down the scope, send a price and deliver.",
       "points": [
-        "Scope and deadline agreed in writing",
-        "One price, no surprise invoices",
+        "Scope and deadline agreed in writing, one price",
         "Regular demos during the build",
-        "A month of support after launch",
-        "No obligations after handover"
+        "A month of support after launch"
       ],
       "cta": "Get a quote"
     }
@@ -256,10 +237,6 @@
         "a": "You do. Repository, database and hosting are created under your name. Nothing stays with us as leverage."
       },
       {
-        "q": "What does MVP mean to you?",
-        "a": "The first version a real customer pays for or uses daily. Three to five things that work, not twenty that half work. Anything else goes on the \"later\" list."
-      },
-      {
         "q": "Who do I talk to about details?",
         "a": "Directly with Andrej, who writes your software. No one in between."
       },
@@ -270,10 +247,6 @@
       {
         "q": "How do you use AI in development?",
         "a": "AI agents write the routine code under my supervision. I own architecture, security and review every change before it ships. That's how one person covers what used to take a team."
-      },
-      {
-        "q": "Monthly or fixed price?",
-        "a": "If the brief will evolve, go monthly. If it's clear and closed, fixed price. On the intro call I'll tell you which makes sense."
       },
       {
         "q": "What if I end the partnership?",

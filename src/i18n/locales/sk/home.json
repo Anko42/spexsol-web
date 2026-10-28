@@ -13,7 +13,7 @@
     "subtitle": "Nahradíme ich aplikáciami, automatizáciami a AI, ktoré sedia na to, ako pracujete — navrhne, postaví a podporí ich jeden inžinier, s ktorým hovoríte priamo.",
     "cta": "Opíšte váš projekt",
     "ctaSecondary": "Čo staviame",
-    "note": "Odpoveď do 1 pracovného dňa · slovensky alebo anglicky",
+    "note": "Odpoveď do 1 pracovného dňa",
     "widget": {
       "title": "Ukážkový projekt",
       "discovery": "Analýza",
@@ -31,6 +31,20 @@
       "Každý piatok vidíte, čo pribudlo",
       "Repozitár aj účty na vaše meno",
       "Bez viazanosti, mesiac po mesiaci"
+    ],
+    "personas": [
+      {
+        "label": "Majitelia: nahradíme Excel",
+        "topic": "automation"
+      },
+      {
+        "label": "Zakladatelia: MVP za 4 až 8 týždňov",
+        "topic": "mvp"
+      },
+      {
+        "label": "Tímy: ďalšie ruky do backlogu",
+        "topic": "advisory"
+      }
     ]
   },
   "ceo": {
@@ -157,15 +171,6 @@
     "title": "S kým budete pracovať",
     "body": "SpexSol je zámerne malé štúdio. Hovoríte priamo s človekom, ktorý píše kód — žiadni account manažéri, žiadne odovzdávanie."
   },
-  "process": {
-    "title": "Ako spolupracujeme",
-    "steps": [
-      "Úvodný hovor zdarma",
-      "Písomný návrh s pevným rozsahom",
-      "Vývoj s týždennými ukážkami",
-      "Spustenie a podpora"
-    ]
-  },
   "figures": {
     "product": {
       "url": "rezervacie.klient.sk",
@@ -198,26 +203,6 @@
       ]
     }
   },
-  "personas": {
-    "heading": "Spoznávate sa?",
-    "lead": "Tri situácie, s ktorými k nám firmy prichádzajú najčastejšie.",
-    "cta": "Toto je náš prípad",
-    "owners": {
-      "title": "Majitelia a prevádzka",
-      "question": "Celá firma stojí na jednom Exceli a jednom človeku, ktorý mu rozumie.",
-      "body": "Postavíme malý interný systém, ktorý tabuľku nahradí a bude zrozumiteľný pre celý tím."
-    },
-    "founders": {
-      "title": "Zakladatelia a MVP",
-      "question": "Máte nápad a prvých záujemcov, ale ešte nič, čo by mohli používať.",
-      "body": "MVP na webe a iOS za 4 až 8 týždňov: prvá verzia, za ktorú reálny zákazník zaplatí, nie ukážka. Vopred sa dohodneme, čo ide dnu a čo počká."
-    },
-    "teams": {
-      "title": "Produktové tímy a CTO",
-      "question": "Backlog rastie rýchlejšie, ako ho tím stíha spracovať.",
-      "body": "Pridáme vám ďalšie ruky: skúsený vývojár, ktorý pracuje podľa vašich pravidiel a code review."
-    }
-  },
   "offer": {
     "heading": "Ako sa dá s nami pracovať",
     "lead": "Neúčtujeme hodiny. Dohodneme sa na rozsahu a cene vopred, podľa toho, čo potrebujete.",
@@ -226,11 +211,9 @@
       "title": "Mesačné partnerstvo",
       "description": "Pracujeme na vašom zozname priorít a každý týždeň odovzdáme hotové zmeny. Čo je prvé, rozhodujete vy.",
       "points": [
-        "Hotová práca každý týždeň, nie až na konci",
         "Priority meníte podľa toho, čo sa naučíte",
         "Jeden inžinier s AI nástrojmi, bez prostredníkov",
-        "Predplatné pozastavíte alebo ukončíte kedykoľvek",
-        "Všetko, čo vznikne, je od začiatku vaše"
+        "Predplatné pozastavíte alebo ukončíte kedykoľvek"
       ],
       "cta": "Chcem mesačnú spoluprácu"
     },
@@ -239,11 +222,9 @@
       "title": "Projekt za pevnú cenu",
       "description": "Hodí sa, keď presne viete, čo chcete. Spíšeme rozsah, pošleme cenu a dodáme.",
       "points": [
-        "Rozsah a termín dohodnuté písomne",
-        "Jedna cena, bez dodatočných faktúr",
+        "Rozsah a termín písomne, jedna cena",
         "Priebežné ukážky počas vývoja",
-        "Mesiac podpory po nasadení",
-        "Po odovzdaní žiadne záväzky"
+        "Mesiac podpory po nasadení"
       ],
       "cta": "Chcem cenovú ponuku"
     }
@@ -256,10 +237,6 @@
         "a": "Vy. Repozitár, databázu aj hosting zakladáme na vaše meno. Nič u nás nezostáva ako rukojemník."
       },
       {
-        "q": "Čo pre vás znamená MVP?",
-        "a": "Prvá verzia, za ktorú reálny zákazník zaplatí alebo ju používa každý deň. Tri až päť vecí, ktoré fungujú, nie dvadsať, ktoré fungujú napoly. Všetko ostatné ide do zoznamu „neskôr“."
-      },
-      {
         "q": "S kým budem riešiť detaily?",
         "a": "Priamo s Andrejom, ktorý váš softvér píše. Žiadne medzičlánky."
       },
@@ -270,10 +247,6 @@
       {
         "q": "Ako využívate AI pri vývoji?",
         "a": "Rutinný kód píšu AI agenti pod mojím dohľadom. Architektúru, bezpečnosť a každú zmenu pred nasadením kontrolujem ja. Preto stíha jeden človek to, na čo bol kedysi potrebný tím."
-      },
-      {
-        "q": "Mesačne alebo pevná cena?",
-        "a": "Ak sa bude zadanie vyvíjať, zvoľte mesačnú spoluprácu. Ak je jasné a uzavreté, pevnú cenu. Na úvodnom hovore vám poviem, čo dáva zmysel."
       },
       {
         "q": "Čo keď spoluprácu ukončím?",

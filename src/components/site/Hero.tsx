@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Button, ButtonArrow } from '~/components/ui/button'
 import { ProjectWidget } from '~/components/site/ProjectWidget'
+import { selectService, type ServiceTopic } from '~/components/site/ServicesShowcase'
+import { Image } from '@unpic/react'
 import { useSplash } from '~/components/site/SplashContext'
 import { staggerContainer, staggerItem } from '~/lib/motion-presets'
 
@@ -154,9 +156,34 @@ export function Hero() {
             </li>
           ))}
         </motion.ul>
-        <motion.p variants={staggerItem} className="label mt-2">
-          {t('hero.note')}
-        </motion.p>
+        <motion.div variants={staggerItem} className="mt-6 flex items-center gap-3">
+          <Image
+            src="/andrej.png"
+            alt=""
+            width={64}
+            height={64}
+            className="size-8 rounded-full border border-line object-cover object-top"
+          />
+          <p className="label">
+            <span className="text-fg">{t('ceo.name')}</span> · {t('ceo.role')} · {t('hero.note')}
+          </p>
+        </motion.div>
+        <motion.ul variants={staggerItem} className="mt-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-line-soft pt-5 text-[14px]">
+          {(t('hero.personas', { returnObjects: true }) as Array<{ label: string; topic: ServiceTopic }>).map(({ label, topic }) => (
+            <li key={topic}>
+              <a
+                href="#services"
+                onClick={(e) => {
+                  e.preventDefault()
+                  selectService(topic)
+                }}
+                className="link-underline text-fg-muted hover:text-fg"
+              >
+                {label} <span aria-hidden="true">→</span>
+              </a>
+            </li>
+          ))}
+        </motion.ul>
       </motion.div>
 
       <motion.div

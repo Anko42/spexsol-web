@@ -18,8 +18,8 @@ export function CookieConsent() {
       cc.run({
         guiOptions: {
           consentModal: {
-            layout: 'box',
-            position: 'bottom right',
+            layout: 'bar inline',
+            position: 'bottom',
             equalWeightButtons: false,
             flipButtons: false,
           },

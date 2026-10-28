@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "motion/react";
 import {
+  useEffect,
   useRef,
   useState,
   type ComponentType,
@@ -15,9 +16,18 @@ import {
   ProductFigure,
 } from "~/components/site/figures";
 import { selectContactTopic } from "~/lib/contact-schema";
+
+export const SERVICE_SELECT_EVENT = "services:select";
+
+/** Jump to the services section with a given tab open (used by hero links). */
+export function selectService(topic: ServiceTopic) {
+  if (typeof window === "undefined") return;
+  window.dispatchEvent(new CustomEvent<ServiceTopic>(SERVICE_SELECT_EVENT, { detail: topic }));
+  document.getElementById("services")?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 import { cn } from "~/lib/utils";
 
-type ServiceTopic = "mvp" | "product" | "automation" | "ai" | "advisory";
+export type ServiceTopic = "mvp" | "product" | "automation" | "ai" | "advisory";
 
 const SERVICES: Array<{ topic: ServiceTopic; Figure: ComponentType }> = [
   { topic: "mvp", Figure: MvpFigure },
@@ -34,6 +44,15 @@ export function ServicesShowcase() {
   const [selected, setSelected] = useState(0);
   const tabs = useRef<Array<HTMLButtonElement | null>>([]);
   const { topic, Figure } = SERVICES[selected];
+
+  useEffect(() => {
+    const onSelect = (e: Event) => {
+      const i = SERVICES.findIndex((s) => s.topic === (e as CustomEvent<ServiceTopic>).detail);
+      if (i >= 0) setSelected(i);
+    };
+    window.addEventListener(SERVICE_SELECT_EVENT, onSelect);
+    return () => window.removeEventListener(SERVICE_SELECT_EVENT, onSelect);
+  }, []);
 
   const select = (i: number) => {
     setSelected(i);
@@ -56,8 +75,6 @@ export function ServicesShowcase() {
       select(next[e.key]);
     }
   };
-
-  const steps = t("process.steps", { returnObjects: true }) as string[];
 
   return (
     <>
@@ -176,35 +193,6 @@ export function ServicesShowcase() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="mt-14">
-        <h3 className="text-[14px] font-medium text-fg-muted">
-          {t("process.title")}
-        </h3>
-        <ol className="well mt-3 grid grid-cols-1 gap-2 min-[480px]:grid-cols-2 !rounded-[22px] p-2 lg:grid-cols-4">
-          {steps.map((step, i) => (
-            <li
-              key={step}
-              className="relative flex items-start gap-3 rounded-[16px] bg-surface p-4 shadow-[0_0_0_1px_var(--line-soft)]"
-            >
-              <span className="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-accent/12 text-[12px] font-semibold tabular-nums text-accent">
-                {i + 1}
-              </span>
-              <span className="text-[15px] font-medium leading-6 text-fg">
-                {step}
-              </span>
-              {i < steps.length - 1 && (
-                <span
-                  aria-hidden="true"
-                  className="absolute -right-[11px] top-1/2 z-10 hidden size-5 -translate-y-1/2 items-center justify-center rounded-full bg-bg text-[11px] text-fg-muted shadow-[0_0_0_1px_var(--line-soft)] lg:inline-flex"
-                >
-                  →
-                </span>
-              )}
-            </li>
-          ))}
-        </ol>
       </div>
     </>
   );

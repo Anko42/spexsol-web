@@ -109,11 +109,6 @@ export function ProjectWidget({ word }: { word: string }) {
           </ol>
         </div>
       </div>
-
-      <div className={cn(chipClass, 'mt-3 lg:absolute lg:-bottom-4 lg:-right-4 lg:mt-0')}>
-        <span className="size-1.5 rounded-full bg-accent" />
-        <span className="text-fg">{t('hero.widget.reply')}</span>
-      </div>
     </div>
   )
 }
