@@ -47,7 +47,9 @@ function Row({ c }: { c: Collaboration }) {
           alt=""
           className={cn(
             'size-12 rounded-[12px] border border-line object-contain p-2 sm:size-14',
-            c.invertDark ? 'dark:invert' : 'bg-card',
+            c.invertDark && 'dark:invert',
+            c.invertLight && 'invert dark:invert-0',
+            !c.invertDark && !c.invertLight && 'bg-card',
           )}
           loading="lazy"
         />

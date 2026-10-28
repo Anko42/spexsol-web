@@ -13,6 +13,8 @@ export interface Collaboration {
   logo?: string
   /** Invert the logo in dark mode (for black-on-transparent marks). */
   invertDark?: boolean
+  /** Invert the logo in light mode (for white-on-transparent marks). */
+  invertLight?: boolean
   /** Through SpexSol, as a freelancer, or as an employee. Drives grouping on the page. */
   via: CollaborationVia
   /** Shows the "ongoing" badge. */
@@ -91,12 +93,14 @@ export const collaborations: Collaboration[] = [
   },
   {
     name: 'Garwan',
+    url: 'https://www.garwan.com',
     role: {
-      en: 'Full-stack developer (React, Laravel). Crypto hub, live blog platform, sports site with live streaming. Mentored juniors.',
-      sk: 'Full-stack vývojár (React, Laravel). Krypto hub, live blog platforma, športový web s live streamingom. Mentoring juniorov.',
+      en: 'Full-stack developer (React, Laravel). Crypto hub, live blog platform, sports site with live streaming.',
+      sk: 'Full-stack vývojár (React, Laravel). Krypto hub, live blog platforma, športový web s live streamingom.',
     },
     from: 2021,
     to: 2023,
+    logo: '/logos/garwan.png',
     via: 'freelance',
     active: false,
   },
@@ -122,6 +126,8 @@ export const collaborations: Collaboration[] = [
     },
     from: 2020,
     to: 2020,
+    logo: '/logos/bbbpets.png',
+    invertLight: true,
     via: 'freelance',
     active: false,
   },
