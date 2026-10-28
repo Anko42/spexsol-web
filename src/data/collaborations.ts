@@ -9,9 +9,13 @@ export interface Collaboration {
   to?: number
   /** Optional logo path under /public, e.g. "/logos/acme.svg". */
   logo?: string
+  /** Shows the "ongoing" badge. */
+  active: boolean
+  /** Keep the entry but do not render it. */
+  hidden?: boolean
 }
 
-// Companies worked with. Keep newest first. Ongoing ones have no `to`.
+// Companies worked with. Keep newest first.
 export const collaborations: Collaboration[] = [
   {
     name: 'Localhost Company',
@@ -22,24 +26,25 @@ export const collaborations: Collaboration[] = [
     },
     from: 2026,
     logo: '/logos/localhost-company.svg',
+    active: true,
   },
   {
     name: 'nes group',
     role: {
       en: 'Software development on client projects',
-      sk: 'Vývoj softvéru na klientskych projektoch',
+      sk: 'VÃ½voj softvÃ©ru na klientskych projektoch',
     },
     from: 2025, // TODO confirm years, website, role
-    to: 2025,
+    active: false,
   },
   {
     name: "Gentlemen's",
     role: {
       en: 'Software development on client projects',
-      sk: 'Vývoj softvéru na klientskych projektoch',
+      sk: 'VÃ½voj softvÃ©ru na klientskych projektoch',
     },
     from: 2025, // TODO confirm years, website, role
-    to: 2025,
+    active: false,
   },
   {
     name: 'Freevision',
@@ -51,5 +56,6 @@ export const collaborations: Collaboration[] = [
     from: 2024, // TODO confirm start year
     to: 2026,
     logo: '/logos/freevision.png',
+    active: false,
   },
 ]
