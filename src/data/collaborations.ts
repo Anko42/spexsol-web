@@ -30,7 +30,7 @@ export interface Collaboration {
 export const collaborations: Collaboration[] = [
   // Through SpexSol (2025 –)
   {
-    name: 'Localhost Company',
+    name: 'localhost',
     url: 'https://localhost.company',
     role: {
       en: 'Software development on client projects',
