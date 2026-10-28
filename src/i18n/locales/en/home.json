@@ -89,9 +89,10 @@
   "services": {
     "product": {
       "title": "End-to-end product",
-      "description": "Design, build, ship. Web and mobile, from first sketch to the App Store.",
+      "description": "Design, build, ship. MVP or full product, web and mobile, from first sketch to the App Store.",
       "deliverables": [
         "UX/UI design",
+        "MVP in 4–8 weeks",
         "iOS & web app",
         "App Store release",
         "Maintenance"
@@ -181,9 +182,9 @@
       "body": "We build a small internal system that replaces the sheet and makes sense to the whole team."
     },
     "founders": {
-      "title": "Founders & new products",
-      "question": "You have the idea and first interested customers, but nothing they can install yet.",
-      "body": "Web and iOS version in a few weeks. We agree up front what exactly goes into the first release."
+      "title": "Founders & MVPs",
+      "question": "You have the idea and first interested customers, but nothing they can use yet.",
+      "body": "An MVP on web and iOS in 4–8 weeks: the first version a real customer pays for, not a demo. We agree up front what goes in and what waits."
     },
     "teams": {
       "title": "Product teams & CTOs",
@@ -227,6 +228,10 @@
       {
         "q": "Who owns the result?",
         "a": "You do. Repository, database and hosting are created under your name. Nothing stays with us as leverage."
+      },
+      {
+        "q": "What does MVP mean to you?",
+        "a": "The first version a real customer pays for or uses daily. Three to five things that work, not twenty that half work. Anything else goes on the \"later\" list."
       },
       {
         "q": "Who do I talk to about details?",

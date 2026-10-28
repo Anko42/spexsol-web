@@ -89,9 +89,10 @@
   "services": {
     "product": {
       "title": "Produkt na kľúč",
-      "description": "Návrh, vývoj, nasadenie. Web a mobil, od prvej skice až po App Store.",
+      "description": "Návrh, vývoj, nasadenie. MVP alebo celý produkt, web a mobil, od prvej skice až po App Store.",
       "deliverables": [
         "UX/UI dizajn",
+        "MVP za 4 až 8 týždňov",
         "iOS a webová aplikácia",
         "Vydanie v App Store",
         "Údržba"
@@ -181,9 +182,9 @@
       "body": "Postavíme malý interný systém, ktorý tabuľku nahradí a bude zrozumiteľný pre celý tím."
     },
     "founders": {
-      "title": "Zakladatelia a nové produkty",
-      "question": "Máte nápad a prvých záujemcov, ale ešte nič, čo by si mohli nainštalovať.",
-      "body": "Web a iOS verzia za niekoľko týždňov. Vopred sa dohodneme, čo presne bude v prvom vydaní."
+      "title": "Zakladatelia a MVP",
+      "question": "Máte nápad a prvých záujemcov, ale ešte nič, čo by mohli používať.",
+      "body": "MVP na webe a iOS za 4 až 8 týždňov: prvá verzia, za ktorú reálny zákazník zaplatí, nie ukážka. Vopred sa dohodneme, čo ide dnu a čo počká."
     },
     "teams": {
       "title": "Produktové tímy a CTO",
@@ -227,6 +228,10 @@
       {
         "q": "Kto vlastní výsledok?",
         "a": "Vy. Repozitár, databázu aj hosting zakladáme na vaše meno. Nič u nás nezostáva ako rukojemník."
+      },
+      {
+        "q": "Čo pre vás znamená MVP?",
+        "a": "Prvá verzia, za ktorú reálny zákazník zaplatí alebo ju používa každý deň. Tri až päť vecí, ktoré fungujú, nie dvadsať, ktoré fungujú napoly. Všetko ostatné ide do zoznamu „neskôr“."
       },
       {
         "q": "S kým budem riešiť detaily?",
