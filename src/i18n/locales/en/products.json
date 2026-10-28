@@ -30,8 +30,17 @@
     "get": "Get it"
   },
   "collab": {
-    "title": "Companies we work with",
-    "subtitle": "Past and current engagements.",
-    "ongoing": "Ongoing"
+    "title": "Companies I have worked with",
+    "subtitle": "Through SpexSol since 2025, and earlier as an employee and freelancer.",
+    "ongoing": "Ongoing",
+    "group": {
+      "spexsol": "Through SpexSol",
+      "before": "Earlier, as employee and freelancer"
+    },
+    "via": {
+      "spexsol": "SpexSol",
+      "employee": "Employee",
+      "freelance": "Freelance"
+    }
   }
 }

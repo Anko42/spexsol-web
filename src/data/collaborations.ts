@@ -1,3 +1,5 @@
+export type CollaborationVia = 'spexsol' | 'freelance' | 'employee'
+
 export interface Collaboration {
   name: string
   url?: string
@@ -11,23 +13,27 @@ export interface Collaboration {
   logo?: string
   /** Invert the logo in dark mode (for black-on-transparent marks). */
   invertDark?: boolean
+  /** Through SpexSol, as a freelancer, or as an employee. Drives grouping on the page. */
+  via: CollaborationVia
   /** Shows the "ongoing" badge. */
   active: boolean
   /** Keep the entry but do not render it. */
   hidden?: boolean
 }
 
-// Companies worked with. Keep newest first.
+// Companies worked with. Keep newest first within each group.
 export const collaborations: Collaboration[] = [
+  // Through SpexSol (2025 –)
   {
     name: 'Localhost Company',
     url: 'https://localhost.company',
     role: {
-      en: 'Engineer on client projects',
-      sk: 'Inžinier na klientskych projektoch',
+      en: 'Senior engineer on client projects',
+      sk: 'Senior inžinier na klientskych projektoch',
     },
     from: 2026,
     logo: '/logos/localhost-company.svg',
+    via: 'spexsol',
     active: true,
   },
   {
@@ -39,6 +45,7 @@ export const collaborations: Collaboration[] = [
     from: 2026,
     logo: '/logos/nes-group.svg',
     invertDark: true,
+    via: 'spexsol',
     active: true,
   },
   {
@@ -51,18 +58,71 @@ export const collaborations: Collaboration[] = [
     from: 2025,
     logo: '/logos/gentlemens.png',
     invertDark: true,
+    via: 'spexsol',
     active: true,
   },
+
+  // Before SpexSol: employee and freelance
   {
     name: 'Freevision',
     url: 'https://freevision.sk',
     role: {
-      en: 'Senior engineer on client apps',
-      sk: 'Senior inžinier na klientskych aplikáciách',
+      en: 'Frontend developer. Web and mobile apps for bus transport (React, Ionic, Capacitor), native bridges, legacy migration.',
+      sk: 'Frontend vývojár. Webové a mobilné aplikácie pre autobusovú dopravu (React, Ionic, Capacitor), natívne bridge, migrácia legacy aplikácie.',
     },
-    from: 2024, // TODO confirm start year
+    from: 2024,
     to: 2026,
     logo: '/logos/freevision.png',
+    via: 'employee',
+    active: false,
+  },
+  {
+    name: 'Kontentino',
+    url: 'https://www.kontentino.com',
+    role: {
+      en: 'Frontend developer on a social media planning SaaS used by thousands of teams daily.',
+      sk: 'Frontend vývojár SaaS nástroja na plánovanie sociálnych sietí, ktorý denne používajú tisíce tímov.',
+    },
+    from: 2024,
+    to: 2024,
+    logo: '/logos/kontentino.png',
+    via: 'employee',
+    active: false,
+  },
+  {
+    name: 'Garwan',
+    role: {
+      en: 'Full-stack developer (React, Laravel). Crypto hub, live blog platform, sports site with live streaming. Mentored juniors.',
+      sk: 'Full-stack vývojár (React, Laravel). Krypto hub, live blog platforma, športový web s live streamingom. Mentoring juniorov.',
+    },
+    from: 2021,
+    to: 2023,
+    via: 'employee',
+    active: false,
+  },
+  {
+    name: 'M7',
+    url: 'https://www.m7.sk',
+    role: {
+      en: 'Full-stack developer on CRM and e-commerce platforms (Vue.js).',
+      sk: 'Full-stack vývojár CRM a e-commerce platforiem (Vue.js).',
+    },
+    from: 2020,
+    to: 2021,
+    logo: '/logos/m7.png',
+    via: 'employee',
+    active: false,
+  },
+  {
+    name: 'bbbpets.sk',
+    url: 'https://bbbpets.sk',
+    role: {
+      en: 'Built the e-shop from provided designs, then ran server and database administration.',
+      sk: 'Postavil e-shop podľa dodaných návrhov, potom správa servera a databázy.',
+    },
+    from: 2020,
+    to: 2020,
+    via: 'freelance',
     active: false,
   },
 ]

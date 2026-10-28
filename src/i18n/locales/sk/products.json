@@ -30,8 +30,17 @@
     "get": "Stiahnuť"
   },
   "collab": {
-    "title": "Firmy, s ktorými spolupracujeme",
-    "subtitle": "Minulé aj prebiehajúce spolupráce.",
-    "ongoing": "Prebieha"
+    "title": "Firmy, s ktorými som pracoval",
+    "subtitle": "Cez SpexSol od roku 2025, predtým ako zamestnanec a freelancer.",
+    "ongoing": "Prebieha",
+    "group": {
+      "spexsol": "Cez SpexSol",
+      "before": "Predtým, ako zamestnanec a freelancer"
+    },
+    "via": {
+      "spexsol": "SpexSol",
+      "employee": "Zamestnanec",
+      "freelance": "Freelance"
+    }
   }
 }
