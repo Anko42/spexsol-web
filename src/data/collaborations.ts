@@ -34,8 +34,8 @@ export const collaborations: Collaboration[] = [
       en: 'Software development on client projects',
       sk: 'Vývoj softvéru na klientskych projektoch',
     },
-    from: 2025, // TODO confirm years, website, role
-    active: false,
+    from: 2026,
+    active: true,
   },
   {
     name: "Gentlemen's",
@@ -43,8 +43,8 @@ export const collaborations: Collaboration[] = [
       en: 'Software development on client projects',
       sk: 'Vývoj softvéru na klientskych projektoch',
     },
-    from: 2025, // TODO confirm years, website, role
-    active: false,
+    from: 2025,
+    active: true,
   },
   {
     name: 'Freevision',
