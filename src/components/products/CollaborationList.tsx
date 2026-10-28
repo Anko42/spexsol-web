@@ -31,16 +31,9 @@ export function CollaborationList({ items }: { items: Collaboration[] }) {
 }
 
 function Row({ c }: { c: Collaboration }) {
-  const { t } = useTranslation('products')
   const lang = useLang()
-  const period =
-    c.to === undefined && c.active
-      ? `${c.from} –`
-      : c.to === undefined || c.from === c.to
-        ? `${c.from}`
-        : `${c.from} – ${c.to}`
   return (
-    <li className="grid grid-cols-[3rem_1fr_auto] items-center gap-4 border-t border-line py-5 sm:grid-cols-[3.5rem_1fr_auto_auto] sm:gap-6 sm:px-2">
+    <li className="grid grid-cols-[3rem_1fr] items-center gap-4 border-t border-line py-5 sm:grid-cols-[3.5rem_1fr] sm:gap-6 sm:px-2">
       {c.logo ? (
         <img
           src={c.logo}
@@ -73,16 +66,6 @@ function Row({ c }: { c: Collaboration }) {
         </h4>
         <p className="mt-1 line-clamp-2 text-[14px] leading-6 text-fg-muted">{c.role[lang]}</p>
       </div>
-      <span
-        className={cn(
-          'hidden items-center gap-1.5 rounded-full px-2.5 py-1 text-[12px] font-medium sm:inline-flex',
-          c.active ? 'bg-accent/12 text-accent' : 'bg-fg/[0.05] text-fg-muted',
-        )}
-      >
-        {c.active && <span className="size-1.5 rounded-full bg-accent" />}
-        {c.active ? t('collab.ongoing') : t(`collab.via.${c.via}`)}
-      </span>
-      <span className="font-mono text-[13px] tabular-nums text-fg-muted">{period}</span>
     </li>
   )
 }

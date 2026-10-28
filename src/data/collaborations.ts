@@ -24,6 +24,7 @@ export interface Collaboration {
 }
 
 // Companies worked with. Keep newest first within each group.
+// Years and active flag are kept for reference but not rendered on the page.
 export const collaborations: Collaboration[] = [
   // Through SpexSol (2025 –)
   {
