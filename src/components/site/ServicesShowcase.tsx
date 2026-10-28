@@ -11,14 +11,16 @@ import {
   AdvisoryFigure,
   AiFigure,
   AutomationFigure,
+  MvpFigure,
   ProductFigure,
 } from "~/components/site/figures";
 import { selectContactTopic } from "~/lib/contact-schema";
 import { cn } from "~/lib/utils";
 
-type ServiceTopic = "product" | "automation" | "ai" | "advisory";
+type ServiceTopic = "mvp" | "product" | "automation" | "ai" | "advisory";
 
 const SERVICES: Array<{ topic: ServiceTopic; Figure: ComponentType }> = [
+  { topic: "mvp", Figure: MvpFigure },
   { topic: "product", Figure: ProductFigure },
   { topic: "automation", Figure: AutomationFigure },
   { topic: "ai", Figure: AiFigure },

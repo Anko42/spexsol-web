@@ -53,6 +53,7 @@
     "companyPlaceholder": "Vaša firma",
     "topic": "O čo ide",
     "topics": {
+      "mvp": "MVP",
       "product": "Produkt",
       "automation": "Automatizácia",
       "ai": "AI",
@@ -87,12 +88,22 @@
     "cta": "Pozrieť produkty"
   },
   "services": {
+    "mvp": {
+      "title": "MVP za pár týždňov",
+      "description": "Prvá verzia, za ktorú reálny zákazník zaplatí. Web a iOS, 4 až 8 týždňov, rozsah dohodnutý vopred.",
+      "deliverables": [
+        "Písomný zoznam na prvý mesiac",
+        "Prvá verzia na webe alebo iOS",
+        "TestFlight a App Store",
+        "Analytika od prvého dňa",
+        "Odovzdanie bez viazanosti"
+      ]
+    },
     "product": {
       "title": "Produkt na kľúč",
-      "description": "Návrh, vývoj, nasadenie. MVP alebo celý produkt, web a mobil, od prvej skice až po App Store.",
+      "description": "Návrh, vývoj, nasadenie. Web a mobil, od prvej skice až po App Store.",
       "deliverables": [
         "UX/UI dizajn",
-        "MVP za 4 až 8 týždňov",
         "iOS a webová aplikácia",
         "Vydanie v App Store",
         "Údržba"
@@ -170,6 +181,21 @@
       "book": "Vyberte čas",
       "day": "Št 9. 10.",
       "confirm": "Potvrdiť"
+    },
+    "mvp": {
+      "title": "Plán MVP",
+      "live": "v1.0 beží",
+      "week": "T",
+      "list": "Zoznam",
+      "design": "Dizajn",
+      "build": "Vývoj",
+      "test": "TestFlight",
+      "launch": "Spustenie",
+      "facts": [
+        "3 až 5 funkcií",
+        "Ukážky každý týždeň",
+        "Váš repozitár a účty"
+      ]
     }
   },
   "personas": {

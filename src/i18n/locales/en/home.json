@@ -53,6 +53,7 @@
     "companyPlaceholder": "Your company",
     "topic": "What's it about",
     "topics": {
+      "mvp": "MVP",
       "product": "Product",
       "automation": "Automation",
       "ai": "AI",
@@ -87,12 +88,22 @@
     "cta": "See products"
   },
   "services": {
+    "mvp": {
+      "title": "MVP in weeks",
+      "description": "The first version a real customer pays for. Web and iOS, 4–8 weeks, scope agreed up front.",
+      "deliverables": [
+        "Written month-one list",
+        "Web or iOS first version",
+        "TestFlight & App Store",
+        "Analytics from day one",
+        "Handover, no lock-in"
+      ]
+    },
     "product": {
       "title": "End-to-end product",
-      "description": "Design, build, ship. MVP or full product, web and mobile, from first sketch to the App Store.",
+      "description": "Design, build, ship. Web and mobile, from first sketch to the App Store.",
       "deliverables": [
         "UX/UI design",
-        "MVP in 4–8 weeks",
         "iOS & web app",
         "App Store release",
         "Maintenance"
@@ -170,6 +181,21 @@
       "book": "Book a time",
       "day": "Thu 9 Oct",
       "confirm": "Confirm"
+    },
+    "mvp": {
+      "title": "MVP plan",
+      "live": "v1.0 live",
+      "week": "W",
+      "list": "List",
+      "design": "Design",
+      "build": "Build",
+      "test": "TestFlight",
+      "launch": "Launch",
+      "facts": [
+        "3–5 features",
+        "Weekly demos",
+        "Your repo & accounts"
+      ]
     }
   },
   "personas": {

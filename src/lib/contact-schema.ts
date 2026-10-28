@@ -3,6 +3,7 @@ import { isValidPhoneNumber, parsePhoneNumberWithError } from 'libphonenumber-js
 
 export const CONTACT_TOPICS = [
   'product',
+  'mvp',
   'automation',
   'ai',
   'advisory',
