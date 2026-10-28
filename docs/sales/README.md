@@ -6,6 +6,7 @@ Spoken scripts for the two calls the site generates. Each line is given in Slova
 |---|---|---|
 | [intro-call.md](intro-call.md) | First contact after the form or a booking link. Goal: qualify and book the next step. | 15 min |
 | [discovery-call.md](discovery-call.md) | Second call with a qualified lead. Goal: shape month 1 and present price. | 45–60 min |
+| [pricing.md](pricing.md) | After the discovery call, before the quote. Rate card, day estimates, MVP packages, quote template. | — |
 
 ## Five rules
 
@@ -15,10 +16,8 @@ Spoken scripts for the two calls the site generates. Each line is given in Slova
 4. **Say no fast.** A bad fit costs more than a lost lead. Decline politely and ask for a referral.
 5. **One observation per call.** Before every call, find one specific thing about their business and mention it. It replaces small talk.
 
-## Internal price guidance (never on the site)
+## Internal price guidance
 
-- Monthly partnership, one stream: 2 500–3 500 € per month ex VAT, depending on scope and how much of your week it takes.
-- Paid audit / discovery week: 500–1 500 € fixed.
-- Fixed-price project: quote from the written list; add 20 % margin for unknowns.
+See [pricing.md](pricing.md). Short version: stream 2 500–3 500 €/month, audit 500–1 500 €, fixed work from 400 €/day with a risk factor.
 
 Keep wording consistent with the site offer section: "Mesačné partnerstvo" / "Monthly partnership" and "Projekt za pevnú cenu" / "Fixed-price project".
