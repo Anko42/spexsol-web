@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import { ContactCard } from '~/components/products/ContactCard'
 import { ProductCard } from '~/components/products/ProductCard'
 import { PageHeader } from '~/components/site/PageHeader'
@@ -40,7 +40,28 @@ function ProductsIndex() {
 
       {collaborations.length > 0 && (
         <section aria-labelledby="collab-title" className="mt-16">
-          <SectionHead id="collab-title" title={t('collab.title')} description={t('collab.subtitle')} />
+          <div className="max-w-[40rem]">
+            <h2
+              id="collab-title"
+              className="text-[clamp(1.75rem,3.5vw,2.5rem)] font-semibold leading-[1.1] tracking-[-0.03em] text-fg"
+            >
+              <Trans
+                t={t}
+                i18nKey="collab.title"
+                components={{
+                  name: (
+                    <a
+                      href={t('home:ceo.linkedin')}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-underline"
+                    />
+                  ),
+                }}
+              />
+            </h2>
+            <p className="mt-3 text-[16px] leading-7 text-fg-muted sm:text-[17px]">{t('collab.subtitle')}</p>
+          </div>
           <div className="mt-8">
             <CollaborationList items={collaborations} />
           </div>
