@@ -209,7 +209,7 @@
     "monthly": {
       "tag": "Dlhodobo",
       "title": "Mesačné partnerstvo",
-      "description": "Pracujeme na vašom zozname priorít a každý týždeň odovzdáme hotové zmeny. Čo je prvé, rozhodujete vy.",
+      "description": "Pracujeme na vašom zozname priorít, hotové zmeny vidíte pravidelne. Čo je prvé, rozhodujete vy.",
       "points": [
         "Priority meníte podľa toho, čo sa naučíte",
         "Jeden inžinier s AI nástrojmi, bez prostredníkov",
@@ -220,7 +220,7 @@
     "fixed": {
       "tag": "Jednorazovo",
       "title": "Projekt za pevnú cenu",
-      "description": "Hodí sa, keď presne viete, čo chcete. Spíšeme rozsah, pošleme cenu a dodáme.",
+      "description": "Hodí sa, keď viete, čo chcete. Ak ešte nie, začneme auditom a písomným plánom. Potom rozsah, jedna cena, dodávka.",
       "points": [
         "Rozsah a termín písomne, jedna cena",
         "Priebežné ukážky počas vývoja",

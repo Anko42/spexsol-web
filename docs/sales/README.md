@@ -7,6 +7,7 @@ Spoken scripts for the two calls the site generates. Each line is given in Slova
 | [intro-call.md](intro-call.md) | First contact after the form or a booking link. Goal: qualify and book the next step. | 15 min |
 | [discovery-call.md](discovery-call.md) | Second call with a qualified lead. Goal: shape month 1 and present price. | 45–60 min |
 | [pricing.md](pricing.md) | After the discovery call, before the quote. Rate card, day estimates, MVP packages, quote template. | — |
+| [capacity.md](capacity.md) | Before promising a start date or a monthly partnership. What to sell while localhost is the main client. | — |
 
 ## Five rules
 
@@ -15,6 +16,7 @@ Spoken scripts for the two calls the site generates. Each line is given in Slova
 3. **Written list, not estimate.** You never promise hours. You promise a list of what will be done and how they will check it.
 4. **Say no fast.** A bad fit costs more than a lost lead. Decline politely and ask for a referral.
 5. **One observation per call.** Before every call, find one specific thing about their business and mention it. It replaces small talk.
+6. **Bounded work first.** Lead with an audit or a fixed-price project. Monthly partnership comes second, one client at a time. See [capacity.md](capacity.md).
 
 ## Internal price guidance
 

@@ -172,7 +172,7 @@ Ask to see it running, not screenshots. Check four things while they click: how 
 
 ### Pricing an MVP
 
-Closed list → fixed price. Founder still learning what to build → monthly. Tie the number to the cost of finding out, not to the features.
+Closed list → fixed price. Founder still learning what to build → fixed-price first slice, then monthly if it goes well (see [capacity.md](capacity.md)). Tie the number to the cost of finding out, not to the features.
 
 > SK: „Zoznam je uzavretý, tak vám dám pevnú cenu a termín. Ak sa počas práce ukáže, že zákazníci chcú niečo iné, zmeníme zoznam a dohodneme sa znova. Neplatíte za funkcie. Platíte za to, aby ste zistili, či to zákazníci chcú, a za to, že to zistíte za pár týždňov namiesto pol roka.“
 >

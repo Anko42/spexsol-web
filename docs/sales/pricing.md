@@ -27,6 +27,7 @@ Three questions decide the number:
 
 | Days per month | Price |
 |---|---|
+| 4–6 (half stream, evenings and weekends, see capacity.md) | 2 000–2 500 € |
 | 6–8 | 2 500 € |
 | 8–10 | 3 000 € |
 | 10–12 | 3 500 € |

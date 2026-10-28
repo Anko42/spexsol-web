@@ -4,11 +4,11 @@ import { Button, ButtonArrow } from '~/components/ui/button'
 import { selectContactTopic, type ContactTopic } from '~/lib/contact-schema'
 
 const PLANS: Array<{ key: string; topic: ContactTopic }> = [
-  { key: 'monthly', topic: 'retainer' },
   { key: 'fixed', topic: 'product' },
+  { key: 'monthly', topic: 'retainer' },
 ]
 
-/** Two engagement models. No prices: scope is discussed on the intro call. */
+/** Two engagement models, fixed first (bounded work is what we sell first). No prices. */
 export function Offer() {
   const { t } = useTranslation('home')
   const ga = useGoogleAnalytics()
@@ -37,7 +37,7 @@ export function Offer() {
             ))}
           </ul>
           <div className="mt-8">
-            <Button asChild size="lg" variant={key === 'monthly' ? 'accent' : 'outline'}>
+            <Button asChild size="lg" variant={key === 'fixed' ? 'accent' : 'outline'}>
               <a
                 href="#contact"
                 onClick={(e) => {

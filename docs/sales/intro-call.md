@@ -92,9 +92,9 @@ Red flags:
 
 Only after Q1–Q3. Use their words from Q1. Keep it to four sentences.
 
-> SK: „Takto fungujem ja. Som jeden inžinier, ktorý používa AI agentov, takže sa hýbem rýchlo, ale za každú zmenu ručím osobne. Každý týždeň vidíte hotovú prácu, nie reporty. Všetko, čo vznikne, repozitár aj účty, je od prvého dňa na vaše meno. Spolupracujeme buď mesačne, podľa zoznamu priorít, ktorý si môžete meniť, alebo na pevnú cenu, keď je zadanie uzavreté.“
+> SK: „Takto fungujem ja. Som jeden inžinier, ktorý používa AI agentov, takže sa hýbem rýchlo, ale za každú zmenu ručím osobne. Pravidelne vidíte hotovú prácu, nie reporty. Všetko, čo vznikne, repozitár aj účty, je od prvého dňa na vaše meno. Začíname auditom alebo projektom za pevnú cenu. Keď sa spoznáme, dá sa pokračovať mesačne, podľa zoznamu priorít, ktorý si meníte.“
 >
-> EN: "Here's how I work. I'm one engineer using AI agents, so I move fast, but I personally stand behind every change. Every week you see finished work, not status reports. Everything that gets built, the repo and the accounts, is in your name from day one. We work either monthly, against a priority list you can change, or at a fixed price when the scope is closed."
+> EN: "Here's how I work. I'm one engineer using AI agents, so I move fast, but I personally stand behind every change. You see finished work regularly, not status reports. Everything that gets built, the repo and the accounts, is in your name from day one. We start with an audit or a fixed-price project. Once we know each other, we can continue monthly, against a priority list you change."
 
 Then tie it back:
 
@@ -118,9 +118,11 @@ Rule: no number before pain. If they ask early, deflect once with a range and a 
 
 Anchor against their number from Q1 before you say yours.
 
-> SK: „Povedali ste, že vás to dnes stojí zhruba [X hodín / Y eur] mesačne. Mesačná spolupráca je u mňa od 2 500 do 3 500 eur bez DPH, podľa toho, koľko z môjho týždňa to zaberie. Ak chcete najprv menší krok, urobím platený audit za 500 až 1 500 eur: týždeň, na konci máte písomný zoznam, čo treba postaviť a v akom poradí. Ten zoznam je potom prvý mesiac spolupráce, alebo si ho vezmete a postavíte to s kýmkoľvek.“
+> SK: „Povedali ste, že vás to dnes stojí zhruba [X hodín / Y eur] mesačne. Prvý krok je u mňa platený audit za 500 až 1 500 eur bez DPH: týždeň až dva, na konci máte písomný zoznam, čo treba postaviť a v akom poradí. Na ten zoznam dám pevnú cenu, alebo si ho vezmete a postavíte to s kýmkoľvek. Mesačná spolupráca sa dá dohodnúť neskôr, keď sa spoznáme.“
 >
-> EN: "You said this costs you roughly [X hours / Y euros] a month today. A monthly partnership with me is 2 500 to 3 500 euros ex VAT, depending on how much of my week it takes. If you'd rather start smaller, I do a paid audit for 500 to 1 500 euros: one week, and at the end you have a written list of what to build and in what order. That list becomes month one of our work, or you take it and build it with anyone."
+> EN: "You said this costs you roughly [X hours / Y euros] a month today. The first step with me is a paid audit for 500 to 1 500 euros ex VAT: one to two weeks, and at the end you have a written list of what to build and in what order. I put a fixed price on that list, or you take it and build it with anyone. A monthly partnership can come later, once we know each other."
+
+Monthly asked for directly: see [capacity.md](capacity.md). Range if pressed: 2 000–3 500 € ex VAT depending on days.
 
 Then stop talking. Let them react. Do not fill the silence with a discount.
 

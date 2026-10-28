@@ -209,7 +209,7 @@
     "monthly": {
       "tag": "Ongoing",
       "title": "Monthly partnership",
-      "description": "We work your priority list and hand over finished changes every week. You decide what comes first.",
+      "description": "We work your priority list and you see finished changes regularly. You decide what comes first.",
       "points": [
         "Change priorities as you learn",
         "One engineer with AI tooling, no middlemen",
@@ -220,7 +220,7 @@
     "fixed": {
       "tag": "One-off",
       "title": "Fixed-price project",
-      "description": "Right when you know exactly what you want. We write down the scope, send a price and deliver.",
+      "description": "Right when you know what you want. If not yet, we start with an audit and a written plan. Then scope, one price, delivery.",
       "points": [
         "Scope and deadline agreed in writing, one price",
         "Regular demos during the build",
