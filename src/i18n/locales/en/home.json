@@ -227,22 +227,7 @@
         "A month of support after launch"
       ],
       "cta": "Get a quote"
-    },
-    "stepsTitle": "How to start",
-    "steps": [
-      {
-        "t": "Audit",
-        "d": "One to two weeks, written plan."
-      },
-      {
-        "t": "Fixed-price project",
-        "d": "We build what the plan says."
-      },
-      {
-        "t": "Monthly",
-        "d": "When you want to keep going without a new brief."
-      }
-    ]
+    }
   },
   "faq": {
     "heading": "Common questions",

@@ -227,22 +227,7 @@
         "Mesiac podpory po nasadení"
       ],
       "cta": "Chcem cenovú ponuku"
-    },
-    "stepsTitle": "Ako začať",
-    "steps": [
-      {
-        "t": "Audit",
-        "d": "Týždeň až dva, písomný plán."
-      },
-      {
-        "t": "Projekt za pevnú cenu",
-        "d": "Postavíme to, čo je v pláne."
-      },
-      {
-        "t": "Mesačne",
-        "d": "Keď chcete pokračovať bez nového zadania."
-      }
-    ]
+    }
   },
   "faq": {
     "heading": "Časté otázky",

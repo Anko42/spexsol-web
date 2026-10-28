@@ -14,22 +14,6 @@ export function Offer() {
   const ga = useGoogleAnalytics()
   return (
     <div className="well grid grid-cols-1 gap-2 !rounded-[22px] p-2 md:grid-cols-2">
-      <ol
-        aria-label={t('offer.stepsTitle')}
-        className="grid grid-cols-1 gap-x-6 gap-y-3 px-4 py-4 sm:grid-cols-3 sm:px-6 md:col-span-2"
-      >
-        {(t('offer.steps', { returnObjects: true }) as Array<{ t: string; d: string }>).map(
-          (s, i) => (
-            <li key={s.t} className="flex gap-3 text-[14px] leading-6">
-              <span className="font-mono text-accent tabular-nums">{i + 1}</span>
-              <span>
-                <span className="font-medium text-fg">{s.t}</span>{' '}
-                <span className="text-fg-muted">{s.d}</span>
-              </span>
-            </li>
-          ),
-        )}
-      </ol>
       {PLANS.map(({ key, topic }) => (
         <div
           key={key}
