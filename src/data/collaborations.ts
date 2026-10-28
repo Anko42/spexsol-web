@@ -124,15 +124,14 @@ export const collaborations: Collaboration[] = [
     name: 'bbbpets.sk',
     url: 'https://bbbpets.sk',
     role: {
-      en: 'Turnkey e-shop and server administration',
-      sk: 'E-shop na kľúč a správa servera',
+      en: 'First e-shop, built in 2020 and still running',
+      sk: 'Prvý e-shop, postavený v roku 2020 a dodnes v prevádzke',
     },
     from: 2020,
     to: 2020,
     logo: '/logos/bbbpets.png',
     invertLight: true,
     via: 'freelance',
-    showYears: true,
     active: false,
   },
 ]
