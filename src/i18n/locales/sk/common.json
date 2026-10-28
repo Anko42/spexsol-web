@@ -3,7 +3,8 @@
   "nav": {
     "back": "Späť",
     "products": "Produkty a spolupráce",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "productsShort": "Práce"
   },
   "notFound": {
     "title": "Stránka sa nenašla.",

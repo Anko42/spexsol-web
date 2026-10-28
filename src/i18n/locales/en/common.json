@@ -3,7 +3,8 @@
   "nav": {
     "back": "Back",
     "products": "Products & partnerships",
-    "contact": "Contact"
+    "contact": "Contact",
+    "productsShort": "Work"
   },
   "notFound": {
     "title": "Page not found.",
