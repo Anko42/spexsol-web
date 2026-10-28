@@ -6,6 +6,7 @@ export const CONTACT_TOPICS = [
   'automation',
   'ai',
   'advisory',
+  'retainer',
   'other',
 ] as const
 export type ContactTopic = (typeof CONTACT_TOPICS)[number]

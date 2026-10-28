@@ -26,7 +26,12 @@
       "replaces": "Replaces",
       "reply": "Reply within 1 business day"
     },
-    "pauseAnimation": "Pause headline animation"
+    "pauseAnimation": "Pause headline animation",
+    "trust": [
+      "Every Friday you see what landed",
+      "Repo and accounts in your name",
+      "No lock-in, month to month"
+    ]
   },
   "ceo": {
     "name": "Andrej Skalicky",
@@ -52,7 +57,8 @@
       "automation": "Automation",
       "ai": "AI",
       "advisory": "Advisory",
-      "other": "Other"
+      "other": "Other",
+      "retainer": "Monthly"
     },
     "brief": "What you need",
     "briefPlaceholder": "A few lines about your project…",
@@ -164,5 +170,84 @@
       "day": "Thu 9 Oct",
       "confirm": "Confirm"
     }
+  },
+  "personas": {
+    "heading": "Sound familiar?",
+    "lead": "Three situations companies usually come to us with.",
+    "cta": "That's us",
+    "owners": {
+      "title": "Owners & operations",
+      "question": "The whole company runs on one spreadsheet and the one person who understands it.",
+      "body": "We build a small internal system that replaces the sheet and makes sense to the whole team."
+    },
+    "founders": {
+      "title": "Founders & new products",
+      "question": "You have the idea and first interested customers, but nothing they can install yet.",
+      "body": "Web and iOS version in a few weeks. We agree up front what exactly goes into the first release."
+    },
+    "teams": {
+      "title": "Product teams & CTOs",
+      "question": "The backlog grows faster than the team can work through it.",
+      "body": "An extra pair of hands: an experienced developer who works by your rules and your code review."
+    }
+  },
+  "offer": {
+    "heading": "Ways to work with us",
+    "lead": "We don't bill by the hour. Scope and price are agreed up front, based on what you need.",
+    "monthly": {
+      "tag": "Ongoing",
+      "title": "Monthly partnership",
+      "description": "We work your priority list and hand over finished changes every week. You decide what comes first.",
+      "points": [
+        "Finished work every week, not at the end",
+        "Change priorities as you learn",
+        "One engineer with AI tooling, no middlemen",
+        "Pause or end the subscription any month",
+        "Everything we build is yours from the start"
+      ],
+      "cta": "Start a monthly partnership"
+    },
+    "fixed": {
+      "tag": "One-off",
+      "title": "Fixed-price project",
+      "description": "Right when you know exactly what you want. We write down the scope, send a price and deliver.",
+      "points": [
+        "Scope and deadline agreed in writing",
+        "One price, no surprise invoices",
+        "Regular demos during the build",
+        "A month of support after launch",
+        "No obligations after handover"
+      ],
+      "cta": "Get a quote"
+    }
+  },
+  "faq": {
+    "heading": "Common questions",
+    "items": [
+      {
+        "q": "Who owns the result?",
+        "a": "You do. Repository, database and hosting are created under your name. Nothing stays with us as leverage."
+      },
+      {
+        "q": "Who do I talk to about details?",
+        "a": "Directly with Andrej, who writes your software. No one in between."
+      },
+      {
+        "q": "What if you get sick or stop?",
+        "a": "Everything is in your repository: code, docs and the reasoning behind decisions. The brief is written down and changes have tests, so any experienced developer can continue."
+      },
+      {
+        "q": "How do you use AI in development?",
+        "a": "AI agents write the routine code under my supervision. I own architecture, security and review every change before it ships. That's how one person covers what used to take a team."
+      },
+      {
+        "q": "Monthly or fixed price?",
+        "a": "If the brief will evolve, go monthly. If it's clear and closed, fixed price. On the intro call I'll tell you which makes sense."
+      },
+      {
+        "q": "What if I end the partnership?",
+        "a": "The software keeps running, because it's yours. You only pay hosting and any AI services directly to their providers. When you want to add something, get in touch."
+      }
+    ]
   }
 }

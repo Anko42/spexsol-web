@@ -143,7 +143,18 @@ export function Hero() {
             <a href="#services">{t('hero.ctaSecondary')}</a>
           </Button>
         </motion.div>
-        <motion.p variants={staggerItem} className="label mt-4">
+        <motion.ul
+          variants={staggerItem}
+          className="label mt-5 flex flex-wrap gap-x-5 gap-y-1"
+        >
+          {(t('hero.trust', { returnObjects: true }) as string[]).map((item) => (
+            <li key={item} className="flex items-center gap-1.5">
+              <span aria-hidden="true" className="text-accent">✓</span>
+              {item}
+            </li>
+          ))}
+        </motion.ul>
+        <motion.p variants={staggerItem} className="label mt-2">
           {t('hero.note')}
         </motion.p>
       </motion.div>

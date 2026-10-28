@@ -26,7 +26,12 @@
       "replaces": "Nahrádza",
       "reply": "Odpoveď do 1 pracovného dňa"
     },
-    "pauseAnimation": "Pozastaviť animáciu nadpisu"
+    "pauseAnimation": "Pozastaviť animáciu nadpisu",
+    "trust": [
+      "Každý piatok vidíte, čo pribudlo",
+      "Repozitár aj účty na vaše meno",
+      "Bez viazanosti, mesiac po mesiaci"
+    ]
   },
   "ceo": {
     "name": "Andrej Skalický",
@@ -52,7 +57,8 @@
       "automation": "Automatizácia",
       "ai": "AI",
       "advisory": "Konzultácia",
-      "other": "Iné"
+      "other": "Iné",
+      "retainer": "Mesačne"
     },
     "brief": "Čo potrebujete",
     "briefPlaceholder": "Pár riadkov o vašom projekte…",
@@ -164,5 +170,84 @@
       "day": "Št 9. 10.",
       "confirm": "Potvrdiť"
     }
+  },
+  "personas": {
+    "heading": "Spoznávate sa?",
+    "lead": "Tri situácie, s ktorými k nám firmy prichádzajú najčastejšie.",
+    "cta": "Toto je náš prípad",
+    "owners": {
+      "title": "Majitelia a prevádzka",
+      "question": "Celá firma stojí na jednom Exceli a jednom človeku, ktorý mu rozumie.",
+      "body": "Postavíme malý interný systém, ktorý tabuľku nahradí a bude zrozumiteľný pre celý tím."
+    },
+    "founders": {
+      "title": "Zakladatelia a nové produkty",
+      "question": "Máte nápad a prvých záujemcov, ale ešte nič, čo by si mohli nainštalovať.",
+      "body": "Web a iOS verzia za niekoľko týždňov. Vopred sa dohodneme, čo presne bude v prvom vydaní."
+    },
+    "teams": {
+      "title": "Produktové tímy a CTO",
+      "question": "Backlog rastie rýchlejšie, ako ho tím stíha spracovať.",
+      "body": "Pridáme vám ďalšie ruky: skúsený vývojár, ktorý pracuje podľa vašich pravidiel a code review."
+    }
+  },
+  "offer": {
+    "heading": "Ako sa dá s nami pracovať",
+    "lead": "Neúčtujeme hodiny. Dohodneme sa na rozsahu a cene vopred, podľa toho, čo potrebujete.",
+    "monthly": {
+      "tag": "Dlhodobo",
+      "title": "Mesačné partnerstvo",
+      "description": "Pracujeme na vašom zozname priorít a každý týždeň odovzdáme hotové zmeny. Čo je prvé, rozhodujete vy.",
+      "points": [
+        "Hotová práca každý týždeň, nie až na konci",
+        "Priority meníte podľa toho, čo sa naučíte",
+        "Jeden inžinier s AI nástrojmi, bez prostredníkov",
+        "Predplatné pozastavíte alebo ukončíte kedykoľvek",
+        "Všetko, čo vznikne, je od začiatku vaše"
+      ],
+      "cta": "Chcem mesačnú spoluprácu"
+    },
+    "fixed": {
+      "tag": "Jednorazovo",
+      "title": "Projekt za pevnú cenu",
+      "description": "Hodí sa, keď presne viete, čo chcete. Spíšeme rozsah, pošleme cenu a dodáme.",
+      "points": [
+        "Rozsah a termín dohodnuté písomne",
+        "Jedna cena, bez dodatočných faktúr",
+        "Priebežné ukážky počas vývoja",
+        "Mesiac podpory po nasadení",
+        "Po odovzdaní žiadne záväzky"
+      ],
+      "cta": "Chcem cenovú ponuku"
+    }
+  },
+  "faq": {
+    "heading": "Časté otázky",
+    "items": [
+      {
+        "q": "Kto vlastní výsledok?",
+        "a": "Vy. Repozitár, databázu aj hosting zakladáme na vaše meno. Nič u nás nezostáva ako rukojemník."
+      },
+      {
+        "q": "S kým budem riešiť detaily?",
+        "a": "Priamo s Andrejom, ktorý váš softvér píše. Žiadne medzičlánky."
+      },
+      {
+        "q": "Čo ak ochoriete alebo skončíte?",
+        "a": "Všetko je vo vašom repozitári: kód, dokumentácia aj dôvody rozhodnutí. Zadanie je spísané a zmeny majú testy, takže ktokoľvek skúsený môže pokračovať."
+      },
+      {
+        "q": "Ako využívate AI pri vývoji?",
+        "a": "Rutinný kód píšu AI agenti pod mojím dohľadom. Architektúru, bezpečnosť a každú zmenu pred nasadením kontrolujem ja. Preto stíha jeden človek to, na čo bol kedysi potrebný tím."
+      },
+      {
+        "q": "Mesačne alebo pevná cena?",
+        "a": "Ak sa bude zadanie vyvíjať, zvoľte mesačnú spoluprácu. Ak je jasné a uzavreté, pevnú cenu. Na úvodnom hovore vám poviem, čo dáva zmysel."
+      },
+      {
+        "q": "Čo keď spoluprácu ukončím?",
+        "a": "Softvér beží ďalej, lebo je váš. Platíte už len hosting a prípadné AI služby priamo ich poskytovateľom. Keď budete chcieť niečo pridať, ozvite sa."
+      }
+    ]
   }
 }

@@ -237,7 +237,7 @@ export function ContactForm() {
           <div
             role="radiogroup"
             aria-label={t('contact.topic')}
-            className="well hidden w-fit flex-wrap gap-1 !rounded-full p-1 sm:flex"
+            className="well hidden w-fit max-w-full flex-wrap gap-1 !rounded-[22px] p-1 sm:flex"
           >
             {CONTACT_TOPICS.map((value) => {
               const selected = topic === value
