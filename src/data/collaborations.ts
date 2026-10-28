@@ -30,7 +30,7 @@ export interface Collaboration {
 export const collaborations: Collaboration[] = [
   // Through SpexSol (2025 –)
   {
-    name: 'localhost',
+    name: 'localhost s.r.o.',
     url: 'https://localhost.company',
     role: {
       en: 'Software development on client projects',
@@ -42,7 +42,7 @@ export const collaborations: Collaboration[] = [
     active: true,
   },
   {
-    name: 'nes group',
+    name: 'nes group, s. r. o.',
     role: {
       en: 'Software development on client projects',
       sk: 'Vývoj softvéru na klientskych projektoch',
@@ -69,7 +69,7 @@ export const collaborations: Collaboration[] = [
 
   // Before SpexSol: freelance
   {
-    name: 'Freevision',
+    name: 'freevision s.r.o.',
     url: 'https://freevision.sk',
     role: {
       en: 'Web and mobile apps for bus transport',
@@ -95,7 +95,7 @@ export const collaborations: Collaboration[] = [
     active: false,
   },
   {
-    name: 'Garwan',
+    name: 'Garwan k.s.',
     url: 'https://www.garwan.com',
     role: {
       en: 'Crypto hub, live blog and sports site with streaming',
@@ -108,7 +108,7 @@ export const collaborations: Collaboration[] = [
     active: false,
   },
   {
-    name: 'M7',
+    name: 'M7 s.r.o.',
     url: 'https://www.m7.sk',
     role: {
       en: 'CRM and e-commerce platforms',
