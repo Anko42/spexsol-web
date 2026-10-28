@@ -19,7 +19,22 @@ function ProductsIndex() {
     <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
       <PageHeader
         title={t('pageTitle')}
-        subtitle={t('pageSubtitle')}
+        subtitle={
+          <Trans
+            t={t}
+            i18nKey="pageSubtitle"
+            components={{
+              name: (
+                <a
+                  href={t('home:ceo.linkedin')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-underline text-fg"
+                />
+              ),
+            }}
+          />
+        }
       />
 
       {products.length > 0 ? (

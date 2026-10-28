@@ -5,7 +5,7 @@ import { staggerContainer, staggerItem } from '~/lib/motion-presets'
 interface PageHeaderProps {
   eyebrow?: string
   title: string
-  subtitle?: string
+  subtitle?: ReactNode
   children?: ReactNode
 }
 

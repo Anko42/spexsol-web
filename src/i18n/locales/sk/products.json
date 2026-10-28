@@ -1,6 +1,6 @@
 {
   "pageTitle": "Produkty a spolupráce",
-  "pageSubtitle": "Aplikácie a weby, ktoré SpexSol postavil, a firmy, s ktorými pracoval Andrej Skalický.",
+  "pageSubtitle": "Aplikácie a weby, ktoré SpexSol postavil, a firmy, s ktorými pracoval <name>Andrej</name>.",
   "empty": "Produkty tu čoskoro pribudnú.",
   "viewDetails": "Zobraziť detail",
   "backToProducts": "Späť na produkty",
@@ -30,7 +30,7 @@
     "get": "Stiahnuť"
   },
   "collab": {
-    "title": "Firmy, s ktorými pracoval <name>Andrej Skalický</name>",
+    "title": "Firmy, s ktorými pracoval <name>Andrej</name>",
     "subtitle": "Zakladateľ a inžinier SpexSol. Od roku 2025 cez SpexSol, predtým ako freelancer.",
     "ongoing": "Prebieha",
     "group": {
