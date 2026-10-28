@@ -37,6 +37,8 @@ export const collaborations: Collaboration[] = [
       sk: 'Vývoj softvéru na klientskych projektoch',
     },
     from: 2026,
+    logo: '/logos/nes-group.svg',
+    invertDark: true,
     active: true,
   },
   {

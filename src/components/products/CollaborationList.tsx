@@ -22,8 +22,8 @@ export function CollaborationList({ items }: { items: Collaboration[] }) {
                 src={c.logo}
                 alt=""
                 className={cn(
-                  "size-12 rounded-[12px] border border-line bg-card object-contain p-2 sm:size-14",
-                  c.invertDark && "dark:invert",
+                  "size-12 rounded-[12px] border border-line object-contain p-2 sm:size-14",
+                  c.invertDark ? "dark:invert" : "bg-card",
                 )}
                 loading="lazy"
               />
