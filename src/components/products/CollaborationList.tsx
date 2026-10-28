@@ -8,9 +8,9 @@ export function CollaborationList({ items }: { items: Collaboration[] }) {
   const lang = useLang()
   return (
     <ul>
-      {items.map((c) => {
-        const ongoing = c.to === undefined
-        const period = ongoing ? `${c.from} –` : c.from === c.to ? `${c.from}` : `${c.from} – ${c.to}`
+      {items.filter((c) => !c.hidden).map((c) => {
+        const ongoing = c.active
+        const period = c.to === undefined && ongoing ? `${c.from} –` : c.to === undefined || c.from === c.to ? `${c.from}` : `${c.from} – ${c.to}`
         return (
           <li
             key={c.name}
