@@ -23,8 +23,8 @@ export const collaborations: Collaboration[] = [
     name: 'Localhost Company',
     url: 'https://localhost.company',
     role: {
-      en: 'Senior engineer on client projects',
-      sk: 'Senior inžinier na klientskych projektoch',
+      en: 'Engineer on client projects',
+      sk: 'Inžinier na klientskych projektoch',
     },
     from: 2026,
     logo: '/logos/localhost-company.svg',
@@ -45,8 +45,8 @@ export const collaborations: Collaboration[] = [
     name: "Gentlemen's",
     url: 'https://gentlemens.sk',
     role: {
-      en: 'E-shop development and automation',
-      sk: 'Vývoj e-shopu a automatizácie',
+      en: 'iOS apps in React Native',
+      sk: 'iOS aplikácie v React Native',
     },
     from: 2025,
     logo: '/logos/gentlemens.png',
