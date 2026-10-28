@@ -56,7 +56,7 @@
   },
   "contact": {
     "title": "Start a conversation",
-    "subtitle": "Tell us what you're building. We reply within one business day.",
+    "subtitle": "Tell us what you're building. No obligation, we reply within one business day.",
     "fullName": "Full name",
     "fullNamePlaceholder": "Jana Kováčová",
     "email": "Email",
@@ -227,7 +227,22 @@
         "A month of support after launch"
       ],
       "cta": "Get a quote"
-    }
+    },
+    "stepsTitle": "How to start",
+    "steps": [
+      {
+        "t": "Audit",
+        "d": "One to two weeks, written plan."
+      },
+      {
+        "t": "Fixed-price project",
+        "d": "We build what the plan says."
+      },
+      {
+        "t": "Monthly",
+        "d": "When you want to keep going without a new brief."
+      }
+    ]
   },
   "faq": {
     "heading": "Common questions",
@@ -251,7 +266,27 @@
       {
         "q": "What if I end the partnership?",
         "a": "The software keeps running, because it's yours. You only pay hosting and any AI services directly to their providers. When you want to add something, get in touch."
+      },
+      {
+        "q": "How does first contact work?",
+        "a": "You write through the form, we reply within one business day and set up a 15-minute call. No obligation, no preparation needed."
+      },
+      {
+        "q": "How long does it take?",
+        "a": "An audit takes one to two weeks. An MVP 4 to 8 weeks. Bigger projects follow a written plan you get before we start."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "We don't bill by the hour. An audit has a fixed price up front. Projects get a written quote after the audit. Monthly work is agreed per scope."
+      },
+      {
+        "q": "Can it be extended later?",
+        "a": "Yes. Code, tests and docs live in your repository. Continue with us or with anyone else."
       }
     ]
+  },
+  "logos": {
+    "title": "Companies Andrej has worked with",
+    "all": "All partnerships"
   }
 }

@@ -56,7 +56,7 @@
   },
   "contact": {
     "title": "Ozvite sa",
-    "subtitle": "Napíšte nám, čo staviate. Odpovieme do jedného pracovného dňa.",
+    "subtitle": "Napíšte, čo staviate. Nezáväzne, odpovieme do jedného pracovného dňa.",
     "fullName": "Celé meno",
     "fullNamePlaceholder": "Jana Kováčová",
     "email": "Email",
@@ -227,7 +227,22 @@
         "Mesiac podpory po nasadení"
       ],
       "cta": "Chcem cenovú ponuku"
-    }
+    },
+    "stepsTitle": "Ako začať",
+    "steps": [
+      {
+        "t": "Audit",
+        "d": "Týždeň až dva, písomný plán."
+      },
+      {
+        "t": "Projekt za pevnú cenu",
+        "d": "Postavíme to, čo je v pláne."
+      },
+      {
+        "t": "Mesačne",
+        "d": "Keď chcete pokračovať bez nového zadania."
+      }
+    ]
   },
   "faq": {
     "heading": "Časté otázky",
@@ -251,7 +266,27 @@
       {
         "q": "Čo keď spoluprácu ukončím?",
         "a": "Softvér beží ďalej, lebo je váš. Platíte už len hosting a prípadné AI služby priamo ich poskytovateľom. Keď budete chcieť niečo pridať, ozvite sa."
+      },
+      {
+        "q": "Ako prebieha prvý kontakt?",
+        "a": "Napíšete cez formulár, do jedného pracovného dňa odpovieme a dohodneme 15-minútový hovor. Nezáväzne, bez prípravy."
+      },
+      {
+        "q": "Ako dlho to trvá?",
+        "a": "Audit týždeň až dva. MVP 4 až 8 týždňov. Väčšie projekty podľa písomného plánu, ktorý dostanete pred začiatkom."
+      },
+      {
+        "q": "Koľko to stojí?",
+        "a": "Neúčtujeme hodiny. Audit má pevnú cenu vopred. Na projekt dostanete písomnú ponuku po audite. Mesačná spolupráca sa dohodne podľa rozsahu."
+      },
+      {
+        "q": "Dá sa to neskôr rozšíriť?",
+        "a": "Áno. Kód, testy aj dokumentácia sú vo vašom repozitári. Pokračujete s nami alebo s kýmkoľvek iným."
       }
     ]
+  },
+  "logos": {
+    "title": "Firmy, s ktorými Andrej pracoval",
+    "all": "Všetky spolupráce"
   }
 }
