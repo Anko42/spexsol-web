@@ -33,8 +33,8 @@ export const collaborations: Collaboration[] = [
     name: 'Localhost Company',
     url: 'https://localhost.company',
     role: {
-      en: 'Senior engineer on client projects',
-      sk: 'Senior inžinier na klientskych projektoch',
+      en: 'Software development on client projects',
+      sk: 'Vývoj softvéru na klientskych projektoch',
     },
     from: 2026,
     logo: '/logos/localhost-company.svg',
