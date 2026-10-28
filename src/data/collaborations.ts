@@ -121,8 +121,8 @@ export const collaborations: Collaboration[] = [
     name: 'bbbpets.sk',
     url: 'https://bbbpets.sk',
     role: {
-      en: 'Built the e-shop from provided designs, then ran server and database administration.',
-      sk: 'Postavil e-shop podľa dodaných návrhov, potom správa servera a databázy.',
+      en: 'E-shop built from provided designs, then server and database administration.',
+      sk: 'Vývoj e-shopu podľa dodaných návrhov, potom správa servera a databázy.',
     },
     from: 2020,
     to: 2020,
