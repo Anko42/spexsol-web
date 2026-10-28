@@ -19,6 +19,8 @@ export interface Collaboration {
   via: CollaborationVia
   /** Shows the "ongoing" badge. */
   active: boolean
+  /** Render the years next to the row (off by default). */
+  showYears?: boolean
   /** Keep the entry but do not render it. */
   hidden?: boolean
 }
@@ -130,6 +132,7 @@ export const collaborations: Collaboration[] = [
     logo: '/logos/bbbpets.png',
     invertLight: true,
     via: 'freelance',
+    showYears: true,
     active: false,
   },
 ]

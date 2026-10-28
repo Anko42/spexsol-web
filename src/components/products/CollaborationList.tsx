@@ -33,7 +33,7 @@ export function CollaborationList({ items }: { items: Collaboration[] }) {
 function Row({ c }: { c: Collaboration }) {
   const lang = useLang()
   return (
-    <li className="grid grid-cols-[3rem_1fr] items-center gap-4 border-t border-line py-5 sm:grid-cols-[3.5rem_1fr] sm:gap-6 sm:px-2">
+    <li className="grid grid-cols-[3rem_1fr_auto] items-center gap-4 border-t border-line py-5 sm:grid-cols-[3.5rem_1fr_auto] sm:gap-6 sm:px-2">
       {c.logo ? (
         <img
           src={c.logo}
@@ -66,6 +66,11 @@ function Row({ c }: { c: Collaboration }) {
         </h4>
         <p className="mt-1 line-clamp-2 text-[14px] leading-6 text-fg-muted">{c.role[lang]}</p>
       </div>
+      {c.showYears && (
+        <span className="font-mono text-[13px] tabular-nums text-fg-muted">
+          {c.to === undefined || c.from === c.to ? c.from : `${c.from} – ${c.to}`}
+        </span>
+      )}
     </li>
   )
 }
