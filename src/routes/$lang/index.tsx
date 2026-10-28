@@ -6,7 +6,6 @@ import { SectionHead } from '~/components/site/SectionHead'
 import { ServicesShowcase } from '~/components/site/ServicesShowcase'
 import { Offer } from '~/components/site/Offer'
 import { Faq } from '~/components/site/Faq'
-import { LogoStrip } from '~/components/site/LogoStrip'
 import { ProductCard } from '~/components/products/ProductCard'
 import { useLang } from '~/hooks/useLang'
 import { products } from '~/data/products'
@@ -36,9 +35,6 @@ function Home() {
           />
         </div>
         <ServicesShowcase />
-        <div className="mt-14 lg:mt-16">
-          <LogoStrip />
-        </div>
       </section>
 
       {/* Work: shown once there is something to show */}
