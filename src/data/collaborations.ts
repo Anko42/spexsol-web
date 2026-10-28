@@ -62,7 +62,7 @@ export const collaborations: Collaboration[] = [
     active: true,
   },
 
-  // Before SpexSol: employee and freelance
+  // Before SpexSol: freelance
   {
     name: 'Freevision',
     url: 'https://freevision.sk',
@@ -73,7 +73,7 @@ export const collaborations: Collaboration[] = [
     from: 2024,
     to: 2026,
     logo: '/logos/freevision.png',
-    via: 'employee',
+    via: 'freelance',
     active: false,
   },
   {
@@ -86,7 +86,7 @@ export const collaborations: Collaboration[] = [
     from: 2024,
     to: 2024,
     logo: '/logos/kontentino.png',
-    via: 'employee',
+    via: 'freelance',
     active: false,
   },
   {
@@ -97,7 +97,7 @@ export const collaborations: Collaboration[] = [
     },
     from: 2021,
     to: 2023,
-    via: 'employee',
+    via: 'freelance',
     active: false,
   },
   {
@@ -110,7 +110,7 @@ export const collaborations: Collaboration[] = [
     from: 2020,
     to: 2021,
     logo: '/logos/m7.png',
-    via: 'employee',
+    via: 'freelance',
     active: false,
   },
   {
