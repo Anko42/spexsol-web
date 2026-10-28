@@ -1,6 +1,5 @@
 {
   "hero": {
-    "status": "Taking new projects",
     "titleBefore": "Still running your business on",
     "words": [
       "spreadsheets",
@@ -26,26 +25,7 @@
       "replaces": "Replaces",
       "reply": "Reply within 1 business day"
     },
-    "pauseAnimation": "Pause headline animation",
-    "trust": [
-      "Every Friday you see what landed",
-      "Repo and accounts in your name",
-      "No lock-in, month to month"
-    ],
-    "personas": [
-      {
-        "label": "Owners: replace the spreadsheet",
-        "topic": "automation"
-      },
-      {
-        "label": "Founders: MVP in 4–8 weeks",
-        "topic": "mvp"
-      },
-      {
-        "label": "Teams: extra hands for the backlog",
-        "topic": "advisory"
-      }
-    ]
+    "pauseAnimation": "Pause headline animation"
   },
   "ceo": {
     "name": "Andrej Skalicky",

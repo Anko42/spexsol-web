@@ -1,6 +1,5 @@
 {
   "hero": {
-    "status": "Prijímame nové projekty",
     "titleBefore": "Stále riadite firmu cez",
     "words": [
       "Excel",
@@ -26,26 +25,7 @@
       "replaces": "Nahrádza",
       "reply": "Odpoveď do 1 pracovného dňa"
     },
-    "pauseAnimation": "Pozastaviť animáciu nadpisu",
-    "trust": [
-      "Každý piatok vidíte, čo pribudlo",
-      "Repozitár aj účty na vaše meno",
-      "Bez viazanosti, mesiac po mesiaci"
-    ],
-    "personas": [
-      {
-        "label": "Majitelia: nahradíme Excel",
-        "topic": "automation"
-      },
-      {
-        "label": "Zakladatelia: MVP za 4 až 8 týždňov",
-        "topic": "mvp"
-      },
-      {
-        "label": "Tímy: ďalšie ruky do backlogu",
-        "topic": "advisory"
-      }
-    ]
+    "pauseAnimation": "Pozastaviť animáciu nadpisu"
   },
   "ceo": {
     "name": "Andrej Skalický",

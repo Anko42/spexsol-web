@@ -42,10 +42,10 @@ export function MvpFigure() {
               key={key}
               style={{ gridColumn: `${start + 1} / span ${span}` }}
               className={cn(
-                'truncate rounded-[4px] px-1.5 text-[8px] font-medium leading-5 sm:text-[10px] sm:leading-6',
+                'truncate px-1.5 text-[8px] font-medium leading-5 sm:text-[10px] sm:leading-6',
                 i === PHASES.length - 1
                   ? 'bg-accent text-bg'
-                  : 'bg-accent/15 text-fg shadow-[inset_2px_0_0_var(--accent)]',
+                  : 'bg-accent/20 text-fg',
               )}
             >
               {t(`figures.mvp.${key}`)}

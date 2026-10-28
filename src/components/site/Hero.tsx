@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Button, ButtonArrow } from '~/components/ui/button'
 import { ProjectWidget } from '~/components/site/ProjectWidget'
-import { selectService, type ServiceTopic } from '~/components/site/ServicesShowcase'
 import { Image } from '@unpic/react'
 import { useSplash } from '~/components/site/SplashContext'
 import { staggerContainer, staggerItem } from '~/lib/motion-presets'
@@ -52,44 +51,16 @@ export function Hero() {
         variants={staggerContainer}
         className="lg:col-span-7"
       >
-        <motion.div variants={staggerItem} className="flex items-center gap-2">
-          <p className="eyebrow">
-            <span className="relative flex size-2" aria-hidden="true">
-              <span className="absolute inset-0 animate-ping rounded-full bg-accent opacity-40 motion-reduce:hidden" />
-              <span className="relative size-2 rounded-full bg-accent" />
-            </span>
-            {t('hero.status')}
-          </p>
-          {animating && (
-            <button
-              type="button"
-              onClick={() => setPaused((p) => !p)}
-              aria-pressed={paused}
-              aria-label={t('hero.pauseAnimation')}
-              title={t('hero.pauseAnimation')}
-              className="inline-flex size-7 cursor-pointer items-center justify-center rounded-full text-fg-muted transition-colors duration-150 hover:bg-fg/5 hover:text-fg"
-            >
-              <svg viewBox="0 0 16 16" className="size-3.5" fill="currentColor" aria-hidden="true">
-                {paused ? (
-                  <path d="M5 3.5v9l7-4.5-7-4.5Z" />
-                ) : (
-                  <path d="M5 3.5h2v9H5zM9 3.5h2v9H9z" />
-                )}
-              </svg>
-            </button>
-          )}
-        </motion.div>
-
         <motion.h1
           id="hero-title"
           variants={staggerItem}
-          className="mt-6 text-[clamp(2.5rem,5.5vw,4.25rem)] font-semibold leading-[1.02] tracking-[-0.035em] text-fg"
+          className="text-[clamp(2.5rem,5.5vw,4.25rem)] font-semibold leading-[1.02] tracking-[-0.035em] text-fg"
         >
           <span className="sr-only">{t('hero.titleFull')}</span>
           <span aria-hidden="true">
             {t('hero.titleBefore')}{' '}
             <span
-              className="relative block font-display font-normal italic tracking-[-0.02em] text-accent"
+              className="relative block font-semibold tracking-[-0.035em] text-accent"
               style={{ height: `${FACE_EM}em`, perspective: '10em' }}
             >
               {/* reserves the widest face so the line never jumps */}
@@ -117,7 +88,7 @@ export function Hero() {
                     transition={{ duration: 0.5 }}
                   >
                     {w}
-                    <span className="not-italic font-body font-semibold tracking-[-0.035em] text-fg">
+                    <span className="text-fg">
                       {t('hero.titleAfter')}
                     </span>
                   </motion.span>
@@ -144,18 +115,25 @@ export function Hero() {
           <Button asChild size="lg" variant="outline">
             <a href="#services">{t('hero.ctaSecondary')}</a>
           </Button>
+          {animating && (
+            <button
+              type="button"
+              onClick={() => setPaused((p) => !p)}
+              aria-pressed={paused}
+              aria-label={t('hero.pauseAnimation')}
+              title={t('hero.pauseAnimation')}
+              className="inline-flex size-7 cursor-pointer items-center justify-center rounded-full text-fg-muted transition-colors duration-150 hover:bg-fg/5 hover:text-fg"
+            >
+              <svg viewBox="0 0 16 16" className="size-3.5" fill="currentColor" aria-hidden="true">
+                {paused ? (
+                  <path d="M5 3.5v9l7-4.5-7-4.5Z" />
+                ) : (
+                  <path d="M5 3.5h2v9H5zM9 3.5h2v9H9z" />
+                )}
+              </svg>
+            </button>
+          )}
         </motion.div>
-        <motion.ul
-          variants={staggerItem}
-          className="label mt-5 flex flex-wrap gap-x-5 gap-y-1"
-        >
-          {(t('hero.trust', { returnObjects: true }) as string[]).map((item) => (
-            <li key={item} className="flex items-center gap-1.5">
-              <span aria-hidden="true" className="text-accent">✓</span>
-              {item}
-            </li>
-          ))}
-        </motion.ul>
         <motion.div variants={staggerItem} className="mt-6 flex items-center gap-3">
           <Image
             src="/andrej.png"
@@ -168,22 +146,6 @@ export function Hero() {
             <span className="text-fg">{t('ceo.name')}</span> · {t('ceo.role')} · {t('hero.note')}
           </p>
         </motion.div>
-        <motion.ul variants={staggerItem} className="mt-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-line-soft pt-5 text-[14px]">
-          {(t('hero.personas', { returnObjects: true }) as Array<{ label: string; topic: ServiceTopic }>).map(({ label, topic }) => (
-            <li key={topic}>
-              <a
-                href="#services"
-                onClick={(e) => {
-                  e.preventDefault()
-                  selectService(topic)
-                }}
-                className="link-underline text-fg-muted hover:text-fg"
-              >
-                {label} <span aria-hidden="true">→</span>
-              </a>
-            </li>
-          ))}
-        </motion.ul>
       </motion.div>
 
       <motion.div
