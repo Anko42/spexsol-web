@@ -1,5 +1,5 @@
 {
-  "pageTitle": "Products",
+  "pageTitle": "Products & partnerships",
   "pageSubtitle": "Apps and websites built and maintained by SpexSol.",
   "empty": "Products will appear here soon.",
   "viewDetails": "View details",
@@ -28,5 +28,10 @@
     "category": "Category",
     "platform": "Platform",
     "get": "Get it"
+  },
+  "collab": {
+    "title": "Companies we work with",
+    "subtitle": "Past and current engagements.",
+    "ongoing": "Ongoing"
   }
 }

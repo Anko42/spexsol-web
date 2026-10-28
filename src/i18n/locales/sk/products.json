@@ -1,5 +1,5 @@
 {
-  "pageTitle": "Produkty",
+  "pageTitle": "Produkty a spolupráce",
   "pageSubtitle": "Aplikácie a weby, ktoré SpexSol postavil a udržiava.",
   "empty": "Produkty tu čoskoro pribudnú.",
   "viewDetails": "Zobraziť detail",
@@ -28,5 +28,10 @@
     "category": "Kategória",
     "platform": "Platforma",
     "get": "Stiahnuť"
+  },
+  "collab": {
+    "title": "Firmy, s ktorými spolupracujeme",
+    "subtitle": "Minulé aj prebiehajúce spolupráce.",
+    "ongoing": "Prebieha"
   }
 }

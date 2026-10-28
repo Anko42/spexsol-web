@@ -4,6 +4,9 @@ import { ContactCard } from '~/components/products/ContactCard'
 import { ProductCard } from '~/components/products/ProductCard'
 import { PageHeader } from '~/components/site/PageHeader'
 import { products } from '~/data/products'
+import { collaborations } from '~/data/collaborations'
+import { CollaborationList } from '~/components/products/CollaborationList'
+import { SectionHead } from '~/components/site/SectionHead'
 
 export const Route = createFileRoute('/$lang/products/')({
   component: ProductsIndex,
@@ -33,6 +36,15 @@ function ProductsIndex() {
             <p className="text-[17px] leading-7 text-fg">{t('empty')}</p>
           </div>
         </div>
+      )}
+
+      {collaborations.length > 0 && (
+        <section aria-labelledby="collab-title" className="mt-16">
+          <SectionHead id="collab-title" title={t('collab.title')} description={t('collab.subtitle')} />
+          <div className="mt-8">
+            <CollaborationList items={collaborations} />
+          </div>
+        </section>
       )}
 
       <div className="mt-16">
