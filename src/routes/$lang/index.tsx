@@ -1,3 +1,4 @@
+import { pageHead } from '~/utils/seo'
 import { Link, createFileRoute } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import { Hero } from '~/components/site/Hero'
@@ -11,6 +12,11 @@ import { useLang } from '~/hooks/useLang'
 import { products } from '~/data/products'
 
 export const Route = createFileRoute('/$lang/')({
+  head: ({ params }) =>
+    pageHead(params.lang, '', {
+      title: 'common:meta.home.title',
+      description: 'common:meta.home.description',
+    }),
   component: Home,
 })
 

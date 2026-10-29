@@ -24,5 +24,11 @@
     "studio": "Štúdio",
     "legal": "Právne"
   },
-  "skip": "Preskočiť na obsah"
+  "skip": "Preskočiť na obsah",
+  "meta": {
+    "home": {
+      "title": "SpexSol — Softvér postavený s rozmyslom",
+      "description": "Malé slovenské softvérové štúdio. Webové a mobilné aplikácie, automatizácia, AI integrácie a audity kódu. Mesačná alebo fixná spolupráca."
+    }
+  }
 }

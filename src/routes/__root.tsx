@@ -15,7 +15,7 @@ import { Splash } from '~/components/site/Splash'
 import { SplashProvider } from '~/components/site/SplashContext'
 import i18n, { DEFAULT_LANGUAGE, isSupportedLanguage } from '~/i18n/config'
 import appCss from '~/styles/app.css?url'
-import { seo } from '~/utils/seo'
+import { SITE_URL } from '~/utils/seo'
 
 export const Route = createRootRoute({
   beforeLoad: async ({ location }) => {
@@ -31,11 +31,7 @@ export const Route = createRootRoute({
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'theme-color', content: '#f5f3ee', media: '(prefers-color-scheme: light)' },
       { name: 'theme-color', content: '#12110e', media: '(prefers-color-scheme: dark)' },
-      ...seo({
-        title: 'SpexSol — Software, built with intent',
-        description:
-          'Small Slovak engineering studio. Web and mobile products, automation, AI integrations and code audits.',
-      }),
+      { title: 'SpexSol' },
     ],
     links: [
       { rel: 'stylesheet', href: appCss },
@@ -50,6 +46,34 @@ export const Route = createRootRoute({
         href: 'https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap',
       },
       { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+      { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
+      { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+      { rel: 'manifest', href: '/site.webmanifest' },
+    ],
+    scripts: [
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'SpexSol s. r. o.',
+          alternateName: 'SpexSol',
+          url: SITE_URL,
+          logo: `${SITE_URL}/icon-512.png`,
+          email: 'skalicky@spexsol.sk',
+          description:
+            'Small Slovak software studio. Web and mobile products, automation, AI integrations and code audits.',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Bojničky 2',
+            postalCode: '920 55',
+            addressLocality: 'Bojničky',
+            addressCountry: 'SK',
+          },
+          vatID: 'SK2122528089',
+          taxID: '2122528089',
+        }),
+      },
     ],
   }),
   errorComponent: DefaultCatchBoundary,
@@ -69,7 +93,7 @@ function MainEntry({ children }: { children: React.ReactNode }) {
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html suppressHydrationWarning>
+    <html lang={i18n.language} suppressHydrationWarning>
       <head>
         <HeadContent />
         <script

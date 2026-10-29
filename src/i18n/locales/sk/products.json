@@ -42,5 +42,9 @@
       "employee": "Zamestnanec",
       "freelance": "Freelance"
     }
+  },
+  "meta": {
+    "title": "Produkty a spolupráce — SpexSol",
+    "description": "Aplikácie a weby, ktoré SpexSol postavil, a firmy, s ktorými sme spolupracovali."
   }
 }

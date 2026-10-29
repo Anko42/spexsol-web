@@ -1,0 +1,20 @@
+# SpexSol
+
+> SpexSol s. r. o. is a small software studio in Slovakia (Bojničky). It builds web and mobile products, automation, AI integrations and does code audits for clients in Slovakia and abroad. Engagements are monthly retainers or fixed-price projects. Site is in English (/en) and Slovak (/sk).
+
+Contact: skalicky@spexsol.sk. Replies within one business day.
+Company ID (IČO): 57004196. VAT ID (DIČ): 2122528089.
+
+## Pages
+
+- [Home](https://spexsol.sk/en): services, offer, FAQ, contact form
+- [Products & partnerships](https://spexsol.sk/en/products): apps and websites built, past collaborations
+- [Contact](https://spexsol.sk/en/contact)
+- [Privacy Policy](https://spexsol.sk/en/privacy-policy): covers website and SpexSol mobile apps
+- [Terms of Use](https://spexsol.sk/en/terms-of-use)
+
+## Slovak
+
+- [Úvod](https://spexsol.sk/sk)
+- [Produkty a spolupráce](https://spexsol.sk/sk/products)
+- [Kontakt](https://spexsol.sk/sk/contact)

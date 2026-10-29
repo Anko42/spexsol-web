@@ -172,6 +172,10 @@
           "Fotografie odoslané na AI identifikáciu sa spracúvajú v pamäti a po vrátení výsledku sa zahodia; neuchovávame ich. Počítadlá limitov viazané na váš identifikátor inštalácie sa automaticky vymažú po jednom dni (Premium) alebo po jednom mesiaci (bezplatná verzia). Samotný identifikátor inštalácie sa odstráni, keď aplikáciu odinštalujete."
         ]
       }
+    },
+    "meta": {
+      "title": "Zásady ochrany osobných údajov — SpexSol",
+      "description": "Ako SpexSol s. r. o. zbiera, používa a chráni osobné údaje na webe a v mobilných aplikáciách."
     }
   },
   "terms": {
@@ -286,6 +290,10 @@
       "heading": "Máte otázky k podmienkam?",
       "subtitle": "Napíšte nám a ozveme sa vám späť.",
       "button": "Kontaktujte nás"
+    },
+    "meta": {
+      "title": "Podmienky používania — SpexSol",
+      "description": "Podmienky používania webov a mobilných aplikácií SpexSol."
     }
   }
 }

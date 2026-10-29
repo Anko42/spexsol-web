@@ -172,6 +172,10 @@
           "Photos submitted for AI identification are processed in memory and discarded once the result is returned; we do not retain them. Rate-limit counters keyed by your install identifier are deleted automatically after one day (Premium) or one month (free tier). Your install identifier itself is removed when you delete the app."
         ]
       }
+    },
+    "meta": {
+      "title": "Privacy Policy — SpexSol",
+      "description": "How SpexSol s. r. o. collects, uses and protects personal data on its website and mobile apps."
     }
   },
   "terms": {
@@ -286,6 +290,10 @@
       "heading": "Questions about these terms?",
       "subtitle": "Reach out and we'll get back to you.",
       "button": "Contact us"
+    },
+    "meta": {
+      "title": "Terms of Use — SpexSol",
+      "description": "Terms governing use of SpexSol websites and mobile applications."
     }
   }
 }

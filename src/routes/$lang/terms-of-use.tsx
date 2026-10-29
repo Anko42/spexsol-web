@@ -1,3 +1,4 @@
+import { pageHead } from '~/utils/seo'
 import { createFileRoute } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import { LegalLayout } from '~/components/legal/LegalLayout'
@@ -7,6 +8,11 @@ import { ContactLegalCTA } from '~/components/legal/ContactLegalCTA'
 import { useLang } from '~/hooks/useLang'
 
 export const Route = createFileRoute('/$lang/terms-of-use')({
+  head: ({ params }) =>
+    pageHead(params.lang, '/terms-of-use', {
+      title: 'legal:terms.meta.title',
+      description: 'legal:terms.meta.description',
+    }),
   component: TermsOfUse,
 })
 

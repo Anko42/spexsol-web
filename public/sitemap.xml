@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://spexsol.sk/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/sk</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/contact"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/sk/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/contact"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/en/products</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/products"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/products"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/products"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/sk/products</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/products"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/products"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/products"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/en/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/privacy-policy"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/sk/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/privacy-policy"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/en/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/terms-of-use"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/terms-of-use"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/terms-of-use"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/sk/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/terms-of-use"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/terms-of-use"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/terms-of-use"/>
+  </url>
+</urlset>

@@ -42,5 +42,9 @@
       "employee": "Employee",
       "freelance": "Freelance"
     }
+  },
+  "meta": {
+    "title": "Products & partnerships — SpexSol",
+    "description": "Apps and websites SpexSol built, and companies we have worked with."
   }
 }

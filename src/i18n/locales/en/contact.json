@@ -1,4 +1,8 @@
 {
   "pageTitle": "Start a conversation",
-  "pageSubtitle": "Tell us what you're building. We reply within one business day."
+  "pageSubtitle": "Tell us what you're building. We reply within one business day.",
+  "meta": {
+    "title": "Contact — SpexSol",
+    "description": "Tell us what you're building. We reply within one business day."
+  }
 }

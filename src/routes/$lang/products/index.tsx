@@ -1,3 +1,4 @@
+import { pageHead } from '~/utils/seo'
 import { createFileRoute } from '@tanstack/react-router'
 import { Trans, useTranslation } from 'react-i18next'
 import { ContactCard } from '~/components/products/ContactCard'
@@ -9,6 +10,11 @@ import { CollaborationList } from '~/components/products/CollaborationList'
 import { SectionHead } from '~/components/site/SectionHead'
 
 export const Route = createFileRoute('/$lang/products/')({
+  head: ({ params }) =>
+    pageHead(params.lang, '/products', {
+      title: 'products:meta.title',
+      description: 'products:meta.description',
+    }),
   component: ProductsIndex,
 })
 
