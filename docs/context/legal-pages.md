@@ -9,11 +9,11 @@
 - `/$lang/terms-of-use`
 
 ## Format
-Hardcoded TSX, one component per page, content inlined per locale (en + sk). No MDX, no CMS — keeps the build trivial and the content reviewable in PRs.
+Content lives in `src/i18n/locales/{en,sk}/legal.json` (namespace `legal`). Routes in `src/routes/$lang/` stay thin and only map keys onto `LegalSection` / `NumberedList`. No MDX, no CMS — keeps the build trivial and the content reviewable in PRs.
 
 ## Update process
-1. Edit the TSX file directly for the relevant locale.
-2. Bump a "Last updated" date shown at the top of the page.
+1. Edit `legal.json` in **both** locales; keep key sets identical (new section = new key in en + sk, renumber headings).
+2. Bump `lastUpdated` in both locales (shown at the top of the page).
 3. If a change is material (data handling, retention, contact channel), notify users per the policy's own update clause and re-submit affected iOS apps if their listing references changed sections.
 
 ## Cross-references to keep in sync

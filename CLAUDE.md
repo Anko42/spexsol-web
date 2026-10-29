@@ -30,5 +30,5 @@ See `docs/context/` for architecture, i18n, contact form, and legal-pages notes.
 
 ## Notes for Claude
 - The repo started from the TanStack Start basic example; example routes (posts, users, deferred, pathless layouts) are scheduled for removal.
-- Legal content lives **hardcoded in TSX** per locale (not MDX).
-- Contact form delivery mechanism is **not yet decided** — the API route should remain a clearly-marked stub until the user picks SMTP/Resend/Formspree/DB.
+- Legal content lives in `src/i18n/locales/{en,sk}/legal.json`; routes stay thin (not MDX).
+- Contact form delivers to Slack via `src/server/slack.ts` (`/api/contact`).

@@ -63,6 +63,14 @@ function TermsOfUse() {
         ))}
       </LegalSection>
 
+      <LegalSection heading={t('terms.sections.aiFeatures.heading')}>
+        <p>{t('terms.sections.aiFeatures.body')}</p>
+      </LegalSection>
+
+      <LegalSection heading={t('terms.sections.sharing.heading')}>
+        <p>{t('terms.sections.sharing.body')}</p>
+      </LegalSection>
+
       <LegalSection
         heading={t('terms.sections.intellectualProperty.heading')}
         variant="card"

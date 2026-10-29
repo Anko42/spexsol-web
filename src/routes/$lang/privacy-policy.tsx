@@ -21,6 +21,12 @@ function PrivacyPolicy() {
   const collectionItems = t('privacy.sections.collection.items', {
     returnObjects: true,
   }) as Record<string, string>
+  const iosItems = t('privacy.sections.collection.iosItems', {
+    returnObjects: true,
+  }) as Record<string, string>
+  const retentionParagraphs = t('privacy.sections.retention.paragraphs', {
+    returnObjects: true,
+  }) as ReadonlyArray<string>
   const useItems = t('privacy.sections.use.items', {
     returnObjects: true,
   }) as Record<string, string>
@@ -73,7 +79,9 @@ function PrivacyPolicy() {
         <h3 className={subHeadingClass}>
           {t('privacy.sections.collection.iosHeading')}
         </h3>
-        <p>{t('privacy.sections.collection.iosBody')}</p>
+        <p>{t('privacy.sections.collection.iosIntro')}</p>
+        <p>{t('privacy.sections.collection.iosLocalBody')}</p>
+        <NumberedList items={toNumberedItems(iosItems)} />
       </LegalSection>
 
       <LegalSection heading={t('privacy.sections.legitimateReasons.heading')}>
@@ -90,7 +98,9 @@ function PrivacyPolicy() {
       </LegalSection>
 
       <LegalSection heading={t('privacy.sections.retention.heading')}>
-        <p>{t('privacy.sections.retention.body')}</p>
+        {retentionParagraphs.map((para, idx) => (
+          <p key={idx}>{para}</p>
+        ))}
       </LegalSection>
 
       <LegalSection heading={t('privacy.sections.children.heading')}>
@@ -114,6 +124,7 @@ function PrivacyPolicy() {
       <LegalSection heading={t('privacy.sections.rights.heading')}>
         <p>{t('privacy.sections.rights.intro')}</p>
         <NumberedList items={toNumberedItems(rightsItems)} />
+        <p>{t('privacy.sections.rights.outro')}</p>
       </LegalSection>
 
       <LegalSection heading={t('privacy.sections.businessTransfers.heading')}>
