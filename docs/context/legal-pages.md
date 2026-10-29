@@ -19,3 +19,12 @@ Content lives in `src/i18n/locales/{en,sk}/legal.json` (namespace `legal`). Rout
 ## Cross-references to keep in sync
 - Contact email / channel mentioned in privacy policy must match what `ContactForm` actually does.
 - Company legal name and address must match across both pages and the iOS App Store listing.
+
+## Adding an app
+Privacy policy is one page for all apps. Shared sections stay generic; app-specific text lives under `privacy.apps.<appKey>` in both `legal.json` files:
+- `name` — display name (used as sub-heading in sections 2 and 6)
+- `collectionIntro` — what stays on device, what leaves it
+- `collectionItems` — numbered list of data that leaves the device (`"01"`, `"02"`, …)
+- `retention` — array of app-specific retention paragraphs (may be empty)
+
+Route `src/routes/$lang/privacy-policy.tsx` loops over `privacy.apps`; no code change needed. Add new third parties to `privacy.sections.thirdParties.providers` and name the app in the item. Terms of use are app-agnostic ("some of our applications"); add a section only for genuinely new behaviour.

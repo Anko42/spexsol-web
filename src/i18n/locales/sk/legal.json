@@ -23,17 +23,7 @@
           "03": "Obsah akejkoľvek správy, ktorú nám pošlete"
         },
         "iosHeading": "Údaje zhromažďované našimi iOS aplikáciami",
-        "iosIntro": "Údaje, ktoré naše iOS aplikácie zhromažďujú, zodpovedajú tomu, čo je deklarované v privacy label každej aplikácie v App Store. Naše aplikácie nevyžadujú účet, nepoužívajú reklamné identifikátory, nesledujú vás naprieč inými aplikáciami ani webovými stránkami a nežiadajú o povolenie App Tracking Transparency ani o vašu polohu.",
-        "iosLocalBody": "Water Me ukladá vaše rastliny, fotografie, históriu polievania, pripomienky a nastavenia lokálne na vašom zariadení. Pripomienky sa plánujú priamo na zariadení; žiadne údaje o notifikáciách ho neopúšťajú. Zariadenie opúšťajú tieto údaje:",
-        "iosItems": {
-          "01": "Diagnostika pádov a výkonu — odosielaná do služby Firebase Crashlytics (pozri sekciu 9).",
-          "02": "Analytika používania — anonymné udalosti v aplikácii (napríklad „rastlina pridaná\", „pripomienka odložená\", „zobrazený paywall\") a zobrazenia obrazoviek, odosielané do služby Firebase Analytics, aby sme vedeli, ktoré funkcie sa používajú. Identifikátor dodávateľa (IDFV) ani reklamný identifikátor sa nezhromažďujú.",
-          "03": "Identifikátor inštalácie — náhodný identifikátor vygenerovaný pri prvom spustení. Odosiela sa s požiadavkami na náš server na uplatnenie limitov férového používania a na rozpoznanie vašich nákupov. Nie je prepojený s vaším menom, e-mailom ani Apple ID.",
-          "04": "Fotografie rastlín na AI identifikáciu (Premium) — keď na fotografii ťuknete na „Identifikovať\", zmenšená kópia tejto fotografie sa odošle na náš server a ďalej do Claude API spoločnosti Anthropic, ktoré vráti druh rastliny a odporúčania starostlivosti. Fotografiu ani výsledok na našich serveroch neukladáme; Anthropic nepoužíva údaje z API na trénovanie svojich modelov. Výsledok sa ukladá iba na vašom zariadení.",
-          "05": "Zdieľané zoznamy rastlín — ak vytvoríte odkaz na zdieľanie, údaje, ktoré sa rozhodnete zdieľať (vaše zobrazované meno, názvy rastlín a nádob, fotografie rastlín a nádob, plány polievania a záznam polievania), sa nahrajú na naše servery, aby si ich ľudia s odkazom mohli zobraziť a, pokiaľ zdieľanie neoznačíte iba na čítanie, zaznamenávať polievania. Uchovávanie a doba uloženia sú opísané v sekcii 8.",
-          "06": "Stav nákupu — keď si kúpite alebo obnovíte Premium, náš poskytovateľ predplatného RevenueCat dostane váš identifikátor inštalácie a doklad o nákupe od Apple. Vaše platobné údaje nikdy nevidíme.",
-          "07": "Atestácia zariadenia — každá požiadavka na náš server obsahuje token Firebase App Check získaný zo služby Apple App Attest, ktorý preukazuje, že požiadavka pochádza z pravej kópie aplikácie."
-        }
+        "iosIntro": "Údaje, ktoré naše iOS aplikácie zhromažďujú, zodpovedajú tomu, čo je deklarované v privacy label každej aplikácie v App Store. Pokiaľ nie je pri konkrétnej aplikácii nižšie uvedené inak, naše aplikácie nevyžadujú účet, nepoužívajú reklamné identifikátory, nesledujú vás naprieč inými aplikáciami ani webovými stránkami a nežiadajú o povolenie App Tracking Transparency ani o vašu polohu. Nasledujúce podsekcie opisujú jednotlivé aplikácie."
       },
       "legitimateReasons": {
         "heading": "3. Oprávnené dôvody spracúvania osobných údajov",
@@ -56,10 +46,9 @@
       "retention": {
         "heading": "6. Ako dlho uchovávame vaše osobné údaje",
         "paragraphs": [
-          "Vaše osobné údaje uchovávame iba tak dlho, ako je to nevyhnutné. Správy odoslané cez kontaktný formulár a súvisiacu komunikáciu uchovávame najviac 12 mesiacov od našej poslednej odpovede, po uplynutí tejto doby ich vymažeme alebo anonymizujeme. Serverové záznamy o prístupe sú uchovávané po štandardnú krátku dobu stanovenú naším poskytovateľom hostingu. Záznamy o pádoch a chybách odoslané cez Firebase Crashlytics sú uchovávané po štandardnú dobu Crashlytics (90 dní), pokiaľ nie sú viazané na otvorený problém, ktorý ešte riešime. Udalosti analytiky používania zhromaždené cez Firebase Analytics sa uchovávajú 14 mesiacov. Ak vaše osobné údaje už nie sú potrebné a nemáme zákonnú povinnosť ich uchovávať, vymažeme ich alebo ich anonymizujeme odstránením všetkých údajov, ktoré vás identifikujú.",
-          "Zdieľané zoznamy rastlín (Water Me). Zdieľanie trvá po dobu, ktorú zvolíte pri jeho vytvorení (najviac 365 dní), a automaticky sa vymaže sedem dní po uplynutí platnosti. Zdieľanie môžete kedykoľvek vymazať v aplikácii, čím sa z našich serverov okamžite odstránia všetky jeho údaje vrátane fotografií. Odkazy na zdieľané fotografie strácajú platnosť hodinu po vydaní. Ak už nemáte prístup k zariadeniu, ktoré zdieľanie vytvorilo, pošlite nám e-mailom kód zdieľania a my ho vymažeme.",
-          "Fotografie odoslané na AI identifikáciu sa spracúvajú v pamäti a po vrátení výsledku sa zahodia; neuchovávame ich. Počítadlá limitov viazané na váš identifikátor inštalácie sa automaticky vymažú po jednom dni (Premium) alebo po jednom mesiaci (bezplatná verzia). Samotný identifikátor inštalácie sa odstráni, keď aplikáciu odinštalujete."
-        ]
+          "Vaše osobné údaje uchovávame iba tak dlho, ako je to nevyhnutné. Správy odoslané cez kontaktný formulár a súvisiacu komunikáciu uchovávame najviac 12 mesiacov od našej poslednej odpovede, po uplynutí tejto doby ich vymažeme alebo anonymizujeme. Serverové záznamy o prístupe sú uchovávané po štandardnú krátku dobu stanovenú naším poskytovateľom hostingu. Záznamy o pádoch a chybách odoslané cez Firebase Crashlytics sú uchovávané po štandardnú dobu Crashlytics (90 dní), pokiaľ nie sú viazané na otvorený problém, ktorý ešte riešime. Udalosti analytiky používania zhromaždené cez Firebase Analytics sa uchovávajú 14 mesiacov. Ak vaše osobné údaje už nie sú potrebné a nemáme zákonnú povinnosť ich uchovávať, vymažeme ich alebo ich anonymizujeme odstránením všetkých údajov, ktoré vás identifikujú."
+        ],
+        "appsIntro": "Doby uchovávania špecifické pre jednotlivé aplikácie:"
       },
       "children": {
         "heading": "7. Ochrana súkromia detí",
@@ -78,8 +67,8 @@
           "01": "Google Cloud Platform (Google Ireland Limited) — hosting našich aplikačných serverov, databáz a úložiska fotografií (Cloud Run, Cloud Firestore, Cloud Storage) v regióne europe-west1 (Belgicko). Sprostredkovateľ.",
           "02": "Firebase Crashlytics a Firebase Analytics (Google Ireland Limited) — nahlasovanie pádov a anonymná analytika používania našich iOS aplikácií. Minimálne údaje o zariadení a diagnostike sa spracúvajú v našom mene v pozícii sprostredkovateľa. Údaje môžu byť prenášané do Spojených štátov na základe Štandardných zmluvných doložiek Európskej komisie.",
           "03": "Firebase App Check (Google Ireland Limited) a Apple App Attest (Apple Inc.) — atestácia zariadenia, ktorá chráni naše servery pred zneužitím.",
-          "04": "Anthropic, PBC (Spojené štáty) — poskytovateľ AI modelu pre funkciu identifikácie rastlín. Dostane fotografiu, ktorú odošlete na identifikáciu, spracuje ju a vráti výsledok; nepoužíva ju na trénovanie modelov. Prenosy do Spojených štátov sú kryté Štandardnými zmluvnými doložkami Európskej komisie, ktoré sú súčasťou dodatku o spracúvaní údajov spoločnosti Anthropic.",
-          "05": "RevenueCat, Inc. (Spojené štáty) — správa predplatného v aplikácii. Dostane váš identifikátor inštalácie a doklad z App Store na určenie stavu Premium. Uplatňujú sa Štandardné zmluvné doložky.",
+          "04": "Anthropic, PBC (Spojené štáty) — poskytovateľ AI modelu pre funkcie AI v našich aplikáciách (napríklad identifikácia rastlín vo Water Me). Dostane obsah, ktorý funkcii odošlete, spracuje ho a vráti výsledok; nepoužíva ho na trénovanie modelov. Prenosy do Spojených štátov sú kryté Štandardnými zmluvnými doložkami Európskej komisie, ktoré sú súčasťou dodatku o spracúvaní údajov spoločnosti Anthropic.",
+          "05": "RevenueCat, Inc. (Spojené štáty) — správa predplatného v aplikácii. Dostane váš identifikátor inštalácie a doklad z App Store na určenie stavu predplatného. Uplatňujú sa Štandardné zmluvné doložky.",
           "06": "Apple Inc. — spracúva všetky platby, fakturáciu a vrátenie peňazí za nákupy v aplikácii podľa podmienok vášho Apple ID.",
           "07": "Google Analytics 4 a Google Tag Manager (Google Ireland Limited) — meranie návštevnosti webu. Načítavajú sa až po tom, ako prijmete analytické cookies cez náš cookie banner.",
           "08": "Slack Technologies, LLC (Spojené štáty) — doručovanie správ z kontaktného formulára na webe do nášho interného pracovného priestoru. Dostane meno, e-mailovú adresu a správu, ktoré odošlete. Uplatňujú sa Štandardné zmluvné doložky."
@@ -99,7 +88,7 @@
           "03": "kedykoľvek sa odhlásiť z akejkoľvek priamej marketingovej komunikácie;",
           "04": "požiadať o vymazanie osobných údajov, ktoré o vás máme, s výhradou platných právnych požiadaviek."
         },
-        "outro": "Keďže naše iOS aplikácie ukladajú vaše údaje na vašom zariadení, odinštalovaním aplikácie sa tieto údaje vymažú. Údaje, ktoré ste nahrali cez odkaz na zdieľanie, sa vymažú, keď zdieľanie v aplikácii vymažete alebo keď mu uplynie platnosť. S akoukoľvek inou žiadosťou nás kontaktujte na skalicky@spexsol.sk."
+        "outro": "Ak aplikácia ukladá vaše údaje iba na vašom zariadení, odinštalovaním aplikácie sa tieto údaje vymažú. Údaje, ktoré ste nahrali cez odkaz na zdieľanie, sa vymažú, keď zdieľanie v aplikácii vymažete alebo keď mu uplynie platnosť. S akoukoľvek inou žiadosťou nás kontaktujte na skalicky@spexsol.sk."
       },
       "businessTransfers": {
         "heading": "11. Prevod podniku",
@@ -120,13 +109,13 @@
         "legalBasesHeading": "Právne základy spracúvania",
         "legalBasesIntro": "Vaše osobné údaje budeme spracúvať zákonným, spravodlivým a transparentným spôsobom. Údaje o vás zhromažďujeme a spracúvame iba vtedy, keď na to máme právny základ. Tieto právne základy závisia od služieb, ktoré používate, a od spôsobu ich používania, čo znamená, že vaše údaje zhromažďujeme a používame iba v prípade, ak:",
         "legalBases": {
-          "01": "je to nevyhnutné na plnenie zmluvy, ktorej ste zmluvnou stranou, alebo na vykonanie krokov na vašu žiadosť pred uzavretím takejto zmluvy (čl. 6 ods. 1 písm. b) GDPR) — napríklad keď odpovedáme na dopyt zaslaný cez kontaktný formulár — a keď spracúvame fotografiu, ktorú odošlete na AI identifikáciu, alebo údaje, ktoré sa rozhodnete zverejniť cez odkaz na zdieľanie, keďže ide o funkcie, ktoré aktívne požadujete;",
+          "01": "je to nevyhnutné na plnenie zmluvy, ktorej ste zmluvnou stranou, alebo na vykonanie krokov na vašu žiadosť pred uzavretím takejto zmluvy (čl. 6 ods. 1 písm. b) GDPR) — napríklad keď odpovedáme na dopyt zaslaný cez kontaktný formulár — a keď spracúvame obsah, ktorý odošlete funkcii AI, alebo údaje, ktoré sa rozhodnete zverejniť cez odkaz na zdieľanie, keďže ide o funkcie, ktoré aktívne požadujete;",
           "02": "spĺňa to oprávnený záujem (ktorý nie je prevažovaný vašimi záujmami na ochranu údajov) podľa čl. 6 ods. 1 písm. f) GDPR, napríklad odpovedanie na dopyty, ktoré nie sú predzmluvné, udržiavanie stability a bezpečnosti našich iOS aplikácií prostredníctvom nahlasovania pádov, zisťovanie, ktoré funkcie sa používajú, prostredníctvom anonymnej analytiky, ochrana našich služieb pred zneužitím a ochrana našich právnych práv a záujmov;",
           "03": "ste nám na to dali súhlas na konkrétny účel podľa čl. 6 ods. 1 písm. a) GDPR; alebo",
           "04": "potrebujeme spracúvať vaše údaje na splnenie zákonnej povinnosti podľa čl. 6 ods. 1 písm. c) GDPR."
         },
         "transfersHeading": "Medzinárodné prenosy mimo EHP",
-        "transfersBody": "Zabezpečíme, aby každý prenos osobných údajov z krajín Európskeho hospodárskeho priestoru (EHP) do krajín mimo EHP bol chránený primeranými zárukami, napríklad použitím Štandardných zmluvných doložiek schválených Európskou komisiou. Týka sa to najmä údajov o pádoch, chybách a používaní odosielaných do služby Firebase, fotografií odosielaných spoločnosti Anthropic na AI identifikáciu, údajov o nákupoch odosielaných do služby RevenueCat, správ z kontaktného formulára doručovaných cez Slack a údajov o návštevnosti webu odosielaných do služby Google Analytics, ktoré všetky môžu byť spracúvané v Spojených štátoch.",
+        "transfersBody": "Zabezpečíme, aby každý prenos osobných údajov z krajín Európskeho hospodárskeho priestoru (EHP) do krajín mimo EHP bol chránený primeranými zárukami, napríklad použitím Štandardných zmluvných doložiek schválených Európskou komisiou. Týka sa to najmä údajov o pádoch, chybách a používaní odosielaných do služby Firebase, obsahu odosielaného spoločnosti Anthropic pre funkcie AI, údajov o nákupoch odosielaných do služby RevenueCat, správ z kontaktného formulára doručovaných cez Slack a údajov o návštevnosti webu odosielaných do služby Google Analytics, ktoré všetky môžu byť spracúvané v Spojených štátoch.",
         "dpoHeading": "Zodpovedná osoba (DPO)",
         "dpoBody": "Nevymenovali sme zodpovednú osobu (Data Protection Officer). Vzhľadom na veľkosť spoločnosti SpexSol a obmedzenú povahu osobných údajov, ktoré spracúvame, nie sme na to povinní podľa čl. 37 GDPR. V akýchkoľvek otázkach týkajúcich sa vašich osobných údajov nás môžete priamo kontaktovať na skalicky@spexsol.sk.",
         "rightsHeading": "Vaše práva",
@@ -164,6 +153,25 @@
       "heading": "Máte otázky o vašich údajoch?",
       "subtitle": "Napíšte nám a ozveme sa vám späť.",
       "button": "Kontaktujte nás"
+    },
+    "apps": {
+      "waterMe": {
+        "name": "Water Me",
+        "collectionIntro": "Water Me ukladá vaše rastliny, fotografie, históriu polievania, pripomienky a nastavenia lokálne na vašom zariadení. Pripomienky sa plánujú priamo na zariadení; žiadne údaje o notifikáciách ho neopúšťajú. Zariadenie opúšťajú tieto údaje:",
+        "collectionItems": {
+          "01": "Diagnostika pádov a výkonu — odosielaná do služby Firebase Crashlytics (pozri sekciu 9).",
+          "02": "Analytika používania — anonymné udalosti v aplikácii (napríklad „rastlina pridaná\", „pripomienka odložená\", „zobrazený paywall\") a zobrazenia obrazoviek, odosielané do služby Firebase Analytics, aby sme vedeli, ktoré funkcie sa používajú. Identifikátor dodávateľa (IDFV) ani reklamný identifikátor sa nezhromažďujú.",
+          "03": "Identifikátor inštalácie — náhodný identifikátor vygenerovaný pri prvom spustení. Odosiela sa s požiadavkami na náš server na uplatnenie limitov férového používania a na rozpoznanie vašich nákupov. Nie je prepojený s vaším menom, e-mailom ani Apple ID.",
+          "04": "Fotografie rastlín na AI identifikáciu (Premium) — keď na fotografii ťuknete na „Identifikovať\", zmenšená kópia tejto fotografie sa odošle na náš server a ďalej do Claude API spoločnosti Anthropic, ktoré vráti druh rastliny a odporúčania starostlivosti. Fotografiu ani výsledok na našich serveroch neukladáme; Anthropic nepoužíva údaje z API na trénovanie svojich modelov. Výsledok sa ukladá iba na vašom zariadení.",
+          "05": "Zdieľané zoznamy rastlín — ak vytvoríte odkaz na zdieľanie, údaje, ktoré sa rozhodnete zdieľať (vaše zobrazované meno, názvy rastlín a nádob, fotografie rastlín a nádob, plány polievania a záznam polievania), sa nahrajú na naše servery, aby si ich ľudia s odkazom mohli zobraziť a, pokiaľ zdieľanie neoznačíte iba na čítanie, zaznamenávať polievania. Uchovávanie a doba uloženia sú opísané v sekcii 8.",
+          "06": "Stav nákupu — keď si kúpite alebo obnovíte Premium, náš poskytovateľ predplatného RevenueCat dostane váš identifikátor inštalácie a doklad o nákupe od Apple. Vaše platobné údaje nikdy nevidíme.",
+          "07": "Atestácia zariadenia — každá požiadavka na náš server obsahuje token Firebase App Check získaný zo služby Apple App Attest, ktorý preukazuje, že požiadavka pochádza z pravej kópie aplikácie."
+        },
+        "retention": [
+          "Zdieľané zoznamy rastlín. Zdieľanie trvá po dobu, ktorú zvolíte pri jeho vytvorení (najviac 365 dní), a automaticky sa vymaže sedem dní po uplynutí platnosti. Zdieľanie môžete kedykoľvek vymazať v aplikácii, čím sa z našich serverov okamžite odstránia všetky jeho údaje vrátane fotografií. Odkazy na zdieľané fotografie strácajú platnosť hodinu po vydaní. Ak už nemáte prístup k zariadeniu, ktoré zdieľanie vytvorilo, pošlite nám e-mailom kód zdieľania a my ho vymažeme.",
+          "Fotografie odoslané na AI identifikáciu sa spracúvajú v pamäti a po vrátení výsledku sa zahodia; neuchovávame ich. Počítadlá limitov viazané na váš identifikátor inštalácie sa automaticky vymažú po jednom dni (Premium) alebo po jednom mesiaci (bezplatná verzia). Samotný identifikátor inštalácie sa odstráni, keď aplikáciu odinštalujete."
+        ]
+      }
     }
   },
   "terms": {
@@ -195,7 +203,7 @@
           "Niektoré funkcie našich iOS aplikácií sú ponúkané ako platené predplatné alebo nákupy v aplikácii. Všetky platby, fakturácia, obnovenia a vrátenie peňazí za nákupy uskutočnené prostredníctvom App Store sú spracúvané spoločnosťou Apple v súlade s podmienkami vášho Apple ID účtu, a nie spoločnosťou SpexSol.",
           "Predplatné sa automaticky obnovuje, pokiaľ automatické obnovenie nevypnete najmenej 24 hodín pred koncom aktuálneho obdobia. Predplatné môžete spravovať a zrušiť v nastaveniach svojho Apple ID. Zrušenie nadobudne účinnosť na konci aktuálneho fakturačného obdobia; už uhradené sumy sa nevracajú s výnimkou prípadov vyžadovaných zákonom alebo politikami spoločnosti Apple.",
           "Ceny, funkcie a rozsah bezplatných a platených úrovní sa môžu meniť. Ak je to potrebné, o podstatných zmenách vás budeme informovať pred ich účinnosťou.",
-          "Premium je viazané na Apple ID použité pri nákupe a je dostupné na všetkých vašich zariadeniach prihlásených týmto Apple ID. Na opätovnú aktiváciu na novom alebo preinštalovanom zariadení použite „Obnoviť nákupy\" v nastaveniach aplikácie."
+          "Predplatné a nákupy v aplikácii sú viazané na Apple ID použité pri nákupe a sú dostupné na všetkých vašich zariadeniach prihlásených týmto Apple ID. Na opätovnú aktiváciu na novom alebo preinštalovanom zariadení použite „Obnoviť nákupy\" v nastaveniach aplikácie."
         ]
       },
       "aiFeatures": {

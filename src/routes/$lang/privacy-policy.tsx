@@ -14,6 +14,13 @@ function toNumberedItems(record: Record<string, string>) {
   return Object.entries(record).map(([number, text]) => ({ number, text }))
 }
 
+interface AppPrivacy {
+  name: string
+  collectionIntro: string
+  collectionItems: Record<string, string>
+  retention: ReadonlyArray<string>
+}
+
 function PrivacyPolicy() {
   const { t } = useTranslation('legal')
   const lang = useLang()
@@ -21,9 +28,9 @@ function PrivacyPolicy() {
   const collectionItems = t('privacy.sections.collection.items', {
     returnObjects: true,
   }) as Record<string, string>
-  const iosItems = t('privacy.sections.collection.iosItems', {
-    returnObjects: true,
-  }) as Record<string, string>
+  const apps = Object.values(
+    t('privacy.apps', { returnObjects: true }) as Record<string, AppPrivacy>,
+  )
   const retentionParagraphs = t('privacy.sections.retention.paragraphs', {
     returnObjects: true,
   }) as ReadonlyArray<string>
@@ -48,6 +55,7 @@ function PrivacyPolicy() {
 
   const subHeadingClass =
     'mt-2 text-[16px] font-semibold leading-6 text-fg'
+  const appHeadingClass = 'text-[15px] font-semibold leading-6 text-fg'
 
   return (
     <LegalLayout
@@ -80,8 +88,13 @@ function PrivacyPolicy() {
           {t('privacy.sections.collection.iosHeading')}
         </h3>
         <p>{t('privacy.sections.collection.iosIntro')}</p>
-        <p>{t('privacy.sections.collection.iosLocalBody')}</p>
-        <NumberedList items={toNumberedItems(iosItems)} />
+        {apps.map((app) => (
+          <div key={app.name} className="flex flex-col gap-4">
+            <h4 className={appHeadingClass}>{app.name}</h4>
+            <p>{app.collectionIntro}</p>
+            <NumberedList items={toNumberedItems(app.collectionItems)} />
+          </div>
+        ))}
       </LegalSection>
 
       <LegalSection heading={t('privacy.sections.legitimateReasons.heading')}>
@@ -101,6 +114,17 @@ function PrivacyPolicy() {
         {retentionParagraphs.map((para, idx) => (
           <p key={idx}>{para}</p>
         ))}
+        <p>{t('privacy.sections.retention.appsIntro')}</p>
+        {apps
+          .filter((app) => app.retention.length > 0)
+          .map((app) => (
+            <div key={app.name} className="flex flex-col gap-4">
+              <h4 className={appHeadingClass}>{app.name}</h4>
+              {app.retention.map((para, idx) => (
+                <p key={idx}>{para}</p>
+              ))}
+            </div>
+          ))}
       </LegalSection>
 
       <LegalSection heading={t('privacy.sections.children.heading')}>
