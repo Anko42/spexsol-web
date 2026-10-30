@@ -1,0 +1,97 @@
+{
+  "pageTitle": "Prípadové štúdie",
+  "pageSubtitle": "Ako SpexSol rámcuje prevádzkové problémy a navrhuje praktický softvér a procesy s podporou AI. Koncepty sú takto označené — nenárokujeme si žiadne klientske výsledky.",
+  "backToList": "Späť na prípadové štúdie",
+  "conceptIllustration": "Koncepčná ilustrácia",
+  "status": {
+    "concept": "Koncept / Plánované MVP"
+  },
+  "sections": {
+    "challenge": "Výzva",
+    "solution": "Navrhované riešenie",
+    "workflow": "Navrhovaný proces",
+    "value": "Potenciálny prínos pre firmu",
+    "principles": "Princípy návrhu",
+    "nextSteps": "Stav a ďalšie kroky"
+  },
+  "meta": {
+    "title": "Prípadové štúdie — SpexSol",
+    "description": "Koncepčné prípadové štúdie SpexSol: rámcovanie problému, návrh riešenia a procesy s podporou AI pre prevádzkové tímy."
+  },
+  "fieldflow": {
+    "name": "FieldFlow",
+    "eyebrow": "SpexSol koncept / Plánované MVP",
+    "category": "Automatizácia procesov · Spracovanie dokumentov s podporou AI",
+    "tagline": "Z fotiek z terénu na štruktúrované servisné správy.",
+    "title": "FieldFlow — zo servisných papierov z terénu štruktúrovaný proces",
+    "intro": "Technici v teréne často posielajú fotky vyplnených servisných protokolov cez chatové aplikácie. Koordinátori potom trávia čas ich lúštením, triedením a ručným preposielaním. FieldFlow je navrhovaný proces s podporou AI, ktorý by z roztrúsených fotiek vytvoril štruktúrované záznamy pripravené na kontrolu.",
+    "cta": "Prebrať podobný proces",
+    "spec": {
+      "status": "Stav",
+      "category": "Kategória",
+      "audience": "Pre koho",
+      "audienceValue": "Servisné firmy, údržbárske tímy, prevádzkoví manažéri, koordinátori"
+    },
+    "challenge": {
+      "heading": "Dôležité servisné dáta ostávajú visieť v chatoch",
+      "body": "Po návšteve u zákazníka technik odfotí papierový protokol a pošle ho cez chatovú aplikáciu. Koordinátor musí identifikovať zákazku, prečítať dokument, prepísať kľúčové údaje, skontrolovať chýbajúce informácie a preposlať ho správnemu príjemcovi. Proces závisí od ručného odovzdávania a s rastúcim počtom správ sťažuje sledovanie, dohľadávanie aj konzistenciu."
+    },
+    "solution": {
+      "heading": "Jedno miesto na zber, kontrolu a odoslanie servisných správ",
+      "body": "FieldFlow skúma mobilný tok odoslania pre technikov a pracovný priestor pre koordinátora. Krok AI spracovania dokumentu by z nahratých fotiek navrhol štruktúrované polia. Človek by polia potvrdil alebo opravil pred vygenerovaním čistej správy a jej prípravou na doručenie. Návrh necháva konečné schválenie na ľuďoch."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Zber",
+          "body": "Technik nahrá jednu alebo viac fotiek vyplneného servisného protokolu."
+        },
+        {
+          "title": "Extrakcia",
+          "body": "Spracovanie s podporou AI navrhne kľúčové polia: číslo zákazky, dátum, zákazník, vykonané práce, poznámky."
+        },
+        {
+          "title": "Kontrola",
+          "body": "Koordinátor porovná zdrojovú fotku s extrahovanými údajmi a opraví všetko neisté."
+        },
+        {
+          "title": "Príprava a odoslanie",
+          "body": "Po schválení proces pripraví štandardizované PDF alebo štruktúrovaný export na autorizované doručenie."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Navrhnuté tak, aby ubralo z opakovanej koordinačnej práce",
+      "items": [
+        "Menej ručného prepisovania a opakovaného preposielania.",
+        "Konzistentnejšia štruktúra správ a jednoduchšie dohľadávanie.",
+        "Jasnejšie zodpovednosti za kontrolu a schválenie.",
+        "Lepší prehľad o nedokončených alebo neúplných správach."
+      ],
+      "disclaimer": "Ide o očakávané prínosy navrhovaného procesu, nie o overené výsledky. Žiadne merania výkonu zatiaľ nie sú k dispozícii."
+    },
+    "principles": {
+      "heading": "Praktická automatizácia s ľudským dohľadom",
+      "items": [
+        "Odoslanie primárne z mobilu, pre technikov v teréne.",
+        "Výslovná ľudská validácia pred odoslaním navonok.",
+        "Viditeľnosť chýbajúcich alebo neistých informácií.",
+        "Dohľadateľnosť od pôvodnej fotky až po finálnu správu.",
+        "Ochrana dát a riadenie prístupu ako požiadavka pre každú budúcu implementáciu."
+      ]
+    },
+    "nextSteps": {
+      "heading": "Dnes koncept, zajtra možné MVP",
+      "body": "FieldFlow je v súčasnosti koncept riešenia. Budúca proof-of-concept implementácia by mohla overiť presnosť extrakcie z dokumentov, čas kontroly a použiteľnosť pre koordinátorov na syntetických alebo riadne autorizovaných vzorových dokumentoch. Nenárokujeme si žiadne produkčné nasadenie ani zákaznícke výsledky."
+    },
+    "closing": {
+      "heading": "Máte vo firme podobný ručný proces?",
+      "body": "SpexSol pomáha tímom zistiť, ako by softvér na mieru a procesy s podporou AI mohli zjednodušiť prevádzkovú prácu. Poďme prebrať problém a nájsť realistický prvý krok.",
+      "cta": "Napíšte SpexSol"
+    },
+    "meta": {
+      "title": "FieldFlow — koncept servisného procesu s podporou AI | SpexSol",
+      "description": "FieldFlow je koncept SpexSol: odfotené servisné protokoly z terénu sa menia na štruktúrované, človekom skontrolované záznamy s extrakciou podporovanou AI."
+    }
+  }
+}

@@ -4,7 +4,9 @@
     "back": "Späť",
     "products": "Produkty a spolupráce",
     "contact": "Kontakt",
-    "productsShort": "Práce"
+    "productsShort": "Práce",
+    "caseStudies": "Prípadové štúdie",
+    "caseStudiesShort": "Štúdie"
   },
   "notFound": {
     "title": "Stránka sa nenašla.",

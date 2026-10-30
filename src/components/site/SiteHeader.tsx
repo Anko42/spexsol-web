@@ -51,6 +51,14 @@ export function SiteHeader() {
             <span className="hidden sm:inline">{t('nav.products')}</span>
           </Link>
           <Link
+            to="/$lang/case-studies"
+            params={{ lang }}
+            className={navClass(pathname.includes('/case-studies'))}
+          >
+            <span className="sm:hidden">{t('nav.caseStudiesShort')}</span>
+            <span className="hidden sm:inline">{t('nav.caseStudies')}</span>
+          </Link>
+          <Link
             to="/$lang/contact"
             params={{ lang }}
             className={navClass(pathname.endsWith('/contact'))}

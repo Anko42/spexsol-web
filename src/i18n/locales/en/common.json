@@ -4,7 +4,9 @@
     "back": "Back",
     "products": "Products & partnerships",
     "contact": "Contact",
-    "productsShort": "Work"
+    "productsShort": "Work",
+    "caseStudies": "Case studies",
+    "caseStudiesShort": "Cases"
   },
   "notFound": {
     "title": "Page not found.",

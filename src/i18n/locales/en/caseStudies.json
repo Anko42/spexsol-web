@@ -1,0 +1,97 @@
+{
+  "pageTitle": "Case studies",
+  "pageSubtitle": "How SpexSol frames operational problems and designs practical software and AI-assisted workflows. Concepts are labelled as such — no client results are claimed.",
+  "backToList": "Back to case studies",
+  "conceptIllustration": "Concept illustration",
+  "status": {
+    "concept": "Concept / Planned MVP"
+  },
+  "sections": {
+    "challenge": "The challenge",
+    "solution": "Proposed solution",
+    "workflow": "Proposed workflow",
+    "value": "Potential business value",
+    "principles": "Design principles",
+    "nextSteps": "Status and next steps"
+  },
+  "meta": {
+    "title": "Case studies — SpexSol",
+    "description": "Concept case studies from SpexSol: problem framing, solution design and AI-assisted workflow proposals for operational teams."
+  },
+  "fieldflow": {
+    "name": "FieldFlow",
+    "eyebrow": "SpexSol Concept / Planned MVP",
+    "category": "Workflow Automation · AI-assisted Document Processing",
+    "tagline": "From field photos to structured service reports.",
+    "title": "FieldFlow — turning field service paperwork into structured workflows",
+    "intro": "Field technicians often share photos of completed service reports through messaging apps. Coordinators then spend time interpreting, organizing and forwarding those documents by hand. FieldFlow is a proposed AI-assisted workflow that would turn those scattered photos into structured, reviewable records.",
+    "cta": "Discuss a similar workflow",
+    "spec": {
+      "status": "Status",
+      "category": "Category",
+      "audience": "Audience",
+      "audienceValue": "Field service operators, maintenance teams, operations managers, coordinators"
+    },
+    "challenge": {
+      "heading": "Important service data gets stuck in chat threads",
+      "body": "After a site visit, a technician may photograph a paper protocol and send it through a messaging app. A coordinator must identify the job, read the document, re-enter key details, check for missing information and forward it to the right recipient. The process depends on manual hand-offs and makes tracking, retrieval and consistency harder as the volume of reports grows."
+    },
+    "solution": {
+      "heading": "One place to capture, review and route field reports",
+      "body": "FieldFlow explores a mobile-friendly submission flow and a coordinator workspace. An AI document-processing step would suggest structured fields from uploaded photos. A human reviewer would confirm or correct those fields before generating a clean report and preparing it for delivery. The design keeps people in control of final approval."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Capture",
+          "body": "A technician uploads one or more photos of a completed service protocol."
+        },
+        {
+          "title": "Extract",
+          "body": "AI-assisted processing proposes key fields such as job reference, date, customer, work performed and notes."
+        },
+        {
+          "title": "Review",
+          "body": "A coordinator checks the source image alongside the extracted information and corrects anything uncertain."
+        },
+        {
+          "title": "Prepare & send",
+          "body": "Once approved, the workflow prepares a standardized PDF or structured export for authorized delivery."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Designed to reduce repetitive coordination work",
+      "items": [
+        "Less manual transcription and repetitive forwarding.",
+        "More consistent report structure and easier retrieval.",
+        "Clearer review and approval responsibilities.",
+        "Better visibility into outstanding or incomplete reports."
+      ],
+      "disclaimer": "These are expected benefits of the proposed workflow, not validated results. No performance measurements are available yet."
+    },
+    "principles": {
+      "heading": "Practical automation with human oversight",
+      "items": [
+        "Mobile-first submission for technicians in the field.",
+        "Explicit human validation before external delivery.",
+        "Visibility into missing or low-confidence information.",
+        "Traceability from the original image to the final report.",
+        "Data protection and access controls as requirements for any future implementation."
+      ]
+    },
+    "nextSteps": {
+      "heading": "A concept today, a potential MVP next",
+      "body": "FieldFlow is currently a solution concept. A future proof-of-concept implementation could validate document extraction accuracy, review time and coordinator usability using synthetic or properly authorized sample documents. No production deployment or customer results are claimed."
+    },
+    "closing": {
+      "heading": "Have a similar manual workflow in your business?",
+      "body": "SpexSol helps teams explore how custom software and AI-assisted processes could simplify operational work. Let's discuss the problem and identify a realistic first step.",
+      "cta": "Talk to SpexSol"
+    },
+    "meta": {
+      "title": "FieldFlow — AI-Assisted Field Service Workflow Concept | SpexSol",
+      "description": "Explore FieldFlow, a SpexSol concept for turning photographed field service reports into structured, human-reviewed workflows with AI-assisted extraction."
+    }
+  }
+}

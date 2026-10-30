@@ -1,11 +1,13 @@
 import i18n, { type InitOptions } from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
+import enCaseStudies from './locales/en/caseStudies.json'
 import enCommon from './locales/en/common.json'
 import enContact from './locales/en/contact.json'
 import enHome from './locales/en/home.json'
 import enLegal from './locales/en/legal.json'
 import enProducts from './locales/en/products.json'
+import skCaseStudies from './locales/sk/caseStudies.json'
 import skCommon from './locales/sk/common.json'
 import skContact from './locales/sk/contact.json'
 import skHome from './locales/sk/home.json'
@@ -37,6 +39,7 @@ if (!i18n.isInitialized) {
         home: enHome,
         legal: enLegal,
         products: enProducts,
+        caseStudies: enCaseStudies,
         contact: enContact,
       },
       sk: {
@@ -44,13 +47,14 @@ if (!i18n.isInitialized) {
         home: skHome,
         legal: skLegal,
         products: skProducts,
+        caseStudies: skCaseStudies,
         contact: skContact,
       },
     },
     lng: detectInitialLanguage(),
     fallbackLng: DEFAULT_LANGUAGE,
     defaultNS: 'common',
-    ns: ['common', 'home', 'legal', 'products', 'contact'],
+    ns: ['common', 'home', 'legal', 'products', 'contact', 'caseStudies'],
     interpolation: { escapeValue: false },
     react: { useSuspense: false },
   }

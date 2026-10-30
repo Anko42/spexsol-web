@@ -17,7 +17,9 @@ import { Route as LangTermsOfUseRouteImport } from './routes/$lang/terms-of-use'
 import { Route as LangPrivacyPolicyRouteImport } from './routes/$lang/privacy-policy'
 import { Route as LangContactRouteImport } from './routes/$lang/contact'
 import { Route as LangProductsIndexRouteImport } from './routes/$lang/products/index'
+import { Route as LangCaseStudiesIndexRouteImport } from './routes/$lang/case-studies/index'
 import { Route as LangProductsSlugRouteImport } from './routes/$lang/products/$slug'
+import { Route as LangCaseStudiesSlugRouteImport } from './routes/$lang/case-studies/$slug'
 
 const LangRoute = LangRouteImport.update({
   id: '/$lang',
@@ -59,9 +61,19 @@ const LangProductsIndexRoute = LangProductsIndexRouteImport.update({
   path: '/products/',
   getParentRoute: () => LangRoute,
 } as any)
+const LangCaseStudiesIndexRoute = LangCaseStudiesIndexRouteImport.update({
+  id: '/case-studies/',
+  path: '/case-studies/',
+  getParentRoute: () => LangRoute,
+} as any)
 const LangProductsSlugRoute = LangProductsSlugRouteImport.update({
   id: '/products/$slug',
   path: '/products/$slug',
+  getParentRoute: () => LangRoute,
+} as any)
+const LangCaseStudiesSlugRoute = LangCaseStudiesSlugRouteImport.update({
+  id: '/case-studies/$slug',
+  path: '/case-studies/$slug',
   getParentRoute: () => LangRoute,
 } as any)
 
@@ -73,7 +85,9 @@ export interface FileRoutesByFullPath {
   '/$lang/terms-of-use': typeof LangTermsOfUseRoute
   '/api/contact': typeof ApiContactRoute
   '/$lang/': typeof LangIndexRoute
+  '/$lang/case-studies/$slug': typeof LangCaseStudiesSlugRoute
   '/$lang/products/$slug': typeof LangProductsSlugRoute
+  '/$lang/case-studies/': typeof LangCaseStudiesIndexRoute
   '/$lang/products/': typeof LangProductsIndexRoute
 }
 export interface FileRoutesByTo {
@@ -83,7 +97,9 @@ export interface FileRoutesByTo {
   '/$lang/terms-of-use': typeof LangTermsOfUseRoute
   '/api/contact': typeof ApiContactRoute
   '/$lang': typeof LangIndexRoute
+  '/$lang/case-studies/$slug': typeof LangCaseStudiesSlugRoute
   '/$lang/products/$slug': typeof LangProductsSlugRoute
+  '/$lang/case-studies': typeof LangCaseStudiesIndexRoute
   '/$lang/products': typeof LangProductsIndexRoute
 }
 export interface FileRoutesById {
@@ -95,7 +111,9 @@ export interface FileRoutesById {
   '/$lang/terms-of-use': typeof LangTermsOfUseRoute
   '/api/contact': typeof ApiContactRoute
   '/$lang/': typeof LangIndexRoute
+  '/$lang/case-studies/$slug': typeof LangCaseStudiesSlugRoute
   '/$lang/products/$slug': typeof LangProductsSlugRoute
+  '/$lang/case-studies/': typeof LangCaseStudiesIndexRoute
   '/$lang/products/': typeof LangProductsIndexRoute
 }
 export interface FileRouteTypes {
@@ -108,7 +126,9 @@ export interface FileRouteTypes {
     | '/$lang/terms-of-use'
     | '/api/contact'
     | '/$lang/'
+    | '/$lang/case-studies/$slug'
     | '/$lang/products/$slug'
+    | '/$lang/case-studies/'
     | '/$lang/products/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -118,7 +138,9 @@ export interface FileRouteTypes {
     | '/$lang/terms-of-use'
     | '/api/contact'
     | '/$lang'
+    | '/$lang/case-studies/$slug'
     | '/$lang/products/$slug'
+    | '/$lang/case-studies'
     | '/$lang/products'
   id:
     | '__root__'
@@ -129,7 +151,9 @@ export interface FileRouteTypes {
     | '/$lang/terms-of-use'
     | '/api/contact'
     | '/$lang/'
+    | '/$lang/case-studies/$slug'
     | '/$lang/products/$slug'
+    | '/$lang/case-studies/'
     | '/$lang/products/'
   fileRoutesById: FileRoutesById
 }
@@ -197,11 +221,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LangProductsIndexRouteImport
       parentRoute: typeof LangRoute
     }
+    '/$lang/case-studies/': {
+      id: '/$lang/case-studies/'
+      path: '/case-studies'
+      fullPath: '/$lang/case-studies/'
+      preLoaderRoute: typeof LangCaseStudiesIndexRouteImport
+      parentRoute: typeof LangRoute
+    }
     '/$lang/products/$slug': {
       id: '/$lang/products/$slug'
       path: '/products/$slug'
       fullPath: '/$lang/products/$slug'
       preLoaderRoute: typeof LangProductsSlugRouteImport
+      parentRoute: typeof LangRoute
+    }
+    '/$lang/case-studies/$slug': {
+      id: '/$lang/case-studies/$slug'
+      path: '/case-studies/$slug'
+      fullPath: '/$lang/case-studies/$slug'
+      preLoaderRoute: typeof LangCaseStudiesSlugRouteImport
       parentRoute: typeof LangRoute
     }
   }
@@ -212,7 +250,9 @@ interface LangRouteChildren {
   LangPrivacyPolicyRoute: typeof LangPrivacyPolicyRoute
   LangTermsOfUseRoute: typeof LangTermsOfUseRoute
   LangIndexRoute: typeof LangIndexRoute
+  LangCaseStudiesSlugRoute: typeof LangCaseStudiesSlugRoute
   LangProductsSlugRoute: typeof LangProductsSlugRoute
+  LangCaseStudiesIndexRoute: typeof LangCaseStudiesIndexRoute
   LangProductsIndexRoute: typeof LangProductsIndexRoute
 }
 
@@ -221,7 +261,9 @@ const LangRouteChildren: LangRouteChildren = {
   LangPrivacyPolicyRoute: LangPrivacyPolicyRoute,
   LangTermsOfUseRoute: LangTermsOfUseRoute,
   LangIndexRoute: LangIndexRoute,
+  LangCaseStudiesSlugRoute: LangCaseStudiesSlugRoute,
   LangProductsSlugRoute: LangProductsSlugRoute,
+  LangCaseStudiesIndexRoute: LangCaseStudiesIndexRoute,
   LangProductsIndexRoute: LangProductsIndexRoute,
 }
 

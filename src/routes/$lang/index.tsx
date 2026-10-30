@@ -10,6 +10,8 @@ import { Faq } from '~/components/site/Faq'
 import { ProductCard } from '~/components/products/ProductCard'
 import { useLang } from '~/hooks/useLang'
 import { products } from '~/data/products'
+import { CaseStudyCard } from '~/components/case-studies/CaseStudyCard'
+import { caseStudies } from '~/data/case-studies'
 
 export const Route = createFileRoute('/$lang/')({
   head: ({ params }) =>
@@ -44,18 +46,23 @@ function Home() {
       </section>
 
       {/* Work: shown once there is something to show */}
-      {products.length > 0 && (
+      {(products.length > 0 || caseStudies.length > 0) && (
         <section aria-labelledby="work-title" className="py-16 lg:py-24">
           <SectionHead id="work-title" title={t('work.title')} />
-          <ul className="mt-8">
+          <ul className="mt-8 border-b border-line">
             {products.map((product) => (
               <li key={product.slug}>
                 <ProductCard product={product} />
               </li>
             ))}
+            {caseStudies.map((c) => (
+              <li key={c.slug}>
+                <CaseStudyCard caseStudy={c} />
+              </li>
+            ))}
           </ul>
           <Link
-            to="/$lang/products"
+            to="/$lang/case-studies"
             params={{ lang }}
             className="link-underline mt-8 inline-block text-[15px] font-medium text-fg"
           >

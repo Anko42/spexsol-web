@@ -37,6 +37,30 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/products"/>
   </url>
   <url>
+    <loc>https://spexsol.sk/en/case-studies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/sk/case-studies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/en/case-studies/fieldflow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies/fieldflow"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies/fieldflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies/fieldflow"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/sk/case-studies/fieldflow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies/fieldflow"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies/fieldflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies/fieldflow"/>
+  </url>
+  <url>
     <loc>https://spexsol.sk/en/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/privacy-policy"/>
