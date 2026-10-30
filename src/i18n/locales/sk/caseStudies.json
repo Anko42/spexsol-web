@@ -500,5 +500,20 @@
       "title": "FixFlow — koncept koordinácie požiadaviek na údržbu | SpexSol",
       "description": "FixFlow je koncept SpexSol: telefonáty a e-maily o poruchách sa menia na sledované požiadavky s jasným zodpovedným, priebežnými aktualizáciami a kontrolou koordinátora."
     }
+  },
+  "calculator": {
+    "title": "Ilustračná kalkulačka úspory času",
+    "disclaimer": "Ilustračný scenár, nie nameraný výsledok u klienta.",
+    "assumptions": "Odhad nezahŕňa implementáciu, predplatné, ľudskú kontrolu, riešenie výnimiek ani prevádzkové náklady. Ušetrený čas sa nerovná ušetreným peniazom.",
+    "inputs": {
+      "volume": "Počet položiek za mesiac",
+      "minutesPerItem": "Minúty ručnej práce na položku",
+      "hourlyCost": "Náklady na hodinu práce",
+      "reduction": "Podiel ušetreného času (%)"
+    },
+    "outputs": {
+      "hours": "Ušetrené hodiny za mesiac",
+      "value": "Hodnota ušetreného času za mesiac"
+    }
   }
 }
