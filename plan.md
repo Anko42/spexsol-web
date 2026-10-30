@@ -281,7 +281,7 @@ Formula: `hoursSaved = volume * minutesPerItem / 60 * reductionFraction`; `labor
   - [ ] DEVICE: `/en` work section shows all products, then 3 case study cards, subtitle mentioning "concept", and "All case studies" link.
   - [ ] DEVICE: `/sk` work section subtitle is Slovak.
 
-### [~] C5 Illustrative automation value calculator
+### [x] C5 Illustrative automation value calculator (PR #5)
 - Why: Brief asks for optional calculator so visitors can reason about potential time saved with visible, adjustable assumptions and explicit "not a measured result" label.
 - Scope: Pure function `estimateSavings({ volume, minutesPerItem, hourlyCost, reductionFraction })` returning `{ hoursSaved, laborTimeValue }` in `src/lib/value-calculator.ts` with `node --test`-runnable check file `src/lib/value-calculator.test.ts`. Client component `src/components/case-studies/ValueCalculator.tsx` using native `<input type="number">` via existing `Input`/`Label`, four inputs with defaults (100, 10, 30, 0.5), live outputs, label "Illustrative scenario, not a measured client result." and assumptions note (excludes implementation, subscriptions, human review, exceptions, operating costs; time saved does not equal cash savings). Render once on `/case-studies` index below card list. Keys under `calculator.*` in `caseStudies.json` EN + SK. Non-goals: no currency conversion, no persistence, no analytics event, no charts, no new dependency, no per-concept placement.
 - Files: `src/lib/value-calculator.ts`, `src/lib/value-calculator.test.ts`, `src/components/case-studies/ValueCalculator.tsx`, `src/routes/$lang/case-studies/index.tsx`, `src/i18n/locales/en/caseStudies.json`, `src/i18n/locales/sk/caseStudies.json`.
