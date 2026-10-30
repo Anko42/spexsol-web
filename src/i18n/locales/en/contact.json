@@ -4,5 +4,13 @@
   "meta": {
     "title": "Contact — SpexSol",
     "description": "Tell us what you're building. We reply within one business day."
+  },
+  "assessment": {
+    "pageTitle": "What could we automate in your business?",
+    "pageSubtitle": "Tell us about a repetitive process, spreadsheet, or manual handoff. We'll explore whether a focused software solution could simplify it.",
+    "meta": {
+      "title": "Automation assessment — SpexSol",
+      "description": "Tell us about a repetitive process, spreadsheet, or manual handoff. We'll explore whether a focused software solution could simplify it."
+    }
   }
 }

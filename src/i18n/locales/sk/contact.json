@@ -4,5 +4,13 @@
   "meta": {
     "title": "Kontakt — SpexSol",
     "description": "Povedzte nám, čo staviate. Odpovieme do jedného pracovného dňa."
+  },
+  "assessment": {
+    "pageTitle": "Čo by sme vo vašej firme mohli automatizovať?",
+    "pageSubtitle": "Opíšte nám opakujúci sa proces, tabuľku alebo manuálne odovzdávanie práce. Preveríme, či by sa to dalo zjednodušiť cieleným softvérovým riešením.",
+    "meta": {
+      "title": "Posúdenie automatizácie — SpexSol",
+      "description": "Opíšte nám opakujúci sa proces, tabuľku alebo manuálne odovzdávanie práce. Preveríme, či by sa to dalo zjednodušiť cieleným softvérovým riešením."
+    }
   }
 }
