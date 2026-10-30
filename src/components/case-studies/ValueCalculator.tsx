@@ -34,7 +34,7 @@ export function ValueCalculator() {
   ]
 
   return (
-    <section className="mt-8 border-t border-line pt-8">
+    <section className="mt-8 rounded-[16px] bg-surface p-6 shadow-[0_0_0_1px_var(--line-soft)] sm:p-8">
       <h2 className="text-[24px] font-semibold leading-tight tracking-[-0.025em] text-fg">{t('calculator.title')}</h2>
       <p className="mt-2 text-fg-muted">{t('calculator.disclaimer')}</p>
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
