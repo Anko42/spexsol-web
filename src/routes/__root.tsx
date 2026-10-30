@@ -72,6 +72,11 @@ export const Route = createRootRoute({
           },
           vatID: 'SK2122528089',
           taxID: '2122528089',
+          founder: {
+            '@type': 'Person',
+            name: 'Andrej Skalický',
+            sameAs: ['https://www.linkedin.com/in/andrej-skalick%C3%BD-09208413a/'],
+          },
         }),
       },
     ],

@@ -6,11 +6,32 @@ import { StoreBadge } from '~/components/products/StoreBadge'
 import { SectionHead } from '~/components/site/SectionHead'
 import { getProductBySlug } from '~/data/products'
 import { useLang } from '~/hooks/useLang'
+import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES, isSupportedLanguage } from '~/i18n/config'
+import { SITE_URL, seo } from '~/utils/seo'
 
 export const Route = createFileRoute('/$lang/products/$slug')({
   beforeLoad: ({ params }) => {
     if (!getProductBySlug(params.slug)) {
       throw notFound()
+    }
+  },
+  head: ({ params }) => {
+    const product = getProductBySlug(params.slug)
+    if (!product) return {}
+    const lang = isSupportedLanguage(params.lang) ? params.lang : DEFAULT_LANGUAGE
+    const href = (l: string) => `${SITE_URL}/${l}/products/${product.slug}`
+    return {
+      meta: seo({
+        title: `${product.name} — SpexSol`,
+        description: product.tagline[lang],
+        url: href(lang),
+        locale: lang,
+      }),
+      links: [
+        { rel: 'canonical', href: href(lang) },
+        ...SUPPORTED_LANGUAGES.map((l) => ({ rel: 'alternate', hreflang: l, href: href(l) })),
+        { rel: 'alternate', hreflang: 'x-default', href: href('en') },
+      ],
     }
   },
   component: ProductDetail,
