@@ -61,6 +61,66 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies/fieldflow"/>
   </url>
   <url>
+    <loc>https://spexsol.sk/en/case-studies/invoiceflow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies/invoiceflow"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies/invoiceflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies/invoiceflow"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/sk/case-studies/invoiceflow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies/invoiceflow"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies/invoiceflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies/invoiceflow"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/en/case-studies/quoteflow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies/quoteflow"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies/quoteflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies/quoteflow"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/sk/case-studies/quoteflow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies/quoteflow"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies/quoteflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies/quoteflow"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/en/case-studies/shiftflow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies/shiftflow"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies/shiftflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies/shiftflow"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/sk/case-studies/shiftflow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies/shiftflow"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies/shiftflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies/shiftflow"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/en/case-studies/stockflow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies/stockflow"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies/stockflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies/stockflow"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/sk/case-studies/stockflow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies/stockflow"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies/stockflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies/stockflow"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/en/case-studies/fixflow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies/fixflow"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies/fixflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies/fixflow"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/sk/case-studies/fixflow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/case-studies/fixflow"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/case-studies/fixflow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/case-studies/fixflow"/>
+  </url>
+  <url>
     <loc>https://spexsol.sk/en/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/privacy-policy"/>
