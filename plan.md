@@ -248,7 +248,7 @@ Formula: `hoursSaved = volume * minutesPerItem / 60 * reductionFraction`; `labor
   - [ ] DEVICE: `/sk/case-studies/fixflow` renders Slovak copy, not EN text.
 - Plan: docs/plans/C1.md   (added by the architect)
 
-### [ ] C2 Solutions framing on case studies index
+### [x] C2 Solutions framing on case studies index (PR #3)
 - Why: `/case-studies` index has generic title and subtitle; brief wants problem-first positioning, concept disclosure and contact CTA so index works as the Solutions landing.
 - Scope: Replace `pageTitle` and `pageSubtitle` in `caseStudies.json` (EN + SK) with brief H1 "Your business runs on processes. We make them work better." and intro copy; add `eyebrow` ("Solutions"), `disclosure` ("Concept illustration — not a deployed client solution.") and `indexCta` keys. Index route renders eyebrow above title, disclosure line under card list, and a contact CTA link to `/$lang/contact` using existing `Button`/link styles. Non-goals: no `/solutions` route or redirect, no nav change, no filters or categories, no new components, no card changes.
 - Files: `src/routes/$lang/case-studies/index.tsx`, `src/i18n/locales/en/caseStudies.json`, `src/i18n/locales/sk/caseStudies.json`.
