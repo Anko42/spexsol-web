@@ -271,7 +271,7 @@ Formula: `hoursSaved = volume * minutesPerItem / 60 * reductionFraction`; `labor
   - [ ] DEVICE: `/en/automation-assessment` renders H1, intro and contact form with topic "Automation" preselected; submit with valid data shows existing success toast.
   - [ ] DEVICE: `/en/contact` still preselects topic "Product" (default unchanged).
 
-### [~] C4 Homepage work section cap and concept framing
+### [x] C4 Homepage work section cap and concept framing (PR #1)
 - Why: Home "Products & case studies" section lists every case study; after C1 six concept cards push Offer and FAQ below fold and verified products lose prominence.
 - Scope: In home route, render products first, then at most 3 case studies (`caseStudies.slice(0, 3)`); add `work.subtitle` key (EN + SK) in `home.json` stating case studies are solution concepts, not delivered client work, rendered under section head. Non-goals: no card changes, no new components, no products change, no ordering logic in data file.
 - Files: `src/routes/$lang/index.tsx`, `src/i18n/locales/en/home.json`, `src/i18n/locales/sk/home.json`.
