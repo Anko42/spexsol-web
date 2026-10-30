@@ -509,7 +509,7 @@
       "volume": "Počet položiek za mesiac",
       "minutesPerItem": "Minúty ručnej práce na položku",
       "hourlyCost": "Náklady na hodinu práce (€)",
-      "reduction": "Podiel ušetreného času (%)"
+      "reduction": "Koľko ručnej práce automatizácia odstráni (%)"
     },
     "outputs": {
       "hours": "Ušetrené hodiny za mesiac",
