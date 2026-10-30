@@ -1,6 +1,7 @@
 import { Link, createFileRoute } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import { CaseStudyCard } from '~/components/case-studies/CaseStudyCard'
+import { ValueCalculator } from '~/components/case-studies/ValueCalculator'
 import { PageHeader } from '~/components/site/PageHeader'
 import { Button, ButtonArrow } from '~/components/ui/button'
 import { caseStudies } from '~/data/case-studies'
@@ -30,6 +31,7 @@ function CaseStudiesIndex() {
           </li>
         ))}
       </ul>
+      <ValueCalculator />
       <p className="mt-4 text-sm text-fg-muted">{t('disclosure')}</p>
       <div className="mt-10">
         <Button asChild size="lg">

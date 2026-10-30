@@ -500,5 +500,20 @@
       "title": "FixFlow — Maintenance Request Coordination Concept | SpexSol",
       "description": "Explore FixFlow, a SpexSol concept for turning maintenance calls and emails into tracked requests with clear ownership, updates and coordinator review."
     }
+  },
+  "calculator": {
+    "title": "Illustrative time-savings calculator",
+    "disclaimer": "Illustrative scenario, not a measured client result.",
+    "assumptions": "The estimate excludes implementation, subscriptions, human review, exceptions and operating costs. Time saved does not equal cash savings.",
+    "inputs": {
+      "volume": "Items per month",
+      "minutesPerItem": "Manual minutes per item",
+      "hourlyCost": "Labour cost per hour",
+      "reduction": "Handling time removed (%)"
+    },
+    "outputs": {
+      "hours": "Hours saved per month",
+      "value": "Value of time saved per month"
+    }
   }
 }
