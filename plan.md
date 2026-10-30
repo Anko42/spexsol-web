@@ -233,7 +233,7 @@ Formula: `hoursSaved = volume * minutesPerItem / 60 * reductionFraction`; `labor
 
 ## Backlog
 
-### [~] C1 Add five concept case studies (InvoiceFlow, QuoteFlow, ShiftFlow, StockFlow, FixFlow)
+### [x] C1 Add five concept case studies (InvoiceFlow, QuoteFlow, ShiftFlow, StockFlow, FixFlow) (PR #2)
 - Why: Case studies index shows one concept only, so visitors cannot see breadth of operational problems SpexSol frames; brief above defines five more.
 - Scope: Register slugs `invoiceflow`, `quoteflow`, `shiftflow`, `stockflow`, `fixflow` in `src/data/case-studies.ts` with status `concept`. Add full EN and SK copy for each under its slug in `caseStudies.json`, same key shape as `fieldflow` (name, eyebrow, category, tagline, title, intro, cta, spec, challenge, solution, workflow.steps, value, principles, nextSteps). InvoiceFlow and QuoteFlow get full editorial depth; the other three shorter but every key present. Add each page to `public/sitemap.xml` and `public/llms.txt` for both locales. Non-goals: no `/solutions` route, no nav change, no FieldFlow copy change, no new components, no `/automation-assessment`, no calculator, no integration/CRM/ERP/messenger claims, no invented clients, numbers or testimonials.
 - Files: `src/data/case-studies.ts`, `src/i18n/locales/en/caseStudies.json`, `src/i18n/locales/sk/caseStudies.json`, `public/sitemap.xml`, `public/llms.txt`.
