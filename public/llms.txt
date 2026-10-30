@@ -9,6 +9,8 @@ Company ID (IČO): 57004196. VAT ID (DIČ): 2122528089.
 
 - [Home](https://spexsol.sk/en): services, offer, FAQ, contact form
 - [Products & partnerships](https://spexsol.sk/en/products): apps and websites built, past collaborations
+- [Case studies](https://spexsol.sk/en/case-studies): concept case studies showing problem framing and solution design
+  - [FieldFlow](https://spexsol.sk/en/case-studies/fieldflow): concept (not a delivered product) for turning photographed field service reports into structured, human-reviewed records with AI-assisted extraction. Status: Concept / Planned MVP. No client, no measured results.
 - [Contact](https://spexsol.sk/en/contact)
 - [Privacy Policy](https://spexsol.sk/en/privacy-policy): covers website and SpexSol mobile apps
 - [Terms of Use](https://spexsol.sk/en/terms-of-use)
@@ -17,4 +19,6 @@ Company ID (IČO): 57004196. VAT ID (DIČ): 2122528089.
 
 - [Úvod](https://spexsol.sk/sk)
 - [Produkty a spolupráce](https://spexsol.sk/sk/products)
+- [Prípadové štúdie](https://spexsol.sk/sk/case-studies)
+  - [FieldFlow](https://spexsol.sk/sk/case-studies/fieldflow): koncept / plánované MVP
 - [Kontakt](https://spexsol.sk/sk/contact)
