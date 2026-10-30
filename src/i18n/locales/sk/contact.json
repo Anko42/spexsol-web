@@ -6,11 +6,11 @@
     "description": "Povedzte nám, čo staviate. Odpovieme do jedného pracovného dňa."
   },
   "assessment": {
-    "pageTitle": "Čo by sme vo vašej firme mohli automatizovať?",
-    "pageSubtitle": "Opíšte nám opakujúci sa proces, tabuľku alebo manuálne odovzdávanie práce. Preveríme, či by sa to dalo zjednodušiť cieleným softvérovým riešením.",
+    "pageTitle": "Čo by sa dalo vo vašej firme automatizovať?",
+    "pageSubtitle": "Opíšte nám opakujúci sa proces, tabuľku alebo ručné odovzdávanie práce. Preveríme, či by ho cielený softvér dokázal zjednodušiť.",
     "meta": {
       "title": "Posúdenie automatizácie — SpexSol",
-      "description": "Opíšte nám opakujúci sa proces, tabuľku alebo manuálne odovzdávanie práce. Preveríme, či by sa to dalo zjednodušiť cieleným softvérovým riešením."
+      "description": "Opíšte nám opakujúci sa proces, tabuľku alebo ručné odovzdávanie práce. Preveríme, či by ho cielený softvér dokázal zjednodušiť."
     }
   }
 }
