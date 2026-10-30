@@ -10,7 +10,7 @@ import {
 
 /** Illustrative time-savings scenario with visible, adjustable assumptions. Local state only. */
 export function ValueCalculator() {
-  const { t } = useTranslation('caseStudies')
+  const { t, i18n } = useTranslation('caseStudies')
   const [input, setInput] = useState<SavingsInput>(DEFAULT_SAVINGS_INPUT)
   const { hoursSaved, laborTimeValue } = estimateSavings(input)
 
@@ -58,11 +58,11 @@ export function ValueCalculator() {
       <dl className="mt-6 grid gap-4 sm:grid-cols-2" aria-live="polite">
         <div>
           <dt className="text-[13px] text-fg-muted">{t('calculator.outputs.hours')}</dt>
-          <dd className="text-[24px] font-semibold tabular-nums text-fg">{hoursSaved.toFixed(1)} h</dd>
+          <dd className="text-[24px] font-semibold tabular-nums text-fg">{hoursSaved.toLocaleString(i18n.language, { maximumFractionDigits: 1 })} h</dd>
         </div>
         <div>
           <dt className="text-[13px] text-fg-muted">{t('calculator.outputs.value')}</dt>
-          <dd className="text-[24px] font-semibold tabular-nums text-fg">{Math.round(laborTimeValue)}</dd>
+          <dd className="text-[24px] font-semibold tabular-nums text-fg">{Math.round(laborTimeValue).toLocaleString(i18n.language)} €</dd>
         </div>
       </dl>
       <p className="mt-4 text-[13px] text-fg-muted">{t('calculator.assumptions')}</p>
