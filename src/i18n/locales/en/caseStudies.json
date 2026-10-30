@@ -508,8 +508,8 @@
     "inputs": {
       "volume": "Items per month",
       "minutesPerItem": "Manual minutes per item",
-      "hourlyCost": "Labour cost per hour",
-      "reduction": "Handling time removed (%)"
+      "hourlyCost": "Labour cost per hour (€)",
+      "reduction": "Share of manual work automated (%)"
     },
     "outputs": {
       "hours": "Hours saved per month",
