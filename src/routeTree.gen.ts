@@ -16,6 +16,7 @@ import { Route as ApiContactRouteImport } from './routes/api/contact'
 import { Route as LangTermsOfUseRouteImport } from './routes/$lang/terms-of-use'
 import { Route as LangPrivacyPolicyRouteImport } from './routes/$lang/privacy-policy'
 import { Route as LangContactRouteImport } from './routes/$lang/contact'
+import { Route as LangAutomationAssessmentRouteImport } from './routes/$lang/automation-assessment'
 import { Route as LangProductsIndexRouteImport } from './routes/$lang/products/index'
 import { Route as LangCaseStudiesIndexRouteImport } from './routes/$lang/case-studies/index'
 import { Route as LangProductsSlugRouteImport } from './routes/$lang/products/$slug'
@@ -56,6 +57,12 @@ const LangContactRoute = LangContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => LangRoute,
 } as any)
+const LangAutomationAssessmentRoute =
+  LangAutomationAssessmentRouteImport.update({
+    id: '/automation-assessment',
+    path: '/automation-assessment',
+    getParentRoute: () => LangRoute,
+  } as any)
 const LangProductsIndexRoute = LangProductsIndexRouteImport.update({
   id: '/products/',
   path: '/products/',
@@ -80,6 +87,7 @@ const LangCaseStudiesSlugRoute = LangCaseStudiesSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/$lang': typeof LangRouteWithChildren
+  '/$lang/automation-assessment': typeof LangAutomationAssessmentRoute
   '/$lang/contact': typeof LangContactRoute
   '/$lang/privacy-policy': typeof LangPrivacyPolicyRoute
   '/$lang/terms-of-use': typeof LangTermsOfUseRoute
@@ -92,6 +100,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/$lang/automation-assessment': typeof LangAutomationAssessmentRoute
   '/$lang/contact': typeof LangContactRoute
   '/$lang/privacy-policy': typeof LangPrivacyPolicyRoute
   '/$lang/terms-of-use': typeof LangTermsOfUseRoute
@@ -106,6 +115,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/$lang': typeof LangRouteWithChildren
+  '/$lang/automation-assessment': typeof LangAutomationAssessmentRoute
   '/$lang/contact': typeof LangContactRoute
   '/$lang/privacy-policy': typeof LangPrivacyPolicyRoute
   '/$lang/terms-of-use': typeof LangTermsOfUseRoute
@@ -121,6 +131,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/$lang'
+    | '/$lang/automation-assessment'
     | '/$lang/contact'
     | '/$lang/privacy-policy'
     | '/$lang/terms-of-use'
@@ -133,6 +144,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/$lang/automation-assessment'
     | '/$lang/contact'
     | '/$lang/privacy-policy'
     | '/$lang/terms-of-use'
@@ -146,6 +158,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/$lang'
+    | '/$lang/automation-assessment'
     | '/$lang/contact'
     | '/$lang/privacy-policy'
     | '/$lang/terms-of-use'
@@ -214,6 +227,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LangContactRouteImport
       parentRoute: typeof LangRoute
     }
+    '/$lang/automation-assessment': {
+      id: '/$lang/automation-assessment'
+      path: '/automation-assessment'
+      fullPath: '/$lang/automation-assessment'
+      preLoaderRoute: typeof LangAutomationAssessmentRouteImport
+      parentRoute: typeof LangRoute
+    }
     '/$lang/products/': {
       id: '/$lang/products/'
       path: '/products'
@@ -246,6 +266,7 @@ declare module '@tanstack/react-router' {
 }
 
 interface LangRouteChildren {
+  LangAutomationAssessmentRoute: typeof LangAutomationAssessmentRoute
   LangContactRoute: typeof LangContactRoute
   LangPrivacyPolicyRoute: typeof LangPrivacyPolicyRoute
   LangTermsOfUseRoute: typeof LangTermsOfUseRoute
@@ -257,6 +278,7 @@ interface LangRouteChildren {
 }
 
 const LangRouteChildren: LangRouteChildren = {
+  LangAutomationAssessmentRoute: LangAutomationAssessmentRoute,
   LangContactRoute: LangContactRoute,
   LangPrivacyPolicyRoute: LangPrivacyPolicyRoute,
   LangTermsOfUseRoute: LangTermsOfUseRoute,
