@@ -2,9 +2,16 @@ import { useTranslation } from 'react-i18next'
 import { CeoCard } from '~/components/site/CeoCard'
 import { ContactForm } from '~/components/site/ContactForm'
 import { SectionHead } from '~/components/site/SectionHead'
+import type { ContactTopic } from '~/lib/contact-schema'
 
-/** Form card beside the person who answers it. Used on home and /contact. */
-export function ContactSection({ showTitle = true }: { showTitle?: boolean }) {
+/** Form card beside the person who answers it. Used on home, /contact and /automation-assessment. */
+export function ContactSection({
+  showTitle = true,
+  defaultTopic,
+}: {
+  showTitle?: boolean
+  defaultTopic?: ContactTopic
+}) {
   const { t } = useTranslation('home')
   return (
     <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-6">
@@ -32,7 +39,7 @@ export function ContactSection({ showTitle = true }: { showTitle?: boolean }) {
       </div>
       <div className="shell lg:col-span-7">
         <div className="core p-6 sm:p-8">
-          <ContactForm />
+          <ContactForm defaultTopic={defaultTopic} />
         </div>
       </div>
     </div>

@@ -19,6 +19,7 @@ Company ID (IČO): 57004196. VAT ID (DIČ): 2122528089.
 - [Contact](https://spexsol.sk/en/contact)
 - [Privacy Policy](https://spexsol.sk/en/privacy-policy): covers website and SpexSol mobile apps
 - [Terms of Use](https://spexsol.sk/en/terms-of-use)
+- [Automation assessment](https://spexsol.sk/en/automation-assessment): tell us about a repetitive process; contact form preselected for automation
 
 ## Slovak
 
@@ -32,3 +33,4 @@ Company ID (IČO): 57004196. VAT ID (DIČ): 2122528089.
   - [StockFlow](https://spexsol.sk/sk/case-studies/stockflow): koncept / plánované MVP
   - [FixFlow](https://spexsol.sk/sk/case-studies/fixflow): koncept / plánované MVP
 - [Kontakt](https://spexsol.sk/sk/contact)
+- [Posúdenie automatizácie](https://spexsol.sk/sk/automation-assessment)

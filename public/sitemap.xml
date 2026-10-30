@@ -144,4 +144,16 @@
     <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/terms-of-use"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/terms-of-use"/>
   </url>
+  <url>
+    <loc>https://spexsol.sk/en/automation-assessment</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/automation-assessment"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/automation-assessment"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/automation-assessment"/>
+  </url>
+  <url>
+    <loc>https://spexsol.sk/sk/automation-assessment</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spexsol.sk/en/automation-assessment"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://spexsol.sk/sk/automation-assessment"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spexsol.sk/en/automation-assessment"/>
+  </url>
 </urlset>

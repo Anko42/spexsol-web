@@ -259,7 +259,7 @@ Formula: `hoursSaved = volume * minutesPerItem / 60 * reductionFraction`; `labor
   - [ ] DEVICE: `/en/case-studies` shows eyebrow, H1, intro, card list, disclosure line and contact CTA; CTA navigates to `/en/contact`.
   - [ ] DEVICE: `/sk/case-studies` shows Slovak copy, no raw i18n key.
 
-### [ ] C3 Automation assessment page
+### [x] C3 Automation assessment page (PR #4)
 - Why: Brief defines conversion page "What could we automate in your business?"; today only generic contact page exists, so concept visitors get no process-focused entry point.
 - Scope: New route `/$lang/automation-assessment` rendering `PageHeader` (brief H1 + intro) and existing `ContactSection` with topic preselected to `automation` (add optional `defaultTopic` prop to `ContactForm` and `ContactSection`; initial `useState` uses it). Add `assessment.*` keys (pageTitle, pageSubtitle, meta.title, meta.description) to `contact.json` EN + SK. Add page to `public/sitemap.xml` and `public/llms.txt` both locales. Non-goals: no new form fields, no schema or Slack change, no nav entry, no change to concept page CTA, no anti-spam beyond existing honeypot.
 - Files: `src/routes/$lang/automation-assessment.tsx`, `src/components/site/ContactForm.tsx`, `src/components/site/ContactSection.tsx`, `src/i18n/locales/en/contact.json`, `src/i18n/locales/sk/contact.json`, `public/sitemap.xml`, `public/llms.txt`.
