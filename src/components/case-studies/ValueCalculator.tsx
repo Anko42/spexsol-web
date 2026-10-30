@@ -50,6 +50,7 @@ export function ValueCalculator() {
               step={f.step}
               value={Number.isNaN(f.value) ? '' : f.value}
               onChange={f.onChange}
+              aria-invalid={f.value < 0 || (f.max !== undefined && f.value > f.max) || undefined}
             />
           </div>
         ))}

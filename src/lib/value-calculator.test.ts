@@ -22,3 +22,8 @@ test('NaN volume gives zero output', () => {
   const r = estimateSavings({ ...DEFAULT_SAVINGS_INPUT, volume: NaN })
   assert.deepEqual(r, { hoursSaved: 0, laborTimeValue: 0 })
 })
+
+test('negative volume gives zero output', () => {
+  const r = estimateSavings({ ...DEFAULT_SAVINGS_INPUT, volume: -10 })
+  assert.deepEqual(r, { hoursSaved: 0, laborTimeValue: 0 })
+})
