@@ -513,7 +513,7 @@
     },
     "outputs": {
       "hours": "Hours saved per month",
-      "value": "Value of time saved per month (€)"
+      "value": "Value of time saved per month"
     }
   }
 }
