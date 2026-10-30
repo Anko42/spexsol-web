@@ -93,5 +93,409 @@
       "title": "FieldFlow — koncept servisného procesu s podporou AI | SpexSol",
       "description": "FieldFlow je koncept SpexSol: odfotené servisné protokoly z terénu sa menia na štruktúrované, človekom skontrolované záznamy s extrakciou podporovanou AI."
     }
+  },
+  "invoiceflow": {
+    "name": "InvoiceFlow",
+    "eyebrow": "SpexSol koncept / Plánované MVP",
+    "category": "Automatizácia procesov · Spracovanie dokumentov s podporou AI",
+    "tagline": "Z roztrúsených faktúr jednotný schvaľovací proces.",
+    "title": "InvoiceFlow — dodávateľské faktúry v jednom prehľadnom schvaľovacom procese",
+    "intro": "Dodávateľské faktúry často prichádzajú do viacerých schránok ako prílohy, skeny alebo papierové kópie. Niekto ich potom musí prečítať, prepísať kľúčové údaje a zháňať človeka, ktorý ich schváli. InvoiceFlow je navrhovaný proces s podporou AI, ktorý by prichádzajúce faktúry zhromaždil na jednom mieste a previedol ich prehľadným schvaľovaním, v ktorom má posledné slovo človek.",
+    "cta": "Prebrať podobný proces",
+    "spec": {
+      "status": "Stav",
+      "category": "Kategória",
+      "audience": "Pre koho",
+      "audienceValue": "Finančné oddelenia, účtovníci, malé a stredné firmy, firmy s viacerými prevádzkami"
+    },
+    "challenge": {
+      "heading": "Faktúry sú roztrúsené po schránkach a prílohách",
+      "body": "Faktúry od dodávateľov končia v osobných aj zdieľaných e-mailových schránkach a niekedy aj v papierovej podobe na stole. Zamestnanci ručne vypisujú dodávateľa, sumu, dátum splatnosti a nákladové stredisko a dokument potom posielajú tomu, kto ho má schváliť. Bez jedného prehľadu je ťažké povedať, ktoré faktúry čakajú, kde sa zasekli a či už niektorá nebola zaevidovaná. S rastúcim objemom sa čoraz ťažšie stráži splatnosť a odpovedá na otázky pri audite."
+    },
+    "solution": {
+      "heading": "Jedno miesto príjmu a jasná cesta k schváleniu",
+      "body": "InvoiceFlow skúma jedno miesto príjmu dodávateľských faktúr a jednoduchý pracovný priestor na schvaľovanie. Krok AI spracovania dokumentu by z každej faktúry navrhol kľúčové polia a upozornil na možné duplicity alebo chýbajúce údaje. Zodpovedná osoba by faktúru skontrolovala, opravila a schválila a až potom by sa pripravila ako export pre účtovný softvér. Prepojenie s účtovnými systémami, daňové kontroly či odhaľovanie podvodov berieme ako možné budúce funkcie, nie ako zaručený výsledok."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Príjem",
+          "body": "Faktúry sa preposielajú na vyhradenú adresu alebo sa nahrajú priamo do jedného spoločného zoznamu."
+        },
+        {
+          "title": "Extrakcia",
+          "body": "Spracovanie s podporou AI navrhne polia ako dodávateľ, číslo faktúry, suma, dátum splatnosti a nákladové stredisko."
+        },
+        {
+          "title": "Kontrola",
+          "body": "Ešte pred schválením proces upozorní na možné duplicity a chýbajúce či nekonzistentné údaje."
+        },
+        {
+          "title": "Pridelenie",
+          "body": "Každá faktúra putuje k schvaľovateľovi podľa jednoduchých, vopred dohodnutých pravidiel."
+        },
+        {
+          "title": "Schválenie",
+          "body": "Schvaľovateľ porovná pôvodný dokument s extrahovanými údajmi a faktúru potvrdí alebo vráti."
+        },
+        {
+          "title": "Export",
+          "body": "Schválené faktúry sa pripravia ako štruktúrovaný export pre účtovný softvér."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Navrhnuté tak, aby bola práca s faktúrami predvídateľnejšia",
+      "items": [
+        "Jednotnejší príjem faktúr zo všetkých kanálov.",
+        "Menej kopírovania údajov medzi dokumentmi a tabuľkami.",
+        "Jasnejšia stopa o tom, kto faktúru kontroloval a schválil.",
+        "Lepší prehľad o čakajúcich schváleniach a blížiacich sa splatnostiach.",
+        "Skoršie odhalenie možných duplicít a chýbajúcich údajov."
+      ],
+      "disclaimer": "Ide o očakávané prínosy navrhovaného procesu, nie o overené výsledky. Žiadne merania výkonu zatiaľ nie sú k dispozícii."
+    },
+    "principles": {
+      "heading": "Automatizácia, pri ktorej financie ostávajú pod kontrolou",
+      "items": [
+        "Ľudské schválenie skôr, než faktúra odíde do účtovníctva.",
+        "Pôvodný dokument vždy na očiach vedľa extrahovaných údajov.",
+        "Jasné upozornenia na duplicity, medzery a neisté polia.",
+        "Export pre účtovný softvér; priame prepojenie s existujúcimi systémami až v budúcej fáze.",
+        "Ochrana dát a prístup podľa rolí ako požiadavka pre každú budúcu implementáciu."
+      ]
+    },
+    "nextSteps": {
+      "heading": "Dnes koncept, zajtra možné MVP",
+      "body": "InvoiceFlow je v súčasnosti koncept riešenia. Budúca proof-of-concept implementácia by mohla overiť presnosť extrakcie, odhaľovanie duplicít a použiteľnosť pre schvaľovateľov na syntetických alebo riadne autorizovaných vzorových faktúrach. Nenárokujeme si žiadne produkčné nasadenie ani zákaznícke výsledky."
+    },
+    "closing": {
+      "heading": "Máte vo firme podobný ručný proces?",
+      "body": "SpexSol pomáha tímom zistiť, ako by softvér na mieru a procesy s podporou AI mohli zjednodušiť prevádzkovú prácu. Poďme prebrať problém a nájsť realistický prvý krok.",
+      "cta": "Napíšte SpexSol"
+    },
+    "meta": {
+      "title": "InvoiceFlow — koncept príjmu a schvaľovania faktúr | SpexSol",
+      "description": "InvoiceFlow je koncept SpexSol: dodávateľské faktúry na jednom mieste, extrakcia kľúčových údajov s podporou AI a schvaľovanie, pri ktorom rozhoduje človek."
+    }
+  },
+  "quoteflow": {
+    "name": "QuoteFlow",
+    "eyebrow": "SpexSol koncept / Plánované MVP",
+    "category": "Automatizácia procesov · Obchodné procesy",
+    "tagline": "Jednotné cenové ponuky bez neustáleho prerábania tabuliek.",
+    "title": "QuoteFlow — jednotné B2B ponuky bez prerábania tabuliek",
+    "intro": "Mnohé B2B obchodné tímy stále skladajú každú ponuku kopírovaním riadkov medzi tabuľkami a ručnou úpravou cien. Verzie sa množia, cenové pravidlá má každý v hlave a schvaľovanie beží cez e-maily. QuoteFlow je navrhovaný proces, ktorý by prípravu ponuky viedol od šablóny až po schválenú ponuku s jasnou verziou.",
+    "cta": "Prebrať podobný proces",
+    "spec": {
+      "status": "Stav",
+      "category": "Kategória",
+      "audience": "Pre koho",
+      "audienceValue": "Výrobné a montážne firmy, B2B obchodné tímy, poskytovatelia technických služieb"
+    },
+    "challenge": {
+      "heading": "Každá ponuka začína ďalšou kópiou tabuľky",
+      "body": "Obchodníci kopírujú položky zo starších ponúk, dohľadávajú aktuálne ceny a ručne uplatňujú zľavy a pravidlá marže. Drobnú chybu vo vzorci si často nikto nevšimne, kým sa neozve zákazník. Keď treba výnimku schváliť u manažéra, žiadosť putuje e-mailom alebo cez chat a nie je vždy jasné, ktorá verzia je posledná. S rastom tímu je čoraz ťažšie sledovať, ktoré ponuky sú otvorené, upravené alebo prijaté."
+    },
+    "solution": {
+      "heading": "Šablóny, cenové pravidlá a schvaľovanie v jednom procese",
+      "body": "QuoteFlow skúma tvorbu ponúk zo šablón a zo spoločného katalógu položiek. Dohodnuté cenové pravidlá a marže by sa uplatňovali jednotne a výnimky by išli na schválenie manažérovi. Každá schválená ponuka by vznikla ako PDF s číslom verzie a viditeľným stavom. Prepojenie s existujúcimi systémami by sa dalo preskúmať v budúcej fáze; dnes s ním nepočítame."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Začiatok",
+          "body": "Vyberiete zákazníka a vhodnú šablónu ponuky."
+        },
+        {
+          "title": "Konfigurácia",
+          "body": "Pridáte položky zo spoločného katalógu a nastavíte množstvá či varianty."
+        },
+        {
+          "title": "Nacenenie",
+          "body": "Schválené cenové pravidlá a marže sa uplatnia automaticky a jednotne."
+        },
+        {
+          "title": "Schválenie výnimiek",
+          "body": "Zľavy alebo podmienky mimo pravidiel idú na schválenie manažérovi."
+        },
+        {
+          "title": "Vytvorenie PDF",
+          "body": "Proces vytvorí čisté PDF ponuky s číslom verzie."
+        },
+        {
+          "title": "Sledovanie",
+          "body": "Každá ponuka má viditeľný stav: rozpracovaná, odoslaná, upravená alebo prijatá."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Navrhnuté pre rýchlejšie a jednotnejšie ponuky",
+      "items": [
+        "Rýchlejšia príprava štandardných ponúk.",
+        "Menej chýb vo vzorcoch a pri kopírovaní.",
+        "Jednotné cenové a schvaľovacie pravidlá v celom tíme.",
+        "Dohľadateľné úpravy a jasná história každej ponuky.",
+        "Lepší prehľad o otvorených a čakajúcich ponukách."
+      ],
+      "disclaimer": "Ide o očakávané prínosy navrhovaného procesu, nie o overené výsledky. Žiadne merania výkonu zatiaľ nie sú k dispozícii."
+    },
+    "principles": {
+      "heading": "Poriadok v obchode bez straty flexibility",
+      "items": [
+        "Šablóny a katalóg ako jediný zdroj obsahu ponúk.",
+        "Cenové pravidlá dohodnuté s firmou, nie schované vo vzorcoch.",
+        "Schválenie výnimiek manažérom skôr, než ponuka odíde z firmy.",
+        "História verzií pri každej ponuke.",
+        "Prepojenie s existujúcimi systémami len ako budúca, overená možnosť."
+      ]
+    },
+    "nextSteps": {
+      "heading": "Dnes koncept, zajtra možné MVP",
+      "body": "QuoteFlow je v súčasnosti koncept riešenia. Budúca proof-of-concept implementácia by mohla overiť čas prípravy ponuky, pokrytie cenových pravidiel a použiteľnosť pre obchodníkov na syntetických alebo riadne autorizovaných vzorových dátach. Nenárokujeme si žiadne produkčné nasadenie ani zákaznícke výsledky."
+    },
+    "closing": {
+      "heading": "Máte vo firme podobný ručný proces?",
+      "body": "SpexSol pomáha tímom zistiť, ako by softvér na mieru a procesy s podporou AI mohli zjednodušiť prevádzkovú prácu. Poďme prebrať problém a nájsť realistický prvý krok.",
+      "cta": "Napíšte SpexSol"
+    },
+    "meta": {
+      "title": "QuoteFlow — koncept tvorby B2B cenových ponúk | SpexSol",
+      "description": "QuoteFlow je koncept SpexSol: B2B ponuky zo šablón, jednotne uplatnené cenové pravidlá a sledovanie schválení aj verzií v jednom procese."
+    }
+  },
+  "shiftflow": {
+    "name": "ShiftFlow",
+    "eyebrow": "SpexSol koncept / Plánované MVP",
+    "category": "Automatizácia procesov · Mobilné reportovanie",
+    "tagline": "Namiesto výkazov hodín v chatoch prehľadný proces s kontrolou.",
+    "title": "ShiftFlow — od výkazov hodín v chatoch k prehľadnému reportovaniu",
+    "intro": "V mnohých tímoch sa odpracované hodiny hlásia cez správy a na konci mesiaca sa skladajú do tabuľky. ShiftFlow je navrhovaný mobilný proces, ktorý by zmeny zaznamenával priebežne a vedúcim dal jasný spôsob, ako ich skontrolovať.",
+    "cta": "Prebrať podobný proces",
+    "spec": {
+      "status": "Stav",
+      "category": "Kategória",
+      "audience": "Pre koho",
+      "audienceValue": "Stavebníctvo, logistika, výroba a tímy v teréne"
+    },
+    "challenge": {
+      "heading": "Hodiny sa hlásia v správach a skladajú sa až dodatočne",
+      "body": "Zamestnanci posielajú svoje hodiny cez chatové aplikácie, SMS alebo na papieri. Na konci mesiaca ich manažér dáva dokopy v jednej tabuľke a pred spracovaním miezd naháňa chýbajúce či nejasné záznamy."
+    },
+    "solution": {
+      "heading": "Jednoduché hlásenie z mobilu s kontrolou vedúceho",
+      "body": "ShiftFlow skúma mobilný formulár na zápis zmeny k zákazke alebo stavbe. Vedúci by záznamy kontroloval, riešil výnimky a pripravil export pre mzdy, takže problémy by sa ukázali počas mesiaca, nie až na jeho konci."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Zápis",
+          "body": "Zamestnanec zapíše hodiny z mobilu hneď po skončení zmeny."
+        },
+        {
+          "title": "Priradenie",
+          "body": "Každý záznam sa priradí k zákazke, stavbe alebo zmene."
+        },
+        {
+          "title": "Kontrola",
+          "body": "Vedúci skontroluje a potvrdí odoslané záznamy."
+        },
+        {
+          "title": "Riešenie výnimiek",
+          "body": "Chýbajúce alebo nezvyčajné záznamy sa označia a vyjasnia so zamestnancom."
+        },
+        {
+          "title": "Export",
+          "body": "Schválené hodiny sa pripravia ako export pripravený na spracovanie miezd."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Navrhnuté tak, aby na konci mesiaca ubudlo dorovnávania",
+      "items": [
+        "Menej chýbajúcich či nejasných záznamov.",
+        "Menej ručného spájania údajov na konci mesiaca.",
+        "Jasný záznam o tom, kto ktoré hodiny schválil."
+      ],
+      "disclaimer": "Ide o očakávané prínosy navrhovaného procesu, nie o overené výsledky. Žiadne merania výkonu zatiaľ nie sú k dispozícii."
+    },
+    "principles": {
+      "heading": "Jednoduché pre tím, prehľadné pre vedúcich",
+      "items": [
+        "Rýchly zápis z mobilu, ktorý zapadne do pracovného dňa.",
+        "Kontrola vedúcim skôr, než sa čokoľvek dostane do miezd.",
+        "Export pre mzdy; prepojenie s existujúcimi systémami až v budúcej fáze.",
+        "Ochrana dát a riadenie prístupu ako požiadavka pre každú budúcu implementáciu."
+      ]
+    },
+    "nextSteps": {
+      "heading": "Dnes koncept, zajtra možné MVP",
+      "body": "ShiftFlow je v súčasnosti koncept riešenia. Budúci proof-of-concept by mohol overiť jednoduchosť zápisu a náročnosť kontroly na syntetických alebo riadne autorizovaných vzorových dátach. Nenárokujeme si žiadne produkčné nasadenie ani zákaznícke výsledky."
+    },
+    "closing": {
+      "heading": "Máte vo firme podobný ručný proces?",
+      "body": "SpexSol pomáha tímom zistiť, ako by softvér na mieru a procesy s podporou AI mohli zjednodušiť prevádzkovú prácu. Poďme prebrať problém a nájsť realistický prvý krok.",
+      "cta": "Napíšte SpexSol"
+    },
+    "meta": {
+      "title": "ShiftFlow — koncept výkazov hodín a reportovania zmien | SpexSol",
+      "description": "ShiftFlow je koncept SpexSol: namiesto výkazov hodín v chatoch hlásenie zmien z mobilu, kontrola vedúcim a export pripravený na spracovanie miezd."
+    }
+  },
+  "stockflow": {
+    "name": "StockFlow",
+    "eyebrow": "SpexSol koncept / Plánované MVP",
+    "category": "Automatizácia procesov · Prehľad o zásobách",
+    "tagline": "Pohyby na sklade jednoduchšie zapísať aj overiť.",
+    "title": "StockFlow — jednoduchý prehľad o pohyboch na sklade",
+    "intro": "Menšie sklady a predajne často evidujú zmeny zásob vo viacerých tabuľkách, ktoré sa len zriedka zhodujú. StockFlow je navrhovaný jednoduchý proces, v ktorom by sa každý pohyb na sklade dal rýchlo zapísať a ľahko overiť.",
+    "cta": "Prebrať podobný proces",
+    "spec": {
+      "status": "Stav",
+      "category": "Kategória",
+      "audience": "Pre koho",
+      "audienceValue": "Sklady, distribútori, menšie predajne a e-shopy"
+    },
+    "challenge": {
+      "heading": "Zmeny zásob žijú v samostatných tabuľkách",
+      "body": "Príjmy, presuny a korekcie zapisujú rôzni ľudia do rôznych súborov, často až dodatočne. Ich zosúladenie zaberie čas a ťažko povedať, ktoré číslo je aktuálne a kto zmenu urobil."
+    },
+    "solution": {
+      "heading": "Každý pohyb zapísaný raz a viditeľný pre všetkých",
+      "body": "StockFlow skúma zápis pohybu naskenovaním položky alebo QR kódu v mobile, spolu s množstvom a umiestnením. Každá zmena by sa overila a premietla do spoločného prehľadu a tím by dostal upozornenie, keď zásoba prekročí hranicu, ktorú si sám nastaví."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Skenovanie",
+          "body": "Mobilom naskenujete položku alebo QR kód."
+        },
+        {
+          "title": "Zápis",
+          "body": "Zadáte pohyb: príjem, presun, výdaj alebo korekciu."
+        },
+        {
+          "title": "Overenie",
+          "body": "Množstvo a umiestnenie sa skontrolujú ešte pred uložením."
+        },
+        {
+          "title": "Aktualizácia",
+          "body": "Spoločný prehľad zásob sa aktualizuje pre celý tím."
+        },
+        {
+          "title": "Upozornenie",
+          "body": "Tím dostane upozornenie, keď zásoba prekročí nastavenú hranicu."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Navrhnuté pre aktuálnejší prehľad o zásobách",
+      "items": [
+        "Aktuálnejší prehľad o stave zásob.",
+        "Dohľadateľné korekcie s jasným autorom a časom.",
+        "Menej ručného prenášania údajov medzi tabuľkami."
+      ],
+      "disclaimer": "Ide o očakávané prínosy navrhovaného procesu, nie o overené výsledky. Žiadne merania výkonu zatiaľ nie sú k dispozícii."
+    },
+    "principles": {
+      "heading": "Zámerne jednoduché",
+      "items": [
+        "Rýchly zápis v mobile priamo pri tovare.",
+        "Overenie pri zápise namiesto dodatočného zosúlaďovania.",
+        "Jasná história každej korekcie.",
+        "Prepojenie s existujúcimi systémami až v budúcej fáze."
+      ]
+    },
+    "nextSteps": {
+      "heading": "Dnes koncept, zajtra možné MVP",
+      "body": "StockFlow je v súčasnosti koncept riešenia. Budúci proof-of-concept by mohol overiť rýchlosť zápisu a konzistenciu dát na syntetických alebo riadne autorizovaných vzorových dátach. Nenárokujeme si žiadne produkčné nasadenie ani zákaznícke výsledky."
+    },
+    "closing": {
+      "heading": "Máte vo firme podobný ručný proces?",
+      "body": "SpexSol pomáha tímom zistiť, ako by softvér na mieru a procesy s podporou AI mohli zjednodušiť prevádzkovú prácu. Poďme prebrať problém a nájsť realistický prvý krok.",
+      "cta": "Napíšte SpexSol"
+    },
+    "meta": {
+      "title": "StockFlow — koncept prehľadu o zásobách | SpexSol",
+      "description": "StockFlow je koncept SpexSol: zápis pohybov na sklade skenovaním, overenie množstva a umiestnenia a spoločný aktuálny prehľad o zásobách."
+    }
+  },
+  "fixflow": {
+    "name": "FixFlow",
+    "eyebrow": "SpexSol koncept / Plánované MVP",
+    "category": "Automatizácia procesov · Koordinácia požiadaviek",
+    "tagline": "Od roztrúsených hlásení porúch k požiadavkám s jasnou zodpovednosťou.",
+    "title": "FixFlow — od roztrúsených hlásení porúch k požiadavkám s jasnou zodpovednosťou",
+    "intro": "Požiadavky na údržbu často prichádzajú telefonicky a e-mailom a ľahko sa stratí prehľad o tom, kto čo rieši. FixFlow je navrhovaný proces, v ktorom by sa z každého hlásenia stala sledovaná úloha s jasne určeným zodpovedným, od nahlásenia až po vyriešenie.",
+    "cta": "Prebrať podobný proces",
+    "spec": {
+      "status": "Stav",
+      "category": "Kategória",
+      "audience": "Pre koho",
+      "audienceValue": "Správcovia nehnuteľností, facility tímy, firmy s viacerými prevádzkami"
+    },
+    "challenge": {
+      "heading": "Hlásenia prichádzajú odvšadiaľ, zodpovednosť je nejasná",
+      "body": "Nájomníci, zamestnanci aj vedúci prevádzok hlásia poruchy telefonicky a e-mailom. Koordinátorom chýba spoľahlivý prehľad o tom, ktoré požiadavky sú otvorené, kto ich má na starosti a či boli naozaj vyriešené."
+    },
+    "solution": {
+      "heading": "Jedna požiadavka, jeden zodpovedný, jedna história",
+      "body": "FixFlow skúma jednoduchý formulár na nahlásenie s fotkou, po ktorom nasleduje zaradenie, určenie priority a pridelenie technikovi. Priebeh by sa zaznamenával na jednom mieste a koordinátor by pred uzavretím požiadavky skontroloval, či je práca naozaj hotová."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Nahlásenie",
+          "body": "Nahlasujúci opíše problém a priloží fotku."
+        },
+        {
+          "title": "Zaradenie",
+          "body": "Požiadavka sa zaradí do kategórie a dostane prioritu."
+        },
+        {
+          "title": "Pridelenie",
+          "body": "Zodpovedným sa stane technik alebo externý dodávateľ."
+        },
+        {
+          "title": "Sledovanie",
+          "body": "Priebežné aktualizácie sa zapisujú priamo k požiadavke."
+        },
+        {
+          "title": "Uzavretie",
+          "body": "Koordinátor skontroluje dokončenie a požiadavku uzavrie."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Navrhnuté pre jasnejšiu zodpovednosť",
+      "items": [
+        "Jasnejšia zodpovednosť za každú požiadavku.",
+        "Prehľadná a vyhľadateľná história porúch a opráv.",
+        "Menej zabudnutých požiadaviek, na ktoré nikto nereagoval."
+      ],
+      "disclaimer": "Ide o očakávané prínosy navrhovaného procesu, nie o overené výsledky. Žiadne merania výkonu zatiaľ nie sú k dispozícii."
+    },
+    "principles": {
+      "heading": "Jednoduché nahlásenie, prehľadné riadenie",
+      "items": [
+        "Rýchle nahlásenie s fotkou.",
+        "Každá požiadavka má práve jedného aktuálneho zodpovedného.",
+        "Kontrola koordinátorom pred uzavretím požiadavky.",
+        "Ochrana dát a riadenie prístupu ako požiadavka pre každú budúcu implementáciu."
+      ]
+    },
+    "nextSteps": {
+      "heading": "Dnes koncept, zajtra možné MVP",
+      "body": "FixFlow je v súčasnosti koncept riešenia. Budúci proof-of-concept by mohol overiť spracovanie požiadaviek a použiteľnosť pre koordinátorov na syntetických alebo riadne autorizovaných vzorových dátach. Nenárokujeme si žiadne produkčné nasadenie ani zákaznícke výsledky."
+    },
+    "closing": {
+      "heading": "Máte vo firme podobný ručný proces?",
+      "body": "SpexSol pomáha tímom zistiť, ako by softvér na mieru a procesy s podporou AI mohli zjednodušiť prevádzkovú prácu. Poďme prebrať problém a nájsť realistický prvý krok.",
+      "cta": "Napíšte SpexSol"
+    },
+    "meta": {
+      "title": "FixFlow — koncept koordinácie požiadaviek na údržbu | SpexSol",
+      "description": "FixFlow je koncept SpexSol: telefonáty a e-maily o poruchách sa menia na sledované požiadavky s jasným zodpovedným, priebežnými aktualizáciami a kontrolou koordinátora."
+    }
   }
 }

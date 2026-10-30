@@ -93,5 +93,409 @@
       "title": "FieldFlow — AI-Assisted Field Service Workflow Concept | SpexSol",
       "description": "Explore FieldFlow, a SpexSol concept for turning photographed field service reports into structured, human-reviewed workflows with AI-assisted extraction."
     }
+  },
+  "invoiceflow": {
+    "name": "InvoiceFlow",
+    "eyebrow": "SpexSol Concept / Planned MVP",
+    "category": "Workflow Automation · AI-assisted Document Processing",
+    "tagline": "Turn scattered invoices into a consistent approval process.",
+    "title": "InvoiceFlow — bringing supplier invoices into one reviewable approval flow",
+    "intro": "Supplier invoices often arrive across several inboxes as attachments, scans or paper copies. Someone then has to read each one, copy the key details and chase the right person for approval. InvoiceFlow is a proposed AI-assisted workflow that would collect incoming invoices in one place and guide them through a clear, human-approved process.",
+    "cta": "Discuss a similar workflow",
+    "spec": {
+      "status": "Status",
+      "category": "Category",
+      "audience": "Audience",
+      "audienceValue": "Finance teams, accountants, small and mid-sized businesses, multi-location operations"
+    },
+    "challenge": {
+      "heading": "Invoices are spread across inboxes and attachments",
+      "body": "Supplier invoices land in personal mailboxes, shared inboxes and sometimes on someone's desk. Employees manually extract the vendor, total, due date and cost center, then forward the document to whoever needs to approve it. Without a single overview, it is hard to tell which invoices are pending, where they are stuck and whether one has already been entered. As volume grows, due dates and audit questions become harder to manage."
+    },
+    "solution": {
+      "heading": "One intake point and a clear path to approval",
+      "body": "InvoiceFlow explores a single intake point for supplier invoices and a simple approval workspace. An AI document-processing step would propose key fields from each invoice and flag possible duplicates or missing data. The responsible person would review, correct and approve the invoice before it is prepared as an export for accounting software. Accounting integrations, tax checks and fraud detection are treated as possible future capabilities, not guaranteed outcomes."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Receive",
+          "body": "Invoices are forwarded to a dedicated address or uploaded directly into one shared queue."
+        },
+        {
+          "title": "Extract",
+          "body": "AI-assisted processing proposes fields such as vendor, invoice number, total, due date and cost center."
+        },
+        {
+          "title": "Check",
+          "body": "The workflow flags possible duplicates and missing or inconsistent data before anyone approves."
+        },
+        {
+          "title": "Assign",
+          "body": "Each invoice is routed to an approval owner based on simple, agreed rules."
+        },
+        {
+          "title": "Approve",
+          "body": "The approver compares the original document with the extracted fields and confirms or returns the invoice."
+        },
+        {
+          "title": "Export",
+          "body": "Approved invoices are prepared as a structured export for accounting software."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Designed to make invoice handling more predictable",
+      "items": [
+        "More consistent intake from every channel.",
+        "Fewer copy-and-paste tasks between documents and spreadsheets.",
+        "A clearer audit trail of who reviewed and approved each invoice.",
+        "Better visibility into pending approvals and upcoming due dates.",
+        "Earlier detection of possible duplicates and missing details."
+      ],
+      "disclaimer": "These are expected benefits of the proposed workflow, not validated results. No performance measurements are available yet."
+    },
+    "principles": {
+      "heading": "Automation that keeps finance in control",
+      "items": [
+        "Human approval before any invoice moves to accounting.",
+        "The original document always visible next to the extracted data.",
+        "Clear flags for duplicates, gaps and low-confidence fields.",
+        "Export for accounting software; direct connections to existing systems only in a future phase.",
+        "Data protection and role-based access as requirements for any future implementation."
+      ]
+    },
+    "nextSteps": {
+      "heading": "A concept today, a potential MVP next",
+      "body": "InvoiceFlow is currently a solution concept. A future proof-of-concept implementation could validate extraction accuracy, duplicate detection and approver usability using synthetic or properly authorized sample invoices. No production deployment or customer results are claimed."
+    },
+    "closing": {
+      "heading": "Have a similar manual workflow in your business?",
+      "body": "SpexSol helps teams explore how custom software and AI-assisted processes could simplify operational work. Let's discuss the problem and identify a realistic first step.",
+      "cta": "Talk to SpexSol"
+    },
+    "meta": {
+      "title": "InvoiceFlow — Invoice Intake & Approval Concept | SpexSol",
+      "description": "Explore InvoiceFlow, a SpexSol concept for collecting supplier invoices in one place, extracting key fields with AI assistance and routing them through human approval."
+    }
+  },
+  "quoteflow": {
+    "name": "QuoteFlow",
+    "eyebrow": "SpexSol Concept / Planned MVP",
+    "category": "Workflow Automation · Sales Operations",
+    "tagline": "Build consistent proposals without rebuilding spreadsheets.",
+    "title": "QuoteFlow — consistent B2B quotes without rebuilding spreadsheets",
+    "intro": "Many B2B sales teams still build each quote by copying rows between spreadsheets and adjusting prices by hand. Versions multiply, pricing rules live in people's heads and approvals happen over email. QuoteFlow is a proposed workflow that would guide quote preparation from template to an approved, versioned proposal.",
+    "cta": "Discuss a similar workflow",
+    "spec": {
+      "status": "Status",
+      "category": "Category",
+      "audience": "Audience",
+      "audienceValue": "Manufacturers, installers, B2B sales teams, technical service providers"
+    },
+    "challenge": {
+      "heading": "Every quote starts with another spreadsheet copy",
+      "body": "Salespeople copy line items from older quotes, look up current prices and manually apply discounts and margin rules. A small formula mistake can go unnoticed until the customer replies. When a manager needs to approve an exception, the request travels by email or chat, and the latest version is not always obvious. Tracking which proposals are open, revised or accepted gets harder as the team grows."
+    },
+    "solution": {
+      "heading": "Templates, pricing rules and approvals in one flow",
+      "body": "QuoteFlow explores a quote builder based on templates and a shared catalog of items. Agreed pricing and margin rules would be applied consistently, and exceptions would be routed to a manager for approval. Each approved quote would be generated as a versioned PDF with a visible status. Connections to existing systems could be explored in a future phase; none are assumed today."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Start",
+          "body": "Select the customer and a suitable quote template."
+        },
+        {
+          "title": "Configure",
+          "body": "Add items from a shared catalog and set quantities or options."
+        },
+        {
+          "title": "Price",
+          "body": "Approved pricing and margin rules are applied automatically and consistently."
+        },
+        {
+          "title": "Approve exceptions",
+          "body": "Discounts or terms outside the rules go to a manager for approval."
+        },
+        {
+          "title": "Generate",
+          "body": "The workflow produces a clean, versioned PDF proposal."
+        },
+        {
+          "title": "Track",
+          "body": "Each proposal has a visible status: draft, sent, revised or accepted."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Designed to make quoting faster and more consistent",
+      "items": [
+        "Faster preparation of standard quotes.",
+        "Fewer formula and copy-and-paste mistakes.",
+        "Consistent pricing and approval rules across the team.",
+        "Traceable revisions and a clear history for every proposal.",
+        "Better overview of open and pending proposals."
+      ],
+      "disclaimer": "These are expected benefits of the proposed workflow, not validated results. No performance measurements are available yet."
+    },
+    "principles": {
+      "heading": "Structured sales work without losing flexibility",
+      "items": [
+        "Templates and catalog as a single source for quote content.",
+        "Pricing rules agreed with the business, not hidden in formulas.",
+        "Manager approval for exceptions before a quote leaves the company.",
+        "Version history for every proposal.",
+        "Connection to existing systems only as a future, verified option."
+      ]
+    },
+    "nextSteps": {
+      "heading": "A concept today, a potential MVP next",
+      "body": "QuoteFlow is currently a solution concept. A future proof-of-concept implementation could validate quote preparation time, pricing-rule coverage and usability for sales staff using synthetic or properly authorized sample data. No production deployment or customer results are claimed."
+    },
+    "closing": {
+      "heading": "Have a similar manual workflow in your business?",
+      "body": "SpexSol helps teams explore how custom software and AI-assisted processes could simplify operational work. Let's discuss the problem and identify a realistic first step.",
+      "cta": "Talk to SpexSol"
+    },
+    "meta": {
+      "title": "QuoteFlow — B2B Quotation Workflow Concept | SpexSol",
+      "description": "Explore QuoteFlow, a SpexSol concept for building B2B quotes from templates, applying agreed pricing rules and tracking approvals and versions in one workflow."
+    }
+  },
+  "shiftflow": {
+    "name": "ShiftFlow",
+    "eyebrow": "SpexSol Concept / Planned MVP",
+    "category": "Workflow Automation · Mobile Reporting",
+    "tagline": "Replace chat-based timesheets with a reviewable reporting flow.",
+    "title": "ShiftFlow — from chat-based timesheets to a reviewable reporting flow",
+    "intro": "In many teams, hours worked are reported through messages and pieced together in spreadsheets at month-end. ShiftFlow is a proposed mobile workflow that would capture shifts as they happen and give supervisors a clear way to review them.",
+    "cta": "Discuss a similar workflow",
+    "spec": {
+      "status": "Status",
+      "category": "Category",
+      "audience": "Audience",
+      "audienceValue": "Construction, logistics, production and field teams"
+    },
+    "challenge": {
+      "heading": "Hours are reported in messages and pieced together later",
+      "body": "Employees send their hours through messaging apps, text messages or paper notes. At month-end, a manager consolidates everything into a spreadsheet and chases missing or unclear entries before payroll."
+    },
+    "solution": {
+      "heading": "Simple mobile reporting with supervisor review",
+      "body": "ShiftFlow explores a mobile form for logging shifts against a job or site. Supervisors would review entries, resolve exceptions and prepare a payroll-ready export, so problems surface during the month rather than at its end."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Submit",
+          "body": "Employees log their hours from a phone right after the shift."
+        },
+        {
+          "title": "Associate",
+          "body": "Each entry is linked to a job, site or shift."
+        },
+        {
+          "title": "Review",
+          "body": "A supervisor checks and confirms the submitted entries."
+        },
+        {
+          "title": "Resolve",
+          "body": "Missing or unusual entries are flagged and clarified with the employee."
+        },
+        {
+          "title": "Export",
+          "body": "Approved hours are prepared as a payroll-ready export."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Designed to reduce month-end reconciliation",
+      "items": [
+        "Fewer missing or unclear entries.",
+        "Less manual consolidation at month-end.",
+        "A clear record of who approved which hours."
+      ],
+      "disclaimer": "These are expected benefits of the proposed workflow, not validated results. No performance measurements are available yet."
+    },
+    "principles": {
+      "heading": "Easy for the team, clear for supervisors",
+      "items": [
+        "Quick mobile entry that fits into a working day.",
+        "Supervisor review before anything reaches payroll.",
+        "Payroll-ready export; connection to existing systems only in a future phase.",
+        "Data protection and access controls as requirements for any future implementation."
+      ]
+    },
+    "nextSteps": {
+      "heading": "A concept today, a potential MVP next",
+      "body": "ShiftFlow is currently a solution concept. A future proof-of-concept could validate ease of entry and review effort using synthetic or properly authorized sample data. No production deployment or customer results are claimed."
+    },
+    "closing": {
+      "heading": "Have a similar manual workflow in your business?",
+      "body": "SpexSol helps teams explore how custom software and AI-assisted processes could simplify operational work. Let's discuss the problem and identify a realistic first step.",
+      "cta": "Talk to SpexSol"
+    },
+    "meta": {
+      "title": "ShiftFlow — Timesheet & Shift Reporting Concept | SpexSol",
+      "description": "Explore ShiftFlow, a SpexSol concept for replacing chat-based timesheets with mobile shift reporting, supervisor review and a payroll-ready export."
+    }
+  },
+  "stockflow": {
+    "name": "StockFlow",
+    "eyebrow": "SpexSol Concept / Planned MVP",
+    "category": "Workflow Automation · Inventory Visibility",
+    "tagline": "Make stock movements easier to capture and verify.",
+    "title": "StockFlow — lightweight visibility into stock movements",
+    "intro": "Smaller warehouses and retail teams often track stock changes in several spreadsheets that rarely match. StockFlow is a proposed lightweight workflow that would make every stock movement quick to record and easy to verify.",
+    "cta": "Discuss a similar workflow",
+    "spec": {
+      "status": "Status",
+      "category": "Category",
+      "audience": "Audience",
+      "audienceValue": "Warehouses, distributors, small retail and e-commerce teams"
+    },
+    "challenge": {
+      "heading": "Stock changes live in separate spreadsheets",
+      "body": "Receipts, transfers and adjustments are recorded by different people in different files, often after the fact. Reconciling them takes time, and it is hard to say which number is current or who made a change."
+    },
+    "solution": {
+      "heading": "Record each movement once, see it everywhere",
+      "body": "StockFlow explores scanning an item or QR code on a phone to record a movement with its quantity and location. Each change would be validated and reflected in a shared view, with notifications when stock crosses thresholds the team sets."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Scan",
+          "body": "Scan an item or QR code with a phone."
+        },
+        {
+          "title": "Record",
+          "body": "Enter the movement: receipt, transfer, issue or adjustment."
+        },
+        {
+          "title": "Validate",
+          "body": "Quantity and location are checked before the change is saved."
+        },
+        {
+          "title": "Update",
+          "body": "The shared stock view updates for the whole team."
+        },
+        {
+          "title": "Notify",
+          "body": "The team is notified when stock crosses a configured threshold."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Designed for more timely stock visibility",
+      "items": [
+        "A more timely view of current stock levels.",
+        "Traceable adjustments with a clear author and time.",
+        "Fewer manual hand-offs between spreadsheets."
+      ],
+      "disclaimer": "These are expected benefits of the proposed workflow, not validated results. No performance measurements are available yet."
+    },
+    "principles": {
+      "heading": "Lightweight by design",
+      "items": [
+        "Fast capture on a phone, right where the stock is.",
+        "Validation at entry rather than reconciliation later.",
+        "A clear history for every adjustment.",
+        "Connection to existing systems only in a future phase."
+      ]
+    },
+    "nextSteps": {
+      "heading": "A concept today, a potential MVP next",
+      "body": "StockFlow is currently a solution concept. A future proof-of-concept could validate capture speed and data consistency using synthetic or properly authorized sample data. No production deployment or customer results are claimed."
+    },
+    "closing": {
+      "heading": "Have a similar manual workflow in your business?",
+      "body": "SpexSol helps teams explore how custom software and AI-assisted processes could simplify operational work. Let's discuss the problem and identify a realistic first step.",
+      "cta": "Talk to SpexSol"
+    },
+    "meta": {
+      "title": "StockFlow — Lightweight Inventory Visibility Concept | SpexSol",
+      "description": "Explore StockFlow, a SpexSol concept for capturing stock movements by scanning, validating quantities and locations, and sharing a current view of inventory."
+    }
+  },
+  "fixflow": {
+    "name": "FixFlow",
+    "eyebrow": "SpexSol Concept / Planned MVP",
+    "category": "Workflow Automation · Request Coordination",
+    "tagline": "From scattered maintenance messages to accountable requests.",
+    "title": "FixFlow — from scattered maintenance messages to accountable requests",
+    "intro": "Maintenance requests often arrive by phone and email, and it is easy to lose track of who is handling what. FixFlow is a proposed workflow that would turn each request into a tracked task with a clear owner, from report to resolution.",
+    "cta": "Discuss a similar workflow",
+    "spec": {
+      "status": "Status",
+      "category": "Category",
+      "audience": "Audience",
+      "audienceValue": "Property managers, facility teams, multi-site operators"
+    },
+    "challenge": {
+      "heading": "Requests arrive from everywhere, ownership is unclear",
+      "body": "Tenants, staff and site managers report issues by phone and email. Coordinators lack a reliable overview of which requests are open, who owns them and whether they were actually resolved."
+    },
+    "solution": {
+      "heading": "One request, one owner, one history",
+      "body": "FixFlow explores a simple submission form with photos, followed by classification, prioritization and assignment to a technician. Updates would be tracked in one place, and a coordinator would review completion before closing the request."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Submit",
+          "body": "The reporter describes the issue and attaches a photo."
+        },
+        {
+          "title": "Classify",
+          "body": "The request is categorized and given a priority."
+        },
+        {
+          "title": "Assign",
+          "body": "A technician or contractor is assigned as the owner."
+        },
+        {
+          "title": "Track",
+          "body": "Progress updates are recorded on the request."
+        },
+        {
+          "title": "Close",
+          "body": "A coordinator reviews completion and closes the request."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Designed for clearer accountability",
+      "items": [
+        "Clearer ownership of every request.",
+        "A searchable history of issues and repairs.",
+        "Fewer missed follow-ups."
+      ],
+      "disclaimer": "These are expected benefits of the proposed workflow, not validated results. No performance measurements are available yet."
+    },
+    "principles": {
+      "heading": "Simple to report, clear to manage",
+      "items": [
+        "Quick reporting with a photo.",
+        "Every request has exactly one current owner.",
+        "Coordinator review before a request is closed.",
+        "Data protection and access controls as requirements for any future implementation."
+      ]
+    },
+    "nextSteps": {
+      "heading": "A concept today, a potential MVP next",
+      "body": "FixFlow is currently a solution concept. A future proof-of-concept could validate request handling and coordinator usability using synthetic or properly authorized sample data. No production deployment or customer results are claimed."
+    },
+    "closing": {
+      "heading": "Have a similar manual workflow in your business?",
+      "body": "SpexSol helps teams explore how custom software and AI-assisted processes could simplify operational work. Let's discuss the problem and identify a realistic first step.",
+      "cta": "Talk to SpexSol"
+    },
+    "meta": {
+      "title": "FixFlow — Maintenance Request Coordination Concept | SpexSol",
+      "description": "Explore FixFlow, a SpexSol concept for turning maintenance calls and emails into tracked requests with clear ownership, updates and coordinator review."
+    }
   }
 }
