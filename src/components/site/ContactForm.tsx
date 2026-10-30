@@ -33,13 +33,13 @@ type FieldError =
   | 'message'
   | 'privacy'
 
-export function ContactForm() {
+export function ContactForm({ defaultTopic = 'product' }: { defaultTopic?: ContactTopic }) {
   const { t } = useTranslation('home')
   const lang = useLang()
   const ga = useGoogleAnalytics()
   const [status, setStatus] = useState<Status>({ kind: 'idle' })
   const [errors, setErrors] = useState<Partial<Record<FieldError, string>>>({})
-  const [topic, setTopic] = useState<ContactTopic>('product')
+  const [topic, setTopic] = useState<ContactTopic>(defaultTopic)
   const [privacyAccepted, setPrivacyAccepted] = useState(false)
 
   useEffect(() => {
@@ -105,7 +105,7 @@ export function ContactForm() {
       if (!res.ok) throw new Error(`Request failed (${res.status})`)
       setStatus({ kind: 'success' })
       ;(e.target as HTMLFormElement).reset()
-      setTopic('product')
+      setTopic(defaultTopic)
       setPrivacyAccepted(false)
       toast.success(t('contact.success'))
       ga.event('generate_lead', {
