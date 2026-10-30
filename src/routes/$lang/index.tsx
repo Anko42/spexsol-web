@@ -48,14 +48,18 @@ function Home() {
       {/* Work: shown once there is something to show */}
       {(products.length > 0 || caseStudies.length > 0) && (
         <section aria-labelledby="work-title" className="py-16 lg:py-24">
-          <SectionHead id="work-title" title={t('work.title')} />
+          <SectionHead
+            id="work-title"
+            title={t('work.title')}
+            description={t('work.subtitle')}
+          />
           <ul className="mt-8 border-b border-line">
             {products.map((product) => (
               <li key={product.slug}>
                 <ProductCard product={product} />
               </li>
             ))}
-            {caseStudies.map((c) => (
+            {caseStudies.slice(0, 3).map((c) => (
               <li key={c.slug}>
                 <CaseStudyCard caseStudy={c} />
               </li>
