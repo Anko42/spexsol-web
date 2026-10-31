@@ -23,7 +23,7 @@ export function CaseStudyCard({ caseStudy }: { caseStudy: CaseStudy }) {
         aria-hidden="true"
         className="well flex size-14 items-center justify-center rounded-[14px] sm:size-16 sm:rounded-[16px]"
       >
-        <ConceptMark className="size-7 text-fg sm:size-8" />
+        <ConceptMark slug={caseStudy.slug} className="size-7 text-fg sm:size-8" />
       </span>
       <div className="min-w-0">
         <h3 className="truncate text-[20px] font-semibold leading-tight tracking-[-0.02em] text-fg">
