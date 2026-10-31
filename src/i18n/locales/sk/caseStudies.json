@@ -1,34 +1,38 @@
 {
-  "eyebrow": "SpexSol / Riešenia",
-  "pageTitle": "Vaša firma stojí na procesoch. Postaráme sa, aby fungovali lepšie.",
-  "pageSubtitle": "Pozrite si, ako sa z papierov, tabuliek a roztrúsenej komunikácie dajú urobiť prehľadné digitálne procesy. Ide o koncepty, ktoré ukazujú, ako v SpexSol pristupujeme k skutočným prevádzkovým problémom.",
-  "disclosure": "Ilustračný koncept, nie riešenie nasadené u klienta.",
-  "indexCta": "Preberme váš proces",
-  "backToList": "Späť na prípadové štúdie",
-  "conceptIllustration": "Ilustrácia konceptu",
+  "eyebrow": "SpexSol / Riešenia pre firmy",
+  "pageTitle": "Menej ručnej práce. Viac času na to podstatné.",
+  "pageSubtitle": "Faktúry v e-mailoch, výkazy v tabuľkách či požiadavky stratené v správach? Pozrite si naše návrhy, ako tieto každodenné problémy vyriešiť pomocou softvéru na mieru.",
+  "disclosure": "Ukážka navrhovaného riešenia. Zatiaľ nejde o produkt nasadený u zákazníka.",
+  "indexCta": "Porozprávajme sa o vašej firme",
+  "backToList": "Späť na prehľad riešení",
+  "conceptIllustration": "Návrh riešenia",
   "status": {
-    "concept": "Koncept / plánované MVP"
+    "concept": "Návrh riešenia"
   },
   "sections": {
-    "challenge": "Výzva",
-    "solution": "Náš návrh",
-    "workflow": "Ako by to fungovalo",
-    "value": "Možný prínos pre firmu",
-    "principles": "Zásady návrhu",
-    "nextSteps": "Stav a ďalšie kroky"
+    "challenge": "Kde vzniká problém",
+    "solution": "Ako by sme ho vyriešili",
+    "workflow": "Ako by riešenie fungovalo",
+    "value": "Čo by firma získala",
+    "principles": "Na čom nám záleží",
+    "nextSteps": "Ako pokračovať"
+  },
+  "ai": {
+    "title": "AI asistenti a inteligentná automatizácia",
+    "intro": "Príklady využitia AI tam, kde pomáha pracovať s neštruktúrovanými informáciami. Bežné úlohy riešime spoľahlivou automatizáciou bez zbytočnej AI."
   },
   "meta": {
-    "title": "Prípadové štúdie — SpexSol",
-    "description": "Koncepčné prípadové štúdie SpexSol: ako vymedzujeme problém, navrhujeme riešenie a staviame procesy s podporou AI pre prevádzkové tímy."
+    "title": "Návrhy riešení pre firmy | SpexSol",
+    "description": "Praktické návrhy, ako zjednodušiť fakturáciu, servis, evidenciu práce, cenové ponuky a ďalšie firemné procesy pomocou softvéru na mieru."
   },
   "fieldflow": {
-    "name": "FieldFlow",
-    "eyebrow": "Koncept SpexSol / plánované MVP",
-    "category": "Automatizácia procesov · Spracovanie dokumentov s podporou AI",
-    "tagline": "Z fotiek z terénu prehľadné servisné správy.",
-    "title": "FieldFlow — zo servisných papierov z terénu prehľadný proces",
-    "intro": "Technici v teréne často posielajú fotky vyplnených servisných protokolov cez chat. Koordinátori ich potom lúštia, triedia a ručne preposielajú ďalej. FieldFlow je návrh procesu s podporou AI, ktorý by z roztrúsených fotiek urobil štruktúrované záznamy pripravené na kontrolu.",
-    "cta": "Preberme podobný proces",
+    "name": "Digitalizácia servisných protokolov",
+    "eyebrow": "Návrh riešenia od SpexSol",
+    "category": "Automatizácia procesov · Spracovanie dokumentov",
+    "tagline": "Zo servisného protokolu hotová správa. Bez zdĺhavého prepisovania.",
+    "title": "Digitalizácia servisných protokolov",
+    "intro": "Technik odfotí vyplnený protokol a pošle ho cez chat. V kancelárii potom niekto musí údaje prepísať, skontrolovať a poslať ďalej. Takto by sa táto práca dala zjednodušiť.",
+    "cta": "Pozrime sa na váš prípad",
     "spec": {
       "status": "Stav",
       "category": "Kategória",
@@ -36,26 +40,26 @@
       "audienceValue": "Servisné firmy, údržbárske tímy, prevádzkoví manažéri, koordinátori"
     },
     "challenge": {
-      "heading": "Dôležité servisné údaje sa strácajú v chatoch",
-      "body": "Technik po návšteve u zákazníka odfotí papierový protokol a pošle ho cez chat. Koordinátor musí zistiť, o ktorú zákazku ide, dokument prečítať, prepísať kľúčové údaje, skontrolovať, či nič nechýba, a poslať ho správnemu príjemcovi. Všetko stojí na ručnom odovzdávaní. Čím viac správ pribúda, tým ťažšie sa sledujú, dohľadávajú a držia v jednotnej podobe."
+      "heading": "Keď sa servisné protokoly strácajú v správach",
+      "body": "Po každom výjazde príde fotka papierového protokolu. Koordinátor musí zistiť, ku ktorej zákazke patrí, prečítať údaje a prepísať ich do správnej podoby. Pri väčšom počte zákaziek je čoraz ťažšie udržať si prehľad."
     },
     "solution": {
-      "heading": "Zber, kontrola a odoslanie správ na jednom mieste",
-      "body": "FieldFlow počíta s jednoduchým odoslaním z mobilu pre technikov a s pracovným prostredím pre koordinátora. Z nahratých fotiek by AI navrhla hodnoty jednotlivých polí. Človek by ich potvrdil alebo opravil, až potom by vznikla čistá správa pripravená na odoslanie. Konečné schválenie ostáva na ľuďoch."
+      "heading": "Technik odfotí protokol, koordinátor už len skontroluje údaje",
+      "body": "Technik by protokol jednoducho nahral cez mobil. Systém by pomocou AI pripravil údaje na kontrolu. Koordinátor by ich overil, prípadne opravil a schválil výslednú správu. Bez jeho potvrdenia by sa nič neodoslalo."
     },
     "workflow": {
       "steps": [
         {
-          "title": "Zber",
+          "title": "Nahratie",
           "body": "Technik nahrá jednu alebo viac fotiek vyplneného servisného protokolu."
         },
         {
-          "title": "Rozpoznanie",
-          "body": "AI navrhne kľúčové údaje: číslo zákazky, dátum, zákazníka, vykonané práce a poznámky."
+          "title": "Vyťaženie údajov",
+          "body": "Systém vyťaží údaje o zákazke, dátumy a poznámky k práci. Skeny prečíta OCR, pri zložitejších prípadoch môže pomôcť AI."
         },
         {
           "title": "Kontrola",
-          "body": "Koordinátor porovná fotku s rozpoznanými údajmi a opraví, čo nesedí."
+          "body": "Koordinátor porovná vyťažené údaje s originálom a opraví prípadné chyby."
         },
         {
           "title": "Príprava a odoslanie",
@@ -64,145 +68,145 @@
       ]
     },
     "value": {
-      "heading": "Menej opakovanej koordinačnej práce",
+      "heading": "Menej prepisovania, lepší prehľad o zákazkách",
       "items": [
         "Menej ručného prepisovania a preposielania.",
-        "Jednotná štruktúra správ a jednoduchšie dohľadávanie.",
+        "Jednotné záznamy, ktoré sa ľahšie dohľadávajú.",
         "Jasne určené, kto kontroluje a kto schvaľuje.",
         "Lepší prehľad o nedokončených a neúplných správach."
       ],
-      "disclaimer": "Ide o očakávané prínosy navrhovaného procesu, nie o overené výsledky. Žiadne merania zatiaľ nemáme."
+      "disclaimer": "Ide o predpokladané prínosy. Riešenie zatiaľ nebolo overené v prevádzke."
     },
     "principles": {
-      "heading": "Praktická automatizácia pod dohľadom človeka",
+      "heading": "Automatizácia, pri ktorej má kontrolu človek",
       "items": [
-        "Odoslanie z mobilu, priamo z terénu.",
+        "Jednoduché nahratie priamo z terénu.",
         "Výslovné potvrdenie človekom pred odoslaním navonok.",
-        "Chýbajúce alebo neisté údaje sú na prvý pohľad viditeľné.",
+        "Chýbajúce alebo neisté údaje zreteľne označené na kontrolu.",
         "Dohľadateľnosť od pôvodnej fotky až po hotovú správu.",
-        "Ochrana údajov a riadenie prístupu ako podmienka každej budúcej implementácie."
+        "Primeraná ochrana údajov a riadenie prístupu."
       ]
     },
     "nextSteps": {
-      "heading": "Dnes koncept, zajtra možné MVP",
-      "body": "FieldFlow je dnes vo fáze konceptu. Budúci proof-of-concept by mohol na syntetických alebo so súhlasom poskytnutých vzorových dokumentoch overiť presnosť rozpoznávania, čas kontroly a použiteľnosť pre koordinátorov. Nejde o produkčné nasadenie a neuvádzame žiadne výsledky u zákazníkov."
+      "heading": "Ako by sme začali",
+      "body": "Zatiaľ ide o návrh, nie o hotový produkt ani riešenie nasadené u zákazníka. Prvým krokom by bolo pripraviť malú skúšobnú verziu na vzorových alebo oprávnene poskytnutých údajoch a overiť, či prináša očakávaný úžitok."
     },
     "closing": {
-      "heading": "Máte vo firme podobný ručný proces?",
-      "body": "SpexSol pomáha tímom zistiť, kde by softvér na mieru a procesy s podporou AI zjednodušili každodennú prevádzku. Preberme váš problém a nájdime realistický prvý krok.",
-      "cta": "Ozvite sa nám"
+      "heading": "Riešite vo firme niečo podobné?",
+      "body": "Nemusíte hneď meniť celý systém. Pozrieme sa na váš súčasný postup, nájdeme najväčšie zdržania a navrhneme rozumný prvý krok.",
+      "cta": "Poďme sa porozprávať"
     },
     "meta": {
-      "title": "FieldFlow — koncept servisného procesu s podporou AI | SpexSol",
-      "description": "FieldFlow je koncept SpexSol: odfotené servisné protokoly z terénu sa menia na štruktúrované záznamy, ktoré AI rozpozná a človek skontroluje."
+      "title": "Digitalizácia servisných protokolov | SpexSol",
+      "description": "Technik odfotí vyplnený protokol a pošle ho cez chat. V kancelárii potom niekto musí údaje prepísať, skontrolovať a poslať ďalej. Takto by sa táto práca dala zjednodušiť."
     }
   },
   "invoiceflow": {
-    "name": "InvoiceFlow",
-    "eyebrow": "Koncept SpexSol / plánované MVP",
-    "category": "Automatizácia procesov · Spracovanie dokumentov s podporou AI",
-    "tagline": "Z roztrúsených faktúr jeden jasný schvaľovací proces.",
-    "title": "InvoiceFlow — dodávateľské faktúry v jednom schvaľovacom procese",
-    "intro": "Dodávateľské faktúry prichádzajú do viacerých schránok ako prílohy, skeny či papier. Niekto ich potom musí prečítať, prepísať kľúčové údaje a zháňať toho, kto ich schváli. InvoiceFlow je návrh procesu s podporou AI, ktorý by faktúry sústredil na jedno miesto a previedol ich jasným schvaľovaním, v ktorom má posledné slovo človek.",
-    "cta": "Preberme podobný proces",
+    "name": "Automatizácia spracovania faktúr",
+    "eyebrow": "Návrh riešenia od SpexSol",
+    "category": "Automatizácia procesov · Spracovanie dokumentov",
+    "tagline": "Všetky faktúry na jednom mieste. Od prijatia po schválenie.",
+    "title": "Automatizácia spracovania faktúr",
+    "intro": "Faktúry prichádzajú e-mailom, v prílohách aj na papieri. Niekto ich musí zaevidovať, skontrolovať a naháňať schválenia. Tento príklad ukazuje, ako by jednotnejší postup znížil rutinnú prácu.",
+    "cta": "Pozrime sa na váš prípad",
     "spec": {
       "status": "Stav",
       "category": "Kategória",
       "audience": "Pre koho",
-      "audienceValue": "Finančné oddelenia, účtovníci, malé a stredné firmy, firmy s viacerými prevádzkami"
+      "audienceValue": "Finančné tímy, účtovníci, malé a stredné firmy a firmy s viacerými prevádzkami"
     },
     "challenge": {
-      "heading": "Faktúry sú roztrúsené po schránkach a prílohách",
-      "body": "Faktúry končia v osobných aj zdieľaných schránkach, niekedy aj na stole. Zamestnanci z nich ručne vypisujú dodávateľa, sumu, splatnosť a nákladové stredisko a posielajú ich ďalej tomu, kto má schvaľovať. Bez jedného prehľadu sa ťažko zistí, ktoré faktúry čakajú, kde sa zasekli a či už niektorá nebola zaevidovaná dvakrát. S rastúcim objemom sa horšie stráži splatnosť a horšie sa odpovedá na otázky pri audite."
+      "heading": "Keď nikto nevie, kde sa faktúra práve nachádza",
+      "body": "Faktúry sú rozdelené medzi e-mailové schránky a papierové dokumenty. Údaje sa prepisujú ručne a schvaľovanie prebieha cez správy. Ťažko sa potom zisťuje, čo už bolo schválené, čo ešte čaká a kde sa mohla stať chyba."
     },
     "solution": {
-      "heading": "Jedno miesto príjmu a jasná cesta k schváleniu",
-      "body": "InvoiceFlow počíta s jedným miestom príjmu faktúr a jednoduchým prostredím na schvaľovanie. AI by z každej faktúry navrhla kľúčové údaje a upozornila na možné duplicity alebo chýbajúce položky. Zodpovedná osoba by faktúru skontrolovala, opravila a schválila, až potom by sa pripravil export do účtovného softvéru. Prepojenie s účtovníctvom, daňové kontroly či odhaľovanie podvodov sú možné budúce funkcie, nie prísľub."
+      "heading": "Faktúry na jednom mieste, schvaľovanie pod kontrolou",
+      "body": "Faktúry by sa zhromažďovali na jednom mieste. AI by predvyplnila základné údaje a upozornila na možné duplicity. Zodpovedný človek by všetko skontroloval a schválil. Následne by bolo možné pripraviť údaje na import do účtovného softvéru."
     },
     "workflow": {
       "steps": [
         {
           "title": "Príjem",
-          "body": "Faktúry sa preposielajú na vyhradenú adresu alebo nahrajú priamo do spoločného zoznamu."
+          "body": "Faktúry sa preposielajú na vyhradenú adresu alebo nahrajú do spoločného pracovného priestoru."
         },
         {
-          "title": "Rozpoznanie",
-          "body": "AI navrhne údaje ako dodávateľ, číslo faktúry, suma, splatnosť a nákladové stredisko."
+          "title": "Vyťaženie údajov",
+          "body": "Dodávateľ, číslo faktúry, suma a splatnosť sa načítajú zo štruktúrovaných súborov, PDF alebo skenov, v prípade potreby cez OCR."
         },
         {
           "title": "Kontrola",
-          "body": "Ešte pred schválením proces upozorní na možné duplicity a chýbajúce či nesúhlasiace údaje."
+          "body": "Kontroly odhalia chýbajúce polia, nezrovnalosti a možné duplicity."
         },
         {
           "title": "Pridelenie",
-          "body": "Každá faktúra putuje k schvaľovateľovi podľa jednoduchých, vopred dohodnutých pravidiel."
+          "body": "Každá faktúra putuje k správnemu schvaľovateľovi podľa dohodnutých pravidiel."
         },
         {
           "title": "Schválenie",
-          "body": "Schvaľovateľ porovná pôvodný dokument s rozpoznanými údajmi a faktúru potvrdí alebo vráti."
+          "body": "Schvaľovateľ porovná pôvodnú faktúru s vyťaženými údajmi a faktúru schváli alebo vráti."
         },
         {
           "title": "Export",
-          "body": "Schválené faktúry sa pripravia ako štruktúrovaný export do účtovného softvéru."
+          "body": "Schválené faktúry sa pripravia na import do účtovného softvéru."
         }
       ]
     },
     "value": {
-      "heading": "Predvídateľnejšia práca s faktúrami",
+      "heading": "Menej administratívy a jasný stav každej faktúry",
       "items": [
-        "Jednotný príjem faktúr zo všetkých kanálov.",
+        "Jedno miesto pre príjem faktúr.",
         "Menej prepisovania údajov medzi dokumentmi a tabuľkami.",
         "Jasná stopa, kto faktúru kontroloval a schválil.",
         "Lepší prehľad o čakajúcich schváleniach a blížiacich sa splatnostiach.",
         "Včasné odhalenie možných duplicít a chýbajúcich údajov."
       ],
-      "disclaimer": "Ide o očakávané prínosy navrhovaného procesu, nie o overené výsledky. Žiadne merania zatiaľ nemáme."
+      "disclaimer": "Ide o predpokladané prínosy. Riešenie zatiaľ nebolo overené v prevádzke."
     },
     "principles": {
-      "heading": "Automatizácia, pri ktorej majú financie všetko pod kontrolou",
+      "heading": "Financie majú všetko pod kontrolou",
       "items": [
         "Schválenie človekom skôr, než faktúra odíde do účtovníctva.",
-        "Pôvodný dokument vždy vedľa rozpoznaných údajov.",
-        "Zreteľné upozornenia na duplicity, medzery a neisté údaje.",
-        "Export do účtovného softvéru; priame prepojenie s existujúcimi systémami až v ďalšej fáze.",
-        "Ochrana údajov a prístup podľa rolí ako podmienka každej budúcej implementácie."
+        "Pôvodný dokument vždy vedľa vyťažených údajov.",
+        "Kontroly podľa pravidiel a zreteľne označené výnimky.",
+        "Najprv štruktúrovaný export; priame integrácie môžu prísť neskôr.",
+        "Prístup podľa rolí a primeraná ochrana údajov."
       ]
     },
     "nextSteps": {
-      "heading": "Dnes koncept, zajtra možné MVP",
-      "body": "InvoiceFlow je dnes vo fáze konceptu. Budúci proof-of-concept by mohol na syntetických alebo so súhlasom poskytnutých vzorových faktúrach overiť presnosť rozpoznávania, odhaľovanie duplicít a použiteľnosť pre schvaľovateľov. Nejde o produkčné nasadenie a neuvádzame žiadne výsledky u zákazníkov."
+      "heading": "Ako by sme začali",
+      "body": "Zatiaľ ide o návrh, nie o hotový produkt ani riešenie nasadené u zákazníka. Prvým krokom by bolo pripraviť malú skúšobnú verziu na vzorových alebo oprávnene poskytnutých údajoch a overiť, či prináša očakávaný úžitok."
     },
     "closing": {
-      "heading": "Máte vo firme podobný ručný proces?",
-      "body": "SpexSol pomáha tímom zistiť, kde by softvér na mieru a procesy s podporou AI zjednodušili každodennú prevádzku. Preberme váš problém a nájdime realistický prvý krok.",
-      "cta": "Ozvite sa nám"
+      "heading": "Riešite vo firme niečo podobné?",
+      "body": "Nemusíte hneď meniť celý systém. Pozrieme sa na váš súčasný postup, nájdeme najväčšie zdržania a navrhneme rozumný prvý krok.",
+      "cta": "Poďme sa porozprávať"
     },
     "meta": {
-      "title": "InvoiceFlow — koncept príjmu a schvaľovania faktúr | SpexSol",
-      "description": "InvoiceFlow je koncept SpexSol: dodávateľské faktúry na jednom mieste, kľúčové údaje rozpoznané s podporou AI a schvaľovanie, v ktorom rozhoduje človek."
+      "title": "Automatizácia spracovania faktúr | SpexSol",
+      "description": "Faktúry prichádzajú e-mailom, v prílohách aj na papieri. Niekto ich musí zaevidovať, skontrolovať a naháňať schválenia. Tento príklad ukazuje, ako by jednotnejší postup znížil rutinnú prácu."
     }
   },
   "quoteflow": {
-    "name": "QuoteFlow",
-    "eyebrow": "Koncept SpexSol / plánované MVP",
+    "name": "Správa a schvaľovanie cenových ponúk",
+    "eyebrow": "Návrh riešenia od SpexSol",
     "category": "Automatizácia procesov · Obchod",
-    "tagline": "Jednotné cenové ponuky bez večného prerábania tabuliek.",
-    "title": "QuoteFlow — jednotné B2B ponuky bez prerábania tabuliek",
-    "intro": "Mnohé B2B obchodné tímy stále skladajú každú ponuku kopírovaním riadkov medzi tabuľkami a ručnou úpravou cien. Verzie sa množia, cenové pravidlá má každý v hlave a schvaľuje sa cez e-mail. QuoteFlow je návrh procesu, ktorý by ponuku previedol od šablóny až po schválenú verziu.",
-    "cta": "Preberme podobný proces",
+    "tagline": "Cenové ponuky bez nekonečného kopírovania tabuliek.",
+    "title": "Správa a schvaľovanie cenových ponúk",
+    "intro": "Keď každá nová ponuka vzniká úpravou starej tabuľky, ľahko sa pomýli cena, zľava aj verzia dokumentu. Takto by obchodný tím mohol pripravovať a schvaľovať ponuky na jednom mieste.",
+    "cta": "Pozrime sa na váš prípad",
     "spec": {
       "status": "Stav",
       "category": "Kategória",
       "audience": "Pre koho",
-      "audienceValue": "Výrobcovia, montážne firmy, B2B obchodné tímy, poskytovatelia technických služieb"
+      "audienceValue": "Výrobcovia, montážne firmy, B2B obchodné tímy a poskytovatelia technických služieb"
     },
     "challenge": {
-      "heading": "Každá ponuka začína ďalšou kópiou tabuľky",
-      "body": "Obchodníci kopírujú položky zo starších ponúk, dohľadávajú aktuálne ceny a ručne uplatňujú zľavy a marže. Drobná chyba vo vzorci sa často ukáže, až keď sa ozve zákazník. Keď má výnimku schváliť manažér, žiadosť putuje e-mailom alebo chatom a nie vždy je jasné, ktorá verzia je posledná. S rastom tímu sa horšie sleduje, ktoré ponuky sú otvorené, upravené alebo prijaté."
+      "heading": "Každá ponuka znamená ďalšiu tabuľku",
+      "body": "Obchodníci kopírujú položky zo starších ponúk, dohľadávajú ceny a ručne upravujú výpočty. Schválenie výnimiek sa rieši cez e-mail a nie vždy je jasné, ktorá verzia ponuky je aktuálna."
     },
     "solution": {
-      "heading": "Šablóny, cenové pravidlá a schvaľovanie v jednom procese",
-      "body": "QuoteFlow stavia na šablónach a spoločnom katalógu položiek. Dohodnuté cenové pravidlá a marže by platili rovnako pre všetkých, výnimky by šli na schválenie manažérovi. Každá schválená ponuka by vznikla ako PDF s číslom verzie a viditeľným stavom. Prepojenie s existujúcimi systémami je téma na ďalšiu fázu, dnes s ním nepočítame."
+      "heading": "Jednotné ceny, šablóny a schvaľovanie",
+      "body": "Obchodník by si vybral šablónu a položky z katalógu. Systém by použil dohodnuté cenové pravidlá a výnimočné zľavy poslal na schválenie. Výsledkom by bola prehľadná ponuka s jasne označenou verziou."
     },
     "workflow": {
       "steps": [
@@ -216,65 +220,65 @@
         },
         {
           "title": "Nacenenie",
-          "body": "Schválené cenové pravidlá a marže sa uplatnia automaticky a rovnako."
+          "body": "Dohodnuté cenové pravidlá a marže sa uplatnia automaticky."
         },
         {
           "title": "Schválenie výnimiek",
           "body": "Zľavy alebo podmienky mimo pravidiel idú na schválenie manažérovi."
         },
         {
-          "title": "PDF ponuky",
-          "body": "Vznikne čisté PDF ponuky s číslom verzie."
+          "title": "Vytvorenie PDF",
+          "body": "Vznikne profesionálne PDF ponuky s číslom verzie."
         },
         {
           "title": "Sledovanie",
-          "body": "Každá ponuka má viditeľný stav: rozpracovaná, odoslaná, upravená alebo prijatá."
+          "body": "Pri každej ponuke vidíte, či je rozpracovaná, odoslaná, upravená alebo prijatá."
         }
       ]
     },
     "value": {
-      "heading": "Rýchlejšie a jednotnejšie ponuky",
+      "heading": "Rýchlejšie ponuky a menej chýb pri nacenení",
       "items": [
         "Rýchlejšia príprava bežných ponúk.",
-        "Menej chýb vo vzorcoch a pri kopírovaní.",
+        "Menej chýb pri kopírovaní a vo vzorcoch.",
         "Rovnaké cenové a schvaľovacie pravidlá pre celý tím.",
-        "Dohľadateľné úpravy a jasná história každej ponuky.",
-        "Lepší prehľad o otvorených a čakajúcich ponukách."
+        "Prehľadná história zmien a verzií.",
+        "Prehľad o otvorených ponukách a tých, ktoré čakajú na krok."
       ],
-      "disclaimer": "Ide o očakávané prínosy navrhovaného procesu, nie o overené výsledky. Žiadne merania zatiaľ nemáme."
+      "disclaimer": "Ide o predpokladané prínosy. Riešenie zatiaľ nebolo overené v prevádzke."
     },
     "principles": {
-      "heading": "Poriadok v obchode bez straty pružnosti",
+      "heading": "Konzistentnosť bez zbytočnej strnulosti",
       "items": [
-        "Šablóny a katalóg ako jediný zdroj obsahu ponúk.",
+        "Šablóny a spoločný katalóg produktov.",
         "Cenové pravidlá dohodnuté s vedením, nie schované vo vzorcoch.",
         "Výnimky schvaľuje manažér skôr, než ponuka odíde z firmy.",
         "História verzií pri každej ponuke.",
-        "Prepojenie s existujúcimi systémami až ako budúca, overená možnosť."
+        "Integrácie s existujúcimi systémami zvážime v ďalšej fáze."
       ]
     },
     "nextSteps": {
-      "heading": "Dnes koncept, zajtra možné MVP",
-      "body": "QuoteFlow je dnes vo fáze konceptu. Budúci proof-of-concept by mohol na syntetických alebo so súhlasom poskytnutých vzorových dátach overiť čas prípravy ponuky, pokrytie cenových pravidiel a použiteľnosť pre obchodníkov. Nejde o produkčné nasadenie a neuvádzame žiadne výsledky u zákazníkov."
+      "heading": "Ako by sme začali",
+      "body": "Zatiaľ ide o návrh, nie o hotový produkt ani riešenie nasadené u zákazníka. Prvým krokom by bolo pripraviť malú skúšobnú verziu na vzorových alebo oprávnene poskytnutých údajoch a overiť, či prináša očakávaný úžitok."
     },
     "closing": {
-      "heading": "Máte vo firme podobný ručný proces?",
-      "body": "SpexSol pomáha tímom zistiť, kde by softvér na mieru a procesy s podporou AI zjednodušili každodennú prevádzku. Preberme váš problém a nájdime realistický prvý krok.",
-      "cta": "Ozvite sa nám"
+      "heading": "Riešite vo firme niečo podobné?",
+      "body": "Nemusíte hneď meniť celý systém. Pozrieme sa na váš súčasný postup, nájdeme najväčšie zdržania a navrhneme rozumný prvý krok.",
+      "cta": "Poďme sa porozprávať"
     },
     "meta": {
-      "title": "QuoteFlow — koncept tvorby B2B cenových ponúk | SpexSol",
-      "description": "QuoteFlow je koncept SpexSol: B2B ponuky zo šablón, jednotne uplatnené cenové pravidlá a prehľad o schváleniach aj verziách v jednom procese."
+      "title": "Správa a schvaľovanie cenových ponúk | SpexSol",
+      "description": "Keď každá nová ponuka vzniká úpravou starej tabuľky, ľahko sa pomýli cena, zľava aj verzia dokumentu. Takto by obchodný tím mohol pripravovať a schvaľovať ponuky na jednom mieste."
     }
   },
   "shiftflow": {
-    "name": "ShiftFlow",
-    "eyebrow": "Koncept SpexSol / plánované MVP",
+    "name": "Evidencia odpracovaného času",
+    "eyebrow": "Návrh riešenia od SpexSol",
     "category": "Automatizácia procesov · Mobilné výkazy",
-    "tagline": "Namiesto hodín hlásených v chate prehľadný výkaz s kontrolou.",
-    "title": "ShiftFlow — od hodín v chatoch k výkazom, ktoré sa dajú skontrolovať",
-    "intro": "V mnohých tímoch sa odpracované hodiny hlásia správami a na konci mesiaca sa skladajú do tabuľky. ShiftFlow je návrh mobilného procesu, ktorý by zmeny zaznamenával priebežne a vedúcim dal jasný spôsob, ako ich skontrolovať.",
-    "cta": "Preberme podobný proces",
+    "tagline": "Odpracované hodiny bez dohľadávania správ na konci mesiaca.",
+    "title": "Evidencia odpracovaného času",
+    "intro": "Zamestnanci posielajú odpracované hodiny cez SMS alebo chat a vedúci ich potom prepisujú do tabuliek. Tento príklad ukazuje, ako hodiny zapisovať priebežne a pripraviť podklady pre mzdy bez zbytočného dohľadávania.",
+    "cta": "Pozrime sa na váš prípad",
     "spec": {
       "status": "Stav",
       "category": "Kategória",
@@ -282,18 +286,18 @@
       "audienceValue": "Stavebníctvo, logistika, výroba a tímy v teréne"
     },
     "challenge": {
-      "heading": "Hodiny sa hlásia v správach a skladajú dodatočne",
-      "body": "Zamestnanci posielajú hodiny cez chat, SMS alebo na papieri. Vedúci ich na konci mesiaca dáva dokopy v tabuľke a pred mzdami naháňa chýbajúce či nejasné záznamy."
+      "heading": "Keď sa výkazy práce riešia až pred výplatou",
+      "body": "Hodiny prichádzajú v správach, na papieri alebo ústne. Na konci mesiaca ich treba spojiť, overiť a doplniť chýbajúce záznamy. To zdržuje vedúcich aj mzdové oddelenie."
     },
     "solution": {
-      "heading": "Jednoduchý zápis z mobilu, kontrola vedúcim",
-      "body": "ShiftFlow počíta s mobilným formulárom, v ktorom zamestnanec zapíše zmenu k zákazke alebo stavbe. Vedúci by záznamy kontroloval, riešil výnimky a pripravil podklad pre mzdy. Problémy by sa tak ukázali počas mesiaca, nie až na jeho konci."
+      "heading": "Zápis cez mobil, schválenie vedúcim",
+      "body": "Zamestnanec by po skončení zmeny zapísal hodiny cez mobil a priradil ich k zákazke alebo stavbe. Vedúci by ich priebežne kontroloval. Schválené údaje by slúžili ako podklad pre mzdy."
     },
     "workflow": {
       "steps": [
         {
           "title": "Zápis",
-          "body": "Zamestnanec zapíše hodiny z mobilu hneď po zmene."
+          "body": "Zamestnanci zapíšu hodiny z mobilu hneď po zmene."
         },
         {
           "title": "Priradenie",
@@ -304,8 +308,8 @@
           "body": "Vedúci záznamy skontroluje a potvrdí."
         },
         {
-          "title": "Výnimky",
-          "body": "Chýbajúce alebo nezvyčajné záznamy sa označia a vyjasnia so zamestnancom."
+          "title": "Riešenie výnimiek",
+          "body": "Chýbajúce alebo nezvyčajné záznamy sa označia na vyjasnenie."
         },
         {
           "title": "Export",
@@ -314,45 +318,45 @@
       ]
     },
     "value": {
-      "heading": "Menej dorovnávania na konci mesiaca",
+      "heading": "Menej zhonu pri mesačnej uzávierke",
       "items": [
         "Menej chýbajúcich a nejasných záznamov.",
         "Menej ručného skladania údajov na konci mesiaca.",
         "Jasný záznam, kto ktoré hodiny schválil."
       ],
-      "disclaimer": "Ide o očakávané prínosy navrhovaného procesu, nie o overené výsledky. Žiadne merania zatiaľ nemáme."
+      "disclaimer": "Ide o predpokladané prínosy. Riešenie zatiaľ nebolo overené v prevádzke."
     },
     "principles": {
       "heading": "Jednoduché pre tím, prehľadné pre vedúcich",
       "items": [
         "Rýchly zápis z mobilu, ktorý nezdržuje pracovný deň.",
         "Kontrola vedúcim skôr, než sa čokoľvek dostane do miezd.",
-        "Podklad pre mzdy; prepojenie s existujúcimi systémami až v ďalšej fáze.",
-        "Ochrana údajov a riadenie prístupu ako podmienka každej budúcej implementácie."
+        "Exporty pripravené pre mzdy; integrácie zvážime neskôr.",
+        "Primerané riadenie prístupu a ochrana údajov."
       ]
     },
     "nextSteps": {
-      "heading": "Dnes koncept, zajtra možné MVP",
-      "body": "ShiftFlow je dnes vo fáze konceptu. Budúci proof-of-concept by mohol na syntetických alebo so súhlasom poskytnutých vzorových dátach overiť jednoduchosť zápisu a prácnosť kontroly. Nejde o produkčné nasadenie a neuvádzame žiadne výsledky u zákazníkov."
+      "heading": "Ako by sme začali",
+      "body": "Zatiaľ ide o návrh, nie o hotový produkt ani riešenie nasadené u zákazníka. Prvým krokom by bolo pripraviť malú skúšobnú verziu na vzorových alebo oprávnene poskytnutých údajoch a overiť, či prináša očakávaný úžitok."
     },
     "closing": {
-      "heading": "Máte vo firme podobný ručný proces?",
-      "body": "SpexSol pomáha tímom zistiť, kde by softvér na mieru a procesy s podporou AI zjednodušili každodennú prevádzku. Preberme váš problém a nájdime realistický prvý krok.",
-      "cta": "Ozvite sa nám"
+      "heading": "Riešite vo firme niečo podobné?",
+      "body": "Nemusíte hneď meniť celý systém. Pozrieme sa na váš súčasný postup, nájdeme najväčšie zdržania a navrhneme rozumný prvý krok.",
+      "cta": "Poďme sa porozprávať"
     },
     "meta": {
-      "title": "ShiftFlow — koncept výkazov hodín a zmien | SpexSol",
-      "description": "ShiftFlow je koncept SpexSol: namiesto hodín hlásených v chate zápis zmien z mobilu, kontrola vedúcim a podklad pripravený pre mzdy."
+      "title": "Evidencia odpracovaného času | SpexSol",
+      "description": "Zamestnanci posielajú odpracované hodiny cez SMS alebo chat a vedúci ich potom prepisujú do tabuliek. Tento príklad ukazuje, ako hodiny zapisovať priebežne a pripraviť podklady pre mzdy bez zbytočného dohľadávania."
     }
   },
   "stockflow": {
-    "name": "StockFlow",
-    "eyebrow": "Koncept SpexSol / plánované MVP",
+    "name": "Správa skladových zásob",
+    "eyebrow": "Návrh riešenia od SpexSol",
     "category": "Automatizácia procesov · Prehľad o zásobách",
-    "tagline": "Pohyby na sklade rýchlo zapísať a ľahko overiť.",
-    "title": "StockFlow — jednoduchý prehľad o pohyboch na sklade",
-    "intro": "Menšie sklady a predajne často evidujú zásoby vo viacerých tabuľkách, ktoré sa málokedy zhodujú. StockFlow je návrh jednoduchého procesu, v ktorom by sa každý pohyb na sklade dal rýchlo zapísať a ľahko overiť.",
-    "cta": "Preberme podobný proces",
+    "tagline": "Vždy vedieť, čo máte na sklade.",
+    "title": "Správa skladových zásob",
+    "intro": "Keď sa príjem a výdaj tovaru zapisuje do rôznych súborov, skutočný stav zásob sa zisťuje ťažko. Takto by skladníci mohli evidovať pohyby zásob z mobilu.",
+    "cta": "Pozrime sa na váš prípad",
     "spec": {
       "status": "Stav",
       "category": "Kategória",
@@ -360,12 +364,12 @@
       "audienceValue": "Sklady, distribútori, menšie predajne a e-shopy"
     },
     "challenge": {
-      "heading": "Zmeny zásob žijú v oddelených tabuľkách",
-      "body": "Príjmy, presuny a korekcie zapisujú rôzni ľudia do rôznych súborov, často až dodatočne. Zosúladiť ich trvá a ťažko povedať, ktoré číslo platí a kto zmenu urobil."
+      "heading": "Keď tabuľky ukazujú rôzne stavy zásob",
+      "body": "Príjem, výdaj aj presuny tovaru zapisujú rôzni ľudia na rôzne miesta. Údaje sa často dopĺňajú spätne, takže je ťažké zistiť aktuálny stav aj pôvod rozdielov."
     },
     "solution": {
-      "heading": "Každý pohyb zapísaný raz, viditeľný pre všetkých",
-      "body": "StockFlow stavia na naskenovaní položky alebo QR kódu mobilom a zápise množstva a umiestnenia. Každá zmena by sa overila a hneď premietla do spoločného prehľadu. Keď zásoba prekročí hranicu, ktorú si tím sám nastaví, príde upozornenie."
+      "heading": "Každý pohyb na sklade na jednom mieste",
+      "body": "Pracovník by mobilom naskenoval položku a zaznamenal príjem, výdaj alebo presun. Systém by aktualizoval spoločný prehľad a upozornil na nízky stav zásob podľa nastavených pravidiel."
     },
     "workflow": {
       "steps": [
@@ -378,86 +382,86 @@
           "body": "Zadáte pohyb: príjem, presun, výdaj alebo korekciu."
         },
         {
-          "title": "Overenie",
+          "title": "Kontrola",
           "body": "Množstvo a umiestnenie sa skontrolujú ešte pred uložením."
         },
         {
           "title": "Aktualizácia",
-          "body": "Spoločný prehľad zásob sa aktualizuje pre celý tím."
+          "body": "Spoločný prehľad zásob sa aktualizuje."
         },
         {
           "title": "Upozornenie",
-          "body": "Keď zásoba prekročí nastavenú hranicu, tím dostane upozornenie."
+          "body": "Keď zásoba klesne pod nastavenú hranicu, tím dostane upozornenie."
         }
       ]
     },
     "value": {
-      "heading": "Aktuálnejší prehľad o zásobách",
+      "heading": "Aktuálne zásoby bez zdĺhavého porovnávania súborov",
       "items": [
-        "Aktuálny stav zásob bez čakania na zosúladenie tabuliek.",
-        "Dohľadateľné korekcie s jasným autorom a časom.",
+        "Aktuálny stav zásob bez zosúlaďovania viacerých súborov.",
+        "Dohľadateľné korekcie s autorom a časom.",
         "Menej ručného prenášania údajov medzi tabuľkami."
       ],
-      "disclaimer": "Ide o očakávané prínosy navrhovaného procesu, nie o overené výsledky. Žiadne merania zatiaľ nemáme."
+      "disclaimer": "Ide o predpokladané prínosy. Riešenie zatiaľ nebolo overené v prevádzke."
     },
     "principles": {
-      "heading": "Zámerne jednoduché",
+      "heading": "Prakticky a jednoducho",
       "items": [
         "Rýchly zápis mobilom priamo pri tovare.",
         "Overenie pri zápise namiesto dodatočného zosúlaďovania.",
         "Jasná história každej korekcie.",
-        "Prepojenie s existujúcimi systémami až v ďalšej fáze."
+        "Integrácie s existujúcimi systémami zvážime v ďalšej fáze."
       ]
     },
     "nextSteps": {
-      "heading": "Dnes koncept, zajtra možné MVP",
-      "body": "StockFlow je dnes vo fáze konceptu. Budúci proof-of-concept by mohol na syntetických alebo so súhlasom poskytnutých vzorových dátach overiť rýchlosť zápisu a konzistentnosť údajov. Nejde o produkčné nasadenie a neuvádzame žiadne výsledky u zákazníkov."
+      "heading": "Ako by sme začali",
+      "body": "Zatiaľ ide o návrh, nie o hotový produkt ani riešenie nasadené u zákazníka. Prvým krokom by bolo pripraviť malú skúšobnú verziu na vzorových alebo oprávnene poskytnutých údajoch a overiť, či prináša očakávaný úžitok."
     },
     "closing": {
-      "heading": "Máte vo firme podobný ručný proces?",
-      "body": "SpexSol pomáha tímom zistiť, kde by softvér na mieru a procesy s podporou AI zjednodušili každodennú prevádzku. Preberme váš problém a nájdime realistický prvý krok.",
-      "cta": "Ozvite sa nám"
+      "heading": "Riešite vo firme niečo podobné?",
+      "body": "Nemusíte hneď meniť celý systém. Pozrieme sa na váš súčasný postup, nájdeme najväčšie zdržania a navrhneme rozumný prvý krok.",
+      "cta": "Poďme sa porozprávať"
     },
     "meta": {
-      "title": "StockFlow — koncept prehľadu o zásobách | SpexSol",
-      "description": "StockFlow je koncept SpexSol: zápis pohybov na sklade skenovaním, overenie množstva a umiestnenia a spoločný aktuálny prehľad o zásobách."
+      "title": "Správa skladových zásob | SpexSol",
+      "description": "Keď sa príjem a výdaj tovaru zapisuje do rôznych súborov, skutočný stav zásob sa zisťuje ťažko. Takto by skladníci mohli evidovať pohyby zásob z mobilu."
     }
   },
   "fixflow": {
-    "name": "FixFlow",
-    "eyebrow": "Koncept SpexSol / plánované MVP",
-    "category": "Automatizácia procesov · Koordinácia požiadaviek",
-    "tagline": "Z roztrúsených hlásení porúch požiadavky s jasným zodpovedným.",
-    "title": "FixFlow — z roztrúsených hlásení porúch požiadavky s jasným zodpovedným",
-    "intro": "Požiadavky na údržbu prichádzajú telefonicky aj e-mailom a ľahko sa stratí prehľad, kto čo rieši. FixFlow je návrh procesu, v ktorom by sa z každého hlásenia stala sledovaná úloha s jedným zodpovedným, od nahlásenia až po vyriešenie.",
-    "cta": "Preberme podobný proces",
+    "name": "Správa požiadaviek na údržbu",
+    "eyebrow": "Návrh riešenia od SpexSol",
+    "category": "Automatizácia procesov · Správa požiadaviek",
+    "tagline": "Každá nahlásená porucha má svojho riešiteľa.",
+    "title": "Správa požiadaviek na údržbu",
+    "intro": "Pokazená klimatizácia, nefunkčné osvetlenie či problém na prevádzke. Hlásenia prichádzajú telefonicky a e-mailom, no nie vždy je jasné, kto ich rieši. Takto by sa dali spravovať na jednom mieste.",
+    "cta": "Pozrime sa na váš prípad",
     "spec": {
       "status": "Stav",
       "category": "Kategória",
       "audience": "Pre koho",
-      "audienceValue": "Správcovia nehnuteľností, tímy správy budov, firmy s viacerými prevádzkami"
+      "audienceValue": "Správcovia nehnuteľností, tímy správy budov a firmy s viacerými prevádzkami"
     },
     "challenge": {
-      "heading": "Hlásenia prichádzajú odvšadiaľ, zodpovednosť nie je jasná",
-      "body": "Nájomníci, zamestnanci aj vedúci prevádzok hlásia poruchy telefonicky a e-mailom. Koordinátorom chýba spoľahlivý prehľad, ktoré požiadavky sú otvorené, kto ich má na starosti a či sa naozaj vyriešili."
+      "heading": "Keď sa hlásenia porúch strácajú medzi telefonátmi",
+      "body": "Nájomníci a zamestnanci nahlasujú poruchy rôznymi spôsobmi. Koordinátor potom zisťuje, kto problém prevzal, čo sa už urobilo a či je oprava dokončená."
     },
     "solution": {
-      "heading": "Jedna požiadavka, jeden zodpovedný, jedna história",
-      "body": "FixFlow počíta s jednoduchým formulárom na nahlásenie s fotkou. Požiadavka sa potom zaradí, dostane prioritu a pridelí sa technikovi. Priebeh by sa zapisoval na jednom mieste a koordinátor by pred uzavretím skontroloval, či je práca naozaj hotová."
+      "heading": "Od nahlásenia po opravu v jednom prehľade",
+      "body": "Porucha by sa nahlásila cez jednoduchý formulár, prípadne aj s fotografiou. Požiadavka by dostala prioritu a zodpovednú osobu. Koordinátor by videl priebeh riešenia a po kontrole opravu uzavrel."
     },
     "workflow": {
       "steps": [
         {
           "title": "Nahlásenie",
-          "body": "Nahlasujúci opíše problém a priloží fotku."
+          "body": "Nahlasujúci opíše problém a podľa potreby priloží fotku."
         },
         {
-          "title": "Zaradenie",
+          "title": "Priorita",
           "body": "Požiadavka dostane kategóriu a prioritu."
         },
         {
           "title": "Pridelenie",
-          "body": "Zodpovedným sa stane technik alebo externý dodávateľ."
+          "body": "Požiadavku dostane technik alebo externý dodávateľ."
         },
         {
           "title": "Sledovanie",
@@ -470,50 +474,645 @@
       ]
     },
     "value": {
-      "heading": "Jasnejšia zodpovednosť",
+      "heading": "Menej zabudnutých požiadaviek a jasná zodpovednosť",
       "items": [
-        "Jasný zodpovedný za každú požiadavku.",
+        "Menovitý zodpovedný za každú požiadavku.",
         "Prehľadná história porúch a opráv, v ktorej sa dá hľadať.",
         "Menej požiadaviek, na ktoré sa zabudlo."
       ],
-      "disclaimer": "Ide o očakávané prínosy navrhovaného procesu, nie o overené výsledky. Žiadne merania zatiaľ nemáme."
+      "disclaimer": "Ide o predpokladané prínosy. Riešenie zatiaľ nebolo overené v prevádzke."
     },
     "principles": {
       "heading": "Jednoduché nahlásenie, prehľadné riadenie",
       "items": [
-        "Rýchle nahlásenie s fotkou.",
-        "Každá požiadavka má v každom momente práve jedného zodpovedného.",
+        "Rýchle nahlásenie, fotka podľa potreby.",
+        "V každom momente práve jeden zodpovedný.",
         "Kontrola koordinátorom pred uzavretím požiadavky.",
-        "Ochrana údajov a riadenie prístupu ako podmienka každej budúcej implementácie."
+        "Primerané riadenie prístupu a ochrana údajov."
       ]
     },
     "nextSteps": {
-      "heading": "Dnes koncept, zajtra možné MVP",
-      "body": "FixFlow je dnes vo fáze konceptu. Budúci proof-of-concept by mohol na syntetických alebo so súhlasom poskytnutých vzorových dátach overiť spracovanie požiadaviek a použiteľnosť pre koordinátorov. Nejde o produkčné nasadenie a neuvádzame žiadne výsledky u zákazníkov."
+      "heading": "Ako by sme začali",
+      "body": "Zatiaľ ide o návrh, nie o hotový produkt ani riešenie nasadené u zákazníka. Prvým krokom by bolo pripraviť malú skúšobnú verziu na vzorových alebo oprávnene poskytnutých údajoch a overiť, či prináša očakávaný úžitok."
     },
     "closing": {
-      "heading": "Máte vo firme podobný ručný proces?",
-      "body": "SpexSol pomáha tímom zistiť, kde by softvér na mieru a procesy s podporou AI zjednodušili každodennú prevádzku. Preberme váš problém a nájdime realistický prvý krok.",
+      "heading": "Riešite vo firme niečo podobné?",
+      "body": "Nemusíte hneď meniť celý systém. Pozrieme sa na váš súčasný postup, nájdeme najväčšie zdržania a navrhneme rozumný prvý krok.",
+      "cta": "Poďme sa porozprávať"
+    },
+    "meta": {
+      "title": "Správa požiadaviek na údržbu | SpexSol",
+      "description": "Pokazená klimatizácia, nefunkčné osvetlenie či problém na prevádzke. Hlásenia prichádzajú telefonicky a e-mailom, no nie vždy je jasné, kto ich rieši. Takto by sa dali spravovať na jednom mieste."
+    }
+  },
+  "sales-assistant": {
+    "name": "AI asistent pre obchodné dopyty",
+    "eyebrow": "Príklad riešenia / koncept",
+    "category": "AI asistenti · Automatizácia procesov",
+    "tagline": "Z dopytu konkrétny ďalší krok. Bez zdĺhavého prepisovania do CRM.",
+    "title": "AI asistent obchodného tímu",
+    "intro": "Nové dopyty prichádzajú e-mailom aj cez formuláre. Obchodníci musia opakovane zisťovať, čo zákazník potrebuje, dohľadávať kontext a prepisovať informácie do CRM. Ukazujeme, ako by sa dal tento proces zjednodušiť; nejde o hotový produkt.",
+    "cta": "Porozprávajme sa o vašom procese",
+    "spec": {
+      "status": "Stav",
+      "category": "Kategória",
+      "audience": "Pre koho",
+      "audienceValue": "Obchodné tímy, B2B služby, agentúry a poskytovatelia technických služieb"
+    },
+    "challenge": {
+      "heading": "Kde dnes vzniká zbytočná práca",
+      "body": "Nové dopyty prichádzajú e-mailom aj cez formuláre. Obchodníci musia opakovane zisťovať, čo zákazník potrebuje, dohľadávať kontext a prepisovať informácie do CRM."
+    },
+    "solution": {
+      "heading": "Ako by sme to riešili",
+      "body": "Asistent by zhrnul požiadavku, identifikoval chýbajúce informácie a pripravil návrh odpovede. Po kontrole obchodníkom by sa relevantné údaje uložili do CRM."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Prijatie dopytu",
+          "body": "Nový e-mail alebo formulár sa bezpečne zaznamená."
+        },
+        {
+          "title": "Analýza",
+          "body": "AI pripraví zhrnutie, rozpozná zámer a navrhne doplňujúce otázky."
+        },
+        {
+          "title": "Kontrola",
+          "body": "Obchodník overí návrh odpovede a prípadné obchodné podmienky."
+        },
+        {
+          "title": "Aktualizácia CRM",
+          "body": "Schválené údaje sa zapíšu cez API podľa dohodnutých pravidiel."
+        },
+        {
+          "title": "Odpoveď",
+          "body": "Odpoveď sa odošle až po schválení zodpovednou osobou."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Čo by to mohlo priniesť",
+      "items": [
+        "Menej času stráveného triedením dopytov.",
+        "Jednotnejšie informácie v CRM.",
+        "Rýchlejšia príprava odpovedí bez straty kontroly."
+      ],
+      "disclaimer": "Očakávané prínosy konceptu, nie namerané výsledky."
+    },
+    "principles": {
+      "heading": "Na čom by riešenie stálo",
+      "items": [
+        "Žiadne automatické cenové alebo zmluvné záväzky.",
+        "Odoslanie externej komunikácie podlieha schváleniu.",
+        "Prístup k údajom a CRM podľa oprávnení."
+      ]
+    },
+    "nextSteps": {
+      "heading": "Ako by sme koncept overili",
+      "body": "Overili by sme kvalitu zhrnutí, správnosť zápisu do CRM a čas potrebný na kontrolu na testovacích alebo schválených vzorových dopytoch. Zatiaľ nejde o realizované riešenie ani referenciu."
+    },
+    "closing": {
+      "heading": "Riešite niečo podobné?",
+      "body": "Pozrime sa na váš proces a navrhnime rozumný prvý krok. AI zapojíme iba tam, kde má jasný prínos.",
       "cta": "Ozvite sa nám"
     },
     "meta": {
-      "title": "FixFlow — koncept koordinácie požiadaviek na údržbu | SpexSol",
-      "description": "FixFlow je koncept SpexSol: telefonáty a e-maily o poruchách sa menia na sledované požiadavky s jasným zodpovedným, priebežnými záznamami a kontrolou koordinátora."
+      "title": "AI asistent obchodného tímu | SpexSol",
+      "description": "Z dopytu konkrétny ďalší krok. Bez zdĺhavého prepisovania do CRM. Návrh riešenia, nie hotový produkt."
+    }
+  },
+  "support-assistant": {
+    "name": "AI asistent zákazníckej podpory",
+    "eyebrow": "Príklad riešenia / koncept",
+    "category": "AI asistenti · Automatizácia procesov",
+    "tagline": "Odpovede z vašich podkladov, nie vymyslené sľuby.",
+    "title": "AI zákaznícka podpora",
+    "intro": "Podpora opakovane rieši podobné otázky, no odpovede sú roztrúsené v návodoch, e-mailoch a interných dokumentoch. Ukazujeme, ako by sa dal tento proces zjednodušiť; nejde o hotový produkt.",
+    "cta": "Porozprávajme sa o vašom procese",
+    "spec": {
+      "status": "Stav",
+      "category": "Kategória",
+      "audience": "Pre koho",
+      "audienceValue": "E-shopy, SaaS firmy, servisné a zákaznícke tímy"
+    },
+    "challenge": {
+      "heading": "Kde dnes vzniká zbytočná práca",
+      "body": "Podpora opakovane rieši podobné otázky, no odpovede sú roztrúsené v návodoch, e-mailoch a interných dokumentoch."
+    },
+    "solution": {
+      "heading": "Ako by sme to riešili",
+      "body": "Asistent by vyhľadal relevantné informácie v schválených zdrojoch a pripravil odpoveď s odkazmi na podklady. Pri nejasnostiach by požiadavku odovzdal pracovníkovi podpory."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Prijatie",
+          "body": "Zákazník pošle otázku cez podporovaný kanál."
+        },
+        {
+          "title": "Vyhľadanie",
+          "body": "Systém vyhľadá relevantné časti schválenej znalostnej bázy."
+        },
+        {
+          "title": "Návrh",
+          "body": "AI pripraví odpoveď s odkazmi na zdroje."
+        },
+        {
+          "title": "Rozhodnutie",
+          "body": "Pri nízkej istote alebo citlivej téme sa prípad odovzdá človeku."
+        },
+        {
+          "title": "Odoslanie",
+          "body": "Odpoveď schváli pracovník podpory; prípadné automatické odosielanie by vyžadovalo samostatne odsúhlasené pravidlá."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Čo by to mohlo priniesť",
+      "items": [
+        "Menej opakovaného vyhľadávania odpovedí.",
+        "Konzistentnejšie informácie pre zákazníkov.",
+        "Jednoduchšie odovzdanie zložitých prípadov."
+      ],
+      "disclaimer": "Očakávané prínosy konceptu, nie namerané výsledky."
+    },
+    "principles": {
+      "heading": "Na čom by riešenie stálo",
+      "items": [
+        "Odpovede musia vychádzať z dostupných zdrojov.",
+        "Žiadne svojvoľné refundácie alebo zmeny objednávok.",
+        "Záznam zdrojov a možnosti odovzdania človeku."
+      ]
+    },
+    "nextSteps": {
+      "heading": "Ako by sme koncept overili",
+      "body": "Na vzorových otázkach by sme vyhodnotili správnosť odpovedí, citácie zdrojov a prípady, ktoré majú prejsť na človeka. Zatiaľ nejde o realizované riešenie ani referenciu."
+    },
+    "closing": {
+      "heading": "Riešite niečo podobné?",
+      "body": "Pozrime sa na váš proces a navrhnime rozumný prvý krok. AI zapojíme iba tam, kde má jasný prínos.",
+      "cta": "Ozvite sa nám"
+    },
+    "meta": {
+      "title": "AI zákaznícka podpora | SpexSol",
+      "description": "Odpovede z vašich podkladov, nie vymyslené sľuby. Návrh riešenia, nie hotový produkt."
+    }
+  },
+  "knowledge-assistant": {
+    "name": "AI asistent pre interné znalosti",
+    "eyebrow": "Príklad riešenia / koncept",
+    "category": "AI asistenti · Automatizácia procesov",
+    "tagline": "Firemné postupy a dokumenty bez zdĺhavého hľadania.",
+    "title": "Interný znalostný asistent",
+    "intro": "Zamestnanci hľadajú odpovede v rôznych priečinkoch, wiki stránkach a starých dokumentoch. Často sa musia pýtať kolegov na tie isté veci. Ukazujeme, ako by sa dal tento proces zjednodušiť; nejde o hotový produkt.",
+    "cta": "Porozprávajme sa o vašom procese",
+    "spec": {
+      "status": "Stav",
+      "category": "Kategória",
+      "audience": "Pre koho",
+      "audienceValue": "HR, IT podpora, onboarding a tímy s rozsiahlejšou dokumentáciou"
+    },
+    "challenge": {
+      "heading": "Kde dnes vzniká zbytočná práca",
+      "body": "Zamestnanci hľadajú odpovede v rôznych priečinkoch, wiki stránkach a starých dokumentoch. Často sa musia pýtať kolegov na tie isté veci."
+    },
+    "solution": {
+      "heading": "Ako by sme to riešili",
+      "body": "Asistent by vyhľadával v schválených interných zdrojoch a odpovedal s citáciami. Pri chýbajúcich informáciách by otvorene uviedol, že odpoveď nenašiel."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Otázka",
+          "body": "Zamestnanec položí otázku bežným jazykom."
+        },
+        {
+          "title": "Oprávnenia",
+          "body": "Systém určí, ku ktorým dokumentom má používateľ prístup."
+        },
+        {
+          "title": "Vyhľadanie",
+          "body": "Vyhľadá relevantné pasáže v povolených zdrojoch."
+        },
+        {
+          "title": "Odpoveď",
+          "body": "AI pripraví stručnú odpoveď s odkazmi na dokumenty."
+        },
+        {
+          "title": "Spätná väzba",
+          "body": "Používateľ označí nepresnú odpoveď na preverenie."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Čo by to mohlo priniesť",
+      "items": [
+        "Menej času stráveného hľadaním informácií.",
+        "Jednoduchší onboarding nových kolegov.",
+        "Lepšia využiteľnosť existujúcej dokumentácie."
+      ],
+      "disclaimer": "Očakávané prínosy konceptu, nie namerané výsledky."
+    },
+    "principles": {
+      "heading": "Na čom by riešenie stálo",
+      "items": [
+        "Rešpektovanie oprávnení na úrovni dokumentov.",
+        "Citácie a možnosť overiť pôvodnú informáciu.",
+        "Žiadne predstieranie odpovede, ak zdroj chýba."
+      ]
+    },
+    "nextSteps": {
+      "heading": "Ako by sme koncept overili",
+      "body": "Začali by sme obmedzenou sadou dokumentov a merali správnosť odpovedí, dodržiavanie oprávnení a kvalitu citácií. Zatiaľ nejde o realizované riešenie ani referenciu."
+    },
+    "closing": {
+      "heading": "Riešite niečo podobné?",
+      "body": "Pozrime sa na váš proces a navrhnime rozumný prvý krok. AI zapojíme iba tam, kde má jasný prínos.",
+      "cta": "Ozvite sa nám"
+    },
+    "meta": {
+      "title": "Interný znalostný asistent | SpexSol",
+      "description": "Firemné postupy a dokumenty bez zdĺhavého hľadania. Návrh riešenia, nie hotový produkt."
+    }
+  },
+  "workflow-coordinator": {
+    "name": "AI koordinátor firemných úloh",
+    "eyebrow": "Príklad riešenia / koncept",
+    "category": "AI asistenti · Automatizácia procesov",
+    "tagline": "Menej zabudnutých úloh. Jasnejší ďalší krok.",
+    "title": "AI koordinátor procesov",
+    "intro": "Úlohy sa presúvajú medzi e-mailom, chatom a internými systémami. Chýbajúce podklady alebo nejasná zodpovednosť sa často odhalia až po termíne. Ukazujeme, ako by sa dal tento proces zjednodušiť; nejde o hotový produkt.",
+    "cta": "Porozprávajme sa o vašom procese",
+    "spec": {
+      "status": "Stav",
+      "category": "Kategória",
+      "audience": "Pre koho",
+      "audienceValue": "Prevádzkové tímy, servisné firmy, projektoví koordinátori"
+    },
+    "challenge": {
+      "heading": "Kde dnes vzniká zbytočná práca",
+      "body": "Úlohy sa presúvajú medzi e-mailom, chatom a internými systémami. Chýbajúce podklady alebo nejasná zodpovednosť sa často odhalia až po termíne."
+    },
+    "solution": {
+      "heading": "Ako by sme to riešili",
+      "body": "Systém by sledoval stav úloh podľa pravidiel a AI by pomáhala zhrnúť komunikáciu či navrhnúť ďalší krok. Pripomienky a aktualizácie stavov by vykonávala bežná automatizácia."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Zachytenie",
+          "body": "Systém prijme udalosť z podporovaného nástroja."
+        },
+        {
+          "title": "Kontrola pravidiel",
+          "body": "Overí termíny, zodpovednosť a povinné podklady."
+        },
+        {
+          "title": "Zhrnutie",
+          "body": "AI pripraví stručný kontext a návrh ďalšieho postupu."
+        },
+        {
+          "title": "Schválenie",
+          "body": "Človek potvrdí zásahy s obchodným alebo prevádzkovým dopadom."
+        },
+        {
+          "title": "Vykonanie",
+          "body": "Integrácia odošle pripomienku alebo aktualizuje povolené údaje."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Čo by to mohlo priniesť",
+      "items": [
+        "Skoršie zachytenie chýbajúcich podkladov.",
+        "Menej manuálneho sledovania stavu úloh.",
+        "Lepší prehľad o zodpovednosti a ďalších krokoch."
+      ],
+      "disclaimer": "Očakávané prínosy konceptu, nie namerané výsledky."
+    },
+    "principles": {
+      "heading": "Na čom by riešenie stálo",
+      "items": [
+        "Pravidlá a termíny sa vyhodnocujú deterministicky.",
+        "AI navrhuje, nie svojvoľne rozhoduje o kritických zmenách.",
+        "Každá vykonaná akcia má auditnú stopu."
+      ]
+    },
+    "nextSteps": {
+      "heading": "Ako by sme koncept overili",
+      "body": "Na testovacích procesoch by sme overili správnosť upozornení, užitočnosť návrhov a bezpečné vykonávanie akcií. Zatiaľ nejde o realizované riešenie ani referenciu."
+    },
+    "closing": {
+      "heading": "Riešite niečo podobné?",
+      "body": "Pozrime sa na váš proces a navrhnime rozumný prvý krok. AI zapojíme iba tam, kde má jasný prínos.",
+      "cta": "Ozvite sa nám"
+    },
+    "meta": {
+      "title": "AI koordinátor procesov | SpexSol",
+      "description": "Menej zabudnutých úloh. Jasnejší ďalší krok. Návrh riešenia, nie hotový produkt."
     }
   },
   "calculator": {
-    "title": "Orientačná kalkulačka úspory času",
-    "disclaimer": "Orientačný scenár, nie nameraný výsledok u klienta.",
-    "assumptions": "Odhad nezahŕňa implementáciu, predplatné, kontrolu človekom, riešenie výnimiek ani prevádzkové náklady. Ušetrený čas nie je to isté ako ušetrené peniaze.",
+    "title": "Koľko času by ste mohli ušetriť?",
+    "disclaimer": "Len orientačný výpočet, nie výsledok z reálnej zákazky.",
+    "assumptions": "Výpočet nezahŕňa náklady na vývoj, prevádzku ani čas potrebný na kontrolu a riešenie výnimiek. Ušetrený čas automaticky neznamená rovnakú finančnú úsporu.",
     "inputs": {
-      "volume": "Počet položiek za mesiac",
-      "minutesPerItem": "Minúty ručnej práce na položku",
-      "hourlyCost": "Náklady na hodinu práce (€)",
-      "reduction": "Koľko ručnej práce automatizácia odstráni (%)"
+      "volume": "Koľko položiek spracujete mesačne?",
+      "minutesPerItem": "Koľko minút trvá spracovanie jednej položky?",
+      "hourlyCost": "Koľko stojí hodina práce (€)?",
+      "reduction": "Akú časť ručnej práce by bolo možné odstrániť (%)"
     },
     "outputs": {
-      "hours": "Ušetrené hodiny za mesiac",
-      "value": "Hodnota ušetreného času za mesiac"
+      "hours": "Odhad ušetrených hodín mesačne",
+      "value": "Orientačná hodnota ušetreného času mesačne"
+    }
+  },
+  "figures": {
+    "ticketSteps": [
+      "otvorené",
+      "priradené",
+      "hotovo",
+      "uzavreté"
+    ],
+    "fieldflow": {
+      "inputTag": "foto",
+      "outputTag": "pdf",
+      "fields": [
+        {
+          "label": "č. zákazky",
+          "value": "SR-2041"
+        },
+        {
+          "label": "dátum",
+          "value": "14. 10. 2026"
+        },
+        {
+          "label": "zákazník",
+          "value": "Acme Plant 3"
+        },
+        {
+          "label": "práce",
+          "value": "výmena filtra, kontrola tesnenia"
+        },
+        {
+          "label": "poznámky",
+          "value": "— nízka istota",
+          "ok": false
+        }
+      ]
+    },
+    "invoiceflow": {
+      "inputTag": "schránka",
+      "outputTag": "export",
+      "fields": [
+        {
+          "label": "dodávateľ",
+          "value": "Nordic Parts AB"
+        },
+        {
+          "label": "č. faktúry",
+          "value": "INV-88213"
+        },
+        {
+          "label": "suma",
+          "value": "4 820,00 €"
+        },
+        {
+          "label": "splatnosť",
+          "value": "13. 11. 2026"
+        },
+        {
+          "label": "duplicita",
+          "value": "— možná zhoda",
+          "ok": false
+        }
+      ]
+    },
+    "quoteflow": {
+      "inputTag": "katalóg",
+      "outputTag": "pdf · v2",
+      "outputStatus": "odoslané",
+      "fields": [
+        {
+          "label": "zákazník",
+          "value": "Brno Steelworks"
+        },
+        {
+          "label": "šablóna",
+          "value": "Montáž · Štandard"
+        },
+        {
+          "label": "položky",
+          "value": "12 riadkov"
+        },
+        {
+          "label": "marža",
+          "value": "31 %"
+        },
+        {
+          "label": "zľava",
+          "value": "14 % — vyžaduje schválenie",
+          "ok": false
+        }
+      ]
+    },
+    "shiftflow": {
+      "inputTag": "mobil",
+      "outputTag": "mzdy",
+      "fields": [
+        {
+          "label": "zamestnanec",
+          "value": "M. Kováč"
+        },
+        {
+          "label": "miesto",
+          "value": "Hala B · Linka 2"
+        },
+        {
+          "label": "zmena",
+          "value": "06:00 – 14:30"
+        },
+        {
+          "label": "hodiny",
+          "value": "8,5"
+        },
+        {
+          "label": "prestávka",
+          "value": "— chýba",
+          "ok": false
+        }
+      ]
+    },
+    "stockflow": {
+      "inputTag": "sken",
+      "outputTag": "naživo",
+      "fields": [
+        {
+          "label": "sku",
+          "value": "BRK-4410"
+        },
+        {
+          "label": "pohyb",
+          "value": "presun"
+        },
+        {
+          "label": "množstvo",
+          "value": "24"
+        },
+        {
+          "label": "z → do",
+          "value": "A-03 → B-11"
+        },
+        {
+          "label": "stav",
+          "value": "— pod limitom",
+          "ok": false
+        }
+      ]
+    },
+    "fixflow": {
+      "inputTag": "foto",
+      "outputTag": "požiadavka",
+      "fields": [
+        {
+          "label": "miesto",
+          "value": "Budova 2 · 3. posch."
+        },
+        {
+          "label": "kategória",
+          "value": "Vodoinštalácia"
+        },
+        {
+          "label": "priorita",
+          "value": "Vysoká"
+        },
+        {
+          "label": "zodpovedný",
+          "value": "J. Novák"
+        },
+        {
+          "label": "stav",
+          "value": "— čaká na kontrolu",
+          "ok": false
+        }
+      ]
+    },
+    "sales-assistant": {
+      "inputTag": "dopyt",
+      "outputTag": "návrh odpovede",
+      "outputStatus": "kontrola",
+      "fields": [
+        {
+          "label": "firma",
+          "value": "Delta Logistics"
+        },
+        {
+          "label": "požiadavka",
+          "value": "sledovanie flotily, 40 dodávok"
+        },
+        {
+          "label": "termín",
+          "value": "Q1 2027"
+        },
+        {
+          "label": "ďalší krok",
+          "value": "úvodný hovor"
+        },
+        {
+          "label": "rozpočet",
+          "value": "— neuvedený, opýtať sa",
+          "ok": false
+        }
+      ]
+    },
+    "support-assistant": {
+      "inputTag": "otázka",
+      "outputTag": "odpoveď so zdrojom",
+      "outputStatus": "odoslané",
+      "fields": [
+        {
+          "label": "zámer",
+          "value": "podmienky vrátenia"
+        },
+        {
+          "label": "zdroj",
+          "value": "help/returns.md §2"
+        },
+        {
+          "label": "istota",
+          "value": "vysoká"
+        },
+        {
+          "label": "tón",
+          "value": "zákaznícky"
+        },
+        {
+          "label": "eskalovať",
+          "value": "— nie, automatický návrh",
+          "ok": false
+        }
+      ]
+    },
+    "knowledge-assistant": {
+      "inputTag": "otázka",
+      "outputTag": "odpoveď s citáciou",
+      "fields": [
+        {
+          "label": "otázka",
+          "value": "Limit cestovných výdavkov?"
+        },
+        {
+          "label": "zdroj",
+          "value": "HR smernica 2026 · s. 4"
+        },
+        {
+          "label": "aktualizované",
+          "value": "1. 9. 2026"
+        },
+        {
+          "label": "prístup",
+          "value": "povolený"
+        },
+        {
+          "label": "medzera",
+          "value": "— diéty nenájdené",
+          "ok": false
+        }
+      ]
+    },
+    "workflow-coordinator": {
+      "inputTag": "udalosti",
+      "inputSteps": [
+        "e-mail",
+        "chat",
+        "crm",
+        "tiket"
+      ],
+      "outputTag": "ďalší krok",
+      "fields": [
+        {
+          "label": "úloha",
+          "value": "obhliadka · #412"
+        },
+        {
+          "label": "zodpovedný",
+          "value": "P. Horváth"
+        },
+        {
+          "label": "termín",
+          "value": "4. 11. 2026"
+        },
+        {
+          "label": "súhrn",
+          "value": "3 správy, 1 rozhodnutie"
+        },
+        {
+          "label": "chýba",
+          "value": "— prístupový kód",
+          "ok": false
+        }
+      ]
     }
   }
 }

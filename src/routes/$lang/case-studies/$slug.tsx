@@ -57,7 +57,7 @@ function CaseStudyDetail() {
         </div>
       </PageHeader>
 
-      <ConceptIllustration caption={t('conceptIllustration')} />
+      <ConceptIllustration slug={k} caption={t('conceptIllustration')} />
 
       <Section id="challenge" label={t('sections.challenge')} heading={t(`${k}.challenge.heading`)}>
         <Prose>{t(`${k}.challenge.body`)}</Prose>

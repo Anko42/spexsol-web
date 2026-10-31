@@ -1,519 +1,1118 @@
 {
-  "eyebrow": "SpexSol / Solutions",
-  "pageTitle": "Your business runs on processes. We make them work better.",
-  "pageSubtitle": "Explore practical ways to turn paperwork, spreadsheets, and disconnected communication into clearer digital workflows. These are solution concepts that illustrate how SpexSol approaches real operational challenges.",
-  "disclosure": "Concept illustration — not a deployed client solution.",
-  "indexCta": "Discuss your process",
-  "backToList": "Back to case studies",
+  "eyebrow": "SpexSol / Solution Examples",
+  "pageTitle": "Less admin. More time for work that matters.",
+  "pageSubtitle": "Invoices buried in inboxes, timesheets scattered across spreadsheets, or requests lost in chat? Explore practical ways custom software could make everyday work easier.",
+  "disclosure": "These are proposed solutions, not launched products or completed client projects.",
+  "indexCta": "Let's talk about your workflow",
+  "backToList": "Back to solution examples",
   "conceptIllustration": "Concept illustration",
   "status": {
-    "concept": "Concept / Planned MVP"
+    "concept": "Proposed solution"
   },
   "sections": {
     "challenge": "The challenge",
-    "solution": "Proposed solution",
-    "workflow": "Proposed workflow",
-    "value": "Potential business value",
-    "principles": "Design principles",
-    "nextSteps": "Status and next steps"
+    "solution": "Our approach",
+    "workflow": "How it could work",
+    "value": "Potential benefits",
+    "principles": "Design priorities",
+    "nextSteps": "Where we would start"
+  },
+  "ai": {
+    "title": "AI Assistants & Intelligent Automation",
+    "intro": "Examples of AI applied to tasks involving unstructured information. Predictable steps are handled with reliable conventional automation."
   },
   "meta": {
-    "title": "Case studies — SpexSol",
-    "description": "Concept case studies from SpexSol: problem framing, solution design and AI-assisted workflow proposals for operational teams."
+    "title": "Business Solution Examples | SpexSol",
+    "description": "Explore practical custom software ideas for service reports, invoices, quotes, timesheets, inventory and maintenance requests."
   },
   "fieldflow": {
-    "name": "FieldFlow",
-    "eyebrow": "SpexSol Concept / Planned MVP",
-    "category": "Workflow Automation · AI-assisted Document Processing",
-    "tagline": "From field photos to structured service reports.",
-    "title": "FieldFlow — turning field service paperwork into structured workflows",
-    "intro": "Field technicians often share photos of completed service reports through messaging apps. Coordinators then spend time interpreting, organizing and forwarding those documents by hand. FieldFlow is a proposed AI-assisted workflow that would turn those scattered photos into structured, reviewable records.",
-    "cta": "Discuss a similar workflow",
+    "name": "Service Report Digitization",
+    "eyebrow": "Example solution",
+    "category": "Workflow Automation · Document Processing",
+    "tagline": "Turn field reports into usable records, without hours of retyping.",
+    "title": "Service Report Digitization",
+    "intro": "A technician photographs a completed service form and sends it over chat. Back at the office, someone has to read it, re-enter the details and forward it. Here is how that work could be simplified.",
+    "cta": "Discuss your workflow",
     "spec": {
       "status": "Status",
       "category": "Category",
-      "audience": "Audience",
-      "audienceValue": "Field service operators, maintenance teams, operations managers, coordinators"
+      "audience": "Who it's for",
+      "audienceValue": "Field service businesses, maintenance teams, operations managers and coordinators"
     },
     "challenge": {
-      "heading": "Important service data gets stuck in chat threads",
-      "body": "After a site visit, a technician may photograph a paper protocol and send it through a messaging app. A coordinator must identify the job, read the document, re-enter key details, check for missing information and forward it to the right recipient. The process depends on manual hand-offs and makes tracking, retrieval and consistency harder as the volume of reports grows."
+      "heading": "Service reports get lost in messages",
+      "body": "After every visit, a photo of a paper report arrives. Someone has to match it to the right job, read the details and enter them into a consistent format. As the workload grows, keeping track becomes harder."
     },
     "solution": {
-      "heading": "One place to capture, review and route field reports",
-      "body": "FieldFlow explores a mobile-friendly submission flow and a coordinator workspace. An AI document-processing step would suggest structured fields from uploaded photos. A human reviewer would confirm or correct those fields before generating a clean report and preparing it for delivery. The design keeps people in control of final approval."
+      "heading": "Upload the report. Review the details. Move on.",
+      "body": "A technician would upload the report from their phone. Data could be extracted directly from digital documents or with OCR for scans and photos. AI could help with ambiguous cases where simpler methods fall short. A coordinator would review and approve the result before anything is sent."
     },
     "workflow": {
       "steps": [
         {
-          "title": "Capture",
-          "body": "A technician uploads one or more photos of a completed service protocol."
+          "title": "Upload",
+          "body": "The technician uploads one or more photos of the completed service report."
         },
         {
-          "title": "Extract",
-          "body": "AI-assisted processing proposes key fields such as job reference, date, customer, work performed and notes."
+          "title": "Extract data",
+          "body": "The system extracts job details, dates and work notes. OCR can read scans; AI may assist with more complex cases."
         },
         {
           "title": "Review",
-          "body": "A coordinator checks the source image alongside the extracted information and corrects anything uncertain."
+          "body": "A coordinator checks the extracted information against the original and corrects any mistakes."
         },
         {
-          "title": "Prepare & send",
-          "body": "Once approved, the workflow prepares a standardized PDF or structured export for authorized delivery."
+          "title": "Prepare and send",
+          "body": "Once approved, the system prepares a consistent PDF or structured export for an authorized recipient."
         }
       ]
     },
     "value": {
-      "heading": "Designed to reduce repetitive coordination work",
+      "heading": "Less data entry. Better visibility across jobs.",
       "items": [
-        "Less manual transcription and repetitive forwarding.",
-        "More consistent report structure and easier retrieval.",
-        "Clearer review and approval responsibilities.",
-        "Better visibility into outstanding or incomplete reports."
+        "Less manual retyping and forwarding.",
+        "Consistent records that are easier to find.",
+        "Clear responsibility for review and approval.",
+        "Better visibility into missing or incomplete reports."
       ],
-      "disclaimer": "These are expected benefits of the proposed workflow, not validated results. No performance measurements are available yet."
+      "disclaimer": "These are potential benefits, not measured results from a client deployment."
     },
     "principles": {
-      "heading": "Practical automation with human oversight",
+      "heading": "Automation with a human in control",
       "items": [
-        "Mobile-first submission for technicians in the field.",
-        "Explicit human validation before external delivery.",
-        "Visibility into missing or low-confidence information.",
-        "Traceability from the original image to the final report.",
-        "Data protection and access controls as requirements for any future implementation."
+        "Easy uploads directly from the field.",
+        "Explicit approval before sharing information externally.",
+        "Missing or uncertain data clearly flagged for review.",
+        "Traceability from the original photo to the final report.",
+        "Appropriate data protection and access controls."
       ]
     },
     "nextSteps": {
-      "heading": "A concept today, a potential MVP next",
-      "body": "FieldFlow is currently a solution concept. A future proof-of-concept implementation could validate document extraction accuracy, review time and coordinator usability using synthetic or properly authorized sample documents. No production deployment or customer results are claimed."
+      "heading": "Where we would start",
+      "body": "This is an example of a possible solution, not a finished product or a completed client project. We would first review your current workflow and test a small, focused prototype before agreeing on scope or technology."
     },
     "closing": {
-      "heading": "Have a similar manual workflow in your business?",
-      "body": "SpexSol helps teams explore how custom software and AI-assisted processes could simplify operational work. Let's discuss the problem and identify a realistic first step.",
-      "cta": "Talk to SpexSol"
+      "heading": "Dealing with something similar?",
+      "body": "We can review your current process, identify where time is being lost and suggest a practical first step tailored to your business.",
+      "cta": "Let's talk"
     },
     "meta": {
-      "title": "FieldFlow — AI-Assisted Field Service Workflow Concept | SpexSol",
-      "description": "Explore FieldFlow, a SpexSol concept for turning photographed field service reports into structured, human-reviewed workflows with AI-assisted extraction."
+      "title": "Service Report Digitization | SpexSol",
+      "description": "A technician photographs a completed service form and sends it over chat. Back at the office, someone has to read it, re-enter the details and forward it. Here is how that work could be simplified."
     }
   },
   "invoiceflow": {
-    "name": "InvoiceFlow",
-    "eyebrow": "SpexSol Concept / Planned MVP",
-    "category": "Workflow Automation · AI-assisted Document Processing",
-    "tagline": "Turn scattered invoices into a consistent approval process.",
-    "title": "InvoiceFlow — bringing supplier invoices into one reviewable approval flow",
-    "intro": "Supplier invoices often arrive across several inboxes as attachments, scans or paper copies. Someone then has to read each one, copy the key details and chase the right person for approval. InvoiceFlow is a proposed AI-assisted workflow that would collect incoming invoices in one place and guide them through a clear, human-approved process.",
-    "cta": "Discuss a similar workflow",
+    "name": "Invoice Processing Automation",
+    "eyebrow": "Example solution",
+    "category": "Workflow Automation · Document Processing",
+    "tagline": "One place for invoices, from receipt to approval.",
+    "title": "Invoice Processing Automation",
+    "intro": "Invoices arrive by email, as attachments and on paper. Someone has to register each one, check the details and chase approvals. This example shows how a more consistent process could reduce repetitive work.",
+    "cta": "Discuss your workflow",
     "spec": {
       "status": "Status",
       "category": "Category",
-      "audience": "Audience",
-      "audienceValue": "Finance teams, accountants, small and mid-sized businesses, multi-location operations"
+      "audience": "Who it's for",
+      "audienceValue": "Finance teams, accountants, SMEs and multi-site businesses"
     },
     "challenge": {
-      "heading": "Invoices are spread across inboxes and attachments",
-      "body": "Supplier invoices land in personal mailboxes, shared inboxes and sometimes on someone's desk. Employees manually extract the vendor, total, due date and cost center, then forward the document to whoever needs to approve it. Without a single overview, it is hard to tell which invoices are pending, where they are stuck and whether one has already been entered. As volume grows, due dates and audit questions become harder to manage."
+      "heading": "Where is that invoice now?",
+      "body": "Invoices sit across personal inboxes, shared mailboxes and paper folders. Details get copied manually and approvals happen in email threads. It becomes difficult to see what is pending, approved or potentially duplicated."
     },
     "solution": {
-      "heading": "One intake point and a clear path to approval",
-      "body": "InvoiceFlow explores a single intake point for supplier invoices and a simple approval workspace. An AI document-processing step would propose key fields from each invoice and flag possible duplicates or missing data. The responsible person would review, correct and approve the invoice before it is prepared as an export for accounting software. Accounting integrations, tax checks and fraud detection are treated as possible future capabilities, not guaranteed outcomes."
+      "heading": "Keep invoices and approvals in one place",
+      "body": "Invoices would arrive in a shared queue. Data could be read from electronic invoices and PDFs, or extracted from scans using OCR. Rule-based checks would flag missing fields and possible duplicates. AI would be optional for cases that cannot be handled reliably with simpler methods. A person would review and approve each invoice before export."
     },
     "workflow": {
       "steps": [
         {
-          "title": "Receive",
-          "body": "Invoices are forwarded to a dedicated address or uploaded directly into one shared queue."
+          "title": "Collect",
+          "body": "Forward invoices to a dedicated address or upload them to a shared workspace."
         },
         {
-          "title": "Extract",
-          "body": "AI-assisted processing proposes fields such as vendor, invoice number, total, due date and cost center."
+          "title": "Extract data",
+          "body": "Read supplier, invoice number, amount and due date from structured files, PDFs or scans using OCR where needed."
         },
         {
-          "title": "Check",
-          "body": "The workflow flags possible duplicates and missing or inconsistent data before anyone approves."
+          "title": "Validate",
+          "body": "Apply checks for missing fields, mismatches and possible duplicates."
         },
         {
           "title": "Assign",
-          "body": "Each invoice is routed to an approval owner based on simple, agreed rules."
+          "body": "Route each invoice to the right approver based on agreed rules."
         },
         {
           "title": "Approve",
-          "body": "The approver compares the original document with the extracted fields and confirms or returns the invoice."
+          "body": "The approver compares the original invoice with the extracted data and approves or returns it."
         },
         {
           "title": "Export",
-          "body": "Approved invoices are prepared as a structured export for accounting software."
+          "body": "Prepare approved invoices for import into accounting software."
         }
       ]
     },
     "value": {
-      "heading": "Designed to make invoice handling more predictable",
+      "heading": "Less admin. Clearer invoice status.",
       "items": [
-        "More consistent intake from every channel.",
-        "Fewer copy-and-paste tasks between documents and spreadsheets.",
-        "A clearer audit trail of who reviewed and approved each invoice.",
-        "Better visibility into pending approvals and upcoming due dates.",
+        "One place to collect incoming invoices.",
+        "Less copying between documents and spreadsheets.",
+        "A clear record of who reviewed and approved each invoice.",
+        "Better visibility into pending approvals and due dates.",
         "Earlier detection of possible duplicates and missing details."
       ],
-      "disclaimer": "These are expected benefits of the proposed workflow, not validated results. No performance measurements are available yet."
+      "disclaimer": "These are potential benefits, not measured results from a client deployment."
     },
     "principles": {
-      "heading": "Automation that keeps finance in control",
+      "heading": "Finance stays in control",
       "items": [
-        "Human approval before any invoice moves to accounting.",
-        "The original document always visible next to the extracted data.",
-        "Clear flags for duplicates, gaps and low-confidence fields.",
-        "Export for accounting software; direct connections to existing systems only in a future phase.",
-        "Data protection and role-based access as requirements for any future implementation."
+        "Human approval before export to accounting.",
+        "Original documents available alongside extracted data.",
+        "Rule-based checks and clearly flagged exceptions.",
+        "Structured export first; direct integrations could follow later.",
+        "Role-based access and appropriate data protection."
       ]
     },
     "nextSteps": {
-      "heading": "A concept today, a potential MVP next",
-      "body": "InvoiceFlow is currently a solution concept. A future proof-of-concept implementation could validate extraction accuracy, duplicate detection and approver usability using synthetic or properly authorized sample invoices. No production deployment or customer results are claimed."
+      "heading": "Where we would start",
+      "body": "This is an example of a possible solution, not a finished product or a completed client project. We would first review your current workflow and test a small, focused prototype before agreeing on scope or technology."
     },
     "closing": {
-      "heading": "Have a similar manual workflow in your business?",
-      "body": "SpexSol helps teams explore how custom software and AI-assisted processes could simplify operational work. Let's discuss the problem and identify a realistic first step.",
-      "cta": "Talk to SpexSol"
+      "heading": "Dealing with something similar?",
+      "body": "We can review your current process, identify where time is being lost and suggest a practical first step tailored to your business.",
+      "cta": "Let's talk"
     },
     "meta": {
-      "title": "InvoiceFlow — Invoice Intake & Approval Concept | SpexSol",
-      "description": "Explore InvoiceFlow, a SpexSol concept for collecting supplier invoices in one place, extracting key fields with AI assistance and routing them through human approval."
+      "title": "Invoice Processing Automation | SpexSol",
+      "description": "Invoices arrive by email, as attachments and on paper. Someone has to register each one, check the details and chase approvals. This example shows how a more consistent process could reduce repetitive work."
     }
   },
   "quoteflow": {
-    "name": "QuoteFlow",
-    "eyebrow": "SpexSol Concept / Planned MVP",
+    "name": "Quote Management & Approvals",
+    "eyebrow": "Example solution",
     "category": "Workflow Automation · Sales Operations",
-    "tagline": "Build consistent proposals without rebuilding spreadsheets.",
-    "title": "QuoteFlow — consistent B2B quotes without rebuilding spreadsheets",
-    "intro": "Many B2B sales teams still build each quote by copying rows between spreadsheets and adjusting prices by hand. Versions multiply, pricing rules live in people's heads and approvals happen over email. QuoteFlow is a proposed workflow that would guide quote preparation from template to an approved, versioned proposal.",
-    "cta": "Discuss a similar workflow",
+    "tagline": "Build consistent quotes without copying endless spreadsheets.",
+    "title": "Quote Management & Approvals",
+    "intro": "When every new quote starts as a copy of an old spreadsheet, prices, discounts and document versions are easy to get wrong. Here is how sales teams could prepare and approve quotes in one place.",
+    "cta": "Discuss your workflow",
     "spec": {
       "status": "Status",
       "category": "Category",
-      "audience": "Audience",
-      "audienceValue": "Manufacturers, installers, B2B sales teams, technical service providers"
+      "audience": "Who it's for",
+      "audienceValue": "Manufacturers, installers, B2B sales teams and technical service providers"
     },
     "challenge": {
-      "heading": "Every quote starts with another spreadsheet copy",
-      "body": "Salespeople copy line items from older quotes, look up current prices and manually apply discounts and margin rules. A small formula mistake can go unnoticed until the customer replies. When a manager needs to approve an exception, the request travels by email or chat, and the latest version is not always obvious. Tracking which proposals are open, revised or accepted gets harder as the team grows."
+      "heading": "Every quote starts with another spreadsheet",
+      "body": "Salespeople copy items from old quotes, look up current prices and adjust formulas by hand. Exceptions are approved by email, and it is not always clear which version is current."
     },
     "solution": {
-      "heading": "Templates, pricing rules and approvals in one flow",
-      "body": "QuoteFlow explores a quote builder based on templates and a shared catalog of items. Agreed pricing and margin rules would be applied consistently, and exceptions would be routed to a manager for approval. Each approved quote would be generated as a versioned PDF with a visible status. Connections to existing systems could be explored in a future phase; none are assumed today."
+      "heading": "Templates, pricing rules and approvals in one workflow",
+      "body": "A salesperson would choose a template and items from a shared catalog. Agreed pricing rules would be applied consistently, while exceptional discounts would go to a manager for approval. Each quote would have a clear version history."
     },
     "workflow": {
       "steps": [
         {
-          "title": "Start",
-          "body": "Select the customer and a suitable quote template."
+          "title": "Choose",
+          "body": "Select a customer and quote template."
         },
         {
-          "title": "Configure",
-          "body": "Add items from a shared catalog and set quantities or options."
+          "title": "Build",
+          "body": "Add items from the shared catalog and set quantities or options."
         },
         {
           "title": "Price",
-          "body": "Approved pricing and margin rules are applied automatically and consistently."
+          "body": "Apply agreed pricing and margin rules automatically."
         },
         {
           "title": "Approve exceptions",
-          "body": "Discounts or terms outside the rules go to a manager for approval."
+          "body": "Send discounts or special terms outside the rules to a manager."
         },
         {
-          "title": "Generate",
-          "body": "The workflow produces a clean, versioned PDF proposal."
+          "title": "Generate PDF",
+          "body": "Create a professional, versioned quote PDF."
         },
         {
           "title": "Track",
-          "body": "Each proposal has a visible status: draft, sent, revised or accepted."
+          "body": "See whether each quote is in progress, sent, revised or accepted."
         }
       ]
     },
     "value": {
-      "heading": "Designed to make quoting faster and more consistent",
+      "heading": "Faster quoting, fewer pricing errors",
       "items": [
-        "Faster preparation of standard quotes.",
-        "Fewer formula and copy-and-paste mistakes.",
-        "Consistent pricing and approval rules across the team.",
-        "Traceable revisions and a clear history for every proposal.",
-        "Better overview of open and pending proposals."
+        "Prepare standard quotes faster.",
+        "Reduce copy-and-paste and formula mistakes.",
+        "Use consistent pricing and approval rules.",
+        "Keep a clear history of changes and versions.",
+        "See which quotes are open or awaiting action."
       ],
-      "disclaimer": "These are expected benefits of the proposed workflow, not validated results. No performance measurements are available yet."
+      "disclaimer": "These are potential benefits, not measured results from a client deployment."
     },
     "principles": {
-      "heading": "Structured sales work without losing flexibility",
+      "heading": "Consistency without unnecessary rigidity",
       "items": [
-        "Templates and catalog as a single source for quote content.",
-        "Pricing rules agreed with the business, not hidden in formulas.",
-        "Manager approval for exceptions before a quote leaves the company.",
-        "Version history for every proposal.",
-        "Connection to existing systems only as a future, verified option."
+        "Templates and a shared product catalog.",
+        "Pricing rules agreed with management, not hidden in formulas.",
+        "Manager approval for exceptions before sending.",
+        "Version history for every quote.",
+        "Integrations with existing systems considered in a later phase."
       ]
     },
     "nextSteps": {
-      "heading": "A concept today, a potential MVP next",
-      "body": "QuoteFlow is currently a solution concept. A future proof-of-concept implementation could validate quote preparation time, pricing-rule coverage and usability for sales staff using synthetic or properly authorized sample data. No production deployment or customer results are claimed."
+      "heading": "Where we would start",
+      "body": "This is an example of a possible solution, not a finished product or a completed client project. We would first review your current workflow and test a small, focused prototype before agreeing on scope or technology."
     },
     "closing": {
-      "heading": "Have a similar manual workflow in your business?",
-      "body": "SpexSol helps teams explore how custom software and AI-assisted processes could simplify operational work. Let's discuss the problem and identify a realistic first step.",
-      "cta": "Talk to SpexSol"
+      "heading": "Dealing with something similar?",
+      "body": "We can review your current process, identify where time is being lost and suggest a practical first step tailored to your business.",
+      "cta": "Let's talk"
     },
     "meta": {
-      "title": "QuoteFlow — B2B Quotation Workflow Concept | SpexSol",
-      "description": "Explore QuoteFlow, a SpexSol concept for building B2B quotes from templates, applying agreed pricing rules and tracking approvals and versions in one workflow."
+      "title": "Quote Management & Approvals | SpexSol",
+      "description": "When every new quote starts as a copy of an old spreadsheet, prices, discounts and document versions are easy to get wrong. Here is how sales teams could prepare and approve quotes in one place."
     }
   },
   "shiftflow": {
-    "name": "ShiftFlow",
-    "eyebrow": "SpexSol Concept / Planned MVP",
-    "category": "Workflow Automation · Mobile Reporting",
-    "tagline": "Replace chat-based timesheets with a reviewable reporting flow.",
-    "title": "ShiftFlow — from chat-based timesheets to a reviewable reporting flow",
-    "intro": "In many teams, hours worked are reported through messages and pieced together in spreadsheets at month-end. ShiftFlow is a proposed mobile workflow that would capture shifts as they happen and give supervisors a clear way to review them.",
-    "cta": "Discuss a similar workflow",
+    "name": "Time Tracking & Timesheets",
+    "eyebrow": "Example solution",
+    "category": "Workflow Automation · Mobile Timesheets",
+    "tagline": "No more chasing work hours at month-end.",
+    "title": "Time Tracking & Timesheets",
+    "intro": "Employees report hours through text messages or chat, and supervisors later copy them into spreadsheets. This example shows how teams could record hours as they go and prepare payroll inputs with less chasing.",
+    "cta": "Discuss your workflow",
     "spec": {
       "status": "Status",
       "category": "Category",
-      "audience": "Audience",
-      "audienceValue": "Construction, logistics, production and field teams"
+      "audience": "Who it's for",
+      "audienceValue": "Construction, logistics, manufacturing and field teams"
     },
     "challenge": {
-      "heading": "Hours are reported in messages and pieced together later",
-      "body": "Employees send their hours through messaging apps, text messages or paper notes. At month-end, a manager consolidates everything into a spreadsheet and chases missing or unclear entries before payroll."
+      "heading": "Timesheets become a problem just before payroll",
+      "body": "Hours arrive through chat, on paper or verbally. At month-end, managers have to pull everything together, verify entries and chase missing information."
     },
     "solution": {
-      "heading": "Simple mobile reporting with supervisor review",
-      "body": "ShiftFlow explores a mobile form for logging shifts against a job or site. Supervisors would review entries, resolve exceptions and prepare a payroll-ready export, so problems surface during the month rather than at its end."
+      "heading": "Record hours on mobile. Approve them as you go.",
+      "body": "Employees would enter hours from their phones and assign them to a job or site. Supervisors could review entries throughout the month, then export approved hours for payroll."
     },
     "workflow": {
       "steps": [
         {
-          "title": "Submit",
-          "body": "Employees log their hours from a phone right after the shift."
+          "title": "Record",
+          "body": "Employees log their hours from a phone after each shift."
         },
         {
-          "title": "Associate",
-          "body": "Each entry is linked to a job, site or shift."
+          "title": "Assign",
+          "body": "Link each entry to a job, site or shift."
         },
         {
           "title": "Review",
-          "body": "A supervisor checks and confirms the submitted entries."
+          "body": "A supervisor reviews and approves entries."
         },
         {
-          "title": "Resolve",
-          "body": "Missing or unusual entries are flagged and clarified with the employee."
+          "title": "Resolve exceptions",
+          "body": "Flag missing or unusual entries for clarification."
         },
         {
           "title": "Export",
-          "body": "Approved hours are prepared as a payroll-ready export."
+          "body": "Prepare approved hours as payroll input."
         }
       ]
     },
     "value": {
-      "heading": "Designed to reduce month-end reconciliation",
+      "heading": "Less month-end admin",
       "items": [
-        "Fewer missing or unclear entries.",
+        "Fewer missing or unclear time entries.",
         "Less manual consolidation at month-end.",
-        "A clear record of who approved which hours."
+        "A clear record of who approved each entry."
       ],
-      "disclaimer": "These are expected benefits of the proposed workflow, not validated results. No performance measurements are available yet."
+      "disclaimer": "These are potential benefits, not measured results from a client deployment."
     },
     "principles": {
-      "heading": "Easy for the team, clear for supervisors",
+      "heading": "Easy for staff, clear for managers",
       "items": [
-        "Quick mobile entry that fits into a working day.",
-        "Supervisor review before anything reaches payroll.",
-        "Payroll-ready export; connection to existing systems only in a future phase.",
-        "Data protection and access controls as requirements for any future implementation."
+        "Fast mobile entry that fits the workday.",
+        "Supervisor review before payroll processing.",
+        "Payroll-ready exports, with integrations considered later.",
+        "Appropriate access controls and data protection."
       ]
     },
     "nextSteps": {
-      "heading": "A concept today, a potential MVP next",
-      "body": "ShiftFlow is currently a solution concept. A future proof-of-concept could validate ease of entry and review effort using synthetic or properly authorized sample data. No production deployment or customer results are claimed."
+      "heading": "Where we would start",
+      "body": "This is an example of a possible solution, not a finished product or a completed client project. We would first review your current workflow and test a small, focused prototype before agreeing on scope or technology."
     },
     "closing": {
-      "heading": "Have a similar manual workflow in your business?",
-      "body": "SpexSol helps teams explore how custom software and AI-assisted processes could simplify operational work. Let's discuss the problem and identify a realistic first step.",
-      "cta": "Talk to SpexSol"
+      "heading": "Dealing with something similar?",
+      "body": "We can review your current process, identify where time is being lost and suggest a practical first step tailored to your business.",
+      "cta": "Let's talk"
     },
     "meta": {
-      "title": "ShiftFlow — Timesheet & Shift Reporting Concept | SpexSol",
-      "description": "Explore ShiftFlow, a SpexSol concept for replacing chat-based timesheets with mobile shift reporting, supervisor review and a payroll-ready export."
+      "title": "Time Tracking & Timesheets | SpexSol",
+      "description": "Employees report hours through text messages or chat, and supervisors later copy them into spreadsheets. This example shows how teams could record hours as they go and prepare payroll inputs with less chasing."
     }
   },
   "stockflow": {
-    "name": "StockFlow",
-    "eyebrow": "SpexSol Concept / Planned MVP",
+    "name": "Inventory Management",
+    "eyebrow": "Example solution",
     "category": "Workflow Automation · Inventory Visibility",
-    "tagline": "Make stock movements easier to capture and verify.",
-    "title": "StockFlow — lightweight visibility into stock movements",
-    "intro": "Smaller warehouses and retail teams often track stock changes in several spreadsheets that rarely match. StockFlow is a proposed lightweight workflow that would make every stock movement quick to record and easy to verify.",
-    "cta": "Discuss a similar workflow",
+    "tagline": "Know what is in stock without reconciling spreadsheets.",
+    "title": "Inventory Management",
+    "intro": "When goods received and dispatched are recorded in different files, it is hard to know what is actually available. Here is how warehouse teams could record stock movements from a phone.",
+    "cta": "Discuss your workflow",
     "spec": {
       "status": "Status",
       "category": "Category",
-      "audience": "Audience",
-      "audienceValue": "Warehouses, distributors, small retail and e-commerce teams"
+      "audience": "Who it's for",
+      "audienceValue": "Warehouses, distributors, small retailers and e-commerce businesses"
     },
     "challenge": {
-      "heading": "Stock changes live in separate spreadsheets",
-      "body": "Receipts, transfers and adjustments are recorded by different people in different files, often after the fact. Reconciling them takes time, and it is hard to say which number is current or who made a change."
+      "heading": "Different spreadsheets show different stock levels",
+      "body": "Receipts, dispatches and transfers are recorded in separate places, often after the fact. It becomes difficult to establish current stock levels or understand discrepancies."
     },
     "solution": {
-      "heading": "Record each movement once, see it everywhere",
-      "body": "StockFlow explores scanning an item or QR code on a phone to record a movement with its quantity and location. Each change would be validated and reflected in a shared view, with notifications when stock crosses thresholds the team sets."
+      "heading": "Record every stock movement in one place",
+      "body": "A team member would scan an item with a phone and record a receipt, dispatch or transfer. The shared stock view would update, with alerts when quantities fall below agreed thresholds."
     },
     "workflow": {
       "steps": [
         {
           "title": "Scan",
-          "body": "Scan an item or QR code with a phone."
+          "body": "Scan an item or QR code using a phone."
         },
         {
           "title": "Record",
-          "body": "Enter the movement: receipt, transfer, issue or adjustment."
+          "body": "Enter a receipt, transfer, dispatch or adjustment."
         },
         {
-          "title": "Validate",
-          "body": "Quantity and location are checked before the change is saved."
+          "title": "Check",
+          "body": "Validate the quantity and location before saving."
         },
         {
           "title": "Update",
-          "body": "The shared stock view updates for the whole team."
+          "body": "Refresh the shared inventory view."
         },
         {
-          "title": "Notify",
-          "body": "The team is notified when stock crosses a configured threshold."
+          "title": "Alert",
+          "body": "Notify the team when stock falls below a configured threshold."
         }
       ]
     },
     "value": {
-      "heading": "Designed for more timely stock visibility",
+      "heading": "A clearer picture of available stock",
       "items": [
-        "A more timely view of current stock levels.",
-        "Traceable adjustments with a clear author and time.",
-        "Fewer manual hand-offs between spreadsheets."
+        "Up-to-date stock levels without reconciling multiple files.",
+        "Traceable adjustments with author and timestamp.",
+        "Less manual copying between spreadsheets."
       ],
-      "disclaimer": "These are expected benefits of the proposed workflow, not validated results. No performance measurements are available yet."
+      "disclaimer": "These are potential benefits, not measured results from a client deployment."
     },
     "principles": {
-      "heading": "Lightweight by design",
+      "heading": "Keep it practical",
       "items": [
-        "Fast capture on a phone, right where the stock is.",
-        "Validation at entry rather than reconciliation later.",
-        "A clear history for every adjustment.",
-        "Connection to existing systems only in a future phase."
+        "Quick mobile updates at the point of work.",
+        "Validate entries early rather than reconciling later.",
+        "A clear audit trail for adjustments.",
+        "Consider integrations with existing systems in a later phase."
       ]
     },
     "nextSteps": {
-      "heading": "A concept today, a potential MVP next",
-      "body": "StockFlow is currently a solution concept. A future proof-of-concept could validate capture speed and data consistency using synthetic or properly authorized sample data. No production deployment or customer results are claimed."
+      "heading": "Where we would start",
+      "body": "This is an example of a possible solution, not a finished product or a completed client project. We would first review your current workflow and test a small, focused prototype before agreeing on scope or technology."
     },
     "closing": {
-      "heading": "Have a similar manual workflow in your business?",
-      "body": "SpexSol helps teams explore how custom software and AI-assisted processes could simplify operational work. Let's discuss the problem and identify a realistic first step.",
-      "cta": "Talk to SpexSol"
+      "heading": "Dealing with something similar?",
+      "body": "We can review your current process, identify where time is being lost and suggest a practical first step tailored to your business.",
+      "cta": "Let's talk"
     },
     "meta": {
-      "title": "StockFlow — Lightweight Inventory Visibility Concept | SpexSol",
-      "description": "Explore StockFlow, a SpexSol concept for capturing stock movements by scanning, validating quantities and locations, and sharing a current view of inventory."
+      "title": "Inventory Management | SpexSol",
+      "description": "When goods received and dispatched are recorded in different files, it is hard to know what is actually available. Here is how warehouse teams could record stock movements from a phone."
     }
   },
   "fixflow": {
-    "name": "FixFlow",
-    "eyebrow": "SpexSol Concept / Planned MVP",
-    "category": "Workflow Automation · Request Coordination",
-    "tagline": "From scattered maintenance messages to accountable requests.",
-    "title": "FixFlow — from scattered maintenance messages to accountable requests",
-    "intro": "Maintenance requests often arrive by phone and email, and it is easy to lose track of who is handling what. FixFlow is a proposed workflow that would turn each request into a tracked task with a clear owner, from report to resolution.",
-    "cta": "Discuss a similar workflow",
+    "name": "Maintenance Request Management",
+    "eyebrow": "Example solution",
+    "category": "Workflow Automation · Request Management",
+    "tagline": "Every reported issue has an owner and a clear status.",
+    "title": "Maintenance Request Management",
+    "intro": "A broken air conditioner, faulty lighting or an issue at a site. Requests arrive by phone and email, but it is not always clear who is dealing with them. Here is how they could be managed in one place.",
+    "cta": "Discuss your workflow",
     "spec": {
       "status": "Status",
       "category": "Category",
-      "audience": "Audience",
-      "audienceValue": "Property managers, facility teams, multi-site operators"
+      "audience": "Who it's for",
+      "audienceValue": "Property managers, facilities teams and multi-site businesses"
     },
     "challenge": {
-      "heading": "Requests arrive from everywhere, ownership is unclear",
-      "body": "Tenants, staff and site managers report issues by phone and email. Coordinators lack a reliable overview of which requests are open, who owns them and whether they were actually resolved."
+      "heading": "Maintenance requests disappear between calls and emails",
+      "body": "Tenants and employees report problems through different channels. Coordinators then have to find out who took ownership, what has been done and whether the repair is complete."
     },
     "solution": {
-      "heading": "One request, one owner, one history",
-      "body": "FixFlow explores a simple submission form with photos, followed by classification, prioritization and assignment to a technician. Updates would be tracked in one place, and a coordinator would review completion before closing the request."
+      "heading": "From first report to completed repair",
+      "body": "Someone would submit an issue through a simple form, with an optional photo. The request would receive a priority and an owner. Coordinators could track progress and confirm completion before closing it."
     },
     "workflow": {
       "steps": [
         {
-          "title": "Submit",
-          "body": "The reporter describes the issue and attaches a photo."
+          "title": "Report",
+          "body": "Describe the issue and attach a photo if useful."
         },
         {
-          "title": "Classify",
-          "body": "The request is categorized and given a priority."
+          "title": "Prioritize",
+          "body": "Assign a category and priority."
         },
         {
           "title": "Assign",
-          "body": "A technician or contractor is assigned as the owner."
+          "body": "Give the request to a technician or external contractor."
         },
         {
           "title": "Track",
-          "body": "Progress updates are recorded on the request."
+          "body": "Record updates against the request."
         },
         {
           "title": "Close",
-          "body": "A coordinator reviews completion and closes the request."
+          "body": "A coordinator verifies completion and closes the request."
         }
       ]
     },
     "value": {
-      "heading": "Designed for clearer accountability",
+      "heading": "Clear ownership, fewer forgotten requests",
       "items": [
-        "Clearer ownership of every request.",
+        "A named owner for every request.",
         "A searchable history of issues and repairs.",
-        "Fewer missed follow-ups."
+        "Fewer requests slipping through the cracks."
       ],
-      "disclaimer": "These are expected benefits of the proposed workflow, not validated results. No performance measurements are available yet."
+      "disclaimer": "These are potential benefits, not measured results from a client deployment."
     },
     "principles": {
-      "heading": "Simple to report, clear to manage",
+      "heading": "Easy to report, easy to manage",
       "items": [
-        "Quick reporting with a photo.",
-        "Every request has exactly one current owner.",
-        "Coordinator review before a request is closed.",
-        "Data protection and access controls as requirements for any future implementation."
+        "Quick reporting with optional photos.",
+        "One clearly assigned owner at a time.",
+        "Coordinator verification before closure.",
+        "Appropriate access controls and data protection."
       ]
     },
     "nextSteps": {
-      "heading": "A concept today, a potential MVP next",
-      "body": "FixFlow is currently a solution concept. A future proof-of-concept could validate request handling and coordinator usability using synthetic or properly authorized sample data. No production deployment or customer results are claimed."
+      "heading": "Where we would start",
+      "body": "This is an example of a possible solution, not a finished product or a completed client project. We would first review your current workflow and test a small, focused prototype before agreeing on scope or technology."
     },
     "closing": {
-      "heading": "Have a similar manual workflow in your business?",
-      "body": "SpexSol helps teams explore how custom software and AI-assisted processes could simplify operational work. Let's discuss the problem and identify a realistic first step.",
-      "cta": "Talk to SpexSol"
+      "heading": "Dealing with something similar?",
+      "body": "We can review your current process, identify where time is being lost and suggest a practical first step tailored to your business.",
+      "cta": "Let's talk"
     },
     "meta": {
-      "title": "FixFlow — Maintenance Request Coordination Concept | SpexSol",
-      "description": "Explore FixFlow, a SpexSol concept for turning maintenance calls and emails into tracked requests with clear ownership, updates and coordinator review."
+      "title": "Maintenance Request Management | SpexSol",
+      "description": "A broken air conditioner, faulty lighting or an issue at a site. Requests arrive by phone and email, but it is not always clear who is dealing with them. Here is how they could be managed in one place."
+    }
+  },
+  "sales-assistant": {
+    "name": "AI Sales Inquiry Assistant",
+    "eyebrow": "Solution example / concept",
+    "category": "AI assistants · Workflow automation",
+    "tagline": "Turn incoming inquiries into clear next steps, without the CRM busywork.",
+    "title": "AI sales assistant",
+    "intro": "Leads arrive through email and web forms. Sales teams spend time understanding each request, finding context and copying details into the CRM. This is a proposed approach, not a launched product.",
+    "cta": "Discuss your workflow",
+    "spec": {
+      "status": "Status",
+      "category": "Category",
+      "audience": "Who it's for",
+      "audienceValue": "B2B sales teams, agencies and technical service providers"
+    },
+    "challenge": {
+      "heading": "Where the friction comes from",
+      "body": "Leads arrive through email and web forms. Sales teams spend time understanding each request, finding context and copying details into the CRM."
+    },
+    "solution": {
+      "heading": "How we would approach it",
+      "body": "An assistant could summarize the request, identify missing details and draft a response. After a salesperson reviews it, approved information could be saved to the CRM."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Capture",
+          "body": "Record a new inquiry from email or a web form."
+        },
+        {
+          "title": "Understand",
+          "body": "AI summarizes the request, identifies intent and suggests follow-up questions."
+        },
+        {
+          "title": "Review",
+          "body": "A salesperson checks the draft and any commercial details."
+        },
+        {
+          "title": "Update CRM",
+          "body": "Approved fields are saved through an API using defined rules."
+        },
+        {
+          "title": "Respond",
+          "body": "External messages are sent only after approval."
+        }
+      ]
+    },
+    "value": {
+      "heading": "What it could improve",
+      "items": [
+        "Less time spent sorting incoming leads.",
+        "More consistent CRM records.",
+        "Faster response preparation with human oversight."
+      ],
+      "disclaimer": "Potential benefits only; no measured client results."
+    },
+    "principles": {
+      "heading": "Design safeguards",
+      "items": [
+        "No autonomous pricing or contractual commitments.",
+        "Human approval before external communication.",
+        "Role-based access to customer data and CRM."
+      ]
+    },
+    "nextSteps": {
+      "heading": "How we would validate it",
+      "body": "We would test summary quality, CRM field accuracy and review time using synthetic or approved sample inquiries. This is not a completed implementation or client reference."
+    },
+    "closing": {
+      "heading": "Facing a similar challenge?",
+      "body": "Let's review your workflow and identify a practical first step. We will only use AI where it adds clear value.",
+      "cta": "Get in touch"
+    },
+    "meta": {
+      "title": "AI sales assistant | SpexSol",
+      "description": "Turn incoming inquiries into clear next steps, without the CRM busywork. Proposed solution, not a launched product."
+    }
+  },
+  "support-assistant": {
+    "name": "AI Customer Support Assistant",
+    "eyebrow": "Solution example / concept",
+    "category": "AI assistants · Workflow automation",
+    "tagline": "Answers grounded in your documentation, not invented promises.",
+    "title": "AI customer support",
+    "intro": "Support teams answer the same questions repeatedly, while useful information is scattered across guides, emails and internal documents. This is a proposed approach, not a launched product.",
+    "cta": "Discuss your workflow",
+    "spec": {
+      "status": "Status",
+      "category": "Category",
+      "audience": "Who it's for",
+      "audienceValue": "E-commerce, SaaS and customer service teams"
+    },
+    "challenge": {
+      "heading": "Where the friction comes from",
+      "body": "Support teams answer the same questions repeatedly, while useful information is scattered across guides, emails and internal documents."
+    },
+    "solution": {
+      "heading": "How we would approach it",
+      "body": "An assistant could retrieve relevant passages from approved sources and draft a sourced reply. Unclear or sensitive requests would be routed to a support specialist."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Receive",
+          "body": "A customer submits a question through a supported channel."
+        },
+        {
+          "title": "Retrieve",
+          "body": "The system searches approved knowledge sources."
+        },
+        {
+          "title": "Draft",
+          "body": "AI prepares an answer with source references."
+        },
+        {
+          "title": "Escalate",
+          "body": "Uncertain or sensitive cases are passed to a person."
+        },
+        {
+          "title": "Send",
+          "body": "A support specialist approves the reply; any automated sending would require separately agreed rules."
+        }
+      ]
+    },
+    "value": {
+      "heading": "What it could improve",
+      "items": [
+        "Less repetitive searching for answers.",
+        "More consistent customer information.",
+        "Clear escalation for complex cases."
+      ],
+      "disclaimer": "Potential benefits only; no measured client results."
+    },
+    "principles": {
+      "heading": "Design safeguards",
+      "items": [
+        "Answers grounded in approved sources.",
+        "No unauthorized refunds or order changes.",
+        "Source traceability and human handoff."
+      ]
+    },
+    "nextSteps": {
+      "heading": "How we would validate it",
+      "body": "We would evaluate answer accuracy, source attribution and escalation behavior using representative test questions. This is not a completed implementation or client reference."
+    },
+    "closing": {
+      "heading": "Facing a similar challenge?",
+      "body": "Let's review your workflow and identify a practical first step. We will only use AI where it adds clear value.",
+      "cta": "Get in touch"
+    },
+    "meta": {
+      "title": "AI customer support | SpexSol",
+      "description": "Answers grounded in your documentation, not invented promises. Proposed solution, not a launched product."
+    }
+  },
+  "knowledge-assistant": {
+    "name": "Internal AI Knowledge Assistant",
+    "eyebrow": "Solution example / concept",
+    "category": "AI assistants · Workflow automation",
+    "tagline": "Find the right internal answer without digging through folders.",
+    "title": "Internal knowledge assistant",
+    "intro": "Employees search across shared drives, wikis and outdated files, often asking colleagues the same questions again and again. This is a proposed approach, not a launched product.",
+    "cta": "Discuss your workflow",
+    "spec": {
+      "status": "Status",
+      "category": "Category",
+      "audience": "Who it's for",
+      "audienceValue": "HR, IT help desks, onboarding and documentation-heavy teams"
+    },
+    "challenge": {
+      "heading": "Where the friction comes from",
+      "body": "Employees search across shared drives, wikis and outdated files, often asking colleagues the same questions again and again."
+    },
+    "solution": {
+      "heading": "How we would approach it",
+      "body": "An assistant could search approved internal sources and respond with citations. When information is missing, it would say so rather than guess."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Ask",
+          "body": "An employee asks a question in plain language."
+        },
+        {
+          "title": "Authorize",
+          "body": "The system checks which documents the employee can access."
+        },
+        {
+          "title": "Retrieve",
+          "body": "Relevant passages are found within authorized sources."
+        },
+        {
+          "title": "Answer",
+          "body": "AI provides a concise response with document references."
+        },
+        {
+          "title": "Improve",
+          "body": "Users flag incorrect answers for review."
+        }
+      ]
+    },
+    "value": {
+      "heading": "What it could improve",
+      "items": [
+        "Less time searching for internal information.",
+        "Easier onboarding for new team members.",
+        "Better use of existing documentation."
+      ],
+      "disclaimer": "Potential benefits only; no measured client results."
+    },
+    "principles": {
+      "heading": "Design safeguards",
+      "items": [
+        "Document-level permission enforcement.",
+        "Citations and access to original sources.",
+        "No fabricated answers when evidence is missing."
+      ]
+    },
+    "nextSteps": {
+      "heading": "How we would validate it",
+      "body": "We would start with a limited document set and test answer accuracy, permission enforcement and citation quality. This is not a completed implementation or client reference."
+    },
+    "closing": {
+      "heading": "Facing a similar challenge?",
+      "body": "Let's review your workflow and identify a practical first step. We will only use AI where it adds clear value.",
+      "cta": "Get in touch"
+    },
+    "meta": {
+      "title": "Internal knowledge assistant | SpexSol",
+      "description": "Find the right internal answer without digging through folders. Proposed solution, not a launched product."
+    }
+  },
+  "workflow-coordinator": {
+    "name": "AI Workflow Coordinator",
+    "eyebrow": "Solution example / concept",
+    "category": "AI assistants · Workflow automation",
+    "tagline": "Fewer missed handoffs. Clearer next steps.",
+    "title": "AI workflow coordination",
+    "intro": "Tasks move between email, chat and internal tools. Missing information and unclear ownership often become visible only when deadlines slip. This is a proposed approach, not a launched product.",
+    "cta": "Discuss your workflow",
+    "spec": {
+      "status": "Status",
+      "category": "Category",
+      "audience": "Who it's for",
+      "audienceValue": "Operations teams, field service companies and project coordinators"
+    },
+    "challenge": {
+      "heading": "Where the friction comes from",
+      "body": "Tasks move between email, chat and internal tools. Missing information and unclear ownership often become visible only when deadlines slip."
+    },
+    "solution": {
+      "heading": "How we would approach it",
+      "body": "Rules-based automation could track task status while AI summarizes conversations and suggests next steps. Reminders and approved status updates would be handled by standard integrations."
+    },
+    "workflow": {
+      "steps": [
+        {
+          "title": "Detect",
+          "body": "Receive an event from a supported system."
+        },
+        {
+          "title": "Check",
+          "body": "Validate deadlines, ownership and required information using defined rules."
+        },
+        {
+          "title": "Summarize",
+          "body": "AI prepares context and suggests a next step."
+        },
+        {
+          "title": "Approve",
+          "body": "A person approves changes with business or operational impact."
+        },
+        {
+          "title": "Act",
+          "body": "An integration sends a reminder or updates permitted fields."
+        }
+      ]
+    },
+    "value": {
+      "heading": "What it could improve",
+      "items": [
+        "Earlier visibility into missing information.",
+        "Less manual status chasing.",
+        "Clearer ownership and next actions."
+      ],
+      "disclaimer": "Potential benefits only; no measured client results."
+    },
+    "principles": {
+      "heading": "Design safeguards",
+      "items": [
+        "Deterministic rules for deadlines and validation.",
+        "AI suggestions do not authorize critical changes.",
+        "Audit trail for every executed action."
+      ]
+    },
+    "nextSteps": {
+      "heading": "How we would validate it",
+      "body": "We would test alert accuracy, usefulness of suggestions and safe action execution in representative workflows. This is not a completed implementation or client reference."
+    },
+    "closing": {
+      "heading": "Facing a similar challenge?",
+      "body": "Let's review your workflow and identify a practical first step. We will only use AI where it adds clear value.",
+      "cta": "Get in touch"
+    },
+    "meta": {
+      "title": "AI workflow coordination | SpexSol",
+      "description": "Fewer missed handoffs. Clearer next steps. Proposed solution, not a launched product."
     }
   },
   "calculator": {
-    "title": "Illustrative time-savings calculator",
-    "disclaimer": "Illustrative scenario, not a measured client result.",
-    "assumptions": "The estimate excludes implementation, subscriptions, human review, exceptions and operating costs. Time saved does not equal cash savings.",
+    "title": "How much time could you save?",
+    "disclaimer": "An illustrative estimate, not a measured client result.",
+    "assumptions": "This estimate excludes development, operating costs, human review and exception handling. Time saved does not automatically equal cash savings.",
     "inputs": {
-      "volume": "Items per month",
-      "minutesPerItem": "Manual minutes per item",
-      "hourlyCost": "Labour cost per hour (€)",
-      "reduction": "Share of manual work automated (%)"
+      "volume": "How many items do you process each month?",
+      "minutesPerItem": "Minutes spent on each item today",
+      "hourlyCost": "Hourly labor cost (€)",
+      "reduction": "Share of manual work that could be removed (%)"
     },
     "outputs": {
-      "hours": "Hours saved per month",
-      "value": "Value of time saved per month"
+      "hours": "Estimated hours saved per month",
+      "value": "Estimated monthly value of time saved"
     }
+  },
+  "figures": {
+    "fieldflow": {
+      "inputTag": "img",
+      "outputTag": "pdf",
+      "fields": [
+        {
+          "label": "job_ref",
+          "value": "SR-2041"
+        },
+        {
+          "label": "date",
+          "value": "2026-10-14"
+        },
+        {
+          "label": "customer",
+          "value": "Acme Plant 3"
+        },
+        {
+          "label": "work_done",
+          "value": "Filter swap, seal check"
+        },
+        {
+          "label": "notes",
+          "value": "— low confidence",
+          "ok": false
+        }
+      ]
+    },
+    "invoiceflow": {
+      "inputTag": "inbox",
+      "outputTag": "export",
+      "fields": [
+        {
+          "label": "vendor",
+          "value": "Nordic Parts AB"
+        },
+        {
+          "label": "invoice_no",
+          "value": "INV-88213"
+        },
+        {
+          "label": "total",
+          "value": "4 820,00 €"
+        },
+        {
+          "label": "due_date",
+          "value": "2026-11-13"
+        },
+        {
+          "label": "duplicate",
+          "value": "— possible match",
+          "ok": false
+        }
+      ]
+    },
+    "quoteflow": {
+      "inputTag": "catalog",
+      "outputTag": "pdf · v2",
+      "fields": [
+        {
+          "label": "customer",
+          "value": "Brno Steelworks"
+        },
+        {
+          "label": "template",
+          "value": "Install · Standard"
+        },
+        {
+          "label": "items",
+          "value": "12 lines"
+        },
+        {
+          "label": "margin",
+          "value": "31 %"
+        },
+        {
+          "label": "discount",
+          "value": "14 % — needs approval",
+          "ok": false
+        }
+      ],
+      "outputStatus": "sent"
+    },
+    "shiftflow": {
+      "inputTag": "mobile",
+      "outputTag": "payroll",
+      "fields": [
+        {
+          "label": "employee",
+          "value": "M. Kováč"
+        },
+        {
+          "label": "site",
+          "value": "Hall B · Line 2"
+        },
+        {
+          "label": "shift",
+          "value": "06:00 – 14:30"
+        },
+        {
+          "label": "hours",
+          "value": "8.5"
+        },
+        {
+          "label": "break",
+          "value": "— missing",
+          "ok": false
+        }
+      ]
+    },
+    "stockflow": {
+      "inputTag": "scan",
+      "outputTag": "live",
+      "fields": [
+        {
+          "label": "sku",
+          "value": "BRK-4410"
+        },
+        {
+          "label": "movement",
+          "value": "transfer"
+        },
+        {
+          "label": "qty",
+          "value": "24"
+        },
+        {
+          "label": "from → to",
+          "value": "A-03 → B-11"
+        },
+        {
+          "label": "level",
+          "value": "— below threshold",
+          "ok": false
+        }
+      ]
+    },
+    "fixflow": {
+      "inputTag": "img",
+      "outputTag": "request",
+      "fields": [
+        {
+          "label": "location",
+          "value": "Bldg 2 · Floor 3"
+        },
+        {
+          "label": "category",
+          "value": "Plumbing"
+        },
+        {
+          "label": "priority",
+          "value": "High"
+        },
+        {
+          "label": "owner",
+          "value": "J. Novak"
+        },
+        {
+          "label": "status",
+          "value": "— awaiting review",
+          "ok": false
+        }
+      ]
+    },
+    "sales-assistant": {
+      "inputTag": "inquiry",
+      "outputTag": "draft reply",
+      "fields": [
+        {
+          "label": "company",
+          "value": "Delta Logistics"
+        },
+        {
+          "label": "request",
+          "value": "Fleet tracking, 40 vans"
+        },
+        {
+          "label": "timeline",
+          "value": "Q1 2027"
+        },
+        {
+          "label": "next_step",
+          "value": "Discovery call"
+        },
+        {
+          "label": "budget",
+          "value": "— not stated, ask",
+          "ok": false
+        }
+      ],
+      "outputStatus": "review"
+    },
+    "support-assistant": {
+      "inputTag": "question",
+      "outputTag": "sourced reply",
+      "fields": [
+        {
+          "label": "intent",
+          "value": "Return policy"
+        },
+        {
+          "label": "source",
+          "value": "help/returns.md §2"
+        },
+        {
+          "label": "confidence",
+          "value": "high"
+        },
+        {
+          "label": "tone",
+          "value": "customer"
+        },
+        {
+          "label": "escalate",
+          "value": "— no, auto-draft",
+          "ok": false
+        }
+      ],
+      "outputStatus": "sent"
+    },
+    "knowledge-assistant": {
+      "inputTag": "ask",
+      "outputTag": "cited answer",
+      "fields": [
+        {
+          "label": "question",
+          "value": "Travel expense limit?"
+        },
+        {
+          "label": "source",
+          "value": "HR Policy 2026 · p.4"
+        },
+        {
+          "label": "updated",
+          "value": "2026-09-01"
+        },
+        {
+          "label": "access",
+          "value": "allowed"
+        },
+        {
+          "label": "gap",
+          "value": "— per diem not found",
+          "ok": false
+        }
+      ]
+    },
+    "workflow-coordinator": {
+      "inputTag": "events",
+      "outputTag": "next step",
+      "fields": [
+        {
+          "label": "task",
+          "value": "Site survey · #412"
+        },
+        {
+          "label": "owner",
+          "value": "P. Horváth"
+        },
+        {
+          "label": "due",
+          "value": "2026-11-04"
+        },
+        {
+          "label": "summary",
+          "value": "3 msgs, 1 decision"
+        },
+        {
+          "label": "missing",
+          "value": "— access code",
+          "ok": false
+        }
+      ],
+      "inputSteps": [
+        "email",
+        "chat",
+        "crm",
+        "ticket"
+      ]
+    },
+    "ticketSteps": [
+      "open",
+      "assigned",
+      "done",
+      "closed"
+    ]
   }
 }
